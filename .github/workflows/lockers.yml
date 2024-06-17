@@ -1,0 +1,57 @@
+name: Fetch lockers data
+
+on:
+  workflow_dispatch: # Allows the workflow to be triggered manually
+  schedule:
+    - cron: '0 */2 * * *' # Every 2 hours
+
+env:
+  DEVOPS_DIR: devops
+  TARGET_DEVOPS_DIR: target-devops
+  AGNOSTIC_KEY: ${{ secrets.AGNOSTIC_KEY }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the main repo
+        uses: actions/checkout@v4
+        with:
+          repository: stake-dao/interface-v4
+          token: ${{ secrets.GIT_ACCESS_TOKEN }}
+          path: ${{ env.DEVOPS_DIR }}
+          ref: main
+
+      - name: Run script
+        id: reports_script
+        run: |
+          cd ${{ env.DEVOPS_DIR }}
+          npm install
+          npm run buildLockers
+        shell: bash
+        env:
+          GIT_ACCESS_TOKEN: ${{ secrets.GIT_ACCESS_TOKEN }}
+
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          repository: stake-dao/lockers-data
+          token: ${{ secrets.GIT_ACCESS_TOKEN }}
+          path: ${{ env.TARGET_DEVOPS_DIR }}
+        if: always()
+          
+      - name: Copy CSV to target repo
+        run: |
+          cp "${{ env.DEVOPS_DIR }}/data.json" "${GITHUB_WORKSPACE}//${{ env.TARGET_DEVOPS_DIR }}/api/lockers/data.json"
+
+      - name: Commit and push changes to repo
+        run: |
+          cd "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}"
+          git config user.email "actions@github.com"
+          git config user.name "Stake DAO Automation"
+          git add .
+          git commit -m "Lockers"
+          git push
+        shell: bash
+        if: always()
+      
