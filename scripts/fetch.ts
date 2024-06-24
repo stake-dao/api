@@ -19,7 +19,7 @@ const main = async () => {
   };
 
   const prices = await getPricesFromLlama(tokens.filter((t) => t.chainId === 1))
-  const sdtEmissionData = await getSdtInflationData(publicClient, 1)
+  const sdtEmissionData = await getSdtInflationData(publicClient[mainnet.id], 1)
   const gaugesWeights = await getGaugesWeights(process.env.PUBLIC_RPC_MAINNET as string)
 
   const curveData = await fetchCurve(
