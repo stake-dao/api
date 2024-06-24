@@ -6,7 +6,7 @@ on:
     - cron: '*/15 * * * *'  # Every 15 minutes
 
 env:
-  ETHERSCAN_TOKEN: {{ secrets.ETHERSCAN_TOKEN }}
+  ETHERSCAN_TOKEN: ${{ secrets.ETHERSCAN_TOKEN }}
   PUBLIC_RPC_MAINNET: https://eth.public-rpc.com
 
 jobs:
