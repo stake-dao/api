@@ -26,7 +26,7 @@ const main = async () => {
     prices,
     publicClient[mainnet.id],
     process.env.PUBLIC_RPC_MAINNET as string,
-    process.env.ETHERSCAN_KEY as string,
+    process.env.ETHERSCAN_TOKEN as string,
     'etherscan.io',
     mainnet.id,
     19782781,
