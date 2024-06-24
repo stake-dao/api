@@ -1,6 +1,7 @@
 name: Update Strategies
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '*/15 * * * *'  # Every 15 minutes
 
