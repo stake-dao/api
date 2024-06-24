@@ -1,0 +1,35 @@
+name: Update Strategies
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # Every 15 minutes
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run script to update Strategies data
+        run: pnpm tsx scripts/fetch.ts
+
+      - name: Commit and push if changes found
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Stake DAO API update"
+          git add api/strategies/*.json
+          git diff --quiet --exit-code || git commit -m "Auto-update strategies data $(date +%Y-%m-%d)"
+          git push
+
