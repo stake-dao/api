@@ -10,7 +10,7 @@ const main = async () => {
   const publicClient = {
     [mainnet.id]: createPublicClient({
       chain: mainnet,
-      transport: http(),
+      transport: http(process.env.PUBLIC_RPC_MAINNET),
     }),
     [bsc.id]: createPublicClient({
       chain: bsc,
