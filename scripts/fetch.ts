@@ -36,11 +36,7 @@ const main = async () => {
 
   fs.writeFile(
     `api/strategies/curve.json`,
-    JSON.stringify(
-      curveData,
-      null,
-      2,
-    ),
+    JSON.stringify(curveData),
     (err) => {
       if (err) {
         console.info(` 🟥 - An error occured on Curve strategies update.`)
