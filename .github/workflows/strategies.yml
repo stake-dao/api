@@ -39,7 +39,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "Stake DAO API update"
-          git add api/strategies/*/*.json
+          git add api/strategies/curve/*.json
           git diff --quiet --exit-code || git commit -m "Auto-update strategies data $(date +%Y-%m-%d)"
           git push
 
