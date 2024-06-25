@@ -54,7 +54,7 @@ const main = async () => {
   // Write curve files
   fs.writeFile(
     `api/strategies/curve/${mainnet.id}.json`,
-    JSON.stringify(curveDataMainnet, null, 2),
+    JSON.stringify(curveDataMainnet),
     (err) => {
       if (err) {
         console.info(` ❌ - An error occured on Curve mainnet strategies update.`)
@@ -65,7 +65,7 @@ const main = async () => {
   )
   fs.writeFile(
     `api/strategies/curve/${arbitrum.id}.json`,
-    JSON.stringify(curveDataArbitrum, null, 2),
+    JSON.stringify(curveDataArbitrum),
     (err) => {
       if (err) {
         console.info(` ❌ - An error occured on Curve arbitrum strategies update.`)
@@ -80,7 +80,7 @@ const main = async () => {
       ...curveDataMainnet,
       deployed: [...curveDataMainnet.deployed, ...curveDataArbitrum.deployed],
       notDeployed: [...curveDataMainnet.notDeployed, ...curveDataArbitrum.notDeployed]
-    }, null, 2),
+    }),
     (err) => {
       if (err) {
         console.info(` ❌ - An error occured on Curve strategies update.`)
