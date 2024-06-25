@@ -8,6 +8,8 @@ on:
 env:
   ETHERSCAN_TOKEN: ${{ secrets.ETHERSCAN_TOKEN }}
   PUBLIC_RPC_MAINNET: https://eth.public-rpc.com
+  ARBISCAN_TOKEN: ${{ secrets.ARBISCAN_TOKEN }}
+  PUBLIC_RPC_ARBITRUM: https://arb1.arbitrum.io/rpc
 
 jobs:
   update:
@@ -37,7 +39,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "Stake DAO API update"
-          git add api/strategies/*.json
+          git add api/strategies
           git diff --quiet --exit-code || git commit -m "Auto-update strategies data $(date +%Y-%m-%d)"
           git push
 
