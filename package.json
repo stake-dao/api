@@ -4,18 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Stake DAO",
   "license": "AGPL-3.0-only",
   "dependencies": {
+    "@hono/node-server": "^1.11.4",
     "@stake-dao/constants": "^0.1.1",
     "@stake-dao/reader": "^0.1.1",
-    "@types/node": "^20.14.8",
     "dotenv": "^16.4.5",
-    "fs": "0.0.1-security",
-    "tsx": "^4.15.7",
+    "hono": "^4.4.8",
+    "memoizee": "^0.4.17",
     "viem": "^2.16.2"
+  },
+  "devDependencies": {
+    "@types/memoizee": "^0.4.11",
+    "@types/node": "^20.14.8",
+    "prettier": "^3.3.2",
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2"
   }
 }

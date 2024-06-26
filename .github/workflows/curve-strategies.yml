@@ -32,15 +32,15 @@ jobs:
       - name: Install dependencies
         run: pnpm install
     
-      - name: Run script to update Strategies data
-        run: pnpm tsx scripts/fetch.ts
+      - name: Run script to update Curve Strategies data
+        run: pnpm tsx scripts/updateCurveStrats.ts
 
       - name: Commit and push if changes found
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "Stake DAO API update"
-          git add api/strategies
-          git commit -m "Auto-update strategies data $(date +%Y-%m-%d)"
+          git add api/strategies/curve
+          git commit -m "Auto-update Curve strategies data $(date +%Y-%m-%d)"
           git push
         shell: bash
 
