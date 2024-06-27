@@ -1,9 +1,9 @@
-name: Update Curve Strategies
+name: Update Yearn Strategies
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0,15,30,45 * * * *'  # Every 15 minutes
+    - cron: '5,20,35,50 * * * *'  # Every 15 minutes
 
 env:
   ETHERSCAN_TOKEN: ${{ secrets.ETHERSCAN_TOKEN }}
@@ -32,15 +32,15 @@ jobs:
       - name: Install dependencies
         run: pnpm install
     
-      - name: Run script to update Curve Strategies data
-        run: pnpm tsx scripts/updateCurveStrats.ts
+      - name: Run script to update Yearn Strategies data
+        run: pnpm tsx scripts/updateYearnStrats.ts
 
       - name: Commit and push if changes found
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "Stake DAO API update"
-          git add api/strategies/curve
-          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Curve strategies data"
+          git add api/strategies/yearn
+          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Yearn strategies data"
           git push
         shell: bash
 
