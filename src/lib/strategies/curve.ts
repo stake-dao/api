@@ -24,7 +24,7 @@ export const getCurveMainnet = memoize(
       process.env.ETHERSCAN_TOKEN as string,
       'etherscan.io',
       mainnet.id,
-      curveStrats.meta.lastSyncBlock[mainnet.id],
+      curveStrats.meta.lastSyncBlock[mainnet.id] + 1,
       sdtEmissionData as SdtEmissionData,
       gaugesWeights,
     )
@@ -50,7 +50,7 @@ export const getCurveArbitrum = memoize(
       process.env.ARBISCAN_TOKEN as string,
       'arbiscan.io',
       arbitrum.id,
-      curveStrats.meta.lastSyncBlock[arbitrum.id],
+      curveStrats.meta.lastSyncBlock[arbitrum.id] + 1,
       sdtEmissionData as SdtEmissionData,
       gaugesWeights,
     )

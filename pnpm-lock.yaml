@@ -12,11 +12,11 @@ importers:
         specifier: ^1.11.4
         version: 1.11.4
       '@stake-dao/constants':
-        specifier: ^0.1.1
-        version: 0.1.1
+        specifier: ^0.1.2
+        version: 0.1.2
       '@stake-dao/reader':
-        specifier: ^0.1.1
-        version: 0.1.1(typescript@5.5.2)
+        specifier: ^0.1.3
+        version: 0.1.3(graphql@16.9.0)(typescript@5.5.2)(zod@3.23.8)
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
@@ -28,7 +28,7 @@ importers:
         version: 0.4.17
       viem:
         specifier: ^2.16.2
-        version: 2.16.2(typescript@5.5.2)
+        version: 2.16.2(typescript@5.5.2)(zod@3.23.8)
     devDependencies:
       '@types/memoizee':
         specifier: ^0.4.11
@@ -189,6 +189,11 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@graphql-typed-document-node/core@3.2.0':
+    resolution: {integrity: sha512-mB9oAsNCm9aM3/SOv4YtBMqZbYj10R7dkq8byBqxGY/ncFwhf2oQzMV+LCRlWoDSEBJ3COiR1yeDvMtsoOsuFQ==}
+    peerDependencies:
+      graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+
   '@hono/node-server@1.11.4':
     resolution: {integrity: sha512-8TOiiiAqcFC6f62P7M9p6adQREAlWdVi1awehAwgWW+3R65/rKzHnLARO/Hu/466z01VNViBoogqatqXJMyItA==}
     engines: {node: '>=18.14.1'}
@@ -209,11 +214,11 @@ packages:
   '@scure/bip39@1.2.1':
     resolution: {integrity: sha512-Z3/Fsz1yr904dduJD0NpiyRHhRYHdcnyh73FZWiV+/qhWi83wNJ3NWolYqCEN+ZWsUz2TWwajJggcRE9r1zUYg==}
 
-  '@stake-dao/constants@0.1.1':
-    resolution: {integrity: sha512-jDiGHIaIHsSy+l+p9q9hSnPTihjmjze2NxfhUVs04ILypHoWHG//sIyrVPQFIu+pLB2ia2bsPruKzcD4Udkwyg==}
+  '@stake-dao/constants@0.1.2':
+    resolution: {integrity: sha512-xHlkwBaJluaGka3KeDOcUF695X50OGhMvvmiekuOrGFCJIi4QS/nI/ERVtW/mD0T1Zy29poMfpmiPJvJPzT3EA==}
 
-  '@stake-dao/reader@0.1.1':
-    resolution: {integrity: sha512-v+IWOAtnprZoRuxPAzZFmtNQ2VC2SnozPjXqaet3CdnvUPNwwKsN9dFxWYUdkdCF9Z4gCa9GQNQ3AHz1dDss8A==}
+  '@stake-dao/reader@0.1.3':
+    resolution: {integrity: sha512-JBe+6K1OybYyqjQrE4xfZsqVIXQHMqasSg2BN/WB8rUJJ6iPdBDTrHycbkntqby+BrEXN+gi3X6WfSDZZwLbZg==}
 
   '@types/memoizee@0.4.11':
     resolution: {integrity: sha512-2gyorIBZu8GoDr9pYjROkxWWcFtHCquF7TVbN2I+/OvgZhnIGQS0vX5KJz4lXNKb8XOSfxFOSG5OLru1ESqLUg==}
@@ -231,6 +236,9 @@ packages:
         optional: true
       zod:
         optional: true
+
+  cross-fetch@3.1.8:
+    resolution: {integrity: sha512-cvA+JwZoU0Xq+h6WkMvAUqPEYy92Obet6UdKLfW60qn99ftItKjB5T+BkyWOFWe2pUyfQ+IJHmpOTznqk1M6Kg==}
 
   d@1.0.2:
     resolution: {integrity: sha512-MOqHvMWF9/9MX6nza0KgvFH4HpMU0EF5uUDXqX/BtxtU8NfB0QzRtJ8Oe/6SuS4kbhyzVJwjd97EA4PKrzJ8bw==}
@@ -277,6 +285,15 @@ packages:
   get-tsconfig@4.7.5:
     resolution: {integrity: sha512-ZCuZCnlqNzjb4QprAzXKdpp/gh6KTxSJuw3IBsPnV/7fV4NxC9ckB+vPTt8w7fJA0TaSD7c55BR47JD6MEDyDw==}
 
+  graphql-request@6.1.0:
+    resolution: {integrity: sha512-p+XPfS4q7aIpKVcgmnZKhMNqhltk20hfXtkaIkTfjjmiKMJ5xrt5c743cL03y/K7y1rg3WrIC49xGiEQ4mxdNw==}
+    peerDependencies:
+      graphql: 14 - 16
+
+  graphql@16.9.0:
+    resolution: {integrity: sha512-GGTKBX4SD7Wdb8mqeDLni2oaRGYQWjWHGKPQ24ZMnUtKfcsVoiv4uX8+LJr1K6U5VW2Lu1BwJnj7uiori0YtRw==}
+    engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
+
   hono@4.4.8:
     resolution: {integrity: sha512-eewnSgTzdWgFVn97kPV24h+9UVNUQ+9mj6IRxr7dBseTaTBSHtFo/T/vRNcqJkQFysVoXyecflr3Xe/fdvzEpQ==}
     engines: {node: '>=16.0.0'}
@@ -288,10 +305,6 @@ packages:
     resolution: {integrity: sha512-hEzjY+x9u9hPmBom9IIAqdJCwNLax+xrPb51vEPpERoFlIxgmZcHzsT5jKG06nvInKOBGvReAVz80Umed5CczQ==}
     peerDependencies:
       ws: '*'
-
-  ky@1.3.0:
-    resolution: {integrity: sha512-QUViPXlgP6NKA57IAPff/aZSmRA6qs9wKxlEpayBorwRZG+x2LG7jD4kXh8lnH3q/gkUr64NyZ7kwErUEZJmlw==}
-    engines: {node: '>=18'}
 
   lodash-es@4.17.21:
     resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
@@ -306,6 +319,15 @@ packages:
   next-tick@1.1.0:
     resolution: {integrity: sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ==}
 
+  node-fetch@2.7.0:
+    resolution: {integrity: sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==}
+    engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
+
   prettier@3.3.2:
     resolution: {integrity: sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==}
     engines: {node: '>=14'}
@@ -317,6 +339,9 @@ packages:
   timers-ext@0.1.8:
     resolution: {integrity: sha512-wFH7+SEAcKfJpfLPkrgMPvvwnEtj8W4IurvEyrKsDleXnKLCDw71w8jltvfLa8Rm4qQxxT4jmDBYbJG/z7qoww==}
     engines: {node: '>=0.12'}
+
+  tr46@0.0.3:
+    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
 
   tsx@4.15.7:
     resolution: {integrity: sha512-u3H0iSFDZM3za+VxkZ1kywdCeHCn+8/qHQS1MNoO2sONDgD95HlWtt8aB23OzeTmFP9IU4/8bZUdg58Uu5J4cg==}
@@ -342,6 +367,12 @@ packages:
       typescript:
         optional: true
 
+  webidl-conversions@3.0.1:
+    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
+
+  whatwg-url@5.0.0:
+    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
+
   ws@8.17.1:
     resolution: {integrity: sha512-6XQFvXTkbfUOZOKKILFG1PDK2NDQs4azKQl26T0YS5CxqWLgXajbPZ+h4gZekJyRqFU8pvnbAbbs/3TgRPy+GQ==}
     engines: {node: '>=10.0.0'}
@@ -353,6 +384,9 @@ packages:
         optional: true
       utf-8-validate:
         optional: true
+
+  zod@3.23.8:
+    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
 
 snapshots:
 
@@ -427,6 +461,10 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
+  '@graphql-typed-document-node/core@3.2.0(graphql@16.9.0)':
+    dependencies:
+      graphql: 16.9.0
+
   '@hono/node-server@1.11.4': {}
 
   '@noble/curves@1.2.0':
@@ -448,16 +486,18 @@ snapshots:
       '@noble/hashes': 1.3.2
       '@scure/base': 1.1.7
 
-  '@stake-dao/constants@0.1.1': {}
+  '@stake-dao/constants@0.1.2': {}
 
-  '@stake-dao/reader@0.1.1(typescript@5.5.2)':
+  '@stake-dao/reader@0.1.3(graphql@16.9.0)(typescript@5.5.2)(zod@3.23.8)':
     dependencies:
-      '@stake-dao/constants': 0.1.1
-      ky: 1.3.0
+      '@stake-dao/constants': 0.1.2
+      graphql-request: 6.1.0(graphql@16.9.0)
       lodash-es: 4.17.21
-      viem: 2.16.2(typescript@5.5.2)
+      viem: 2.16.2(typescript@5.5.2)(zod@3.23.8)
     transitivePeerDependencies:
       - bufferutil
+      - encoding
+      - graphql
       - typescript
       - utf-8-validate
       - zod
@@ -468,9 +508,16 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
-  abitype@1.0.4(typescript@5.5.2):
+  abitype@1.0.4(typescript@5.5.2)(zod@3.23.8):
     optionalDependencies:
       typescript: 5.5.2
+      zod: 3.23.8
+
+  cross-fetch@3.1.8:
+    dependencies:
+      node-fetch: 2.7.0
+    transitivePeerDependencies:
+      - encoding
 
   d@1.0.2:
     dependencies:
@@ -553,6 +600,16 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
+  graphql-request@6.1.0(graphql@16.9.0):
+    dependencies:
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
+      cross-fetch: 3.1.8
+      graphql: 16.9.0
+    transitivePeerDependencies:
+      - encoding
+
+  graphql@16.9.0: {}
+
   hono@4.4.8: {}
 
   is-promise@2.2.2: {}
@@ -560,8 +617,6 @@ snapshots:
   isows@1.0.4(ws@8.17.1):
     dependencies:
       ws: 8.17.1
-
-  ky@1.3.0: {}
 
   lodash-es@4.17.21: {}
 
@@ -582,6 +637,10 @@ snapshots:
 
   next-tick@1.1.0: {}
 
+  node-fetch@2.7.0:
+    dependencies:
+      whatwg-url: 5.0.0
+
   prettier@3.3.2: {}
 
   resolve-pkg-maps@1.0.0: {}
@@ -590,6 +649,8 @@ snapshots:
     dependencies:
       es5-ext: 0.10.64
       next-tick: 1.1.0
+
+  tr46@0.0.3: {}
 
   tsx@4.15.7:
     dependencies:
@@ -604,14 +665,14 @@ snapshots:
 
   undici-types@5.26.5: {}
 
-  viem@2.16.2(typescript@5.5.2):
+  viem@2.16.2(typescript@5.5.2)(zod@3.23.8):
     dependencies:
       '@adraffy/ens-normalize': 1.10.0
       '@noble/curves': 1.2.0
       '@noble/hashes': 1.3.2
       '@scure/bip32': 1.3.2
       '@scure/bip39': 1.2.1
-      abitype: 1.0.4(typescript@5.5.2)
+      abitype: 1.0.4(typescript@5.5.2)(zod@3.23.8)
       isows: 1.0.4(ws@8.17.1)
       ws: 8.17.1
     optionalDependencies:
@@ -621,4 +682,14 @@ snapshots:
       - utf-8-validate
       - zod
 
+  webidl-conversions@3.0.1: {}
+
+  whatwg-url@5.0.0:
+    dependencies:
+      tr46: 0.0.3
+      webidl-conversions: 3.0.1
+
   ws@8.17.1: {}
+
+  zod@3.23.8:
+    optional: true
