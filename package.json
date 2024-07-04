@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
+    "format": "prettier --write '{src,scripts}/**/*.{js,jsx,ts,tsx}'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

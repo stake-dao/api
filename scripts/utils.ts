@@ -8,7 +8,7 @@ interface WriteFileArgs {
 
 export const writeFile = (args: WriteFileArgs) => {
   const { path, data, log } = args
-  
+
   fs.writeFile(path, data, (err) => {
     if (err) {
       console.error(log.error)
