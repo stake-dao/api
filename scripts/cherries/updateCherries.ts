@@ -46,6 +46,7 @@ const main = async () => {
 
   const usersToUpdate = [...users]
   for (const user of usersToUpdate) {
+    console.log(`-- Updating user ${user.address}`)
     const { user: updatedUser, global: updateGlobal } = await handleUpdate({
       user,
       blockNumber: toBlock,

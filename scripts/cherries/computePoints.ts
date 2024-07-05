@@ -6,8 +6,6 @@ import {
   POOL_V3_TIMESTAMP,
   SDCAKE_ADDRESS,
   SDCAKE_ADDRESS_V2,
-  SDCAKE_GAUGE_ADDRESS,
-  SDCAKE_GAUGE_ADDRESS_V2,
   TEN_M,
   TEN_M_MULTIPLIER,
   THREE_M,
@@ -15,15 +13,14 @@ import {
   TWENTY_FIVE_M,
   TWENTY_FIVE_M_MULTIPLIER,
   V2_TIMESTAMP,
-  NEW_LP_TIMESTAMP,
   Zero,
-  POOL_CREATION_BLOCK,
 } from './constants'
 import { Global } from './classes'
 import {
+  ComputeRateRes,
+  computeRateMulticall,
   getBalanceOfGauge,
-  getBalanceOfNewLp,
-  getBalanceOfOldLp,
+  getBalanceOfLp,
   getCakeAmountInPosition,
   getSdCakeTotalSupply,
 } from './chain'
@@ -33,23 +30,28 @@ export async function computeRate(
   address: string,
   timestamp: number,
   positions: number[],
+  prefetchData?: ComputeRateRes,
 ): Promise<bigint> {
-  const gaugeAddress = timestamp > V2_TIMESTAMP ? SDCAKE_GAUGE_ADDRESS_V2 : SDCAKE_GAUGE_ADDRESS
-  let poolBalance = Zero
-
-  if (blockNumber > POOL_CREATION_BLOCK) {
-    if (NEW_LP_TIMESTAMP > timestamp) {
-      poolBalance = await getBalanceOfOldLp(address, blockNumber)
-    } else {
-      poolBalance = await getBalanceOfNewLp(address, blockNumber)
-    }
+  let rateData = prefetchData
+  if (typeof rateData === 'undefined') {
+    rateData = await computeRateMulticall(address, positions, blockNumber, timestamp)
   }
 
-  const gaugeBalance = await getBalanceOfGauge(gaugeAddress, address, blockNumber)
+  const gaugeBalance = await getBalanceOfGauge(
+    address,
+    blockNumber,
+    timestamp,
+    rateData ? rateData.balanceOfGauge : undefined,
+  )
+  let poolBalance = await getBalanceOfLp(address, blockNumber, timestamp, rateData ? rateData.balanceOfLp : undefined)
 
   if (timestamp >= POOL_V3_TIMESTAMP) {
     for (let i = 0; i < positions.length; i++) {
-      const v3PoolCakePosition = await getCakeAmountInPosition(positions[i], blockNumber)
+      const v3PoolCakePosition = await getCakeAmountInPosition(
+        positions[i],
+        blockNumber,
+        rateData ? { slot0: rateData.slot0, position: rateData.positions[i] } : undefined,
+      )
       poolBalance = poolBalance + v3PoolCakePosition
     }
   }
