@@ -1,6 +1,6 @@
 import { arbitrum, mainnet } from 'viem/chains'
-import { writeFile } from './utils'
-import { getCurve, getCurveArbitrum, getCurveMainnet } from '../src/lib/strategies/curve'
+import { writeFile } from '../utils'
+import { getCurve, getCurveArbitrum, getCurveMainnet } from '../../src/lib/strategies/curve'
 
 const updateCurveStrats = async () => {
   const [curveDataMainnet, curveDataArbitrum, curveData] = await Promise.all([
@@ -37,4 +37,4 @@ const updateCurveStrats = async () => {
   })
 }
 
-updateCurveStrats()
+export default updateCurveStrats

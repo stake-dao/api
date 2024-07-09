@@ -2,14 +2,9 @@ name: Update Yearn Strategies
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '5,20,35,50 * * * *'  # Every 15 minutes
 
 env:
   ETHERSCAN_TOKEN: ${{ secrets.ETHERSCAN_TOKEN }}
-  PUBLIC_RPC_MAINNET: https://eth.public-rpc.com
-  ARBISCAN_TOKEN: ${{ secrets.ARBISCAN_TOKEN }}
-  PUBLIC_RPC_ARBITRUM: https://arb1.arbitrum.io/rpc
 
 jobs:
   update:
@@ -33,7 +28,7 @@ jobs:
         run: pnpm install
     
       - name: Run script to update Yearn Strategies data
-        run: pnpm tsx scripts/updateYearnStrats.ts
+        run: pnpm tsx scripts/strategies/updateYearnStrats.ts
 
       - name: Commit and push if changes found
         run: |

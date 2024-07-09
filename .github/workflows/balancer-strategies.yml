@@ -1,11 +1,10 @@
-name: Update Curve Strategies
+name: Update Balancer Strategies
 
 on:
   workflow_dispatch:
 
 env:
   ETHERSCAN_TOKEN: ${{ secrets.ETHERSCAN_TOKEN }}
-  ARBISCAN_TOKEN: ${{ secrets.ARBISCAN_TOKEN }}
 
 jobs:
   update:
@@ -28,15 +27,15 @@ jobs:
       - name: Install dependencies
         run: pnpm install
     
-      - name: Run script to update Curve Strategies data
-        run: pnpm tsx scripts/strategies/updateCurveStrats.ts
+      - name: Run script to update Balancer Strategies data
+        run: pnpm tsx scripts/strategies/updateBalancerStrats.ts
 
       - name: Commit and push if changes found
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "Stake DAO API update"
-          git add api/strategies/curve
-          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Curve strategies data"
+          git add api/strategies/balancer
+          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Balancer strategies data"
           git push
         shell: bash
 

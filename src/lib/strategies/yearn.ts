@@ -3,6 +3,7 @@ import { SdtEmissionData, fetchYearn } from '@stake-dao/reader'
 import memoize from 'memoizee'
 import { mainnet } from 'viem/chains'
 import { MEMO_MAX_AGE, getPrices, getSdtInflation, publicClient } from '../utils'
+import { RPC } from '../constants'
 
 require('dotenv').config()
 
@@ -16,16 +17,16 @@ export const getYearnMainnet = memoize(
       getSdtInflation(),
     ])
 
-    return fetchYearn(
-      pricesMainnet,
-      publicClient[mainnet.id],
-      process.env.PUBLIC_RPC_MAINNET as string,
-      process.env.ETHERSCAN_TOKEN as string,
-      'etherscan.io',
-      mainnet.id,
-      yearnStrats.meta.lastSyncBlock[mainnet.id] + 1,
-      sdtEmissionData as SdtEmissionData,
-    )
+    return fetchYearn({
+      prices: pricesMainnet,
+      provider: publicClient[mainnet.id],
+      rpc: RPC[mainnet.id],
+      explorerApiKey: process.env.ETHERSCAN_TOKEN as string,
+      explorer: 'etherscan.io',
+      chainId: mainnet.id,
+      lastBlockNumber: yearnStrats.meta.lastSyncBlock[mainnet.id] + 1,
+      sdtEmissionData: sdtEmissionData as SdtEmissionData,
+    })
   },
   { maxAge: MEMO_MAX_AGE },
 )

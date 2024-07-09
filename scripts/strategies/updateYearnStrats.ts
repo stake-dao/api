@@ -1,12 +1,9 @@
 import { mainnet } from 'viem/chains'
-import { writeFile } from './utils'
-import { getYearn, getYearnMainnet } from '../src/lib/strategies/yearn'
+import { writeFile } from '../utils'
+import { getYearn, getYearnMainnet } from '../../src/lib/strategies/yearn'
 
 const updateYearnStrats = async () => {
-  const [yearnDataMainnet, yearnData] = await Promise.all([
-    getYearnMainnet(),
-    getYearn(),
-  ])
+  const [yearnDataMainnet, yearnData] = await Promise.all([getYearnMainnet(), getYearn()])
 
   writeFile({
     path: `api/strategies/yearn/${mainnet.id}.json`,
@@ -27,4 +24,4 @@ const updateYearnStrats = async () => {
   })
 }
 
-updateYearnStrats()
+export default updateYearnStrats

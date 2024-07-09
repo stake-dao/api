@@ -3,6 +3,7 @@ import { SdtEmissionData, fetchCurve } from '@stake-dao/reader'
 import memoize from 'memoizee'
 import { arbitrum, mainnet } from 'viem/chains'
 import { MEMO_MAX_AGE, getCurveGaugesWeights, getPrices, getSdtInflation, publicClient } from '../utils'
+import { RPC } from '../constants'
 
 require('dotenv').config()
 
@@ -17,17 +18,17 @@ export const getCurveMainnet = memoize(
       getCurveGaugesWeights(),
     ])
 
-    return fetchCurve(
-      pricesMainnet,
-      publicClient[mainnet.id],
-      process.env.PUBLIC_RPC_MAINNET as string,
-      process.env.ETHERSCAN_TOKEN as string,
-      'etherscan.io',
-      mainnet.id,
-      curveStrats.meta.lastSyncBlock[mainnet.id] + 1,
-      sdtEmissionData as SdtEmissionData,
+    return fetchCurve({
+      prices: pricesMainnet,
+      provider: publicClient[mainnet.id],
+      rpc: RPC[mainnet.id],
+      explorerApiKey: process.env.ETHERSCAN_TOKEN as string,
+      explorer: 'etherscan.io',
+      chainId: mainnet.id,
+      lastBlockNumber: curveStrats.meta.lastSyncBlock[mainnet.id] + 1,
+      sdtEmissionData: sdtEmissionData as SdtEmissionData,
       gaugesWeights,
-    )
+    })
   },
   { maxAge: MEMO_MAX_AGE },
 )
@@ -43,17 +44,17 @@ export const getCurveArbitrum = memoize(
       getCurveGaugesWeights(),
     ])
 
-    return fetchCurve(
-      pricesArbitrum,
-      publicClient[arbitrum.id],
-      process.env.PUBLIC_RPC_ARBITRUM as string,
-      process.env.ARBISCAN_TOKEN as string,
-      'arbiscan.io',
-      arbitrum.id,
-      curveStrats.meta.lastSyncBlock[arbitrum.id] + 1,
-      sdtEmissionData as SdtEmissionData,
+    return fetchCurve({
+      prices: pricesArbitrum,
+      provider: publicClient[arbitrum.id],
+      rpc: RPC[arbitrum.id],
+      explorerApiKey: process.env.ARBISCAN_TOKEN as string,
+      explorer: 'arbiscan.io',
+      chainId: arbitrum.id,
+      lastBlockNumber: curveStrats.meta.lastSyncBlock[arbitrum.id] + 1,
+      sdtEmissionData: sdtEmissionData as SdtEmissionData,
       gaugesWeights,
-    )
+    })
   },
   { maxAge: MEMO_MAX_AGE },
 )

@@ -2,6 +2,7 @@ import { getPricesFromLlama, getSdtInflationData, getGaugesWeights } from '@stak
 import memoize from 'memoizee'
 import { createPublicClient, http } from 'viem'
 import { arbitrum, bsc, mainnet } from 'viem/chains'
+import { RPC } from './constants'
 
 require('dotenv').config()
 
@@ -12,15 +13,15 @@ export const MEMO_MAX_AGE = 300000 // 5 minutes
 export const publicClient = {
   [mainnet.id]: createPublicClient({
     chain: mainnet,
-    transport: http(process.env.PUBLIC_RPC_MAINNET),
-  }),
-  [arbitrum.id]: createPublicClient({
-    chain: arbitrum,
-    transport: http(process.env.PUBLIC_RPC_ARBITRUM),
+    transport: http(RPC[mainnet.id]),
   }),
   [bsc.id]: createPublicClient({
     chain: bsc,
-    transport: http(),
+    transport: http(RPC[bsc.id]),
+  }),
+  [arbitrum.id]: createPublicClient({
+    chain: arbitrum,
+    transport: http(RPC[arbitrum.id]),
   }),
 }
 
@@ -32,7 +33,7 @@ export const getSdtInflation = memoize(
   async () => {
     const provider = createPublicClient({
       chain: mainnet,
-      transport: http(process.env.PUBLIC_RPC_MAINNET),
+      transport: http(RPC[mainnet.id]),
     })
 
     return getSdtInflationData(provider, mainnet.id)
@@ -42,7 +43,7 @@ export const getSdtInflation = memoize(
 
 export const getCurveGaugesWeights = memoize(
   async () => {
-    return getGaugesWeights(process.env.PUBLIC_RPC_MAINNET as string)
+    return getGaugesWeights(RPC[mainnet.id])
   },
   { maxAge: MEMO_MAX_AGE },
 )
