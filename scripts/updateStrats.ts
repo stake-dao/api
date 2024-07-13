@@ -3,6 +3,7 @@ import updateBalancerStrats from './strategies/updateBalancerStrats'
 import updateYearnStrats from './strategies/updateYearnStrats'
 import updatePancakeStrats from './strategies/updatePancakeStrats'
 import updatePendleStrats from './strategies/updatePendleStrats'
+import updateAngleStrats from './strategies/updateAngleStrats'
 
 const PROMISES_INDEX = {
   0: 'curve',
@@ -19,15 +20,15 @@ const updateStrats = async () => {
     updateYearnStrats(),
     updatePancakeStrats(),
     updatePendleStrats(),
+    updateAngleStrats()
   ])
 
   for (const [index, result] of promises.entries()) {
-    if (result.status === "rejected") {
+    if (result.status === 'rejected') {
       console.error(`❌ - ${PROMISES_INDEX[index]} strats update fails`)
       console.error(result)
     }
   }
-
 }
 
 updateStrats()

@@ -13,8 +13,8 @@
   "license": "AGPL-3.0-only",
   "dependencies": {
     "@hono/node-server": "^1.12.0",
-    "@stake-dao/constants": "^0.2.0",
-    "@stake-dao/reader": "^0.2.6",
+    "@stake-dao/constants": "^0.2.1",
+    "@stake-dao/reader": "^0.2.7",
     "dotenv": "^16.4.5",
     "hono": "^4.4.13",
     "memoizee": "^0.4.17",
@@ -23,7 +23,7 @@
   "devDependencies": {
     "@types/memoizee": "^0.4.11",
     "@types/node": "^20.14.10",
-    "prettier": "^3.3.2",
+    "prettier": "^3.3.3",
     "tsx": "^4.16.2",
     "typescript": "^5.5.3"
   }
