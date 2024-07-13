@@ -76,5 +76,6 @@ export const getPancake = memoize(async () => {
     },
     deployed: [...pancakeDataMainnet.deployed, ...pancakeDataBsc.deployed, ...pancakeDataArbitrum.deployed],
     notDeployed: [...pancakeDataMainnet.notDeployed, ...pancakeDataBsc.notDeployed, ...pancakeDataArbitrum.notDeployed],
+    fetched: true,
   }
 })
