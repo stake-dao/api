@@ -36,7 +36,7 @@ export const getSdtInflation = memoize(
       transport: http(RPC[mainnet.id]),
     })
 
-    return getSdtInflationData(provider, mainnet.id)
+    return getSdtInflationData(provider)
   },
   { maxAge: MEMO_MAX_AGE },
 )

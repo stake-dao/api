@@ -2,7 +2,7 @@ import { tokens } from '@stake-dao/constants'
 import { fetchPancakeswap } from '@stake-dao/reader'
 import memoize from 'memoizee'
 import { arbitrum, bsc, mainnet } from 'viem/chains'
-import { MEMO_MAX_AGE, getPrices } from '../utils'
+import { MEMO_MAX_AGE, getPrices, publicClient } from '../utils'
 import { RPC } from '../constants'
 
 require('dotenv').config()
@@ -15,6 +15,7 @@ export const getPancakeMainnet = memoize(
     )
 
     return fetchPancakeswap({
+      provider: publicClient[mainnet.id],
       rpc: RPC[mainnet.id],
       explorerApiKey: process.env.ETHERSCAN_TOKEN as string,
       chainId: mainnet.id,
@@ -33,6 +34,7 @@ export const getPancakeBsc = memoize(
     )
 
     return fetchPancakeswap({
+      provider: publicClient[bsc.id],
       rpc: RPC[bsc.id],
       explorerApiKey: process.env.BSCSCAN_TOKEN as string,
       chainId: bsc.id,
@@ -51,6 +53,7 @@ export const getPancakeArbitrum = memoize(
     )
 
     return fetchPancakeswap({
+      provider: publicClient[arbitrum.id],
       rpc: RPC[arbitrum.id],
       explorerApiKey: process.env.ARBISCAN_TOKEN as string,
       chainId: arbitrum.id,
