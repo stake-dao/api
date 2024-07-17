@@ -1,5 +1,5 @@
 import { getGlobal, setGlobal, setUser, users } from './classes'
-import { getDepositorV2Events, getPoolEvents, getPoolV3Events } from './events'
+import { getBuyEvents, getDepositorV2Events, getPoolEvents, getPoolV3Events } from './events'
 import { handleAddInPool, handleAddInV3Pool, handleMint, handleUpdate } from './handlers'
 import { bscPublicClient } from './chain'
 import { writeFile } from '../utils'
@@ -14,12 +14,14 @@ const main = async () => {
     getDepositorV2Events(fromBlock, toBlock),
     getPoolV3Events(fromBlock, toBlock),
     getPoolEvents(fromBlock, toBlock),
+    getBuyEvents(fromBlock, toBlock),
   ])
 
   const events = [
     ...eventsPromises[0]['value'].map((e) => ({ ...e, type: 'Mint' })),
     ...eventsPromises[1]['value'].map((e) => ({ ...e, type: 'v3 Pool' })),
     ...eventsPromises[2]['value'].map((e) => ({ ...e, type: 'Pool' })),
+    ...eventsPromises[3]['value'].map((e) => ({ ...e, type: 'Mint' })),
   ].sort((a, b) => a.blockNumber - b.blockNumber)
 
   for (const event of events) {

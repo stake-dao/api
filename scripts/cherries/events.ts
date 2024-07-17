@@ -1,7 +1,19 @@
 import dotenv from 'dotenv'
-import { formatUnits, decodeEventLog, parseAbi, hexToNumber } from 'viem'
+import { formatUnits, decodeEventLog, parseAbi, hexToNumber, zeroAddress } from 'viem'
 
-import { NEW_POOL_ADDRESS, PANCAKE_POOL_V3_ADDRESS, PANCAKE_POSITION_MANAGER } from './constants'
+import {
+  ADD_LP_TOPIC,
+  DECREASE_LP_TOPIC,
+  INCREASE_LP_TOPIC,
+  NEW_POOL_ADDRESS,
+  PANCAKE_POOL_V3_ADDRESS,
+  PANCAKE_POSITION_MANAGER,
+  REMOVE_LP_TOPIC,
+  REWARDS_MERKL,
+  SDCAKE_ADDRESS_V2,
+  SDCAKE_GAUGE_ADDRESS,
+  SDCAKE_GAUGE_ADDRESS_V2,
+} from './constants'
 import { bscPublicClient } from './chain'
 
 dotenv.config()
@@ -14,6 +26,10 @@ interface FetchEventsFromExplorerArgs {
   fromBlock: number
   toBlock: number
   topic: string
+}
+
+const equalTlc = (str1: string, str2: string) => {
+  return str1.toLowerCase() === str2.toLowerCase()
 }
 
 const fetchEventsFromExplorer = async (args: FetchEventsFromExplorerArgs) => {
@@ -121,4 +137,64 @@ export const getPoolEvents = async (fromBlock: number, toBlock: number) => {
   }
 
   return poolMint
+}
+
+export const getBuyEvents = async (fromBlock: number, toBlock: number) => {
+  const sdCakeEvents = await fetchEventsFromExplorer({
+    contract: SDCAKE_ADDRESS_V2,
+    fromBlock,
+    toBlock,
+    topic: '0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef', // Transfer
+  })
+
+  const sdCakeTransfer: any[] = []
+  for (const event of sdCakeEvents.result) {
+    const tx = event.transactionHash
+
+    const decodedEvent = decodeEventLog({
+      abi: parseAbi(['event Transfer(address indexed from, address indexed to, uint256 amount)']),
+      data: event.data,
+      topics: event.topics,
+    })
+
+    const from = decodedEvent.args.from
+    const to = decodedEvent.args.to
+
+    if (
+      !equalTlc(from, zeroAddress) &&
+      !equalTlc(from, SDCAKE_GAUGE_ADDRESS) &&
+      !equalTlc(from, SDCAKE_GAUGE_ADDRESS_V2) &&
+      !equalTlc(from, REWARDS_MERKL) &&
+      !equalTlc(to, SDCAKE_GAUGE_ADDRESS) &&
+      !equalTlc(to, SDCAKE_GAUGE_ADDRESS_V2)
+    ) {
+      const txReceipt = await bscPublicClient.getTransactionReceipt({ hash: tx })
+
+      const user = txReceipt.from
+      let type = 'NEUTRAL'
+
+      if (from.toLowerCase() === user.toLowerCase()) type = 'SELL'
+      if (to.toLowerCase() === user.toLowerCase()) type = 'BUY'
+      if (txReceipt.logs.find((l) => l.topics.find((topic) => equalTlc(topic, ADD_LP_TOPIC)))) type = 'ADD_LIQUIDITY'
+      if (txReceipt.logs.find((l) => l.topics.find((topic) => equalTlc(topic, REMOVE_LP_TOPIC))))
+        type = 'REMOVE_LIQUIDITY'
+      if (txReceipt.logs.find((l) => l.topics.find((topic) => equalTlc(topic, INCREASE_LP_TOPIC))))
+        type = 'ADD_LIQUIDITY_V3'
+      if (txReceipt.logs.find((l) => l.topics.find((topic) => equalTlc(topic, DECREASE_LP_TOPIC))))
+        type = 'ADD_LIQUIDITY_V3'
+
+      sdCakeTransfer.push({
+        user: txReceipt.from,
+        type,
+        from,
+        to,
+        amount: formatUnits(decodedEvent.args.amount, 0),
+        tx,
+        timestamp: hexToNumber(event.timeStamp),
+        blockNumber: hexToNumber(event.blockNumber),
+      })
+    }
+  }
+
+  return sdCakeTransfer.filter((transfer) => transfer.type === 'BUY')
 }
