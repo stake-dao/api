@@ -63,7 +63,10 @@ export const getCurve = memoize(async () => {
   const [curveDataMainnet, curveDataArbitrum] = await Promise.all([getCurveMainnet(), getCurveArbitrum()])
 
   return {
-    ...curveDataMainnet,
+    global: {
+      [mainnet.id]: curveDataMainnet.global,
+      [arbitrum.id]: curveDataArbitrum.global,
+    },
     deployed: [...curveDataMainnet.deployed, ...curveDataArbitrum.deployed],
     notDeployed: [...curveDataMainnet.notDeployed, ...curveDataArbitrum.notDeployed],
   }
