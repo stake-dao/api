@@ -30,8 +30,11 @@ export const getPendle = memoize(async () => {
   const [pendleDataMainnet] = await Promise.all([getPendleMainnet()])
 
   return {
-    ...pendleDataMainnet,
+    global: {
+      [mainnet.id]: pendleDataMainnet.global,
+    },
     deployed: [...pendleDataMainnet.deployed],
     notDeployed: [...pendleDataMainnet.notDeployed],
+    fetched: true,
   }
 })

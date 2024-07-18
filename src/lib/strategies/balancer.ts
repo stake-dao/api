@@ -24,8 +24,11 @@ export const getBalancer = memoize(async () => {
   const [balancerDataMainnet] = await Promise.all([getBalancerMainnet()])
 
   return {
-    ...balancerDataMainnet,
+    global: {
+      [mainnet.id]: balancerDataMainnet.global,
+    },
     deployed: [...balancerDataMainnet.deployed],
     notDeployed: [...balancerDataMainnet.notDeployed],
+    fetched: true,
   }
 })

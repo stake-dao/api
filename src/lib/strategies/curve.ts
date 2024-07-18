@@ -69,5 +69,6 @@ export const getCurve = memoize(async () => {
     },
     deployed: [...curveDataMainnet.deployed, ...curveDataArbitrum.deployed],
     notDeployed: [...curveDataMainnet.notDeployed, ...curveDataArbitrum.notDeployed],
+    fetched: true,
   }
 })

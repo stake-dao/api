@@ -28,8 +28,11 @@ export const getAngle = memoize(async () => {
   const [angleDataMainnet] = await Promise.all([getAngleMainnet()])
 
   return {
-    ...angleDataMainnet,
+    global: {
+      [mainnet.id]: angleDataMainnet.global,
+    },
     deployed: [...angleDataMainnet.deployed],
     notDeployed: [...angleDataMainnet.notDeployed],
+    fetched: true,
   }
 })

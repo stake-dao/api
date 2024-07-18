@@ -35,8 +35,11 @@ export const getYearn = memoize(async () => {
   const [yearnDataMainnet] = await Promise.all([getYearnMainnet()])
 
   return {
-    ...yearnDataMainnet,
+    global: {
+      [mainnet.id]: yearnDataMainnet.global,
+    },
     deployed: [...yearnDataMainnet.deployed],
     notDeployed: [...yearnDataMainnet.notDeployed],
+    fetched: true,
   }
 })
