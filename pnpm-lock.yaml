@@ -15,8 +15,8 @@ importers:
         specifier: ^0.2.1
         version: 0.2.1
       '@stake-dao/reader':
-        specifier: ^0.2.20
-        version: 0.2.20(graphql@16.9.0)(typescript@5.5.3)
+        specifier: ^0.2.21
+        version: 0.2.21(graphql@16.9.0)(typescript@5.5.3)
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
@@ -217,8 +217,8 @@ packages:
   '@stake-dao/constants@0.2.1':
     resolution: {integrity: sha512-GHvXq0hbnC7+Ju8SNX9UQNGQ/Ni6hbvhtjq6/oSr9fy1IsNgcAJmvpjSborUYZahYh0HhIhhtBIN8LFvv/rr+w==}
 
-  '@stake-dao/reader@0.2.20':
-    resolution: {integrity: sha512-NRUMHR3ZWfDZ7Oqd+xMFANuxYiuBghZKeCvsTaXbmE6BzxVsQ81OafMNxzNlwV35rI68l5G0wYC7m+JFsfGaLg==}
+  '@stake-dao/reader@0.2.21':
+    resolution: {integrity: sha512-IqTkbnHLxoAEYNuanrj7K5KcotUDhIW21u8Apjm1ar0CZxzlb+E6HFWngsGhoqVlKLHFEOCbdAvRIGzmghhP4Q==}
 
   '@types/memoizee@0.4.11':
     resolution: {integrity: sha512-2gyorIBZu8GoDr9pYjROkxWWcFtHCquF7TVbN2I+/OvgZhnIGQS0vX5KJz4lXNKb8XOSfxFOSG5OLru1ESqLUg==}
@@ -244,8 +244,8 @@ packages:
     resolution: {integrity: sha512-MOqHvMWF9/9MX6nza0KgvFH4HpMU0EF5uUDXqX/BtxtU8NfB0QzRtJ8Oe/6SuS4kbhyzVJwjd97EA4PKrzJ8bw==}
     engines: {node: '>=0.12'}
 
-  dayjs@1.11.11:
-    resolution: {integrity: sha512-okzr3f11N6WuqYtZSvm+F776mB41wRZMhKP+hc34YdW+KmtYYK9iqvHSwo2k9FEH3fhGXvOPV6yz2IcSrfRUDg==}
+  dayjs@1.11.12:
+    resolution: {integrity: sha512-Rt2g+nTbLlDWZTwwrIXjy9MeiZmSDI375FvZs72ngxx8PDC6YXOeR3q5LAuPzjZQxhiWdRKac7RKV+YyQYfYIg==}
 
   dotenv@16.4.5:
     resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
@@ -285,8 +285,8 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
-  get-tsconfig@4.7.5:
-    resolution: {integrity: sha512-ZCuZCnlqNzjb4QprAzXKdpp/gh6KTxSJuw3IBsPnV/7fV4NxC9ckB+vPTt8w7fJA0TaSD7c55BR47JD6MEDyDw==}
+  get-tsconfig@4.7.6:
+    resolution: {integrity: sha512-ZAqrLlu18NbDdRaHq+AKXzAmqIUPswPWKUchfytdAjiRFnCe5ojG2bstg6mRiZabkKfCoL/e98pbBELIV/YCeA==}
 
   graphql-request@6.1.0:
     resolution: {integrity: sha512-p+XPfS4q7aIpKVcgmnZKhMNqhltk20hfXtkaIkTfjjmiKMJ5xrt5c743cL03y/K7y1rg3WrIC49xGiEQ4mxdNw==}
@@ -488,10 +488,10 @@ snapshots:
 
   '@stake-dao/constants@0.2.1': {}
 
-  '@stake-dao/reader@0.2.20(graphql@16.9.0)(typescript@5.5.3)':
+  '@stake-dao/reader@0.2.21(graphql@16.9.0)(typescript@5.5.3)':
     dependencies:
       '@stake-dao/constants': 0.2.1
-      dayjs: 1.11.11
+      dayjs: 1.11.12
       graphql-request: 6.1.0(graphql@16.9.0)
       lodash-es: 4.17.21
       viem: 2.17.5(typescript@5.5.3)
@@ -524,7 +524,7 @@ snapshots:
       es5-ext: 0.10.64
       type: 2.7.3
 
-  dayjs@1.11.11: {}
+  dayjs@1.11.12: {}
 
   dotenv@16.4.5: {}
 
@@ -598,7 +598,7 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
-  get-tsconfig@4.7.5:
+  get-tsconfig@4.7.6:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
@@ -657,7 +657,7 @@ snapshots:
   tsx@4.16.2:
     dependencies:
       esbuild: 0.21.5
-      get-tsconfig: 4.7.5
+      get-tsconfig: 4.7.6
     optionalDependencies:
       fsevents: 2.3.3
 
