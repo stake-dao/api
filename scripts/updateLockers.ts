@@ -6,7 +6,7 @@ const updateLockers = async () => {
 
   writeFile({
     path: `api/lockers/index.json`,
-    data: JSON.stringify(lockers.parsed),
+    data: JSON.stringify(lockers),
     log: {
       success: '✅ - Lockers have been updated!',
       error: '❌ - An error occured during the Lockers update.',
