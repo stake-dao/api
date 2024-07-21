@@ -9,6 +9,7 @@ app.get('/', (c) => {
 })
 
 app.route('/strategies', strategies)
+app.route('/lockers', strategies)
 
 const port = 3000
 console.log(`Server is running on port ${port}`)

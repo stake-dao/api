@@ -3,11 +3,11 @@ import { writeFile } from '../utils'
 import { getAngle, getAngleMainnet } from '../../src/lib/strategies/angle'
 
 const updateAngleStrats = async () => {
-  const [anlgeDataMainnet, anlgeData] = await Promise.all([getAngleMainnet(), getAngle()])
+  const [angleDataMainnet, angleData] = await Promise.all([getAngleMainnet(), getAngle()])
 
   writeFile({
     path: `api/strategies/angle/${mainnet.id}.json`,
-    data: JSON.stringify(anlgeDataMainnet),
+    data: JSON.stringify(angleDataMainnet),
     log: {
       success: '✅ - Angle Mainnet strategies have been updated!',
       error: '❌ - An error occured during the Angle Mainnet strategies update.',
@@ -16,7 +16,7 @@ const updateAngleStrats = async () => {
 
   writeFile({
     path: `api/strategies/angle/index.json`,
-    data: JSON.stringify(anlgeData),
+    data: JSON.stringify(angleData),
     log: {
       success: '✅ - Angle strategies have been updated!',
       error: '❌ - An error occured during the Angle strategies update.',

@@ -11,6 +11,7 @@ const PROMISES_INDEX = {
   2: 'yearn',
   3: 'pancake',
   4: 'pendle',
+  5: 'angle',
 }
 
 const updateStrats = async () => {
@@ -20,7 +21,7 @@ const updateStrats = async () => {
     updateYearnStrats(),
     updatePancakeStrats(),
     updatePendleStrats(),
-    updateAngleStrats()
+    updateAngleStrats(),
   ])
 
   for (const [index, result] of promises.entries()) {

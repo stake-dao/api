@@ -13,12 +13,12 @@
   "license": "AGPL-3.0-only",
   "dependencies": {
     "@hono/node-server": "^1.12.0",
-    "@stake-dao/constants": "^0.2.1",
-    "@stake-dao/reader": "^0.2.21",
+    "@stake-dao/constants": "^0.3.0",
+    "@stake-dao/reader": "^0.3.1",
     "dotenv": "^16.4.5",
-    "hono": "^4.5.0",
+    "hono": "^4.5.1",
     "memoizee": "^0.4.17",
-    "viem": "^2.17.5"
+    "viem": "^2.17.8"
   },
   "devDependencies": {
     "@types/memoizee": "^0.4.11",
