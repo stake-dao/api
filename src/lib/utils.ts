@@ -8,6 +8,7 @@ require('dotenv').config()
 
 // Config
 export const MEMO_MAX_AGE = 300000 // 5 minutes
+export const STAKE_DAO_ASSETS_BASE_URL = "https://raw.githubusercontent.com/stake-dao/assets/main"
 
 // Providers
 export const publicClient = {
