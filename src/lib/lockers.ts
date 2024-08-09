@@ -34,6 +34,7 @@ export const getLockers = memoize(async () => {
   const [lockersMainnet, lockersBsc] = await Promise.all([getLockersMainnet(), getLockersBsc()])
 
   return {
+    lastUpdate: Math.floor(Date.now() / 1000),
     parsed: [...lockersMainnet.parsed, ...lockersBsc.parsed].sort((a, b) => a.order - b.order),
     sdt: lockersMainnet.sdt,
     fetched: true,

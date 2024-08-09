@@ -30,6 +30,7 @@ export const getPendle = memoize(async () => {
   const [pendleDataMainnet] = await Promise.all([getPendleMainnet()])
 
   return {
+    lastUpdate: Math.floor(Date.now() / 1000),
     global: {
       [mainnet.id]: pendleDataMainnet.global,
     },

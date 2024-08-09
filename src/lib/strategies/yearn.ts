@@ -35,6 +35,7 @@ export const getYearn = memoize(async () => {
   const [yearnDataMainnet] = await Promise.all([getYearnMainnet()])
 
   return {
+    lastUpdate: Math.floor(Date.now() / 1000),
     global: {
       [mainnet.id]: yearnDataMainnet.global,
     },

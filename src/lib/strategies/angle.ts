@@ -28,6 +28,7 @@ export const getAngle = memoize(async () => {
   const [angleDataMainnet] = await Promise.all([getAngleMainnet()])
 
   return {
+    lastUpdate: Math.floor(Date.now() / 1000),
     global: {
       [mainnet.id]: angleDataMainnet.global,
     },

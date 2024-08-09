@@ -24,6 +24,7 @@ export const getBalancer = memoize(async () => {
   const [balancerDataMainnet] = await Promise.all([getBalancerMainnet()])
 
   return {
+    lastUpdate: Math.floor(Date.now() / 1000),
     global: {
       [mainnet.id]: balancerDataMainnet.global,
     },

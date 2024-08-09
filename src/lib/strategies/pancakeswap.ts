@@ -72,6 +72,7 @@ export const getPancake = memoize(async () => {
   ])
 
   return {
+    lastUpdate: Math.floor(Date.now() / 1000),
     global: {
       [mainnet.id]: pancakeDataMainnet.global,
       [bsc.id]: pancakeDataBsc.global,

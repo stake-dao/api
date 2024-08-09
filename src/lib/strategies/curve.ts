@@ -63,6 +63,7 @@ export const getCurve = memoize(async () => {
   const [curveDataMainnet, curveDataArbitrum] = await Promise.all([getCurveMainnet(), getCurveArbitrum()])
 
   return {
+    lastUpdate: Math.floor(Date.now() / 1000),
     global: {
       [mainnet.id]: curveDataMainnet.global,
       [arbitrum.id]: curveDataArbitrum.global,
