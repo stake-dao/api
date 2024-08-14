@@ -28,7 +28,7 @@ jobs:
         run: pnpm install
     
       - name: Run script to update Yearn Strategies data
-        run: pnpm tsx scripts/executable/updateYearnStrats.ts
+        run: pnpm tsx scripts/strategies/execute.ts yearn
 
       - name: Commit and push if changes found
         run: |

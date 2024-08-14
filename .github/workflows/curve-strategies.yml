@@ -29,7 +29,7 @@ jobs:
         run: pnpm install
     
       - name: Run script to update Curve Strategies data
-        run: pnpm tsx scripts/executable/updateCurveStrats.ts
+        run: pnpm tsx scripts/strategies/execute.ts curve
 
       - name: Commit and push if changes found
         run: |

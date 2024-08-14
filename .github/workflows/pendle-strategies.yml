@@ -28,7 +28,7 @@ jobs:
         run: pnpm install
     
       - name: Run script to update Pendle Strategies data
-        run: pnpm tsx scripts/executable/updatePendleStrats.ts
+        run: pnpm tsx scripts/strategies/execute.ts pendle
 
       - name: Commit and push if changes found
         run: |

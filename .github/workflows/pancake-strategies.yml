@@ -30,7 +30,7 @@ jobs:
         run: pnpm install
     
       - name: Run script to update Pancake Strategies data
-        run: pnpm tsx scripts/executable/updatePancakeStrats.ts
+        run: pnpm tsx scripts/strategies/execute.ts pancake
 
       - name: Commit and push if changes found
         run: |
