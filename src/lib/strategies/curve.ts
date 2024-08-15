@@ -1,4 +1,4 @@
-import { curveStrats, tokens } from '@stake-dao/constants'
+import { tokens } from '@stake-dao/constants'
 import { SdtEmissionData, fetchCurve } from '@stake-dao/reader'
 import memoize from 'memoizee'
 import { arbitrum, mainnet } from 'viem/chains'
@@ -25,7 +25,6 @@ export const getCurveMainnet = memoize(
       explorerApiKey: process.env.ETHERSCAN_TOKEN as string,
       explorer: 'etherscan.io',
       chainId: mainnet.id,
-      lastBlockNumber: curveStrats.meta.lastSyncBlock[mainnet.id] + 1,
       sdtEmissionData: sdtEmissionData as SdtEmissionData,
       gaugesWeights,
     })
@@ -51,7 +50,6 @@ export const getCurveArbitrum = memoize(
       explorerApiKey: process.env.ARBISCAN_TOKEN as string,
       explorer: 'arbiscan.io',
       chainId: arbitrum.id,
-      lastBlockNumber: curveStrats.meta.lastSyncBlock[arbitrum.id] + 1,
       sdtEmissionData: sdtEmissionData as SdtEmissionData,
       gaugesWeights,
     })
