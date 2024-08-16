@@ -15,12 +15,12 @@ const PROMISES_INDEX = {
 }
 
 const updateStrats = async () => {
-  await updateCurveStrats()
-  await updatePancakeStrats()
-
+  
   const promises = await Promise.allSettled([
+    updateCurveStrats(),
     updateBalancerStrats(),
     updateYearnStrats(),
+    updatePancakeStrats(),
     updatePendleStrats(),
     updateAngleStrats(),
   ])

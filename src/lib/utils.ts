@@ -44,7 +44,12 @@ export const getSdtInflation = memoize(
 
 export const getCurveGaugesWeights = memoize(
   async () => {
-    return getGaugesWeights(RPC[mainnet.id])
+    const provider = createPublicClient({
+      chain: mainnet,
+      transport: http(RPC[mainnet.id]),
+    })
+
+    return getGaugesWeights(provider, RPC[mainnet.id])
   },
   { maxAge: MEMO_MAX_AGE },
 )
