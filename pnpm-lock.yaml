@@ -15,8 +15,8 @@ importers:
         specifier: ^0.3.10
         version: 0.3.10
       '@stake-dao/reader':
-        specifier: ^0.3.19
-        version: 0.3.19(graphql@16.9.0)(typescript@5.5.4)
+        specifier: ^0.3.20
+        version: 0.3.20(graphql@16.9.0)(typescript@5.5.4)
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
@@ -27,8 +27,8 @@ importers:
         specifier: ^0.4.17
         version: 0.4.17
       viem:
-        specifier: ^2.19.4
-        version: 2.19.4(typescript@5.5.4)
+        specifier: ^2.19.6
+        version: 2.19.6(typescript@5.5.4)
     devDependencies:
       '@types/memoizee':
         specifier: ^0.4.11
@@ -223,8 +223,8 @@ packages:
   '@stake-dao/constants@0.3.10':
     resolution: {integrity: sha512-Mmr8rBITh0KYniFuioVTvO84zgdyILFCnFquP+WZx3uOPs+iUNDLfn9YOJ0wu03ec89RSEHIL5mEdvJ4D/MX2g==}
 
-  '@stake-dao/reader@0.3.19':
-    resolution: {integrity: sha512-V5vyDYWM0UtAaIdFJNBc0ViR9WVZxj3Jca7ggUqypHcEd6SVPaMxaiuad/FQvjzOR55G91BuleWLQmW4+LMLwg==}
+  '@stake-dao/reader@0.3.20':
+    resolution: {integrity: sha512-k2s6hbsmS6qFd3AzjiN7Gk9x1PxbhYPHxfR1/UriwB2buGnmPfg6xkVYbbATLx+SeWE4PljyRtSFe8KI+xThNg==}
 
   '@types/memoizee@0.4.11':
     resolution: {integrity: sha512-2gyorIBZu8GoDr9pYjROkxWWcFtHCquF7TVbN2I+/OvgZhnIGQS0vX5KJz4lXNKb8XOSfxFOSG5OLru1ESqLUg==}
@@ -368,8 +368,8 @@ packages:
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
-  viem@2.19.4:
-    resolution: {integrity: sha512-JdhK3ui3uPD2tnpqGNkJaDQV4zTfOeKXcF+VrU8RG88Dn2e0lFjv6l7m0YNmYLsHm+n5vFFfCLcUrTk6xcYv5w==}
+  viem@2.19.6:
+    resolution: {integrity: sha512-7jiuX+ZncPZE8iEzgW/iO7EaAMRJEW8hYeJy9YFTMK34Wa9aWzqOm4lrORgemlsqJ/kpQG4InzhG0jc2HY67FA==}
     peerDependencies:
       typescript: '>=5.0.4'
     peerDependenciesMeta:
@@ -500,13 +500,13 @@ snapshots:
 
   '@stake-dao/constants@0.3.10': {}
 
-  '@stake-dao/reader@0.3.19(graphql@16.9.0)(typescript@5.5.4)':
+  '@stake-dao/reader@0.3.20(graphql@16.9.0)(typescript@5.5.4)':
     dependencies:
       '@stake-dao/constants': 0.3.10
       dayjs: 1.11.12
       graphql-request: 6.1.0(graphql@16.9.0)
       lodash-es: 4.17.21
-      viem: 2.19.4(typescript@5.5.4)
+      viem: 2.19.6(typescript@5.5.4)
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -680,7 +680,7 @@ snapshots:
 
   undici-types@5.26.5: {}
 
-  viem@2.19.4(typescript@5.5.4):
+  viem@2.19.6(typescript@5.5.4):
     dependencies:
       '@adraffy/ens-normalize': 1.10.0
       '@noble/curves': 1.4.0
