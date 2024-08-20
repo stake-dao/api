@@ -1,35 +1,35 @@
 import { arbitrum, mainnet } from 'viem/chains'
-import { writeFile } from '../utils'
+import { writeFileFromPromise } from '../utils'
 import { getCurve, getCurveArbitrum, getCurveMainnet } from '../../src/lib/strategies/curve'
 
 const updateCurveStrats = async () => {
-  const [curveDataMainnet, curveDataArbitrum, curveData] = await Promise.all([
+  const [curveDataMainnet, curveDataArbitrum, curveData] = await Promise.allSettled([
     getCurveMainnet(),
     getCurveArbitrum(),
     getCurve(),
   ])
 
-  writeFile({
+  writeFileFromPromise({
     path: `api/strategies/curve/${mainnet.id}.json`,
-    data: JSON.stringify(curveDataMainnet),
+    data: curveDataMainnet,
     log: {
       success: '✅ - Curve Mainnet strategies have been updated!',
       error: '❌ - An error occured during the Curve Mainnet strategies update.',
     },
   })
 
-  writeFile({
+  writeFileFromPromise({
     path: `api/strategies/curve/${arbitrum.id}.json`,
-    data: JSON.stringify(curveDataArbitrum),
+    data: curveDataArbitrum,
     log: {
       success: '✅ - Curve Arbitrum strategies have been updated!',
       error: '❌ - An error occured during the Curve Arbitrum strategies update.',
     },
   })
 
-  writeFile({
+  writeFileFromPromise({
     path: `api/strategies/curve/index.json`,
-    data: JSON.stringify(curveData),
+    data: curveData,
     log: {
       success: '✅ - Curve strategies have been updated!',
       error: '❌ - An error occured during the Curve strategies update.',
