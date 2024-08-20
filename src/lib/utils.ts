@@ -8,7 +8,7 @@ require('dotenv').config()
 
 // Config
 export const MEMO_MAX_AGE = 300000 // 5 minutes
-export const STAKE_DAO_ASSETS_BASE_URL = "https://raw.githubusercontent.com/stake-dao/assets/main"
+export const STAKE_DAO_ASSETS_BASE_URL = 'https://raw.githubusercontent.com/stake-dao/assets/main'
 
 // Providers
 export const publicClient = {
@@ -30,26 +30,10 @@ export const getPrices = memoize(async (tokens: any[], chainId = 1) => getPrices
   maxAge: MEMO_MAX_AGE,
 })
 
-export const getSdtInflation = memoize(
-  async () => {
-    const provider = createPublicClient({
-      chain: mainnet,
-      transport: http(RPC[mainnet.id]),
-    })
+export const getSdtInflation = memoize(async () => getSdtInflationData(publicClient[mainnet.id]), {
+  maxAge: MEMO_MAX_AGE,
+})
 
-    return getSdtInflationData(provider)
-  },
-  { maxAge: MEMO_MAX_AGE },
-)
-
-export const getCurveGaugesWeights = memoize(
-  async () => {
-    const provider = createPublicClient({
-      chain: mainnet,
-      transport: http(RPC[mainnet.id]),
-    })
-
-    return getGaugesWeights(provider, RPC[mainnet.id])
-  },
-  { maxAge: MEMO_MAX_AGE },
-)
+export const getCurveGaugesWeights = memoize(async () => getGaugesWeights(publicClient[mainnet.id], RPC[mainnet.id]), {
+  maxAge: MEMO_MAX_AGE,
+})

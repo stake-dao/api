@@ -38,5 +38,6 @@ export const writeFileFromPromise = (args: WriteFileFromPromiseArgs) => {
     })
   } else {
     console.error(log.error)
+    console.error(data.reason)
   }
 }
