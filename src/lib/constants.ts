@@ -5,5 +5,5 @@ export const RPC = {
   252: 'https://rpc.frax.com',
   324: 'https://mainnet.era.zksync.io',
   8453: 'https://mainnet.base.org',
-  42161: 'https://arb1.arbitrum.io/rpc',
+  42161: 'https://arbitrum-one-rpc.publicnode.com',
 }
