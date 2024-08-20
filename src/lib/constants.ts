@@ -1,5 +1,5 @@
 export const RPC = {
-  1: 'https://eth.public-rpc.com',
+  1: 'https://ethereum-rpc.publicnode.com',
   56: 'https://rpc.ankr.com/bsc',
   137: 'https://polygon-bor-rpc.publicnode.com',
   252: 'https://rpc.frax.com',
