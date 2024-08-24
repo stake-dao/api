@@ -3,6 +3,7 @@ import memoize from 'memoizee'
 import { bsc, mainnet } from 'viem/chains'
 import { MEMO_MAX_AGE, getPrices, publicClient } from './utils'
 import { tokens } from '@stake-dao/constants'
+import { createPublicClient, http } from 'viem'
 
 require('dotenv').config()
 
@@ -13,7 +14,12 @@ export const getLockersMainnet = memoize(
       mainnet.id,
     )
 
-    return fetchLockers({ provider: publicClient[mainnet.id], chainId: mainnet.id, prices })
+    const provider = createPublicClient({
+      chain: mainnet,
+      transport: http('https://eth.public-rpc.com'),
+    })
+
+    return fetchLockers({ provider, chainId: mainnet.id, prices })
   },
   { maxAge: MEMO_MAX_AGE },
 )
