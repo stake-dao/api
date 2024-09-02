@@ -10,32 +10,32 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.12.2
-        version: 1.12.2(hono@4.5.9)
+        version: 1.12.2(hono@4.5.10)
       '@stake-dao/constants':
-        specifier: ^0.4.4
-        version: 0.4.4
+        specifier: ^0.4.5
+        version: 0.4.5
       '@stake-dao/reader':
-        specifier: ^0.4.8
-        version: 0.4.8(graphql@16.9.0)(typescript@5.5.4)
+        specifier: ^0.4.10
+        version: 0.4.10(graphql@16.9.0)(typescript@5.5.4)
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
       hono:
-        specifier: ^4.5.9
-        version: 4.5.9
+        specifier: ^4.5.10
+        version: 4.5.10
       memoizee:
         specifier: ^0.4.17
         version: 0.4.17
       viem:
-        specifier: ^2.20.1
-        version: 2.20.1(typescript@5.5.4)
+        specifier: ^2.21.1
+        version: 2.21.1(typescript@5.5.4)
     devDependencies:
       '@types/memoizee':
         specifier: ^0.4.11
         version: 0.4.11
       '@types/node':
-        specifier: ^20.16.2
-        version: 20.16.2
+        specifier: ^20.16.3
+        version: 20.16.3
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -222,17 +222,17 @@ packages:
   '@scure/bip39@1.3.0':
     resolution: {integrity: sha512-disdg7gHuTDZtY+ZdkmLpPCk7fxZSu3gBiEGuoC1XYxv9cGx3Z6cpTggCgW6odSOOIXCiDjuGejW+aJKCY/pIQ==}
 
-  '@stake-dao/constants@0.4.4':
-    resolution: {integrity: sha512-AKSGOWS8aUEL63rIk8Adnf8pEMbtuLTRAQllLZy+cC+kWelxm4ckggL3GnJNTfZdLxbpDQ0c0gWR7nBlC9kGVw==}
+  '@stake-dao/constants@0.4.5':
+    resolution: {integrity: sha512-Gt07Fq0fsXl4vI4Wt+rB8/ybMlaObRR0zqom8eY2TP8ftBk282qTmarPftSGVvy9AgDLKTfmnLkDmxU6R4PhtQ==}
 
-  '@stake-dao/reader@0.4.8':
-    resolution: {integrity: sha512-9R5zItmFpaVnRGoQIYX7/4qsCEy10Z6cI7JA/ZVB/v5vOx4cRQBvGU07+cuB9FKLYoYPKukfEIr+veUUarpEIA==}
+  '@stake-dao/reader@0.4.10':
+    resolution: {integrity: sha512-aObpinrkxsO/fYixwm8xMJyiJx81TgSsLM5nH+kar6aNuHHoYno+pYFbG8cMBYFcM7nGCOo8eLn+HxS/kelH5w==}
 
   '@types/memoizee@0.4.11':
     resolution: {integrity: sha512-2gyorIBZu8GoDr9pYjROkxWWcFtHCquF7TVbN2I+/OvgZhnIGQS0vX5KJz4lXNKb8XOSfxFOSG5OLru1ESqLUg==}
 
-  '@types/node@20.16.2':
-    resolution: {integrity: sha512-91s/n4qUPV/wg8eE9KHYW1kouTfDk2FPGjXbBMfRWP/2vg1rCXNQL1OCabwGs0XSdukuK+MwCDXE30QpSeMUhQ==}
+  '@types/node@20.16.3':
+    resolution: {integrity: sha512-/wdGiWRkMOm53gAsSyFMXFZHbVg7C6CbkrzHNpaHoYfsUWPg7m6ZRKtvQjgvQ9i8WT540a3ydRlRQbxjY30XxQ==}
 
   abitype@1.0.5:
     resolution: {integrity: sha512-YzDhti7cjlfaBhHutMaboYB21Ha3rXR9QTkNJFzYC4kC8YclaiwPBBBJY8ejFdu2wnJeZCVZSMlQJ7fi8S6hsw==}
@@ -293,8 +293,8 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
-  get-tsconfig@4.7.6:
-    resolution: {integrity: sha512-ZAqrLlu18NbDdRaHq+AKXzAmqIUPswPWKUchfytdAjiRFnCe5ojG2bstg6mRiZabkKfCoL/e98pbBELIV/YCeA==}
+  get-tsconfig@4.8.0:
+    resolution: {integrity: sha512-Pgba6TExTZ0FJAn1qkJAjIeKoDJ3CsI2ChuLohJnZl/tTU8MVrq3b+2t5UOPfRa4RMsorClBjJALkJUMjG1PAw==}
 
   graphql-request@6.1.0:
     resolution: {integrity: sha512-p+XPfS4q7aIpKVcgmnZKhMNqhltk20hfXtkaIkTfjjmiKMJ5xrt5c743cL03y/K7y1rg3WrIC49xGiEQ4mxdNw==}
@@ -305,8 +305,8 @@ packages:
     resolution: {integrity: sha512-GGTKBX4SD7Wdb8mqeDLni2oaRGYQWjWHGKPQ24ZMnUtKfcsVoiv4uX8+LJr1K6U5VW2Lu1BwJnj7uiori0YtRw==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
 
-  hono@4.5.9:
-    resolution: {integrity: sha512-zz8ktqMDRrZETjxBrv8C5PQRFbrTRCLNVAjD1SNQyOzv4VjmX68Uxw83xQ6oxdAB60HiWnGEatiKA8V3SZLDkQ==}
+  hono@4.5.10:
+    resolution: {integrity: sha512-az6tdU1U8o/l0v8O37FIQuc+ER/TeD9vHt/qs8JnBDgMxw6Zu5L2AixUyHeXZNcu87r7iYo8Ey85R7IogOINKA==}
     engines: {node: '>=16.0.0'}
 
   is-promise@2.2.2:
@@ -370,8 +370,8 @@ packages:
   undici-types@6.19.8:
     resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
 
-  viem@2.20.1:
-    resolution: {integrity: sha512-a/BSe25TSfkc423GTSKYl1O0ON2J5huoQeOLkylHT1WS8wh3JFqb8nfAq7vg+aZ+W06BCTn36bbi47yp4D92Cg==}
+  viem@2.21.1:
+    resolution: {integrity: sha512-nlIc2LLS6aqkngULS9UJ2Sg3nHKAgF9bbpDUwjUoAUBijd69mrCWPBXQ8jmbzcx12uZUfd9Nc//CHgSVZiMwyg==}
     peerDependencies:
       typescript: '>=5.0.4'
     peerDependenciesMeta:
@@ -479,9 +479,9 @@ snapshots:
     dependencies:
       graphql: 16.9.0
 
-  '@hono/node-server@1.12.2(hono@4.5.9)':
+  '@hono/node-server@1.12.2(hono@4.5.10)':
     dependencies:
-      hono: 4.5.9
+      hono: 4.5.10
 
   '@noble/curves@1.4.0':
     dependencies:
@@ -502,15 +502,15 @@ snapshots:
       '@noble/hashes': 1.4.0
       '@scure/base': 1.1.7
 
-  '@stake-dao/constants@0.4.4': {}
+  '@stake-dao/constants@0.4.5': {}
 
-  '@stake-dao/reader@0.4.8(graphql@16.9.0)(typescript@5.5.4)':
+  '@stake-dao/reader@0.4.10(graphql@16.9.0)(typescript@5.5.4)':
     dependencies:
-      '@stake-dao/constants': 0.4.4
+      '@stake-dao/constants': 0.4.5
       dayjs: 1.11.13
       graphql-request: 6.1.0(graphql@16.9.0)
       lodash-es: 4.17.21
-      viem: 2.20.1(typescript@5.5.4)
+      viem: 2.21.1(typescript@5.5.4)
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -521,7 +521,7 @@ snapshots:
 
   '@types/memoizee@0.4.11': {}
 
-  '@types/node@20.16.2':
+  '@types/node@20.16.3':
     dependencies:
       undici-types: 6.19.8
 
@@ -615,7 +615,7 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
-  get-tsconfig@4.7.6:
+  get-tsconfig@4.8.0:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
@@ -629,7 +629,7 @@ snapshots:
 
   graphql@16.9.0: {}
 
-  hono@4.5.9: {}
+  hono@4.5.10: {}
 
   is-promise@2.2.2: {}
 
@@ -674,7 +674,7 @@ snapshots:
   tsx@4.19.0:
     dependencies:
       esbuild: 0.23.1
-      get-tsconfig: 4.7.6
+      get-tsconfig: 4.8.0
     optionalDependencies:
       fsevents: 2.3.3
 
@@ -684,7 +684,7 @@ snapshots:
 
   undici-types@6.19.8: {}
 
-  viem@2.20.1(typescript@5.5.4):
+  viem@2.21.1(typescript@5.5.4):
     dependencies:
       '@adraffy/ens-normalize': 1.10.0
       '@noble/curves': 1.4.0
