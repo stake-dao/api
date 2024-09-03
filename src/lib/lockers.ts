@@ -1,6 +1,6 @@
 import { fetchLockers } from '@stake-dao/reader'
 import memoize from 'memoizee'
-import { bsc, mainnet } from 'viem/chains'
+import { bsc, fraxtal, mainnet } from 'viem/chains'
 import { MEMO_MAX_AGE, getPrices, publicClient } from './utils'
 import { tokens } from '@stake-dao/constants'
 import { createPublicClient, http } from 'viem'
@@ -36,12 +36,30 @@ export const getLockersBsc = memoize(
   { maxAge: MEMO_MAX_AGE },
 )
 
+export const getLockersFraxtal = memoize(
+  async () => {
+    const prices = await getPrices(
+      tokens.filter((t) => t.chainId === fraxtal.id),
+      fraxtal.id,
+    )
+
+    return fetchLockers({ provider: publicClient[fraxtal.id], chainId: fraxtal.id, prices })
+  },
+  { maxAge: MEMO_MAX_AGE },
+)
+
 export const getLockers = memoize(async () => {
-  const [lockersMainnet, lockersBsc] = await Promise.all([getLockersMainnet(), getLockersBsc()])
+  const [lockersMainnet, lockersBsc, lockersFraxtal] = await Promise.all([
+    getLockersMainnet(),
+    getLockersBsc(),
+    getLockersFraxtal(),
+  ])
 
   return {
     lastUpdate: Math.floor(Date.now() / 1000),
-    parsed: [...lockersMainnet.parsed, ...lockersBsc.parsed].sort((a, b) => a.order - b.order),
+    parsed: [...lockersMainnet.parsed, ...lockersBsc.parsed, ...lockersFraxtal.parsed].sort(
+      (a, b) => a.order - b.order,
+    ),
     sdt: lockersMainnet.sdt,
     fetched: true,
   }

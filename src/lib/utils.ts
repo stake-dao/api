@@ -1,7 +1,7 @@
 import { getPricesFromLlama, getSdtInflationData, getGaugesWeights } from '@stake-dao/reader'
 import memoize from 'memoizee'
 import { createPublicClient, http } from 'viem'
-import { arbitrum, bsc, mainnet } from 'viem/chains'
+import { arbitrum, bsc, fraxtal, mainnet } from 'viem/chains'
 import { RPC } from './constants'
 
 require('dotenv').config()
@@ -19,6 +19,10 @@ export const publicClient = {
   [bsc.id]: createPublicClient({
     chain: bsc,
     transport: http(RPC[bsc.id]),
+  }),
+  [fraxtal.id]: createPublicClient({
+    chain: fraxtal,
+    transport: http(RPC[fraxtal.id]),
   }),
   [arbitrum.id]: createPublicClient({
     chain: arbitrum,
