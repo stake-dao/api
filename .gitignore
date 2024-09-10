@@ -1,0 +1,20 @@
+.DS_Store
+.pnpm-debug.log*
+.pnpm-error.log*
+node_modules
+dist
+
+# dependencies
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# local env files
+.env
+.env*.local
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+fetchGitHistory

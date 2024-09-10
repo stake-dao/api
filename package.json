@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "format": "prettier --write '{src,scripts}/**/*.{js,jsx,ts,tsx}'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Stake DAO",
+  "license": "AGPL-3.0-only",
+  "dependencies": {
+    "@hono/node-server": "^1.12.2",
+    "@stake-dao/constants": "^0.4.11",
+    "@stake-dao/reader": "^0.4.19",
+    "dotenv": "^16.4.5",
+    "hono": "^4.5.11",
+    "memoizee": "^0.4.17",
+    "viem": "^2.21.4"
+  },
+  "devDependencies": {
+    "@types/memoizee": "^0.4.11",
+    "@types/node": "^20.16.5",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.2"
+  }
+}
