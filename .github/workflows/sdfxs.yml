@@ -9,8 +9,8 @@ env:
   TARGET_DEVOPS_DIR: target-devops
   DEVOPS_DIR: devops
   WEB3_ALCHEMY_API_KEY: ${{ secrets.WEB3_ALCHEMY_API_KEY }}
-  FRAXSCAN_API_KEY: ${{ secrets.FRAXSCAN_API_KEY }}
-  ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
+  FRAXSCAN_TOKEN: ${{ secrets.FRAXSCAN_TOKEN }}
+  ETHERSCAN_TOKEN: ${{ secrets.ETHERSCAN_TOKEN }}
 
 jobs:
   build:
