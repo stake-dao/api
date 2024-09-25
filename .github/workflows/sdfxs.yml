@@ -68,7 +68,7 @@ jobs:
           git config user.name "Stake DAO Automation"
           git config pull.rebase false
           git add .
-          git commit -m "Bot sdFXS"
+          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update sdFXS data"
           git pull
           git merge --strategy=ours origin/main
           git push
