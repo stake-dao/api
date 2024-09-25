@@ -59,7 +59,7 @@ jobs:
         
       - name: Copy sdfxs data to target repo
         run: |
-          cp "${{ env.DEVOPS_DIR }}/json/sdfxs/sdfxs-working-supply.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers/sdfxs-working-supply.json"
+          cp "${{ env.DEVOPS_DIR }}/json/sdfxs/sdfxs-working-supply.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
 
       - name: Commit and push changes to repo
         run: |
