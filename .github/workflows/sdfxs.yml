@@ -52,7 +52,7 @@ jobs:
       - name: Checkout target repository
         uses: actions/checkout@v4
         with:
-          repository: stake-dao/tg-bots
+          repository: stake-dao/api
           token: ${{ secrets.GIT_ACCESS_TOKEN }}
           path: ${{ env.TARGET_DEVOPS_DIR }}
         if: always()
