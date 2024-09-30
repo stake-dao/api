@@ -36,6 +36,9 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "Stake DAO API update"
+          git stash
+          git pull
+          git stash apply
           git add api/cherries
           git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Cherries data"
           git push
