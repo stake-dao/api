@@ -33,7 +33,7 @@ interface ProofData {
 }
 
 const TEMP_DIR = 'temp';
-const OUTPUT_DIR = 'api/votemarket';
+const OUTPUT_DIR = 'api/votemarket/proofs';
 
 export async function generateProofs(protocols: string[], blockNumber: number, currentPeriod: number): Promise<void> {
   const command = `python votemarket-proofs-script/main.py ${protocols.join(' ')} ${blockNumber} ${currentPeriod}`;
@@ -50,10 +50,14 @@ export async function generateProofs(protocols: string[], blockNumber: number, c
       }
       console.log(`Python script stdout: ${stdout}`);
 
+      // Create the directory for the current period if it doesn't exist
+      const periodDir = path.join(OUTPUT_DIR, currentPeriod.toString());
+      fs.mkdirSync(periodDir, { recursive: true });
+
       // Move generated files to the API directory
       protocols.forEach((protocol) => {
         const sourceFile = path.join(TEMP_DIR, `${protocol}_active_proofs.json`);
-        const destFile = path.join(OUTPUT_DIR, `${protocol}_proofs.json`);
+        const destFile = path.join(periodDir, `${protocol}.json`);
 
         fs.readFile(sourceFile, 'utf8', (err, data) => {
           if (err) {
@@ -86,8 +90,8 @@ export async function generateProofs(protocols: string[], blockNumber: number, c
   });
 }
 
-export async function getProofs(protocol: string): Promise<ProofData | null> {
-  const filePath = path.join(OUTPUT_DIR, `${protocol}_proofs.json`);
+export async function getProofs(protocol: string, period: number): Promise<ProofData | null> {
+  const filePath = path.join(OUTPUT_DIR, period.toString(), `${protocol}.json`);
 
   return new Promise((resolve) => {
     fs.readFile(filePath, 'utf8', (err, data) => {
