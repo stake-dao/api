@@ -1,4 +1,4 @@
-# Makefile
+# Makefile for vm_all_platforms
 
 include automation/setup/python.mk
 include automation/setup/dotenv.mk
@@ -21,9 +21,20 @@ setup: setup-python checkout-votemarket-proofs-script
 
 install-deps: install-votemarket-proofs-script-deps
 
-run-vm-all-platforms:
+# Get the current period
+get-current-period:
+	@echo "Getting the current period..."
+	@$(eval CURRENT_PERIOD := $(shell $(PYTHON) -c "import time; print(int(time.time()) - (int(time.time()) % (7 * 24 * 3600)))"))
+	@echo "Current period: $(CURRENT_PERIOD)"
+
+run-vm-all-platforms: get-current-period
 	@echo "Running vm_all_platforms.py..."
-	PYTHONPATH=$(VOTEMARKET_PROOFS_SCRIPT_DEVOPS_DIR)/script $(PYTHON) $(VOTEMARKET_PROOFS_SCRIPT_DEVOPS_DIR)/script/external/vm_all_platforms.py curve fxn balancer frax && \
+	cd $(VOTEMARKET_PROOFS_SCRIPT_DEVOPS_DIR) && \
+	PYTHONPATH=script \
+	$(PYTHON) script/external/vm_all_platforms.py \
+	curve fxn balancer frax \
+	--period $(CURRENT_PERIOD) && \
+	cd - > /dev/null && \
 	echo "vm_all_platforms.py completed successfully"
 
 .PHONY: clean

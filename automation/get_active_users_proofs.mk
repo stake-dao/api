@@ -1,4 +1,4 @@
-# Makefile
+# Makefile for vm_active_proofs
 
 include automation/setup/python.mk
 include automation/setup/dotenv.mk
@@ -10,26 +10,34 @@ $(error GIT_ACCESS_TOKEN is not set. Please set it in the environment)
 endif
 
 # Job-specific targets
-.PHONY: all setup install-deps run-vm-set-block run-set-block-data clean
+.PHONY: all setup install-deps run-vm-active-proofs clean
 
 # Define the default target
 .DEFAULT_GOAL := all
 
-all: setup install-deps run-vm-set-block run-set-block-data
+all: setup install-deps run-vm-all-platforms run-vm-active-proofs
 
 setup: setup-python checkout-votemarket-proofs-script
 
 install-deps: install-votemarket-proofs-script-deps
 
-run-vm-set-block:
-	@echo "Running vm_set_block.py..."
-	PYTHONPATH=$(VOTEMARKET_PROOFS_SCRIPT_DEVOPS_DIR)/script $(PYTHON) $(VOTEMARKET_PROOFS_SCRIPT_DEVOPS_DIR)/script/integration/vm_set_block.py && \
-	echo "vm_set_block.py completed successfully"
+# Get the current period
+get-current-period:
+	@echo "Getting the current period..."
+	@$(eval CURRENT_PERIOD := $(shell $(PYTHON) -c "import time; print(int(time.time()) - (int(time.time()) % (7 * 24 * 3600)))"))
+	@echo "Current period: $(CURRENT_PERIOD)"
 
-run-set-block-data: run-vm-set-block
-	@echo "Running set_block_data.py..."
-	PYTHONPATH=$(AUTOMATION_DEVOPS_DIR)/script $(PYTHON) $(AUTOMATION_DEVOPS_DIR)/script/votemarket/x-chain/vm_set_block.py "$$(cat temp/current_period_block_data.json)" && \
-	echo "set_block_data.py completed successfully"
+run-vm-all-platforms:
+	@$(MAKE) -f automation/get_all_platforms.mk run-vm-all-platforms
+
+run-vm-active-proofs: get-current-period run-vm-all-platforms
+	@echo "Running vm_active_proofs.py..."
+	cd $(VOTEMARKET_PROOFS_SCRIPT_DEVOPS_DIR) && \
+	PYTHONPATH=script \
+	$(PYTHON) script/external/vm_active_proofs.py \
+	temp/all_platforms.json $(CURRENT_PERIOD) && \
+	cd - > /dev/null && \
+	echo "vm_active_proofs.py completed successfully"
 
 .PHONY: clean
 clean:
