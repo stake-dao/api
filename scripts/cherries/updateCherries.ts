@@ -6,7 +6,8 @@ import { writeFile } from '../utils'
 
 const main = async () => {
   const fromBlock = getGlobal().lastSyncBlock + 1
-  const toBlockBI = await bscPublicClient.getBlockNumber()
+  // const toBlockBI = await bscPublicClient.getBlockNumber()
+  const toBlockBI = BigInt(42720332)
   const toBlock = Number(toBlockBI)
   const toBlockTimestamp = Number((await bscPublicClient.getBlock({ blockNumber: toBlockBI })).timestamp)
 
