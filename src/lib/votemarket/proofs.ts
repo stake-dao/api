@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { writeFile } from '../../../scripts/utils';
 
-interface ProofData {
+export interface ProofData {
   block_number: number;
   period: number;
   protocol: {
