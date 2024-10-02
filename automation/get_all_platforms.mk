@@ -5,8 +5,10 @@ include automation/setup/dotenv.mk
 include automation/setup/votemarket-proofs-script.mk
 
 # Ensure all env are set
-ifndef GIT_ACCESS_TOKEN || ifndef ETHEREUM_MAINNET_RPC_URL
+ifndef GIT_ACCESS_TOKEN
+ifndef ETHEREUM_MAINNET_RPC_URL
 $(error Some environment variables are not set. Please set them in the environment)
+endif
 endif
 
 # Job-specific targets
