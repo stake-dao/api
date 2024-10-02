@@ -4,9 +4,9 @@ include automation/setup/python.mk
 include automation/setup/dotenv.mk
 include automation/setup/votemarket-proofs-script.mk
 
-# Ensure GIT_ACCESS_TOKEN is set
-ifndef GIT_ACCESS_TOKEN
-$(error GIT_ACCESS_TOKEN is not set. Please set it in the environment)
+# Ensure all env are set
+ifndef GIT_ACCESS_TOKEN || ifndef ETHEREUM_MAINNET_RPC_URL
+$(error Some environment variables are not set. Please set them in the environment)
 endif
 
 # Job-specific targets
@@ -24,16 +24,18 @@ install-deps: install-votemarket-proofs-script-deps
 # Get the current period
 get-current-period:
 	@echo "Getting the current period..."
-	@$(eval CURRENT_PERIOD := $(shell $(PYTHON) -c "import time; print(int(time.time()) - (int(time.time()) % (7 * 24 * 3600)))"))
-	@echo "Current period: $(CURRENT_PERIOD)"
+	@$(eval CURRENT_EPOCH := $(shell $(PYTHON) -c "import time; print(int(time.time()) - (int(time.time()) % (7 * 24 * 3600)))"))
+	@echo "Current period: $(CURRENT_EPOCH)"
+
 
 run-vm-all-platforms: get-current-period
 	@echo "Running vm_all_platforms.py..."
 	cd $(VOTEMARKET_PROOFS_SCRIPT_DEVOPS_DIR) && \
 	PYTHONPATH=script \
+	ETHEREUM_MAINNET_RPC_URL=$${ETHEREUM_MAINNET_RPC_URL%=} \
 	$(PYTHON) script/external/vm_all_platforms.py \
-	curve fxn balancer frax \
-	--period $(CURRENT_PERIOD) && \
+	curve balancer fxn frax \
+	--epoch $(CURRENT_EPOCH) && \
 	cd - > /dev/null && \
 	echo "vm_all_platforms.py completed successfully"
 
