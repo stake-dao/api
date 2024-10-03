@@ -44,18 +44,11 @@ jobs:
       - name: Run active users proofs script
         run: make -f automation/get_active_users_proofs.mk
 
-      - name: Move generated JSON files
-        run: |
-          current_period=$(date +%s)
-          current_period=$((current_period - current_period % (7 * 24 * 3600)))
-          mkdir -p api/votemarket/proofs/$current_period
-          mv temps/votemarket-proofs-script/temp/*_active_proofs.json api/votemarket/proofs/$current_period/
-
       - name: Commit and push if changes found
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "Stake DAO API update"
-          git add api/votemarket/proofs
+          git add api/votemarket
           git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Votemarket proofs data"
           git push
         shell: bash
