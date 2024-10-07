@@ -48,7 +48,7 @@ run-vm-active-proofs: get-current-epoch run-vm-all-platforms
 move-files:
 	@echo "Moving files..."
 	mkdir -p api/votemarket/proofs/$(CURRENT_EPOCH)
-	mv temp/votemarket-proofs-script/temp/*_active_proofs.json api/votemarket/$(CURRENT_EPOCH)/
+	mv temp/votemarket-proofs-script/temp/*_active_proofs.json api/votemarket/$(CURRENT_EPOCH)/proofs/
 
 .PHONY: clean
 clean:

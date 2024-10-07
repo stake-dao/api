@@ -1,109 +1,128 @@
-import fs from 'fs';
-import path from 'path';
+import fs from 'fs'
+import path from 'path'
 
-export interface ProofData {
-  epoch: number;
-  name: string;
-  gauge_controller_proof: string;
+interface ProtocolData {
+  epoch: number
+  block_data: BlockData
+  gauge_controller_proof: string
   platforms: {
-    [platform: string]: {
-      chain_id: number;
-      platform_address: string;
-      block_number: number;
-      gauges: {
-        [gauge: string]: {
-          point_data_proof: string;
-          users: {
-            [user: string]: {
-              storage_proof: string;
-              last_vote: number;
-              slope: number;
-              power: number;
-              end: number;
-            };
-          };
-          blacklisted_users: {
-            [user: string]: {
-              storage_proof: string;
-            };
-          };
-        };
-      };
-    };
-  };
+    [address: string]: PlatformData
+  }
 }
 
 export interface BlockData {
-  epoch: number;
-  block_header: {
-    BlockNumber: number;
-    BlockHash: string;
-    BlockTimestamp: number;
-    RlpBlockHeader: string;
-  };
+  block_number: number
+  block_hash: string
+  block_timestamp: number
+  rlp_block_header: string
 }
 
-const BASE_DIR = 'api/votemarket';
+interface PlatformData {
+  chain_id: number
+  platform_address: string
+  gauges: {
+    [address: string]: GaugeData
+  }
+}
 
-export async function getProofs(protocol: string, period: number): Promise<ProofData | null> {
-  const filePath = path.join(BASE_DIR, period.toString(), `${protocol}_active_proofs.json`);
+interface GaugeData {
+  point_data_proof: string
+  users: {
+    [address: string]: UserData
+  }
+  listed_users: {
+    [address: string]: ListedUsersData
+  }
+}
+
+export interface UserData {
+  storage_proof: string
+  last_vote: number
+  slope: number
+  power: number
+  end: number
+}
+
+interface ListedUsersData {
+  storage_proof: string
+}
+
+const BASE_DIR = 'api/votemarket/'
+
+////////////////////////////////////////////////////////////////
+/// --- FULL DATA
+///////////////////////////////////////////////////////////////
+export async function getProtocolData(protocol: string, period: number): Promise<ProtocolData | null> {
+  const filePath = path.join(BASE_DIR, period.toString(), 'proofs', `${protocol}.json`)
 
   return new Promise((resolve) => {
     fs.readFile(filePath, 'utf8', (err, data) => {
       if (err) {
-        console.error(`Error reading file ${filePath}: ${err}`);
-        resolve(null);
-        return;
+        console.error(`Error reading file ${filePath}: ${err}`)
+        resolve(null)
+        return
       }
 
       try {
-        const proofData: ProofData = JSON.parse(data);
-        resolve(proofData);
+        const jsonData: ProtocolData = JSON.parse(data)
+        resolve(jsonData)
       } catch (error) {
-        console.error(`Error parsing JSON from ${filePath}: ${error}`);
-        resolve(null);
+        console.error(`Error parsing JSON from ${filePath}: ${error}`)
+        resolve(null)
       }
-    });
-  });
+    })
+  })
 }
 
-export async function getBlockData(period: number): Promise<BlockData | null> {
-  const filePath = path.join(BASE_DIR, period.toString(), 'block_data.json');
-
-  return new Promise((resolve) => {
-    fs.readFile(filePath, 'utf8', (err, data) => {
-      if (err) {
-        console.error(`Error reading file ${filePath}: ${err}`);
-        resolve(null);
-        return;
-      }
-
-      try {
-        const blockData: BlockData = JSON.parse(data);
-        resolve(blockData);
-      } catch (error) {
-        console.error(`Error parsing JSON from ${filePath}: ${error}`);
-        resolve(null);
-      }
-    });
-  });
+////////////////////////////////////////////////////////////////
+/// --- BLOCK DATA
+///////////////////////////////////////////////////////////////
+export async function getBlockData(protocol: string, period: number): Promise<BlockData | null> {
+  const protocolData = await getProtocolData(protocol, period)
+  return protocolData?.block_data ?? null
 }
 
-export function getGaugeData(data: ProofData, gaugeAddress: string) {
+////////////////////////////////////////////////////////////////
+/// --- GAUGE DATA
+///////////////////////////////////////////////////////////////
+export function getGaugeData(data: ProtocolData, gaugeAddress: string): GaugeData | null {
+  const lowerGaugeAddress = gaugeAddress.toLowerCase()
   for (const platform of Object.values(data.platforms)) {
-    if (gaugeAddress in platform.gauges) {
-      return platform.gauges[gaugeAddress];
+    for (const [address, gaugeData] of Object.entries(platform.gauges)) {
+      if (address.toLowerCase() === lowerGaugeAddress) {
+        return gaugeData
+      }
     }
   }
-  return null;
+  return null
 }
 
-export function getUserData(data: ProofData, gaugeAddress: string, userAddress: string) {
-  const gaugeData = getGaugeData(data, gaugeAddress);
-  return gaugeData?.users[userAddress] || null;
+////////////////////////////////////////////////////////////////
+/// --- USER DATA
+///////////////////////////////////////////////////////////////
+export function getUserData(gaugeData: GaugeData, userAddress: string): UserData | null {
+  const lowerUserAddress = userAddress.toLowerCase()
+  for (const [address, userData] of Object.entries(gaugeData.users)) {
+    if (address.toLowerCase() === lowerUserAddress) {
+      return userData
+    }
+  }
+  return null
 }
 
-export function getBlacklistData(data: ProofData, gaugeAddress: string) {
-  const gaugeData = getGaugeData(data, gaugeAddress);
-  return gaugeData?.blacklisted_users || null;
+////////////////////////////////////////////////////////////////
+/// --- LISTED USERS DATA
+///////////////////////////////////////////////////////////////
+
+export function getListedUsersData(gaugeData: GaugeData): { [address: string]: { storage_proof: string } } | null {
+  if (gaugeData.listed_users) {
+    return Object.entries(gaugeData.listed_users).reduce(
+      (acc, [address, data]) => {
+        acc[address.toLowerCase()] = { storage_proof: data.storage_proof }
+        return acc
+      },
+      {} as { [address: string]: { storage_proof: string } }
+    )
+  }
+  return null
 }
