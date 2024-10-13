@@ -9,127 +9,149 @@ function isValidPeriod(period: number): boolean {
   return !isNaN(period) && period > 0
 }
 
+function isValidProtocol(protocol: string): boolean {
+  return protocols.includes(protocol.toLowerCase())
+}
+
 ////////////////////////////////////////////////////////////////
 /// --- ALL DATA
 ////////////////////////////////////////////////////////////////
 
-protocols.forEach((protocol) => {
-  // Get all proofs for a protocol
-  proofsVM.get(`/:period/${protocol}`, async (c) => {
-    const period = parseInt(c.req.param('period'))
-    if (!isValidPeriod(period)) {
-      return c.json({ error: `Invalid period: ${c.req.param('period')}` }, 400)
-    }
-    const data = await getProtocolData(protocol, period)
-    if (data) {
-      return c.json(data)
-    } else {
-      return c.json({ error: `No proofs found for ${protocol} in period ${period}` }, 404)
-    }
-  })
+proofsVM.get('/:period/:protocol', async (c) => {
+  const period = parseInt(c.req.param('period'))
+  const protocol = c.req.param('protocol').toLowerCase()
 
-  ////////////////////////////////////////////////////////////////
-  /// --- BLOCK DATA
-  ////////////////////////////////////////////////////////////////
+  if (!isValidPeriod(period)) {
+    return c.json({ error: `Invalid period: ${c.req.param('period')}` }, 400)
+  }
+  if (!isValidProtocol(protocol)) {
+    return c.json({ error: `Invalid protocol: ${protocol}` }, 400)
+  }
 
-  // Get block info
-  proofsVM.get(`/:period/${protocol}/block`, async (c) => {
-    const period = parseInt(c.req.param('period'))
-    if (!isValidPeriod(period)) {
-      return c.json({ error: `Invalid period: ${c.req.param('period')}` }, 400)
-    }
-    const blockData = await getBlockData(protocol, period)
-    if (blockData?.rlp_block_header) {
-      return c.json(blockData)
-    } else {
-      return c.json({ error: `No block info found for period ${period}` }, 404)
-    }
-  })
+  const data = await getProtocolData(protocol, period)
+  if (data) {
+    return c.json(data)
+  } else {
+    return c.json({ error: `No proofs found for ${protocol} in period ${period}` }, 404)
+  }
+})
 
-  ////////////////////////////////////////////////////////////////
-  /// --- GAUGE CONTROLLER DATA
-  ////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+/// --- BLOCK DATA
+////////////////////////////////////////////////////////////////
 
-  // Get gauge controller proof
-  proofsVM.get(`/:period/${protocol}/gauge_controller`, async (c) => {
-    const period = parseInt(c.req.param('period'))
-    if (!isValidPeriod(period)) {
-      return c.json({ error: `Invalid period: ${c.req.param('period')}` }, 400)
-    }
-    const data = await getProtocolData(protocol, period)
-    if (data?.gauge_controller_proof) {
-      return c.json({ gauge_controller_proof: data.gauge_controller_proof })
-    } else {
-      return c.json({ error: `No gauge controller proof found for period ${period}` }, 404)
-    }
-  })
+proofsVM.get('/:period/:protocol/block', async (c) => {
+  const period = parseInt(c.req.param('period'))
+  const protocol = c.req.param('protocol').toLowerCase()
 
-  ////////////////////////////////////////////////////////////////
-  /// --- GAUGE DATA
-  ////////////////////////////////////////////////////////////////
+  if (!isValidPeriod(period)) {
+    return c.json({ error: `Invalid period: ${c.req.param('period')}` }, 400)
+  }
+  if (!isValidProtocol(protocol)) {
+    return c.json({ error: `Invalid protocol: ${protocol}` }, 400)
+  }
 
-  // Get gauge info
-  proofsVM.get(`/:period/${protocol}/:gauge`, async (c) => {
-    const period = parseInt(c.req.param('period'))
-    if (!isValidPeriod(period)) {
-      return c.json({ error: `Invalid period: ${c.req.param('period')}` }, 400)
-    }
-    const gaugeAddress = c.req.param('gauge').toLowerCase()
-    const protocolData = await getProtocolData(protocol, period)
-    if (!protocolData) {
-      return c.json({ error: `No protocol data found for ${protocol} in period ${period}` }, 404)
-    }
-    const data = getGaugeData(protocolData, gaugeAddress)
-    if (data) {
-      return c.json({ point_data_proof: data.point_data_proof })
-    }
-    return c.json({ error: `No gauge info found for ${protocol}, gauge ${gaugeAddress} in period ${period}` }, 404)
-  })
+  const blockData = await getBlockData(protocol, period)
+  if (blockData?.rlp_block_header) {
+    return c.json(blockData)
+  } else {
+    return c.json({ error: `No block info found for ${protocol} in period ${period}` }, 404)
+  }
+})
 
-  ////////////////////////////////////////////////////////////////
-  /// --- USERS DATA
-  ////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+/// --- GAUGE CONTROLLER DATA
+////////////////////////////////////////////////////////////////
 
-  proofsVM.get(`/:period/${protocol}/:gauge/:user`, async (c) => {
-    const period = parseInt(c.req.param('period'))
-    if (!isValidPeriod(period)) {
-      return c.json({ error: `Invalid period: ${c.req.param('period')}` }, 400)
-    }
-    const gaugeAddress = c.req.param('gauge').toLowerCase()
-    const userOrListedUsers = c.req.param('user')
+proofsVM.get('/:period/:protocol/gauge_controller', async (c) => {
+  const period = parseInt(c.req.param('period'))
+  const protocol = c.req.param('protocol').toLowerCase()
 
-    const data = await getProtocolData(protocol, period)
-    if (data) {
-      const gaugeData = getGaugeData(data, gaugeAddress)
-      if (gaugeData) {
-        if (userOrListedUsers === 'listed_users') {
-          // Handle listed_users case
-          const listedUsersData = getListedUsersData(gaugeData)
-          if (listedUsersData) {
-            return c.json({ listed_users: listedUsersData })
-          }
-          return c.json(
-            { error: `No listed users found for ${protocol}, gauge ${gaugeAddress} in period ${period}` },
-            404,
-          )
-        } else {
-          // Handle individual user case
-          const userAddress = userOrListedUsers.toLowerCase()
-          const userData = getUserData(gaugeData, userAddress)
-          if (userData) {
-            return c.json(userData)
-          }
-          return c.json(
-            {
-              error: `No user info found for ${protocol}, gauge ${gaugeAddress}, user ${userAddress} in period ${period}`,
-            },
-            404,
-          )
-        }
-      }
-    }
+  if (!isValidPeriod(period)) {
+    return c.json({ error: `Invalid period: ${c.req.param('period')}` }, 400)
+  }
+  if (!isValidProtocol(protocol)) {
+    return c.json({ error: `Invalid protocol: ${protocol}` }, 400)
+  }
+
+  const data = await getProtocolData(protocol, period)
+  if (data?.gauge_controller_proof) {
+    return c.json({ gauge_controller_proof: data.gauge_controller_proof })
+  } else {
+    return c.json({ error: `No gauge controller proof found for ${protocol} in period ${period}` }, 404)
+  }
+})
+
+////////////////////////////////////////////////////////////////
+/// --- GAUGE DATA
+////////////////////////////////////////////////////////////////
+
+proofsVM.get('/:period/:protocol/:chainId/:platform/:gauge', async (c) => {
+  const period = parseInt(c.req.param('period'))
+  const protocol = c.req.param('protocol').toLowerCase()
+  const chainId = c.req.param('chainId').toLowerCase()
+  const platform = c.req.param('platform').toLowerCase()
+  const gaugeAddress = c.req.param('gauge').toLowerCase()
+
+  if (!isValidPeriod(period)) {
+    return c.json({ error: `Invalid period: ${c.req.param('period')}` }, 400)
+  }
+  if (!isValidProtocol(protocol)) {
+    return c.json({ error: `Invalid protocol: ${protocol}` }, 400)
+  }
+
+  const data = await getGaugeData(protocol, period, chainId, platform, gaugeAddress)
+  if (data) {
+    return c.json({ point_data_proof: data.point_data_proof })
+  }
+  return c.json({ error: `No gauge info found for ${protocol}, gauge ${gaugeAddress} in period ${period}` }, 404)
+})
+
+////////////////////////////////////////////////////////////////
+/// --- USERS DATA
+////////////////////////////////////////////////////////////////
+
+proofsVM.get('/:period/:protocol/:chainId/:platform/:gauge/:user', async (c) => {
+  const period = parseInt(c.req.param('period'))
+  const protocol = c.req.param('protocol').toLowerCase()
+  const chainId = c.req.param('chainId').toLowerCase()
+  const platform = c.req.param('platform').toLowerCase()
+  const gaugeAddress = c.req.param('gauge').toLowerCase()
+  const userOrListedUsers = c.req.param('user').toLowerCase()
+
+  if (!isValidPeriod(period)) {
+    return c.json({ error: `Invalid period: ${c.req.param('period')}` }, 400)
+  }
+  if (!isValidProtocol(protocol)) {
+    return c.json({ error: `Invalid protocol: ${protocol}` }, 400)
+  }
+
+  const gaugeData = await getGaugeData(protocol, period, chainId, platform, gaugeAddress)
+  if (!gaugeData) {
     return c.json({ error: `No data found for ${protocol}, gauge ${gaugeAddress} in period ${period}` }, 404)
-  })
+  }
+
+  if (userOrListedUsers === 'listed_users') {
+    const listedUsersData = getListedUsersData(gaugeData)
+    if (listedUsersData) {
+      return c.json({ listed_users: listedUsersData })
+    }
+    return c.json(
+      { error: `No listed users found for ${protocol}, gauge ${gaugeAddress} in period ${period}` },
+      404,
+    )
+  } else {
+    const userData = getUserData(gaugeData, userOrListedUsers)
+    if (userData) {
+      return c.json(userData)
+    }
+    return c.json(
+      {
+        error: `No user info found for ${protocol}, gauge ${gaugeAddress}, user ${userOrListedUsers} in period ${period}`,
+      },
+      404,
+    )
+  }
 })
 
 export default proofsVM

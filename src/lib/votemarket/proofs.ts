@@ -53,7 +53,7 @@ const BASE_DIR = 'api/votemarket/'
 /// --- FULL DATA
 ///////////////////////////////////////////////////////////////
 export async function getProtocolData(protocol: string, period: number): Promise<ProtocolData | null> {
-  const filePath = path.join(BASE_DIR, period.toString(), 'proofs', `${protocol}.json`)
+  const filePath = path.join(BASE_DIR, period.toString(), protocol, 'main.json')
 
   return new Promise((resolve) => {
     fs.readFile(filePath, 'utf8', (err, data) => {
@@ -78,23 +78,50 @@ export async function getProtocolData(protocol: string, period: number): Promise
 /// --- BLOCK DATA
 ///////////////////////////////////////////////////////////////
 export async function getBlockData(protocol: string, period: number): Promise<BlockData | null> {
-  const protocolData = await getProtocolData(protocol, period)
-  return protocolData?.block_data ?? null
+  const filePath = path.join(BASE_DIR, period.toString(), protocol, 'header.json')
+
+  return new Promise((resolve) => {
+    fs.readFile(filePath, 'utf8', (err, data) => {
+      if (err) {
+        console.error(`Error reading file ${filePath}: ${err}`)
+        resolve(null)
+        return
+      }
+
+      try {
+        const jsonData: BlockData = JSON.parse(data)
+        resolve(jsonData)
+      } catch (error) {
+        console.error(`Error parsing JSON from ${filePath}: ${error}`)
+        resolve(null)
+      }
+    })
+  })
 }
 
 ////////////////////////////////////////////////////////////////
 /// --- GAUGE DATA
 ///////////////////////////////////////////////////////////////
-export function getGaugeData(data: ProtocolData, gaugeAddress: string): GaugeData | null {
-  const lowerGaugeAddress = gaugeAddress.toLowerCase()
-  for (const platform of Object.values(data.platforms)) {
-    for (const [address, gaugeData] of Object.entries(platform.gauges)) {
-      if (address.toLowerCase() === lowerGaugeAddress) {
-        return gaugeData
+export async function getGaugeData(protocol: string, period: number, chainId: string, platform: string, gaugeAddress: string): Promise<GaugeData | null> {
+  const filePath = path.join(BASE_DIR, period.toString(), protocol, `${chainId}-${platform}`, `${gaugeAddress}.json`)
+
+  return new Promise((resolve) => {
+    fs.readFile(filePath, 'utf8', (err, data) => {
+      if (err) {
+        console.error(`Error reading file ${filePath}: ${err}`)
+        resolve(null)
+        return
       }
-    }
-  }
-  return null
+
+      try {
+        const jsonData: GaugeData = JSON.parse(data)
+        resolve(jsonData)
+      } catch (error) {
+        console.error(`Error parsing JSON from ${filePath}: ${error}`)
+        resolve(null)
+      }
+    })
+  })
 }
 
 ////////////////////////////////////////////////////////////////
