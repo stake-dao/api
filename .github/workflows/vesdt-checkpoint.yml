@@ -60,7 +60,7 @@ jobs:
         
       - name: Copy veSDT checkpoints data to target repo
         run: |
-          cp "${{ env.DEVOPS_DIR }}/json/tg-bots/vesdt.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/sdt"
+          cp "${{ env.DEVOPS_DIR }}/json/tg-bots/checkpoint-vesdt.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/sdt"
 
       - name: Commit and push changes to repo
         run: |
