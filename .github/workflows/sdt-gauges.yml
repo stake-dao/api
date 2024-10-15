@@ -1,4 +1,4 @@
-name: Bot sdFXS
+name: Bot SDT Gauges
 
 on:
   schedule:
@@ -41,10 +41,10 @@ jobs:
         run: pip install -r ${{ env.DEVOPS_DIR }}/requirements.txt
         shell: bash
 
-      - name: Run the sdfxs script
+      - name: Run the sdt gauges script
         run: |
           cd ${{ env.DEVOPS_DIR }}
-          python script/lockers/sdfxs_working_supply.py
+          python script/tg-bots/sdt-gauges/main.py
         shell: bash
         env:
           PYTHONPATH: script/
@@ -59,7 +59,7 @@ jobs:
         
       - name: Copy sdfxs data to target repo
         run: |
-          cp "${{ env.DEVOPS_DIR }}/json/sdfxs/sdfxs-working-supply.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
+          cp "${{ env.DEVOPS_DIR }}/json/tg-bots/sdt-gauges.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/sdt"
 
       - name: Commit and push changes to repo
         run: |
@@ -69,7 +69,7 @@ jobs:
           git config pull.rebase false
           git pull
           git add .
-          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update sdFXS data"
+          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update SDT gauges data"
           git merge --strategy=ours origin/main
           git push
         shell: bash
