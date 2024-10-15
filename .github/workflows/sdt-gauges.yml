@@ -58,7 +58,7 @@ jobs:
           path: ${{ env.TARGET_DEVOPS_DIR }}
         if: always()
         
-      - name: Copy sdfxs data to target repo
+      - name: Copy SDT gauges data to target repo
         run: |
           cp "${{ env.DEVOPS_DIR }}/json/tg-bots/sdt-gauges.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/sdt"
 

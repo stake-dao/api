@@ -58,7 +58,7 @@ jobs:
           path: ${{ env.TARGET_DEVOPS_DIR }}
         if: always()
         
-      - name: Copy sdfxs data to target repo
+      - name: Copy veSDT checkpoints data to target repo
         run: |
           cp "${{ env.DEVOPS_DIR }}/json/tg-bots/vesdt.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/sdt"
 
