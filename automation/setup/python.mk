@@ -10,7 +10,7 @@ setup-python: $(VENV_DIR)/bin/activate
 
 $(VENV_DIR)/bin/activate:
 	@echo "Setting up Python $(PYTHON_VERSION)..."
-	@python --version | grep -q "Python $(PYTHON_VERSION)" || { echo >&2 "Python $(PYTHON_VERSION) is required but it's not the default version. Aborting."; exit 1; }
+	@python --version | grep -q "Python $(PYTHON_VERSION)" || { echo >&2 "Python $(PYTHON_VERSION) is required but it's not the default version. Try setting up the correct version with pyenv global $(PYTHON_VERSION), and run this script again. Note: You should run eval \"\$$(pyenv init -)\" before executing this command."; exit 1; }
 	python -m venv $(VENV_DIR)
 	$(PIP) install --upgrade pip
 

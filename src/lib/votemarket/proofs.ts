@@ -89,7 +89,7 @@ export async function getBlockData(protocol: string, period: number): Promise<Bl
       }
 
       try {
-        const jsonData: BlockData = JSON.parse(data)
+        const jsonData: BlockData = JSON.parse(data)['block_data']
         resolve(jsonData)
       } catch (error) {
         console.error(`Error parsing JSON from ${filePath}: ${error}`)

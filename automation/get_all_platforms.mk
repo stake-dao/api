@@ -35,6 +35,7 @@ run-vm-all-platforms: get-current-period
 	cd $(VOTEMARKET_PROOFS_SCRIPT_DEVOPS_DIR) && \
 	PYTHONPATH=script \
 	ETHEREUM_MAINNET_RPC_URL=$${ETHEREUM_MAINNET_RPC_URL%=} \
+	ARBITRUM_MAINNET_RPC_URL=$${ARBITRUM_MAINNET_RPC_URL%=} \
 	$(PYTHON) script/external/vm_all_platforms.py \
 	curve balancer fxn frax \
 	--epoch $(CURRENT_EPOCH) && \

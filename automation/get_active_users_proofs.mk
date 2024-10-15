@@ -19,7 +19,7 @@ endif
 # Define the default target
 .DEFAULT_GOAL := all
 
-all: setup install-deps run-vm-all-platforms run-vm-active-proofs
+all: setup install-deps run-vm-all-platforms run-vm-active-proofs move-files
 
 setup: setup-python checkout-votemarket-proofs-script
 
@@ -47,8 +47,9 @@ run-vm-active-proofs: get-current-epoch run-vm-all-platforms
 
 move-files:
 	@echo "Moving files..."
-	mkdir -p api/votemarket/proofs/$(CURRENT_EPOCH)
-	mv temp/votemarket-proofs-script/temp/*_active_proofs.json api/votemarket/$(CURRENT_EPOCH)/proofs/
+	mkdir -p api/votemarket/$(CURRENT_EPOCH)/
+	mv temp/votemarket-proofs-script/temp/* api/votemarket/$(CURRENT_EPOCH)/
+	rm api/votemarket/$(CURRENT_EPOCH)/all_platforms.json
 
 .PHONY: clean
 clean:
