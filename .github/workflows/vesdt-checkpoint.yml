@@ -1,4 +1,4 @@
-name: Bot SDT Gauges
+name: Bot veSDT checkpoint
 
 on:
   schedule:
@@ -45,7 +45,7 @@ jobs:
       - name: Run the sdt gauges script
         run: |
           cd ${{ env.DEVOPS_DIR }}
-          python script/tg-bots/sdt-gauges/main.py
+          python script/tg-bots/vesdt/main.py
         shell: bash
         env:
           PYTHONPATH: script/
@@ -60,7 +60,7 @@ jobs:
         
       - name: Copy sdfxs data to target repo
         run: |
-          cp "${{ env.DEVOPS_DIR }}/json/tg-bots/sdt-gauges.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/sdt"
+          cp "${{ env.DEVOPS_DIR }}/json/tg-bots/vesdt.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/sdt"
 
       - name: Commit and push changes to repo
         run: |
@@ -70,7 +70,7 @@ jobs:
           git config pull.rebase false
           git pull
           git add .
-          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update SDT gauges data"
+          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update veSDT checkpoint data"
           git merge --strategy=ours origin/main
           git push
         shell: bash
