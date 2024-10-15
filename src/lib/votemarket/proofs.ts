@@ -103,7 +103,7 @@ export async function getBlockData(protocol: string, period: number): Promise<Bl
 /// --- GAUGE DATA
 ///////////////////////////////////////////////////////////////
 export async function getGaugeData(protocol: string, period: number, chainId: string, platform: string, gaugeAddress: string): Promise<GaugeData | null> {
-  const filePath = path.join(BASE_DIR, period.toString(), protocol, `${chainId}-${platform}`, `${gaugeAddress}.json`)
+  const filePath = path.join(BASE_DIR, period.toString(), protocol, `${chainId}/${platform}`, `${gaugeAddress}.json`)
 
   return new Promise((resolve) => {
     fs.readFile(filePath, 'utf8', (err, data) => {
