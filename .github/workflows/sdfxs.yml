@@ -71,6 +71,7 @@ jobs:
           git add .
           git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update sdFXS data"
           git merge --strategy=ours origin/main
+          git pull
           git push
         shell: bash
         if: always()
