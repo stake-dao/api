@@ -1,5 +1,7 @@
 import fs from 'fs'
 import path from 'path'
+import memoize from 'memoizee'
+import { MEMO_MAX_AGE } from '../utils'
 
 interface ProtocolData {
   epoch: number
@@ -52,8 +54,8 @@ const BASE_DIR = 'api/votemarket/'
 ////////////////////////////////////////////////////////////////
 /// --- FULL DATA
 ///////////////////////////////////////////////////////////////
-export async function getProtocolData(protocol: string, period: number): Promise<ProtocolData | null> {
-  const filePath = path.join(BASE_DIR, period.toString(), protocol, 'main.json')
+export const getProtocolData = memoize(async (protocol: string, period: number): Promise<ProtocolData | null> => {
+  const filePath = path.join(BASE_DIR, period.toString(), protocol, 'index.json')
 
   return new Promise((resolve) => {
     fs.readFile(filePath, 'utf8', (err, data) => {
@@ -71,13 +73,15 @@ export async function getProtocolData(protocol: string, period: number): Promise
         resolve(null)
       }
     })
-  })
-}
+    })
+  },
+  { maxAge: MEMO_MAX_AGE },
+)
 
 ////////////////////////////////////////////////////////////////
 /// --- BLOCK DATA
 ///////////////////////////////////////////////////////////////
-export async function getBlockData(protocol: string, period: number): Promise<BlockData | null> {
+export const getBlockData = memoize(async (protocol: string, period: number): Promise<BlockData | null> => {
   const filePath = path.join(BASE_DIR, period.toString(), protocol, 'header.json')
 
   return new Promise((resolve) => {
@@ -96,13 +100,15 @@ export async function getBlockData(protocol: string, period: number): Promise<Bl
         resolve(null)
       }
     })
-  })
-}
+    })
+  },
+  { maxAge: MEMO_MAX_AGE },
+)
 
 ////////////////////////////////////////////////////////////////
 /// --- GAUGE DATA
 ///////////////////////////////////////////////////////////////
-export async function getGaugeData(protocol: string, period: number, chainId: string, platform: string, gaugeAddress: string): Promise<GaugeData | null> {
+export const getGaugeData = memoize(async (protocol: string, period: number, chainId: string, platform: string, gaugeAddress: string): Promise<GaugeData | null> => {
   const filePath = path.join(BASE_DIR, period.toString(), protocol, `${chainId}/${platform}`, `${gaugeAddress}.json`)
 
   return new Promise((resolve) => {
@@ -122,12 +128,14 @@ export async function getGaugeData(protocol: string, period: number, chainId: st
       }
     })
   })
-}
+},
+  { maxAge: MEMO_MAX_AGE },
+)
 
 ////////////////////////////////////////////////////////////////
 /// --- USER DATA
 ///////////////////////////////////////////////////////////////
-export function getUserData(gaugeData: GaugeData, userAddress: string): UserData | null {
+export const getUserData = memoize(async (gaugeData: GaugeData, userAddress: string): Promise<UserData | null> => {
   const lowerUserAddress = userAddress.toLowerCase()
   for (const [address, userData] of Object.entries(gaugeData.users)) {
     if (address.toLowerCase() === lowerUserAddress) {
@@ -135,13 +143,15 @@ export function getUserData(gaugeData: GaugeData, userAddress: string): UserData
     }
   }
   return null
-}
+},
+  { maxAge: MEMO_MAX_AGE },
+)
 
 ////////////////////////////////////////////////////////////////
 /// --- LISTED USERS DATA
 ///////////////////////////////////////////////////////////////
 
-export function getListedUsersData(gaugeData: GaugeData): { [address: string]: { storage_proof: string } } | null {
+export const getListedUsersData = memoize(async (gaugeData: GaugeData): Promise<{ [address: string]: { storage_proof: string } } | null> => {
   if (gaugeData.listed_users) {
     return Object.entries(gaugeData.listed_users).reduce(
       (acc, [address, data]) => {
@@ -151,5 +161,7 @@ export function getListedUsersData(gaugeData: GaugeData): { [address: string]: {
       {} as { [address: string]: { storage_proof: string } }
     )
   }
-  return null
-}
+    return null
+  },
+  { maxAge: MEMO_MAX_AGE },
+)

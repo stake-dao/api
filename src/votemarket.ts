@@ -37,10 +37,10 @@ proofsVM.get('/:period/:protocol', async (c) => {
 })
 
 ////////////////////////////////////////////////////////////////
-/// --- BLOCK DATA
+/// --- BLOCK DATA + GAUGE CONTROLLER DATA
 ////////////////////////////////////////////////////////////////
 
-proofsVM.get('/:period/:protocol/block', async (c) => {
+proofsVM.get('/:period/:protocol/header', async (c) => {
   const period = parseInt(c.req.param('period'))
   const protocol = c.req.param('protocol').toLowerCase()
 
@@ -52,35 +52,14 @@ proofsVM.get('/:period/:protocol/block', async (c) => {
   }
 
   const blockData = await getBlockData(protocol, period)
+  const gaugeControllerData = await getProtocolData(protocol, period)
   if (blockData?.rlp_block_header) {
-    return c.json(blockData)
+    return c.json({ block_data: blockData, gauge_controller_proof: gaugeControllerData?.gauge_controller_proof })
   } else {
     return c.json({ error: `No block info found for ${protocol} in period ${period}` }, 404)
   }
 })
 
-////////////////////////////////////////////////////////////////
-/// --- GAUGE CONTROLLER DATA
-////////////////////////////////////////////////////////////////
-
-proofsVM.get('/:period/:protocol/gauge_controller', async (c) => {
-  const period = parseInt(c.req.param('period'))
-  const protocol = c.req.param('protocol').toLowerCase()
-
-  if (!isValidPeriod(period)) {
-    return c.json({ error: `Invalid period: ${c.req.param('period')}` }, 400)
-  }
-  if (!isValidProtocol(protocol)) {
-    return c.json({ error: `Invalid protocol: ${protocol}` }, 400)
-  }
-
-  const data = await getProtocolData(protocol, period)
-  if (data?.gauge_controller_proof) {
-    return c.json({ gauge_controller_proof: data.gauge_controller_proof })
-  } else {
-    return c.json({ error: `No gauge controller proof found for ${protocol} in period ${period}` }, 404)
-  }
-})
 
 ////////////////////////////////////////////////////////////////
 /// --- GAUGE DATA
@@ -141,7 +120,7 @@ proofsVM.get('/:period/:protocol/:chainId/:platform/:gauge/:user', async (c) => 
       404,
     )
   } else {
-    const userData = getUserData(gaugeData, userOrListedUsers)
+    const userData = await getUserData(gaugeData, userOrListedUsers)
     if (userData) {
       return c.json(userData)
     }
