@@ -13,7 +13,7 @@ export const getSdtData = memoize(
       mainnet.id,
     )
 
-    return fetchSdt({ provider: publicClient[mainnet.id], prices, agnosticKey: process.env.AGNOSTIC as string })
+    return fetchSdt({ provider: publicClient[mainnet.id], prices, explorerApiKey: process.env.ETHERSCAN_TOKEN as string })
   },
   { maxAge: MEMO_MAX_AGE },
 )

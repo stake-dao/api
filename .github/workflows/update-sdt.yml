@@ -6,7 +6,7 @@ on:
     - cron: '0 */2 * * *' # Every 2 hours
 
 env:
-  AGNOSTIC: ${{ secrets.AGNOSTIC_KEY }}
+  ETHERSCAN_TOKEN: ${{ secrets.ETHERSCAN_TOKEN }}
 
 jobs:
   update:
