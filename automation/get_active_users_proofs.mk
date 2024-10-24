@@ -28,7 +28,7 @@ install-deps: install-votemarket-proofs-script-deps
 # Add this new target
 install-solc:
 	@echo "Installing Solidity compiler..."
-	$(PYTHON) -m pip install solcx
+	$(PYTHON) -m pip install py-solc-x
 	$(PYTHON) -c "from solcx import install_solc; install_solc(version='0.8.19')"
 
 # Get the current epoch
