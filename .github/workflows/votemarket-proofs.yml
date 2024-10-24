@@ -16,6 +16,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: fix-solc  # Checkout the fix-solc branch
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
@@ -45,7 +47,5 @@ jobs:
           git config --local user.name "Stake DAO API update"
           git add api/votemarket
           git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Votemarket proofs data"
-          git push
+          git push origin fix-solc  # Push to the fix-solc branch
         shell: bash
-
-
