@@ -19,11 +19,17 @@ endif
 # Define the default target
 .DEFAULT_GOAL := all
 
-all: setup install-deps run-vm-all-platforms run-vm-active-proofs move-files
+all: setup install-deps install-solc run-vm-all-platforms run-vm-active-proofs move-files
 
 setup: setup-python checkout-votemarket-proofs-script
 
 install-deps: install-votemarket-proofs-script-deps
+
+# Add this new target
+install-solc:
+	@echo "Installing Solidity compiler..."
+	$(PYTHON) -m pip install solcx
+	$(PYTHON) -c "from solcx import install_solc; install_solc(version='0.8.19')"
 
 # Get the current epoch
 get-current-epoch:
