@@ -19,17 +19,11 @@ endif
 # Define the default target
 .DEFAULT_GOAL := all
 
-all: setup install-deps install-solc run-vm-all-platforms run-vm-active-proofs move-files
+all: setup install-deps run-vm-all-platforms run-vm-active-proofs move-files
 
 setup: setup-python checkout-votemarket-proofs-script
 
 install-deps: install-votemarket-proofs-script-deps
-
-# Add this new target
-install-solc:
-	@echo "Installing Solidity compiler..."
-	$(PYTHON) -m pip install py-solc-x
-	$(PYTHON) -c "from solcx import install_solc, set_solc_version; install_solc(version='0.8.19'); set_solc_version('0.8.19')"
 
 # Get the current epoch
 get-current-epoch:
@@ -46,7 +40,6 @@ run-vm-active-proofs: get-current-epoch run-vm-all-platforms
 	PYTHONPATH=script \
 	ETHEREUM_MAINNET_RPC_URL=$${ETHEREUM_MAINNET_RPC_URL%=} \
 	ARBITRUM_MAINNET_RPC_URL=$${ARBITRUM_MAINNET_RPC_URL%=} \
-	$(PYTHON) -c "from solcx import set_solc_version; set_solc_version('0.8.19')" && \
 	$(PYTHON) script/external/vm_active_proofs.py \
 	temp/all_platforms.json $(CURRENT_EPOCH) && \
 	cd - > /dev/null && \

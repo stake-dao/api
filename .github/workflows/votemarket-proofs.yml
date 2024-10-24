@@ -38,6 +38,12 @@ jobs:
         with:
           python-version: '3.10.13'
 
+      - name: Install Solidity compiler
+        run: |
+          sudo add-apt-repository ppa:ethereum/ethereum
+          sudo apt-get update
+          sudo apt-get install solc -y
+
       - name: Run active users proofs script
         run: make -f automation/get_active_users_proofs.mk
 
