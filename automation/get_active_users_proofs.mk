@@ -8,7 +8,9 @@ include automation/setup/votemarket-proofs-script.mk
 ifndef GIT_ACCESS_TOKEN
 ifndef ETHEREUM_MAINNET_RPC_URL
 ifndef ARBITRUM_MAINNET_RPC_URL
+ifndef ETHERSCAN_TOKEN
 $(error Some environment variables are not set. Please set them in the environment)
+endif
 endif
 endif
 endif
