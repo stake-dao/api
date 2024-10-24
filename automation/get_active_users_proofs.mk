@@ -29,7 +29,7 @@ install-deps: install-votemarket-proofs-script-deps
 install-solc:
 	@echo "Installing Solidity compiler..."
 	$(PYTHON) -m pip install py-solc-x
-	$(PYTHON) -c "from solcx import install_solc; install_solc(version='0.8.19')"
+	$(PYTHON) -c "from solcx import install_solc, set_solc_version; install_solc(version='0.8.19'); set_solc_version('0.8.19')"
 
 # Get the current epoch
 get-current-epoch:
@@ -46,6 +46,7 @@ run-vm-active-proofs: get-current-epoch run-vm-all-platforms
 	PYTHONPATH=script \
 	ETHEREUM_MAINNET_RPC_URL=$${ETHEREUM_MAINNET_RPC_URL%=} \
 	ARBITRUM_MAINNET_RPC_URL=$${ARBITRUM_MAINNET_RPC_URL%=} \
+	$(PYTHON) -c "from solcx import set_solc_version; set_solc_version('0.8.19')" && \
 	$(PYTHON) script/external/vm_active_proofs.py \
 	temp/all_platforms.json $(CURRENT_EPOCH) && \
 	cd - > /dev/null && \
