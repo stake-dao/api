@@ -13,6 +13,7 @@ $(error Some environment variables are not set. Please set them in the environme
 endif
 endif
 endif
+endif
 
 # Job-specific targets
 .PHONY: all setup install-deps run-vm-active-proofs clean
