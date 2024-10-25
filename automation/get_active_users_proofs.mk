@@ -51,6 +51,7 @@ move-files:
 	@echo "Moving files..."
 	mkdir -p api/votemarket/$(CURRENT_EPOCH)/
 	cp -Rf temp/votemarket-proofs-script/temp/* api/votemarket/$(CURRENT_EPOCH)/
+	rm -f api/votemarket/$(CURRENT_EPOCH)/all_platforms.json
 	rm -rf temp/votemarket-proofs-script/temp/*
 	@echo "Files moved successfully"
 
