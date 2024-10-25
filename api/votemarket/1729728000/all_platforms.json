@@ -1,0 +1,33 @@
+{
+  "protocols": {
+    "curve": {
+      "protocol": "curve",
+      "platforms": {
+        "0x6c8fc8482fae6fe8cbe66281a4640aa19c4d9c8e": {
+          "protocol": "curve",
+          "chain_id": 42161,
+          "address": "0x6c8fc8482fae6fe8cbe66281a4640aa19c4d9c8e",
+          "latest_setted_block": 21031883,
+          "block_data": {
+            "block_number": 21031883,
+            "block_hash": "0x8bb8d6b6b7d2722c713f1677272e40ee5ef742ea3a105cd8abe38ca929ac817c",
+            "block_timestamp": 1729729823,
+            "rlp_block_header": "0xf9025ca00eca0ae9b71ed4e433cf863c343f54897450d805efafe9804cac02bedfab2bbda01dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d493479495222290dd7278aa3ddd389cc1e1d165cc4bafe5a09d45cd3a9c28f9f5ded04275ae0fc1f1e9292534d4ad392ab10537bfc8e1e7c7a0284517db5a1a205533e73b645279c8f317b0633bcfb5a1b01a72d44fee25c797a042fee0382643ad0b4d1a8d649994ca8db49f31376242176be64bbc40758ed7dab901005fb8d6dffdf55d7fd60fa754bb993b3fdb7353e5eb630eef7fcdca6ed7d78bd4a57fcd00f857b59f63f4df7e08d69ddfff6fee9ebbdc7cddbbdabc29bbf7e0b5eec1e549ef29a96fef06e32dead8a8fc1e2ceaf33dc458cdf24e7e87cc76e8ef9e4ac308bbbbea7ad74ed4bbf2695d77ef3d4fe7dff7fecd7fcfd1d6fdce9bf5e2a6f3f9546fffdd7dfbd258c7f7ef762c49a0ebc995b96ce17b74ef66bbcd3febf378eadfbe7dfb29b073d5cc79b7e4f1cff2846c7fd25b9fde7337fb866a6cdfb3f2f341de2f7bf1e6afe4f7dbdfcfe5287bd7ffee9fde64bf7d5ffe66eeeaadfcec7bad67ed7efd4d1bbb3d7b9bf7f1fcfcf787ffefdb69d5ffa774f5fe8d80840140ebcb8401c9c380840148e778846719951f8f6265617665726275696c642e6f7267a04641c5969c99a87574efd62f575ee52a8f74567499636d7bb703377bb28c5c3888000000000000000085018adc6b50a08140937f65c702e8dffa41ca936cbff97e9db04bc1d6e66f6e65364ee7d0d95f830c000083180000a021bd6d022856bb1f82be0d033d0a7f3fe7888bc951cbc9510e6f479cc07378eb"
+          }
+        }
+      }
+    },
+    "balancer": {
+      "protocol": "balancer",
+      "platforms": {}
+    },
+    "fxn": {
+      "protocol": "fxn",
+      "platforms": {}
+    },
+    "frax": {
+      "protocol": "frax",
+      "platforms": {}
+    }
+  }
+}
