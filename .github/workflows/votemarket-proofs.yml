@@ -46,11 +46,17 @@ jobs:
       - name: Run active users proofs script
         run: make -f automation/get_active_users_proofs.mk
 
+      - name: Update metadata.json
+        run: |
+          CURRENT_EPOCH=$(date +%s)
+          CURRENT_EPOCH=$((CURRENT_EPOCH - (CURRENT_EPOCH % (7 * 24 * 3600))))
+          echo "{\"latestUpdatedEpoch\": $CURRENT_EPOCH}" > api/votemarket/metadata.json
+
       - name: Commit and push if changes found
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "Stake DAO API update"
           git add api/votemarket
-          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Votemarket proofs data"
-          git push origin fix-solc  # Push to the fix-solc branch
+          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Votemarket proofs data and metadata"
+          git push origin feat/metadata±  # TODO : change to main
         shell: bash
