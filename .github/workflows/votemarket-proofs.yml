@@ -52,5 +52,5 @@ jobs:
           git config --local user.name "Stake DAO API update"
           git add api/votemarket
           git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Votemarket proofs data"
-          git push origin fix-solc  # Push to the fix-solc branch
+          git push origin main
         shell: bash
