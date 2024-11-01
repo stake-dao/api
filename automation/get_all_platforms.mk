@@ -38,7 +38,8 @@ run-vm-all-platforms: get-current-period
 	ARBITRUM_MAINNET_RPC_URL=$${ARBITRUM_MAINNET_RPC_URL%=} \
 	$(PYTHON) script/external/vm_all_platforms.py \
 	curve balancer fxn frax \
-	--epoch $(CURRENT_EPOCH) && \
+	--epoch $(CURRENT_EPOCH) \
+	$(if $(BLOCK_NUMBER),--block $(BLOCK_NUMBER)) && \
 	cd - > /dev/null && \
 	echo "vm_all_platforms.py completed successfully"
 
