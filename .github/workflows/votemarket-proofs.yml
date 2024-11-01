@@ -1,8 +1,8 @@
 name: Update Votemarket Proofs (current week)
 
 on:
-  schedule:
-    - cron: "0 2 * * 4" # Every Thursday at 02:00 UTC
+  repository_dispatch:
+    types: [update-votemarket-proofs]
   workflow_dispatch:
     inputs:
       block_number:
@@ -15,7 +15,7 @@ env:
   ARBITRUM_MAINNET_RPC_URL: "https://arb-mainnet.g.alchemy.com/v2/${{ secrets.WEB3_ALCHEMY_API_KEY }}"
   EXPLORER_KEY: ${{ secrets.EXPLORER_KEY }}
   GIT_ACCESS_TOKEN: ${{ secrets.GIT_ACCESS_TOKEN }}
-  BLOCK_NUMBER: ${{ inputs.block_number }}
+  BLOCK_NUMBER: ${{ inputs.block_number || github.event.client_payload.block_number }}
 
 jobs:
   update:
