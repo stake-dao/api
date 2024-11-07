@@ -42,6 +42,9 @@ run-vm-active-proofs: get-current-epoch run-vm-all-platforms
 	PYTHONPATH=script \
 	ETHEREUM_MAINNET_RPC_URL=$${ETHEREUM_MAINNET_RPC_URL%=} \
 	ARBITRUM_MAINNET_RPC_URL=$${ARBITRUM_MAINNET_RPC_URL%=} \
+	OPTIMISM_MAINNET_RPC_URL=$${OPTIMISM_MAINNET_RPC_URL%=} \
+	BASE_MAINNET_RPC_URL=$${BASE_MAINNET_RPC_URL%=} \
+	POLYGON_MAINNET_RPC_URL=$${POLYGON_MAINNET_RPC_URL%=} \
 	$(PYTHON) script/external/vm_active_proofs.py \
 	temp/all_platforms.json $(CURRENT_EPOCH) && \
 	cd - > /dev/null && \
