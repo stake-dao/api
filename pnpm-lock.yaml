@@ -15,8 +15,8 @@ importers:
         specifier: ^0.4.17
         version: 0.4.17
       '@stake-dao/reader':
-        specifier: ^0.4.31
-        version: 0.4.31(graphql@16.9.0)(typescript@5.6.3)
+        specifier: ^0.4.32
+        version: 0.4.32(graphql@16.9.0)(typescript@5.6.3)
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
@@ -320,8 +320,8 @@ packages:
   '@stake-dao/constants@0.4.17':
     resolution: {integrity: sha512-qgOH01oySGrkf85jdOKQv0vvmGY2zWoeZwPNp67B5wdpPueU9qu+VVCA7HXuF8AqAv9yYZeLQKyvxVOhGC2AgA==}
 
-  '@stake-dao/reader@0.4.31':
-    resolution: {integrity: sha512-wsxn34wJ/dzFGKABHRw8PB8F56gKNF/X+QQfanXC/T78LRDfIDdTiLdL+cYd3IXmJCfP5N/gNKPhVr685rnQKQ==}
+  '@stake-dao/reader@0.4.32':
+    resolution: {integrity: sha512-tmOiVMh47T6ooexw5gdcfP2n4hK15gHCi15GjYnpbbrGrjVUwdYl3jih0rmZp3iS6qo3IrVgw/8JTi+aA2ZhmQ==}
 
   '@types/memoizee@0.4.11':
     resolution: {integrity: sha512-2gyorIBZu8GoDr9pYjROkxWWcFtHCquF7TVbN2I+/OvgZhnIGQS0vX5KJz4lXNKb8XOSfxFOSG5OLru1ESqLUg==}
@@ -960,7 +960,7 @@ snapshots:
 
   '@stake-dao/constants@0.4.17': {}
 
-  '@stake-dao/reader@0.4.31(graphql@16.9.0)(typescript@5.6.3)':
+  '@stake-dao/reader@0.4.32(graphql@16.9.0)(typescript@5.6.3)':
     dependencies:
       '@snapshot-labs/snapshot.js': 0.9.9
       '@stake-dao/constants': 0.4.17
