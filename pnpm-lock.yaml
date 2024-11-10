@@ -9,39 +9,39 @@ importers:
   .:
     dependencies:
       '@hono/node-server':
-        specifier: ^1.13.2
-        version: 1.13.2(hono@4.6.6)
+        specifier: ^1.13.5
+        version: 1.13.5(hono@4.6.9)
       '@stake-dao/constants':
-        specifier: ^0.4.16
-        version: 0.4.16
+        specifier: ^0.4.17
+        version: 0.4.17
       '@stake-dao/reader':
-        specifier: ^0.4.30
-        version: 0.4.30(graphql@16.9.0)(typescript@5.6.3)
+        specifier: ^0.4.31
+        version: 0.4.31(graphql@16.9.0)(typescript@5.6.3)
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
       hono:
-        specifier: ^4.6.6
-        version: 4.6.6
+        specifier: ^4.6.9
+        version: 4.6.9
       memoizee:
         specifier: ^0.4.17
         version: 0.4.17
       viem:
-        specifier: ^2.21.32
-        version: 2.21.32(typescript@5.6.3)
+        specifier: ^2.21.44
+        version: 2.21.44(typescript@5.6.3)
     devDependencies:
       '@types/memoizee':
         specifier: ^0.4.11
         version: 0.4.11
       '@types/node':
-        specifier: ^20.16.14
-        version: 20.16.14
+        specifier: ^20.17.6
+        version: 20.17.6
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
       tsx:
-        specifier: ^4.19.1
-        version: 4.19.1
+        specifier: ^4.19.2
+        version: 4.19.2
       typescript:
         specifier: ^5.6.3
         version: 5.6.3
@@ -290,8 +290,8 @@ packages:
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
-  '@hono/node-server@1.13.2':
-    resolution: {integrity: sha512-0w8nEmAyx0Ul0CQp8BL2VtAG4YVdpzXd/mvvM+l0G5Oq22pUyHS+KeFFPSY+czLOF5NAiV3MUNPD1n14Ol5svg==}
+  '@hono/node-server@1.13.5':
+    resolution: {integrity: sha512-lSo+CFlLqAFB4fX7ePqI9nauEn64wOfJHAfc9duYFTvAG3o416pC0nTGeNjuLHchLedH+XyWda5v79CVx1PIjg==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
@@ -317,17 +317,17 @@ packages:
     resolution: {integrity: sha512-9c9GVphUs/JwnNrQ39wvpjHhSZ3zqKUH5CSRXacwU1DSCmAg3/b21hauxavAUgK40oXCPkyZ5O1jrGKjbHeT8Q==}
     engines: {node: '>=14'}
 
-  '@stake-dao/constants@0.4.16':
-    resolution: {integrity: sha512-Dx9en48wdC6N71IE02OMPvr2zoKo3+o1ZZGX1vSTvQdcVkiGyHthi22PlYo2isrGH+RPjI9c3LjFvoLokh+ohQ==}
+  '@stake-dao/constants@0.4.17':
+    resolution: {integrity: sha512-qgOH01oySGrkf85jdOKQv0vvmGY2zWoeZwPNp67B5wdpPueU9qu+VVCA7HXuF8AqAv9yYZeLQKyvxVOhGC2AgA==}
 
-  '@stake-dao/reader@0.4.30':
-    resolution: {integrity: sha512-9a8bGYhGeqJJVKBTeoUfT/pD836mI+4C/xECnduuVJodBf8Xd8oJwZ0NCjgVwijMlKDGNMajYjRXvEclR4ATQQ==}
+  '@stake-dao/reader@0.4.31':
+    resolution: {integrity: sha512-wsxn34wJ/dzFGKABHRw8PB8F56gKNF/X+QQfanXC/T78LRDfIDdTiLdL+cYd3IXmJCfP5N/gNKPhVr685rnQKQ==}
 
   '@types/memoizee@0.4.11':
     resolution: {integrity: sha512-2gyorIBZu8GoDr9pYjROkxWWcFtHCquF7TVbN2I+/OvgZhnIGQS0vX5KJz4lXNKb8XOSfxFOSG5OLru1ESqLUg==}
 
-  '@types/node@20.16.14':
-    resolution: {integrity: sha512-vtgGzjxLF7QT88qRHtXMzCWpAAmwonE7fwgVjFtXosUva2oSpnIEc3gNO9P7uIfOxKnii2f79/xtOnfreYtDaA==}
+  '@types/node@20.17.6':
+    resolution: {integrity: sha512-VEI7OdvK2wP7XHnsuXbAJnEpEkF6NjSN45QJlL4VGqZSXsnicpesdTWsg9RISeSdYd3yeRj/y3k5KGjUXYnFwQ==}
 
   abitype@1.0.6:
     resolution: {integrity: sha512-MMSqYh4+C/aVqI2RQaWqbvI4Kxo5cQV40WQ4QFtDnNzCkqChm8MuENhElmynZlO0qUy/ObkEUaXtKqYnx1Kp3A==}
@@ -409,6 +409,9 @@ packages:
   event-emitter@0.3.5:
     resolution: {integrity: sha512-D9rRn9y7kLPnJ+hMq7S/nhvoKwwvVJahBi2BPmx3bvbsEdK3W9ii8cBSGjP+72/LnM4n6fo3+dkCX5FeTQruXA==}
 
+  eventemitter3@5.0.1:
+    resolution: {integrity: sha512-GWkBvjiSZK87ELrYOSESUYeVIc9mvLLf/nXalMOS5dYrgZq9o5OVkbZAVM06CVxYsCwH9BDZFPlQTlPA1j4ahA==}
+
   ext@1.7.0:
     resolution: {integrity: sha512-6hxeJYaL110a9b5TEJSj0gojyHQAmA2ch5Os+ySCiA1QGdS697XWY1pzsrSjqA9LDEEgdB/KypIlR59RcLuHYw==}
 
@@ -441,8 +444,8 @@ packages:
   hmac-drbg@1.0.1:
     resolution: {integrity: sha512-Tti3gMqLdZfhOQY1Mzf/AanLiqh1WTiJgEj26ZuYQ9fbkLomzGchCws4FyrSd4VkpBfiNhaE1On+lOz894jvXg==}
 
-  hono@4.6.6:
-    resolution: {integrity: sha512-euUj5qwvtkG+p38GFs0LYacwaoS2hYRAGn9ysAggiwT2QBcPnT1XYUCW3hatW4C1KzAXTYuQ08BlVDJtAGuhlg==}
+  hono@4.6.9:
+    resolution: {integrity: sha512-p/pN5yZLuZaHzyAOT2nw2/Ud6HhJHYmDNGH6Ck1OWBhPMVeM1r74jbCRwNi0gyFRjjbsGgoHbOyj7mT1PDNbTw==}
     engines: {node: '>=16.9.0'}
 
   inherits@2.0.4:
@@ -496,6 +499,14 @@ packages:
       encoding:
         optional: true
 
+  ox@0.1.2:
+    resolution: {integrity: sha512-ak/8K0Rtphg9vnRJlbOdaX9R7cmxD2MiSthjWGaQdMk3D7hrAlDoM+6Lxn7hN52Za3vrXfZ7enfke/5WjolDww==}
+    peerDependencies:
+      typescript: '>=5.4.0'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
   prettier@3.3.3:
     resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
     engines: {node: '>=14'}
@@ -518,8 +529,8 @@ packages:
   tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
 
-  tsx@4.19.1:
-    resolution: {integrity: sha512-0flMz1lh74BR4wOvBjuh9olbnwqCPc35OOlfyzHba0Dc+QNUeWX/Gq2YTbnwcWPO3BMd8fkzRVrHcsR+a7z7rA==}
+  tsx@4.19.2:
+    resolution: {integrity: sha512-pOUl6Vo2LUq/bSa8S5q7b91cgNSjctn9ugq/+Mvow99qW6x/UZYwzxy/3NmqoT66eHYfCVvFvACC58UBPFf28g==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -534,8 +545,8 @@ packages:
   undici-types@6.19.8:
     resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
 
-  viem@2.21.32:
-    resolution: {integrity: sha512-2oXt5JNIb683oy7C8wuIJ/SeL3XtHVMEQpy1U2TA6WMnJQ4ScssRvyPwYLcaP6mKlrGXE/cR/V7ncWpvLUVPYQ==}
+  viem@2.21.44:
+    resolution: {integrity: sha512-oyLTCt7OQUetQN2m9KPNgSA//MzpnQLABAyglPKh+fAypU8cTT/hC5UyLQvaYt4WPg6dkbKOxfsahV4739pu9w==}
     peerDependencies:
       typescript: '>=5.0.4'
     peerDependenciesMeta:
@@ -903,9 +914,9 @@ snapshots:
     dependencies:
       graphql: 16.9.0
 
-  '@hono/node-server@1.13.2(hono@4.6.6)':
+  '@hono/node-server@1.13.5(hono@4.6.9)':
     dependencies:
-      hono: 4.6.6
+      hono: 4.6.9
 
   '@noble/curves@1.6.0':
     dependencies:
@@ -947,16 +958,16 @@ snapshots:
       - encoding
       - utf-8-validate
 
-  '@stake-dao/constants@0.4.16': {}
+  '@stake-dao/constants@0.4.17': {}
 
-  '@stake-dao/reader@0.4.30(graphql@16.9.0)(typescript@5.6.3)':
+  '@stake-dao/reader@0.4.31(graphql@16.9.0)(typescript@5.6.3)':
     dependencies:
       '@snapshot-labs/snapshot.js': 0.9.9
-      '@stake-dao/constants': 0.4.16
+      '@stake-dao/constants': 0.4.17
       dayjs: 1.11.13
       graphql-request: 6.1.0(graphql@16.9.0)
       lodash-es: 4.17.21
-      viem: 2.21.32(typescript@5.6.3)
+      viem: 2.21.44(typescript@5.6.3)
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -967,7 +978,7 @@ snapshots:
 
   '@types/memoizee@0.4.11': {}
 
-  '@types/node@20.16.14':
+  '@types/node@20.17.6':
     dependencies:
       undici-types: 6.19.8
 
@@ -1085,6 +1096,8 @@ snapshots:
       d: 1.0.2
       es5-ext: 0.10.64
 
+  eventemitter3@5.0.1: {}
+
   ext@1.7.0:
     dependencies:
       type: 2.7.3
@@ -1121,7 +1134,7 @@ snapshots:
       minimalistic-assert: 1.0.1
       minimalistic-crypto-utils: 1.0.1
 
-  hono@4.6.6: {}
+  hono@4.6.9: {}
 
   inherits@2.0.4: {}
 
@@ -1166,6 +1179,20 @@ snapshots:
     dependencies:
       whatwg-url: 5.0.0
 
+  ox@0.1.2(typescript@5.6.3):
+    dependencies:
+      '@adraffy/ens-normalize': 1.11.0
+      '@noble/curves': 1.6.0
+      '@noble/hashes': 1.5.0
+      '@scure/bip32': 1.5.0
+      '@scure/bip39': 1.4.0
+      abitype: 1.0.6(typescript@5.6.3)
+      eventemitter3: 5.0.1
+    optionalDependencies:
+      typescript: 5.6.3
+    transitivePeerDependencies:
+      - zod
+
   prettier@3.3.3: {}
 
   require-from-string@2.0.2: {}
@@ -1181,7 +1208,7 @@ snapshots:
 
   tr46@0.0.3: {}
 
-  tsx@4.19.1:
+  tsx@4.19.2:
     dependencies:
       esbuild: 0.23.1
       get-tsconfig: 4.8.1
@@ -1194,15 +1221,15 @@ snapshots:
 
   undici-types@6.19.8: {}
 
-  viem@2.21.32(typescript@5.6.3):
+  viem@2.21.44(typescript@5.6.3):
     dependencies:
-      '@adraffy/ens-normalize': 1.11.0
       '@noble/curves': 1.6.0
       '@noble/hashes': 1.5.0
       '@scure/bip32': 1.5.0
       '@scure/bip39': 1.4.0
       abitype: 1.0.6(typescript@5.6.3)
       isows: 1.0.6(ws@8.18.0)
+      ox: 0.1.2(typescript@5.6.3)
       webauthn-p256: 0.0.10
       ws: 8.18.0
     optionalDependencies:
