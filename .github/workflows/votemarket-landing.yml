@@ -42,16 +42,22 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
+          
+          # Stash any changes first
+          git stash
+          
           # Fetch and rebase latest changes
           git pull origin main --rebase
-
+          
+          # Pop the stashed changes
+          git stash pop
+          
           # Check if there are changes to commit
           if git diff --quiet api/votemarket; then
             echo "No changes to commit"
             exit 0
           fi
-
+          
           # Commit and push changes
           git add api/votemarket
           git commit -m "chore: Update Votemarket landing page data [$(date +%Y-%m-%d)]"
