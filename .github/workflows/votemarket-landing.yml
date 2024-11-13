@@ -38,11 +38,6 @@ jobs:
       - name: Run landing page script
         run: make -f automation/get_landing_page_data.mk
 
-      - name: Commit and push if changes found
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "Stake DAO API update"
-          git add api/votemarket
-          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Votemarket landing page data"
-          git push origin main
-        shell: bash
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: Update Votemarket landing page data'
