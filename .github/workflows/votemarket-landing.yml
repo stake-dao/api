@@ -38,6 +38,21 @@ jobs:
       - name: Run landing page script
         run: make -f automation/get_landing_page_data.mk
 
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: 'chore: Update Votemarket landing page data'
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # Fetch and rebase latest changes
+          git pull origin main --rebase
+
+          # Check if there are changes to commit
+          if git diff --quiet api/votemarket; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          # Commit and push changes
+          git add api/votemarket
+          git commit -m "chore: Update Votemarket landing page data [$(date +%Y-%m-%d)]"
+          git push origin main
