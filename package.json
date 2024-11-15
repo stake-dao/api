@@ -12,13 +12,13 @@
   "author": "Stake DAO",
   "license": "AGPL-3.0-only",
   "dependencies": {
-    "@hono/node-server": "^1.13.5",
-    "@stake-dao/constants": "^0.4.17",
-    "@stake-dao/reader": "^0.4.32",
+    "@hono/node-server": "^1.13.7",
+    "@stake-dao/constants": "^0.4.18",
+    "@stake-dao/reader": "^0.4.33",
     "dotenv": "^16.4.5",
-    "hono": "^4.6.9",
+    "hono": "^4.6.10",
     "memoizee": "^0.4.17",
-    "viem": "^2.21.44"
+    "viem": "^2.21.45"
   },
   "devDependencies": {
     "@types/memoizee": "^0.4.11",
