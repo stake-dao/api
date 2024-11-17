@@ -1,5 +1,3 @@
-# Makefile for vm_active_proofs
-
 include automation/setup/python.mk
 include automation/setup/dotenv.mk
 include automation/setup/votemarket-proofs-script.mk
@@ -21,31 +19,27 @@ endif
 # Define the default target
 .DEFAULT_GOAL := all
 
+# Update the all target to ensure proper setup order
 all: setup install-deps run-vm-all-platforms run-vm-active-proofs move-files
 
-setup: setup-python checkout-votemarket-proofs-script
+# Make setup depend on UV installation explicitly
+setup: install-uv setup-python checkout-votemarket-proofs-script
 
 install-deps: install-votemarket-proofs-script-deps
 
-# Get the current epoch
-get-current-epoch:
-	@echo "Getting the current epoch..."
-	@$(eval CURRENT_EPOCH := $(shell $(PYTHON) -c "import time; print(int(time.time()) - (int(time.time()) % (7 * 24 * 3600)))"))
-	@echo "Current epoch: $(CURRENT_EPOCH)"
+# Get the current period (7 days in seconds = 604800)
+get-current-period:
+	@echo "Getting the current period..."
+	@$(eval CURRENT_EPOCH := $(shell echo $$(( $(shell date +%s) - $(shell date +%s) % 604800 )) ))
+	@echo "Current period: $(CURRENT_EPOCH)"
 
 run-vm-all-platforms:
 	@$(MAKE) -f automation/get_all_platforms.mk run-vm-all-platforms
 
-run-vm-active-proofs: get-current-epoch run-vm-all-platforms
+run-vm-active-proofs: get-current-period run-vm-all-platforms
 	@echo "Running vm_active_proofs.py..."
 	cd $(VOTEMARKET_PROOFS_SCRIPT_DEVOPS_DIR) && \
-	PYTHONPATH=script \
-	ETHEREUM_MAINNET_RPC_URL=$${ETHEREUM_MAINNET_RPC_URL%=} \
-	ARBITRUM_MAINNET_RPC_URL=$${ARBITRUM_MAINNET_RPC_URL%=} \
-	OPTIMISM_MAINNET_RPC_URL=$${OPTIMISM_MAINNET_RPC_URL%=} \
-	BASE_MAINNET_RPC_URL=$${BASE_MAINNET_RPC_URL%=} \
-	POLYGON_MAINNET_RPC_URL=$${POLYGON_MAINNET_RPC_URL%=} \
-	$(PYTHON) script/external/vm_active_proofs.py \
+	uv run src/votemarket_toolkit/external/vm_active_proofs.py \
 	temp/all_platforms.json $(CURRENT_EPOCH) && \
 	cd - > /dev/null && \
 	echo "vm_active_proofs.py completed successfully"

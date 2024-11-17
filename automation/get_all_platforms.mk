@@ -23,20 +23,16 @@ setup: setup-python checkout-votemarket-proofs-script
 
 install-deps: install-votemarket-proofs-script-deps
 
-# Get the current period
+# Get the current period (7 days in seconds = 604800)
 get-current-period:
 	@echo "Getting the current period..."
-	@$(eval CURRENT_EPOCH := $(shell $(PYTHON) -c "import time; print(int(time.time()) - (int(time.time()) % (7 * 24 * 3600)))"))
+	@$(eval CURRENT_EPOCH := $(shell echo $$(( $(shell date +%s) - $(shell date +%s) % 604800 )) ))
 	@echo "Current period: $(CURRENT_EPOCH)"
-
 
 run-vm-all-platforms: get-current-period
 	@echo "Running vm_all_platforms.py..."
 	cd $(VOTEMARKET_PROOFS_SCRIPT_DEVOPS_DIR) && \
-	PYTHONPATH=script \
-	ETHEREUM_MAINNET_RPC_URL=$${ETHEREUM_MAINNET_RPC_URL%=} \
-	ARBITRUM_MAINNET_RPC_URL=$${ARBITRUM_MAINNET_RPC_URL%=} \
-	$(PYTHON) script/external/vm_all_platforms.py \
+	uv run src/votemarket_toolkit/external/vm_all_platforms.py \
 	curve balancer fxn frax \
 	--epoch $(CURRENT_EPOCH) \
 	$(if $(BLOCK_NUMBER),--block $(BLOCK_NUMBER)) && \
