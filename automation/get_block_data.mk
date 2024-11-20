@@ -33,9 +33,7 @@ get-current-epoch:
 run-get-block-data: get-current-epoch
 	@echo "Running get_block_data.py..."
 	cd $(VOTEMARKET_PROOFS_SCRIPT_DEVOPS_DIR) && \
-	PYTHONPATH=script \
-	ETHEREUM_MAINNET_RPC_URL=$${ETHEREUM_MAINNET_RPC_URL%=} \
-	$(PYTHON) script/external/vm_block_data.py \
+	uv run src/votemarket_toolkit/external/vm_block_data.py \
 	curve balancer fxn frax \
 	--epoch $(CURRENT_EPOCH) && \
 	cd - > /dev/null && \

@@ -27,8 +27,7 @@ run-get-landing-page-data:
 	@echo "Running landing_page.py..."
 	cd $(AUTOMATION_DEVOPS_DIR) && \
 	PYTHONPATH=script \
-	WEB3_ALCHEMY_API_KEY=$${WEB3_ALCHEMY_API_KEY%=} \
-	$(PYTHON) script/votemarket/landing_page.py \
+	uv run script/votemarket/landing_page.py \
 	cd - > /dev/null && \
 	echo "landing_page.py completed successfully"
 

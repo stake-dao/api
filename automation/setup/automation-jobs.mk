@@ -11,12 +11,17 @@ checkout-automation:
 	@if [ -d "$(AUTOMATION_DEVOPS_DIR)" ]; then \
 		cd $(AUTOMATION_DEVOPS_DIR) && git pull origin $(AUTOMATION_BRANCH); \
 	else \
-		git clone -b $(AUTOMATION_BRANCH) https://$(GIT_ACCESS_TOKEN)@github.com/$(AUTOMATION_JOBS_REPO).git $(AUTOMATION_DEVOPS_DIR); \
+		if [ -n "$(GIT_ACCESS_TOKEN)" ]; then \
+			git clone -b $(AUTOMATION_BRANCH) https://oauth2:$(GIT_ACCESS_TOKEN)@github.com/$(AUTOMATION_JOBS_REPO).git $(AUTOMATION_DEVOPS_DIR); \
+		else \
+			git clone -b $(AUTOMATION_BRANCH) git@github.com:$(AUTOMATION_JOBS_REPO).git $(AUTOMATION_DEVOPS_DIR); \
+		fi \
 	fi
 
 install-automation-deps: checkout-automation
 	@echo "Installing dependencies for automation-jobs..."
-	cd $(AUTOMATION_DEVOPS_DIR) && $(PIP) install -r requirements.txt
+	cd $(AUTOMATION_DEVOPS_DIR) && uv pip install -r requirements.txt
+
 
 clean-automation:
 	@echo "Cleaning up automation-jobs..."

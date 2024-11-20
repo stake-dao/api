@@ -1,44 +1,44 @@
 {
   "usd_total_incentives_distributed": {
-    "curve": 26967931.87,
-    "frax": 1349586.63,
-    "balancer": 341628.26,
-    "fxn": 374324.55,
+    "curve": 26979501.02,
+    "frax": 1350273.06,
+    "balancer": 341739.86,
+    "fxn": 372564.96,
     "sdt": 0,
     "angle": 0,
-    "cake": 1017118.19
+    "cake": 1032356.1
   },
   "usd_incentives_directed": {
-    "curve": 31873011.3,
-    "frax": 2973230.41,
-    "balancer": 298668.12,
-    "fxn": 453860.18,
+    "curve": 31939589.63,
+    "frax": 2973781.07,
+    "balancer": 299310.9,
+    "fxn": 454760.35,
     "sdt": 0,
     "angle": 0,
-    "cake": 2467331.61
+    "cake": 2476262.22
   },
   "chain_stats": {
     "1": {
       "total": {
-        "campaigns": 498,
-        "usd_balance": 347876.05999999994
+        "campaigns": 499,
+        "usd_balance": 353338.01
       },
       "protocols": {
         "curve": {
           "campaigns": 328,
-          "usd_balance": 285923.37
+          "usd_balance": 291484.49
         },
         "balancer": {
           "campaigns": 89,
-          "usd_balance": 19678.67
+          "usd_balance": 19983.5
         },
         "frax": {
-          "campaigns": 61,
-          "usd_balance": 11617.3
+          "campaigns": 62,
+          "usd_balance": 12701.63
         },
         "fxn": {
           "campaigns": 20,
-          "usd_balance": 30656.72
+          "usd_balance": 29168.39
         }
       }
     },
@@ -93,16 +93,16 @@
     "42161": {
       "total": {
         "campaigns": 20,
-        "usd_balance": 4098.07
+        "usd_balance": 4215.51
       },
       "protocols": {
         "curve": {
           "campaigns": 9,
-          "usd_balance": 2823.28
+          "usd_balance": 2938.67
         },
         "balancer": {
           "campaigns": 5,
-          "usd_balance": 1237.56
+          "usd_balance": 1239.51
         },
         "frax": {
           "campaigns": 0,
@@ -116,16 +116,16 @@
     },
     "56": {
       "total": {
-        "campaigns": 139,
-        "usd_balance": 101502.78
+        "campaigns": 142,
+        "usd_balance": 122301.66
       },
       "protocols": {
         "cake": {
-          "campaigns": 139,
-          "usd_balance": 101502.78
+          "campaigns": 142,
+          "usd_balance": 122301.66
         }
       }
     }
   },
-  "total_campaigns": 658
+  "total_campaigns": 662
 }
