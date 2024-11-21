@@ -1,6 +1,6 @@
 import { Hono } from 'hono'
-import { bsc, mainnet, polygon, arbitrum, zkSync, base } from 'viem/chains'
-import { getTokens, getTokensArbitrum, getTokensBase, getTokensBsc, getTokensMainnet, getTokensZksync } from './lib/tokens'
+import { bsc, mainnet, polygon, arbitrum, zkSync, base, fantom } from 'viem/chains'
+import { getTokens, getTokensArbitrum, getTokensBase, getTokensBsc, getTokensFantom, getTokensMainnet, getTokensZksync } from './lib/tokens'
 
 const tokens = new Hono()
 
@@ -36,6 +36,11 @@ tokens.get(`/${zkSync.id}`, async (c) => {
 
 tokens.get(`/${base.id}`, async (c) => {
   const data = await getTokensBase()
+  return c.json(data)
+})
+
+tokens.get(`/${fantom.id}`, async (c) => {
+  const data = await getTokensFantom()
   return c.json(data)
 })
 
