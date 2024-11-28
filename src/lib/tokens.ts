@@ -37,6 +37,11 @@ export const getTokensFantom = memoize(
   { maxAge: MEMO_MAX_AGE },
 )
 
+export const getTokensFraxtal = memoize(
+  async () => (await fetch(`${STAKE_DAO_ASSETS_BASE_URL}/tokens/252.json`)).json(),
+  { maxAge: MEMO_MAX_AGE },
+)
+
 export const getTokens = memoize(async () => {
   const tokens = await Promise.all([
     getTokensMainnet(),
@@ -45,7 +50,8 @@ export const getTokens = memoize(async () => {
     getTokensArbitrum(),
     getTokensZksync(),
     getTokensBase(),
-    getTokensFantom()
+    getTokensFantom(),
+    getTokensFraxtal()
   ])
 
   return tokens.flat()
