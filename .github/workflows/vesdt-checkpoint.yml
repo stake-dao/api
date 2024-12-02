@@ -12,6 +12,7 @@ env:
   FRAXSCAN_TOKEN: ${{ secrets.FRAXSCAN_TOKEN }}
   ETHERSCAN_TOKEN: ${{ secrets.ETHERSCAN_TOKEN }}
   ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
+  EXPLORER_KEY: ${{ secrets.EXPLORER_KEY }}
   
 jobs:
   build:
