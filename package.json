@@ -14,17 +14,17 @@
   "dependencies": {
     "@hono/node-server": "^1.13.7",
     "@stake-dao/constants": "^0.4.18",
-    "@stake-dao/reader": "^0.4.33",
-    "dotenv": "^16.4.5",
-    "hono": "^4.6.10",
+    "@stake-dao/reader": "^0.4.34",
+    "dotenv": "^16.4.7",
+    "hono": "^4.6.12",
     "memoizee": "^0.4.17",
-    "viem": "^2.21.45"
+    "viem": "^2.21.54"
   },
   "devDependencies": {
     "@types/memoizee": "^0.4.11",
-    "@types/node": "^20.17.6",
-    "prettier": "^3.3.3",
+    "@types/node": "^20.17.9",
+    "prettier": "^3.4.2",
     "tsx": "^4.19.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.7.2"
   }
 }
