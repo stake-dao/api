@@ -1,0 +1,72 @@
+name: Update Votemarket Proofs (current week)
+
+on:
+  repository_dispatch:
+    types: [update-votemarket-proofs]
+  workflow_dispatch:
+    inputs:
+      block_number:
+        description: 'Block number to use for proofs generation'
+        required: false
+        type: string
+
+env:
+  ETHEREUM_MAINNET_RPC_URL: "https://eth-mainnet.g.alchemy.com/v2/${{ secrets.WEB3_ALCHEMY_API_KEY }}"
+  ARBITRUM_MAINNET_RPC_URL: "https://arb-mainnet.g.alchemy.com/v2/${{ secrets.WEB3_ALCHEMY_API_KEY }}"
+  OPTIMISM_MAINNET_RPC_URL: "https://opt-mainnet.g.alchemy.com/v2/${{ secrets.WEB3_ALCHEMY_API_KEY }}"
+  BASE_MAINNET_RPC_URL: "https://base-mainnet.g.alchemy.com/v2/${{ secrets.WEB3_ALCHEMY_API_KEY }}"
+  POLYGON_MAINNET_RPC_URL: "https://polygon-mainnet.g.alchemy.com/v2/${{ secrets.WEB3_ALCHEMY_API_KEY }}"
+  EXPLORER_KEY: ${{ secrets.EXPLORER_KEY }}
+  GIT_ACCESS_TOKEN: ${{ secrets.GIT_ACCESS_TOKEN }}
+  BLOCK_NUMBER: ${{ inputs.block_number || github.event.client_payload.block_number }}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10.13'
+
+      - name: Install Solidity compiler
+        run: |
+          sudo add-apt-repository ppa:ethereum/ethereum
+          sudo apt-get update
+          sudo apt-get install solc -y
+
+      - name: Run active users proofs script
+        run: make -f automation/get_active_users_proofs.mk
+
+      - name: Update metadata.json
+        run: |
+          CURRENT_EPOCH=$(date +%s)
+          CURRENT_EPOCH=$((CURRENT_EPOCH - (CURRENT_EPOCH % (7 * 24 * 3600))))
+          echo "{\"latestUpdatedEpoch\": $CURRENT_EPOCH}" > api/votemarket/metadata.json
+
+      - name: Commit and push if changes found
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Stake DAO API update"
+          git add api/votemarket
+          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Votemarket proofs data and metadata"
+          git pull --rebase origin main
+          git push origin main
+        shell: bash

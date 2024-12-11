@@ -1,0 +1,64 @@
+name: Update Votemarket Landing Page Data
+
+on:
+  schedule:
+    - cron: '0 12 * * *' # Runs at 12:00 PM UTC every day
+  workflow_dispatch:
+
+env:
+  WEB3_ALCHEMY_API_KEY: ${{ secrets.WEB3_ALCHEMY_API_KEY }}
+  GIT_ACCESS_TOKEN: ${{ secrets.GIT_ACCESS_TOKEN }}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10.13'
+
+      - name: Run landing page script
+        run: make -f automation/get_landing_page_data.mk
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # Stash any changes first
+          git stash
+          
+          # Fetch and rebase latest changes
+          git pull origin main --rebase
+          
+          # Pop the stashed changes
+          git stash pop
+          
+          # Check if there are changes to commit
+          if git diff --quiet api/votemarket; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
+          # Commit and push changes
+          git add api/votemarket
+          git commit -m "chore: Update Votemarket landing page data [$(date +%Y-%m-%d)]"
+          git push origin main
