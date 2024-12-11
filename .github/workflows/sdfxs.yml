@@ -2,7 +2,7 @@ name: Bot sdFXS
 
 on:
   schedule:
-    - cron: "0/10 * * * *" # Every 10 minutes 
+    - cron: "0 */2 * * *" # Every 2 hours 
   workflow_dispatch: # Allows the workflow to be triggered manually -
 
 env:
