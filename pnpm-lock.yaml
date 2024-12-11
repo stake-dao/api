@@ -15,8 +15,8 @@ importers:
         specifier: ^0.4.18
         version: 0.4.18
       '@stake-dao/reader':
-        specifier: ^0.4.35
-        version: 0.4.35(graphql@16.9.0)(typescript@5.7.2)
+        specifier: ^0.4.36
+        version: 0.4.36(graphql@16.9.0)(typescript@5.7.2)
       dotenv:
         specifier: ^16.4.7
         version: 16.4.7
@@ -34,8 +34,8 @@ importers:
         specifier: ^0.4.11
         version: 0.4.11
       '@types/node':
-        specifier: ^20.17.9
-        version: 20.17.9
+        specifier: ^20.17.10
+        version: 20.17.10
       prettier:
         specifier: ^3.4.2
         version: 3.4.2
@@ -324,14 +324,14 @@ packages:
   '@stake-dao/constants@0.4.18':
     resolution: {integrity: sha512-NiG0eGHOrReXPIsgwgV4IFAbISJCOcK81Cwzwl6wRs0q/yo6q13Yb4xJfmQJ5yWpGOg0kgAMYUSB3Hoi3hgdCQ==}
 
-  '@stake-dao/reader@0.4.35':
-    resolution: {integrity: sha512-/q3gzqiP3KTWX9yeewdXAd6YWAGdAkoxYsFo0UUQJ5kOWT/zPGMHY0sw13+M7WziFoQ+n2c7g4a+2Votgyvz/g==}
+  '@stake-dao/reader@0.4.36':
+    resolution: {integrity: sha512-rUR01wHsSSEmwytSf+OEe8HbUeHZY3qE7q9zlbOGqDvtN1l/uaAVQdAPWL37liaIQyRa6l/hcqlhfC2qwoxKPg==}
 
   '@types/memoizee@0.4.11':
     resolution: {integrity: sha512-2gyorIBZu8GoDr9pYjROkxWWcFtHCquF7TVbN2I+/OvgZhnIGQS0vX5KJz4lXNKb8XOSfxFOSG5OLru1ESqLUg==}
 
-  '@types/node@20.17.9':
-    resolution: {integrity: sha512-0JOXkRyLanfGPE2QRCwgxhzlBAvaRdCNMcvbd7jFfpmD4eEXll7LRwy5ymJmyeZqk7Nh7eD2LeUyQ68BbndmXw==}
+  '@types/node@20.17.10':
+    resolution: {integrity: sha512-/jrvh5h6NXhEauFFexRin69nA0uHJ5gwk4iDivp/DeoEua3uwCUto6PC86IpRITBOs4+6i2I56K5x5b6WYGXHA==}
 
   abitype@1.0.7:
     resolution: {integrity: sha512-ZfYYSktDQUwc2eduYu8C4wOs+RDPmnRYMh7zNfzeMtGGgb0U+6tLGjixUic6mXf5xKKCcgT5Qp6cv39tOARVFw==}
@@ -966,7 +966,7 @@ snapshots:
 
   '@stake-dao/constants@0.4.18': {}
 
-  '@stake-dao/reader@0.4.35(graphql@16.9.0)(typescript@5.7.2)':
+  '@stake-dao/reader@0.4.36(graphql@16.9.0)(typescript@5.7.2)':
     dependencies:
       '@snapshot-labs/snapshot.js': 0.9.9
       '@stake-dao/constants': 0.4.18
@@ -984,7 +984,7 @@ snapshots:
 
   '@types/memoizee@0.4.11': {}
 
-  '@types/node@20.17.9':
+  '@types/node@20.17.10':
     dependencies:
       undici-types: 6.19.8
 
