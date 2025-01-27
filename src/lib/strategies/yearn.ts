@@ -24,7 +24,6 @@ export const getYearnMainnet = memoize(
       explorerApiKey: process.env.ETHERSCAN_TOKEN as string,
       explorer: 'etherscan.io',
       chainId: mainnet.id,
-      sdtEmissionData: sdtEmissionData as SdtEmissionData,
     })
   },
   { maxAge: MEMO_MAX_AGE },

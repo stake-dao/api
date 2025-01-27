@@ -4,6 +4,8 @@ import updateYearnStrats from './strategies/updateYearnStrats'
 import updatePancakeStrats from './strategies/updatePancakeStrats'
 import updatePendleStrats from './strategies/updatePendleStrats'
 import updateAngleStrats from './strategies/updateAngleStrats'
+import updatePassiveStrats from './strategies/updatePassiveStrats'
+import updateStakeDaoStrats from './strategies/updateStakeDaoStrats'
 
 const PROMISES_INDEX = {
   0: 'curve',
@@ -12,6 +14,8 @@ const PROMISES_INDEX = {
   3: 'pancake',
   4: 'pendle',
   5: 'angle',
+  6: 'passive',
+  7: 'stakeDao'
 }
 
 const updateStrats = async () => {
@@ -23,6 +27,8 @@ const updateStrats = async () => {
     updatePancakeStrats(),
     updatePendleStrats(),
     updateAngleStrats(),
+    updatePassiveStrats(),
+    updateStakeDaoStrats()
   ])
 
   for (const [index, result] of promises.entries()) {
