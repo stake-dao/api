@@ -68,7 +68,9 @@ jobs:
       - name: Copy sdfxs & sdcake data to target repo
         run: |
           cp "${{ env.DEVOPS_DIR }}/json/sdfxs/sdfxs-working-supply.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
+          cp "${{ env.DEVOPS_DIR }}/json/sdfxs/sdfxs-working-supply-users.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
           cp "${{ env.DEVOPS_DIR }}/json/sdcake/sdcake-working-supply.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
+          cp "${{ env.DEVOPS_DIR }}/json/sdcake/sdcake-working-supply-users.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
 
       - name: Commit and push changes to repo
         run: |
