@@ -50,6 +50,7 @@ move-files:
 	cp -Rf temp/votemarket-proofs-script/temp/* api/votemarket/$(CURRENT_EPOCH)/
 	rm -f api/votemarket/$(CURRENT_EPOCH)/all_platforms.json
 	rm -rf temp/votemarket-proofs-script/temp/*
+	mv temp/votemarket-proofs-script/cache/* api/votemarket/votes_cache/
 	@echo "Files moved successfully"
 
 .PHONY: clean
