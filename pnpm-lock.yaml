@@ -10,19 +10,19 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.13.8
-        version: 1.13.8(hono@4.7.0)
+        version: 1.13.8(hono@4.7.1)
       '@stake-dao/constants':
         specifier: ^0.4.25
         version: 0.4.25
       '@stake-dao/reader':
-        specifier: ^0.4.56
-        version: 0.4.56(graphql@16.9.0)(typescript@5.7.3)
+        specifier: ^0.4.57
+        version: 0.4.57(graphql@16.9.0)(typescript@5.7.3)
       dotenv:
         specifier: ^16.4.7
         version: 16.4.7
       hono:
-        specifier: ^4.7.0
-        version: 4.7.0
+        specifier: ^4.7.1
+        version: 4.7.1
       memoizee:
         specifier: ^0.4.17
         version: 0.4.17
@@ -34,11 +34,11 @@ importers:
         specifier: ^0.4.11
         version: 0.4.11
       '@types/node':
-        specifier: ^20.17.17
-        version: 20.17.17
+        specifier: ^20.17.19
+        version: 20.17.19
       prettier:
-        specifier: ^3.5.0
-        version: 3.5.0
+        specifier: ^3.5.1
+        version: 3.5.1
       tsx:
         specifier: ^4.19.2
         version: 4.19.2
@@ -226,14 +226,14 @@ packages:
   '@stake-dao/constants@0.4.25':
     resolution: {integrity: sha512-zthRG0lzD73iq5BfpIbeWfwJzHBZUOZ5NpfSyXAZRlzoV5b3DGDFgLGy1h1TPdQ+xEMz76Sy4rIZUBM5wWl+2Q==}
 
-  '@stake-dao/reader@0.4.56':
-    resolution: {integrity: sha512-ZQETnWdAQ7i+a8Nk7MRDS0KhhwyYDVW+2svlfITdLANQW7mt/Ny+pNHXMh7c3/pC3NYOWdUBhuCFORBbng/Wmw==}
+  '@stake-dao/reader@0.4.57':
+    resolution: {integrity: sha512-HxqQhq7aVO6vSt/ILN6jWYz7cb/r9OQrIegiAqvPZ3ajYIYIA1PBX+tRRJUuzMiZ975GrT6rLW0r0cHhi5xnXg==}
 
   '@types/memoizee@0.4.11':
     resolution: {integrity: sha512-2gyorIBZu8GoDr9pYjROkxWWcFtHCquF7TVbN2I+/OvgZhnIGQS0vX5KJz4lXNKb8XOSfxFOSG5OLru1ESqLUg==}
 
-  '@types/node@20.17.17':
-    resolution: {integrity: sha512-/WndGO4kIfMicEQLTi/mDANUu/iVUhT7KboZPdEqqHQ4aTS+3qT3U5gIqWDFV+XouorjfgGqvKILJeHhuQgFYg==}
+  '@types/node@20.17.19':
+    resolution: {integrity: sha512-LEwC7o1ifqg/6r2gn9Dns0f1rhK+fPFDoMiceTJ6kWmVk6bgXBI/9IOWfVan4WiAavK9pIVWdX0/e3J+eEUh5A==}
 
   abitype@1.0.8:
     resolution: {integrity: sha512-ZeiI6h3GnW06uYDLx0etQtX/p8E24UaHHBj57RSjK7YBFe7iuVn07EDpOeP451D06sF27VOz9JJPlIKJmXgkEg==}
@@ -309,8 +309,8 @@ packages:
     resolution: {integrity: sha512-GGTKBX4SD7Wdb8mqeDLni2oaRGYQWjWHGKPQ24ZMnUtKfcsVoiv4uX8+LJr1K6U5VW2Lu1BwJnj7uiori0YtRw==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
 
-  hono@4.7.0:
-    resolution: {integrity: sha512-hV97aIR4WYbG30k234sD9B3VNr1ZWdQRmrVF76LKFlmI7O9Yo70mG9+mFwyQ6Sjrz4wH71GfnBxv6CPjcx3QNw==}
+  hono@4.7.1:
+    resolution: {integrity: sha512-V3eWoPkBxoNgFCkSc5Y5rpLF6YoQQx1pkYO4qrF6YfOw8RZbujUNlJLZCxh0z9gZct70+je2Ih7Zrdpv21hP9w==}
     engines: {node: '>=16.9.0'}
 
   is-promise@2.2.2:
@@ -351,8 +351,8 @@ packages:
       typescript:
         optional: true
 
-  prettier@3.5.0:
-    resolution: {integrity: sha512-quyMrVt6svPS7CjQ9gKb3GLEX/rl3BCL2oa/QkNcXv4YNVBC9olt3s+H7ukto06q7B1Qz46PbrKLO34PR6vXcA==}
+  prettier@3.5.1:
+    resolution: {integrity: sha512-hPpFQvHwL3Qv5AdRvBFMhnKo4tYxp0ReXiPn2bxkiohEX6mBeBwEpBSQTkD458RaaDKQMYSp4hX4UtfUTA5wDw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -488,9 +488,9 @@ snapshots:
     dependencies:
       graphql: 16.9.0
 
-  '@hono/node-server@1.13.8(hono@4.7.0)':
+  '@hono/node-server@1.13.8(hono@4.7.1)':
     dependencies:
-      hono: 4.7.0
+      hono: 4.7.1
 
   '@noble/curves@1.8.1':
     dependencies:
@@ -513,7 +513,7 @@ snapshots:
 
   '@stake-dao/constants@0.4.25': {}
 
-  '@stake-dao/reader@0.4.56(graphql@16.9.0)(typescript@5.7.3)':
+  '@stake-dao/reader@0.4.57(graphql@16.9.0)(typescript@5.7.3)':
     dependencies:
       '@stake-dao/constants': 0.4.25
       dayjs: 1.11.13
@@ -530,7 +530,7 @@ snapshots:
 
   '@types/memoizee@0.4.11': {}
 
-  '@types/node@20.17.17':
+  '@types/node@20.17.19':
     dependencies:
       undici-types: 6.19.8
 
@@ -640,7 +640,7 @@ snapshots:
 
   graphql@16.9.0: {}
 
-  hono@4.7.0: {}
+  hono@4.7.1: {}
 
   is-promise@2.2.2: {}
 
@@ -685,7 +685,7 @@ snapshots:
     transitivePeerDependencies:
       - zod
 
-  prettier@3.5.0: {}
+  prettier@3.5.1: {}
 
   resolve-pkg-maps@1.0.0: {}
 
