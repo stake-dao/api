@@ -1,6 +1,6 @@
 import { Hono } from 'hono'
-import { bsc, mainnet, polygon, arbitrum, zkSync, base, fantom, fraxtal, celo } from 'viem/chains'
-import { getTokens, getTokensArbitrum, getTokensBase, getTokensBsc, getTokensCelo, getTokensFantom, getTokensFraxtal, getTokensMainnet, getTokensZksync } from './lib/tokens'
+import { bsc, mainnet, polygon, arbitrum, zkSync, base, fantom, fraxtal, celo, sonic } from 'viem/chains'
+import { getTokens, getTokensArbitrum, getTokensBase, getTokensBsc, getTokensCelo, getTokensFantom, getTokensFraxtal, getTokensMainnet, getTokensSonic, getTokensZksync } from './lib/tokens'
 
 const tokens = new Hono()
 
@@ -51,6 +51,11 @@ tokens.get(`/${fraxtal.id}`, async (c) => {
 
 tokens.get(`/${celo.id}`, async (c) => {
   const data = await getTokensCelo()
+  return c.json(data)
+})
+
+tokens.get(`/${sonic.id}`, async (c) => {
+  const data = await getTokensSonic()
   return c.json(data)
 })
 
