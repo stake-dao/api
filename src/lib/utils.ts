@@ -46,6 +46,18 @@ export const getCurveGaugesWeights = memoize(async () => getGaugesWeights(public
   maxAge: MEMO_MAX_AGE,
 })
 
+export const ethBlockNumber = async (rpc: string) =>
+  fetch(rpc, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      id: 0,
+      jsonrpc: '2.0',
+      method: 'eth_blockNumber',
+      params: [],
+    }),
+  }).then((res) => res.json())
+
 // Etherscan
 export const getEtherscanEvents = async ({ chainId, address, topic, fromBlock }) => {
   const queryParams = {

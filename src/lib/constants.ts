@@ -1,5 +1,6 @@
 export const RPC = {
   1: 'https://ethereum-rpc.publicnode.com',
+  10: 'https://rpc.ankr.com/optimism',
   56: 'https://bsc-rpc.publicnode.com',
   // 56: 'https://rpc.ankr.com/bsc',
   137: 'https://polygon-bor-rpc.publicnode.com',

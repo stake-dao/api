@@ -1,0 +1,45 @@
+name: Update Merkles Recipients
+
+on:
+  schedule:
+    - cron: "0 15 * * */1" # At 15:00 on every day-of-week
+  workflow_dispatch: # Allows the workflow to be triggered manually -
+
+env:
+  ETHERSCAN_TOKEN: ${{ secrets.ETHERSCAN_TOKEN }}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+    
+      - name: Run script to update Merkles Recipients data
+        run: pnpm tsx scripts/updateMerklesRecipients.ts
+
+      - name: Commit and push if changes found
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Stake DAO API update"
+          git add api/recipients
+          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update merkles recipients data"
+          git pull --rebase origin main
+          git push
+        shell: bash
+
+

@@ -1,16 +1,24 @@
 import fs from 'fs'
 
-interface CommonWriteFileArgs {
+interface CommonFileArgs {
   path: string
   log: { success: string; error: string }
 }
 
-interface WriteFileArgs extends CommonWriteFileArgs {
+interface WriteFileArgs extends CommonFileArgs {
   data: any
 }
 
-interface WriteFileFromPromiseArgs extends CommonWriteFileArgs {
+interface WriteFileFromPromiseArgs extends CommonFileArgs {
   data: PromiseFulfilledResult<any> | PromiseRejectedResult
+}
+
+export const readFile = (args: { path: string }) => {
+  const { path } = args
+
+  const fileContent = fs.readFileSync(path, 'utf-8')
+
+  return JSON.parse(fileContent)
 }
 
 export const writeFile = (args: WriteFileArgs) => {
@@ -40,4 +48,12 @@ export const writeFileFromPromise = (args: WriteFileFromPromiseArgs) => {
     console.error(log.error)
     console.error(data.reason)
   }
+}
+
+export const chunk = (array, size = 5) => {
+  return Array.from({ length: Math.ceil(array.length / size) }, (_, i) => array.slice(i * size, i * size + size))
+}
+
+export const sleep = (ms) => {
+  return new Promise((resolve) => setTimeout(resolve, ms))
 }
