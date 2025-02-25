@@ -45,3 +45,18 @@ export const getSdtInflation = memoize(async () => getSdtInflationData(publicCli
 export const getCurveGaugesWeights = memoize(async () => getGaugesWeights(publicClient[mainnet.id], RPC[mainnet.id]), {
   maxAge: MEMO_MAX_AGE,
 })
+
+// Etherscan
+export const getEtherscanEvents = async ({ chainId, address, topic, fromBlock }) => {
+  const queryParams = {
+    chainid: `${chainId}`,
+    module: 'logs',
+    action: 'getLogs',
+    apikey: process.env.ETHERSCAN_TOKEN as string,
+    address,
+    topic0: topic,
+    fromBlock: `${fromBlock}`,
+  }
+
+  return await fetch(`https://api.etherscan.io/v2/api?${new URLSearchParams(queryParams)}`).then((res) => res.json())
+}

@@ -1,6 +1,34 @@
 import { Hono } from 'hono'
-import { bsc, mainnet, polygon, arbitrum, zkSync, base, fantom, fraxtal, celo, sonic, gnosis, optimism, avalanche } from 'viem/chains'
-import { getTokens, getTokensArbitrum, getTokensAvalanche, getTokensBase, getTokensBsc, getTokensCelo, getTokensFantom, getTokensFraxtal, getTokensGnosis, getTokensMainnet, getTokensOptimism, getTokensSonic, getTokensZksync } from './lib/tokens'
+import {
+  bsc,
+  mainnet,
+  polygon,
+  arbitrum,
+  zkSync,
+  base,
+  fantom,
+  fraxtal,
+  celo,
+  sonic,
+  gnosis,
+  optimism,
+  avalanche,
+} from 'viem/chains'
+import {
+  getTokens,
+  getTokensArbitrum,
+  getTokensAvalanche,
+  getTokensBase,
+  getTokensBsc,
+  getTokensCelo,
+  getTokensFantom,
+  getTokensFraxtal,
+  getTokensGnosis,
+  getTokensMainnet,
+  getTokensOptimism,
+  getTokensSonic,
+  getTokensZksync,
+} from './lib/tokens'
 
 const tokens = new Hono()
 

@@ -19,7 +19,7 @@ export const getStakeDaoMainnet = memoize(
       provider: publicClient[mainnet.id],
       explorerApiKey: process.env.ETHERSCAN_TOKEN as string,
       chainId: mainnet.id,
-      lockers: lockersMainnet.parsed
+      lockers: lockersMainnet.parsed,
     })
   },
   { maxAge: MEMO_MAX_AGE },

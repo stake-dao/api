@@ -15,11 +15,10 @@ const PROMISES_INDEX = {
   4: 'pendle',
   5: 'angle',
   6: 'passive',
-  7: 'stakeDao'
+  7: 'stakeDao',
 }
 
 const updateStrats = async () => {
-  
   const promises = await Promise.allSettled([
     updateCurveStrats(),
     updateBalancerStrats(),
@@ -28,7 +27,7 @@ const updateStrats = async () => {
     updatePendleStrats(),
     updateAngleStrats(),
     updatePassiveStrats(),
-    updateStakeDaoStrats()
+    updateStakeDaoStrats(),
   ])
 
   for (const [index, result] of promises.entries()) {

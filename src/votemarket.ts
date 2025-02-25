@@ -60,7 +60,6 @@ proofsVM.get('/:period/:protocol/header', async (c) => {
   }
 })
 
-
 ////////////////////////////////////////////////////////////////
 /// --- GAUGE DATA
 ////////////////////////////////////////////////////////////////
@@ -115,10 +114,7 @@ proofsVM.get('/:period/:protocol/:chainId/:platform/:gauge/:user', async (c) => 
     if (listedUsersData) {
       return c.json({ listed_users: listedUsersData })
     }
-    return c.json(
-      { error: `No listed users found for ${protocol}, gauge ${gaugeAddress} in period ${period}` },
-      404,
-    )
+    return c.json({ error: `No listed users found for ${protocol}, gauge ${gaugeAddress} in period ${period}` }, 404)
   } else {
     const userData = await getUserData(gaugeData, userOrListedUsers)
     if (userData) {
