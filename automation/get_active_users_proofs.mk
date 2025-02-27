@@ -30,7 +30,7 @@ install-deps: install-votemarket-proofs-script-deps
 # Get the current period (7 days in seconds = 604800)
 get-current-period:
 	@echo "Getting the current period..."
-	@$(eval CURRENT_EPOCH := $(shell $(PYTHON) -c "import time; print(int(time.time()) - (int(time.time()) % (7 * 24 * 3600)))"))
+	@$(eval CURRENT_EPOCH := $(shell echo $$(( $(shell date +%s) - $(shell date +%s) % 604800 )) ))
 	@echo "Current period: $(CURRENT_EPOCH)"
 
 run-vm-all-platforms:
