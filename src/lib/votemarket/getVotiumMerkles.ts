@@ -79,7 +79,7 @@ async function getDelegators() {
 }
 
 function findToken(symbol:string) {
-    return tokens.find((t) => t.symbol.toLowerCase() === symbol.toLowerCase())
+    return tokens.find((t) => t.symbol.toLowerCase() === symbol.toLowerCase() && t.chainId === 1)
 }
 
 function getTokenMerkle(symbol:string) {
