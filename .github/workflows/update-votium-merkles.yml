@@ -3,7 +3,7 @@ name: Update Votium merkles
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 8 * * 4' # Every Thursday at 8:30 am, filtered later to match distributions
+    - cron: '30 8 * * 2' # Every Tuesday at 8:30 am, filtered later to match distributions
 
 jobs:
   update:
