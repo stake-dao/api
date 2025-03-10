@@ -13,7 +13,7 @@ jobs:
       - name: Verify week number # Votium distributions occurs on odd weeks
         run: |
           week_number=$(date +%V)
-          if [ $((week_number % 2)) -eq 1 ]; then
+          if [ $((week_number % 2)) -eq 0 ]; then
             echo "Updating script"
           else
             echo "Wrong week, aborting..."
