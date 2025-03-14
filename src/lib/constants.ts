@@ -9,4 +9,5 @@ export const RPC = {
   324: 'https://mainnet.era.zksync.io',
   8453: 'https://mainnet.base.org',
   42161: 'https://arbitrum-one-rpc.publicnode.com',
+  59144: 'https://linea.drpc.org'
 }
