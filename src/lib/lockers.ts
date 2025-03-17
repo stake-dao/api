@@ -82,7 +82,8 @@ export const getLockers = memoize(async () => {
 
   return {
     lastUpdate: Math.floor(Date.now() / 1000),
-    parsed: [...lockersMainnet.parsed, ...lockersBsc.parsed, ...lockersFraxtal.parsed, ...lockersLinea.parsed].sort(
+    // parsed: [...lockersMainnet.parsed, ...lockersBsc.parsed, ...lockersFraxtal.parsed, ...lockersLinea.parsed].sort(
+    parsed: [...lockersMainnet.parsed, ...lockersBsc.parsed, ...lockersFraxtal.parsed].sort(
       (a, b) => a.order - b.order,
     ),
     sdt: lockersMainnet.sdt,
