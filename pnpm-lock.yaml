@@ -12,11 +12,11 @@ importers:
         specifier: ^1.13.8
         version: 1.13.8(hono@4.7.4)
       '@stake-dao/constants':
-        specifier: ^0.4.28
-        version: 0.4.28
+        specifier: ^0.4.29
+        version: 0.4.29
       '@stake-dao/reader':
-        specifier: ^0.4.62
-        version: 0.4.62(graphql@16.9.0)(typescript@5.8.2)
+        specifier: ^0.4.63
+        version: 0.4.63(graphql@16.9.0)(typescript@5.8.2)
       dotenv:
         specifier: ^16.4.7
         version: 16.4.7
@@ -232,11 +232,11 @@ packages:
   '@scure/bip39@1.5.4':
     resolution: {integrity: sha512-TFM4ni0vKvCfBpohoh+/lY05i9gRbSwXWngAsF4CABQxoaOHijxuaZ2R6cStDQ5CHtHO9aGJTr4ksVJASRRyMA==}
 
-  '@stake-dao/constants@0.4.28':
-    resolution: {integrity: sha512-H1K+S2MFicFxyq0gJ967ZMs0HC2bLJBqVFmYRb0iHFaN1lJA/afKgNwUZN64+VB8YE1f16/+qZfOJQifzs2dfw==}
+  '@stake-dao/constants@0.4.29':
+    resolution: {integrity: sha512-8CJL8E3pvYJpuKJf3JP8Inhid3lBvlfEyET8v2i/+Fp6CmJ06NGkBfUHilFTitxENHHz6g6rBcm8UydB/pODVQ==}
 
-  '@stake-dao/reader@0.4.62':
-    resolution: {integrity: sha512-MTsOMNlvSnaZ0b/xRGk+GsHM3yYgpE8AoIjBh9e29qUftJMIP7KVlW8WFwWvaXG+RWyI3YfZl4CZD8QL93GXDA==}
+  '@stake-dao/reader@0.4.63':
+    resolution: {integrity: sha512-ZHefdeM/s7Aro7kaCHJ04pavHLTsRWxF0OleyJekuvBFs0K2E33LMmB3ywMnCJrzOAMuJPBien5vX7gU9SHidA==}
 
   '@types/memoizee@0.4.11':
     resolution: {integrity: sha512-2gyorIBZu8GoDr9pYjROkxWWcFtHCquF7TVbN2I+/OvgZhnIGQS0vX5KJz4lXNKb8XOSfxFOSG5OLru1ESqLUg==}
@@ -571,11 +571,11 @@ snapshots:
       '@noble/hashes': 1.7.1
       '@scure/base': 1.2.4
 
-  '@stake-dao/constants@0.4.28': {}
+  '@stake-dao/constants@0.4.29': {}
 
-  '@stake-dao/reader@0.4.62(graphql@16.9.0)(typescript@5.8.2)':
+  '@stake-dao/reader@0.4.63(graphql@16.9.0)(typescript@5.8.2)':
     dependencies:
-      '@stake-dao/constants': 0.4.28
+      '@stake-dao/constants': 0.4.29
       dayjs: 1.11.13
       graphql-request: 6.1.0(graphql@16.9.0)
       lodash-es: 4.17.21

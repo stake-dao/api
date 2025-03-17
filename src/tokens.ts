@@ -13,6 +13,7 @@ import {
   gnosis,
   optimism,
   avalanche,
+  linea,
 } from 'viem/chains'
 import {
   getTokens,
@@ -24,6 +25,7 @@ import {
   getTokensFantom,
   getTokensFraxtal,
   getTokensGnosis,
+  getTokensLinea,
   getTokensMainnet,
   getTokensOptimism,
   getTokensSonic,
@@ -99,6 +101,11 @@ tokens.get(`/${optimism.id}`, async (c) => {
 
 tokens.get(`/${avalanche.id}`, async (c) => {
   const data = await getTokensAvalanche()
+  return c.json(data)
+})
+
+tokens.get(`/${linea.id}`, async (c) => {
+  const data = await getTokensLinea()
   return c.json(data)
 })
 
