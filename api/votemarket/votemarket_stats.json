@@ -1,60 +1,60 @@
 {
   "usd_total_incentives_distributed": {
-    "curve": 33064401.05,
-    "frax": 1455673.5,
-    "balancer": 377428.77,
-    "fxn": 459596.17,
+    "curve": 33136921.98,
+    "frax": 1458302.22,
+    "balancer": 377428.72,
+    "fxn": 459590.66,
     "sdt": 0,
     "angle": 0,
-    "cake": 175713.33
+    "cake": 175065.63
   },
   "usd_incentives_directed": {
-    "curve": 40457327.25,
-    "frax": 3124692.34,
-    "balancer": 339068.49,
+    "curve": 40564197.74,
+    "frax": 3129775.81,
+    "balancer": 339067.07,
     "fxn": 577486.88,
     "sdt": 0,
     "angle": 0,
-    "cake": 1287408.53
+    "cake": 1285164.83
   },
   "chain_stats": {
     "1": {
       "total": {
         "campaigns": 517,
-        "usd_balance": 586099.37
+        "usd_balance": 714115.6799999999
       },
       "protocols": {
         "curve": {
           "campaigns": 329,
-          "usd_balance": 50684.97
+          "usd_balance": 49899.37
         },
         "balancer": {
           "campaigns": 95,
-          "usd_balance": 14515.34
+          "usd_balance": 14379.44
         },
         "frax": {
           "campaigns": 63,
-          "usd_balance": 5808.46
+          "usd_balance": 10190.44
         },
         "fxn": {
           "campaigns": 30,
-          "usd_balance": 886.48
+          "usd_balance": 870.61
         },
         "curve_v2": {
           "campaigns": 0,
-          "usd_balance": 514204.12
+          "usd_balance": 638775.82
         }
       }
     },
     "8453": {
       "total": {
         "campaigns": 12,
-        "usd_balance": 42321.72
+        "usd_balance": 41080.229999999996
       },
       "protocols": {
         "curve": {
           "campaigns": 4,
-          "usd_balance": 14107.24
+          "usd_balance": 13693.41
         },
         "balancer": {
           "campaigns": 0,
@@ -70,7 +70,7 @@
         },
         "curve_v2": {
           "campaigns": 4,
-          "usd_balance": 14107.24
+          "usd_balance": 13693.41
         }
       }
     },
@@ -100,17 +100,17 @@
     },
     "42161": {
       "total": {
-        "campaigns": 514,
-        "usd_balance": 158223.07
+        "campaigns": 520,
+        "usd_balance": 160321.22999999998
       },
       "protocols": {
         "curve": {
-          "campaigns": 174,
-          "usd_balance": 51932.74
+          "campaigns": 176,
+          "usd_balance": 52625.77
         },
         "balancer": {
           "campaigns": 10,
-          "usd_balance": 3625.33
+          "usd_balance": 3625.48
         },
         "frax": {
           "campaigns": 0,
@@ -121,23 +121,23 @@
           "usd_balance": 0.0
         },
         "curve_v2": {
-          "campaigns": 165,
-          "usd_balance": 51332.5
+          "campaigns": 167,
+          "usd_balance": 52034.990000000005
         }
       }
     },
     "56": {
       "total": {
         "campaigns": 149,
-        "usd_balance": 11188.5
+        "usd_balance": 11057.91
       },
       "protocols": {
         "cake": {
           "campaigns": 149,
-          "usd_balance": 11188.5
+          "usd_balance": 11057.91
         }
       }
     }
   },
-  "total_campaigns": 1192
+  "total_campaigns": 1198
 }
