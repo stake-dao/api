@@ -121,11 +121,10 @@ async function fetchIfToOld(symbol: string) {
 const processVotiumMerkles = async (provider: any) => {
   const output = { claims: {} }
 
-  // Fetch delegators from your parquet file
-  const delegators = await getDelegators()
+  // Fetch delegators from your parquet file.
+  let delegators = await getDelegators()
 
   // Query the forwarding contract for each delegator.
-  // Make sure to use the "view" ABI and that the function signature matches.
   const forwardedAddresses: string[] = await provider.readContract({
     address: '0x92e6E43f99809dF84ed2D533e1FD8017eb966ee2',
     abi: parseAbi(['function batchAddressCheck(address[]) view returns (address[])']),
@@ -133,24 +132,23 @@ const processVotiumMerkles = async (provider: any) => {
     args: [delegators],
   })
 
-  // Create a mapping from original delegator to its effective address.
-  // If the forwarded address is not the zero address, use it. Otherwise, keep the original.
-  const delegatorMapping: { [key: string]: string } = {}
-  for (let i = 0; i < delegators.length; i++) {
-    const original = delegators[i].toLowerCase()
+  // Replace each delegator with its forwarded address (if set), or keep the original.
+  // Log the replacement for each delegator.
+  delegators = delegators.map((delegator, i) => {
+    const original = delegator.toLowerCase()
     const forwarded = forwardedAddresses[i]
     if (forwarded && forwarded !== '0x0000000000000000000000000000000000000000') {
       console.log(`Delegator ${original} forwarded to ${forwarded.toLowerCase()}`)
+      return forwarded.toLowerCase()
+    } else {
+      console.log(`Delegator ${original} has no forwarded address`)
+      return original
     }
-    delegatorMapping[original] =
-      forwarded && forwarded !== '0x0000000000000000000000000000000000000000' ? forwarded.toLowerCase() : original
-  }
+  })
 
-  // Log how many effective addresses you will work with.
-  const effectiveDelegators = Object.values(delegatorMapping)
-  console.log(`Found ${effectiveDelegators.length} effective delegator addresses after forwarding check.`)
+  console.log(`Found ${delegators.length} effective delegator addresses after forwarding check.`)
 
-  // Get the subdirectories for tokens (as before)
+  // Get subdirectories for tokens (as before).
   const subdirectories = await getSubdirectories(`${API_URL}/contents/merkle`)
   for (const symbol of subdirectories) {
     const token = findToken(symbol)
@@ -159,20 +157,14 @@ const processVotiumMerkles = async (provider: any) => {
     const merkle = await fetch(getTokenMerkle(symbol)).then((res) => res.json())
 
     // Iterate over the merkle claims.
-    // For each claim, use the mapping to obtain the effective delegator address.
     for (const user of Object.keys(merkle.claims)) {
-      const effectiveAddress = delegatorMapping[user.toLowerCase()]
-      // Only process if the effective address exists in our mapping
-      if (!effectiveAddress) continue
+      // Process only if the merkle claim's key is one of our effective delegators.
+      if (!delegators.includes(user.toLowerCase())) continue
 
-      // If you want to restrict only to delegators with claims, you can check:
-      if (!effectiveDelegators.includes(effectiveAddress)) continue
-
-      // Use the effective address as the key in the output.
-      if (!output.claims[effectiveAddress]) {
-        output.claims[effectiveAddress] = { tokens: {} }
+      if (!output.claims[user.toLowerCase()]) {
+        output.claims[user.toLowerCase()] = { tokens: {} }
       }
-      output.claims[effectiveAddress].tokens[token.address] = {
+      output.claims[user.toLowerCase()].tokens[token.address] = {
         index: merkle.claims[user].index,
         amount: merkle.claims[user].amount,
         proof: merkle.claims[user].proof,
@@ -180,7 +172,7 @@ const processVotiumMerkles = async (provider: any) => {
     }
   }
 
-  // Continue with the rest of your script (e.g., the multicall to check claims)
+  // Check claimed statuses with multicall.
   const claimsToCheck = Object.keys(output.claims).flatMap((u) =>
     Object.keys(output.claims[u].tokens).flatMap((t) => ({
       token: t,
@@ -203,14 +195,14 @@ const processVotiumMerkles = async (provider: any) => {
     }
   }
 
-  // Remove delegators with no claimable tokens
+  // Remove delegators with no claimable tokens.
   for (const user of Object.keys(output.claims)) {
     if (Object.keys(output.claims[user].tokens).length === 0) {
       delete output.claims[user]
     }
   }
 
-  console.log('Delegators with claimable on votium :', Object.keys(output.claims).length)
+  console.log('Delegators with claimable on votium:', Object.keys(output.claims).length)
   return output
 }
 
