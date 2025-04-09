@@ -1,5 +1,5 @@
 import { writeFile } from '../utils'
-import { getVotiumMerkles } from '../../src/lib/votemarket/getVotiumMerkles';
+import { getVotiumMerkles } from '../../src/lib/votemarket/getVotiumMerkles'
 
 const updateVotiumMerkles = async () => {
   const votiumMerkles = await getVotiumMerkles()
@@ -13,7 +13,8 @@ const updateVotiumMerkles = async () => {
     },
   })
 
-  {/* // Parquet storage
+  {
+    /* // Parquet storage
   const schema = new parquet.ParquetSchema({
     user: { type: 'UTF8' },
     token: { type: 'UTF8' },
@@ -37,7 +38,8 @@ const updateVotiumMerkles = async () => {
       }
     await writer.close();  
     
-  */}
+  */
+  }
 }
 
 updateVotiumMerkles()
