@@ -25,7 +25,6 @@ const updateStrats = async () => {
     updateYearnStrats(),
     updatePancakeStrats(),
     updatePendleStrats(),
-    updateAngleStrats(),
     updatePassiveStrats(),
     updateStakeDaoStrats(),
   ])
