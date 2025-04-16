@@ -1,4 +1,4 @@
-name: Bot sdFXS and sdCake
+name: Bot sdFXS, sdCake and sdSpectra
 
 on:
   schedule:
@@ -49,10 +49,18 @@ jobs:
         env:
           PYTHONPATH: script/
 
-      - name: Run the sdfxs script
+      - name: Run the sdcake script
         run: |
           cd ${{ env.DEVOPS_DIR }}
           python script/lockers/sdcake_working_supply.py
+        shell: bash
+        env:
+          PYTHONPATH: script/
+
+      - name: Run the sdspectra script
+        run: |
+          cd ${{ env.DEVOPS_DIR }}
+          python script/lockers/sdspectra_working_supply.py
         shell: bash
         env:
           PYTHONPATH: script/
@@ -71,6 +79,8 @@ jobs:
           cp "${{ env.DEVOPS_DIR }}/json/sdfxs/sdfxs-working-supply-users.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
           cp "${{ env.DEVOPS_DIR }}/json/sdcake/sdcake-working-supply.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
           cp "${{ env.DEVOPS_DIR }}/json/sdcake/sdcake-working-supply-users.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
+          cp "${{ env.DEVOPS_DIR }}/json/sdcake/sdspectra-working-supply.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
+          cp "${{ env.DEVOPS_DIR }}/json/sdcake/sdspectra-working-supply-users.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
 
       - name: Commit and push changes to repo
         run: |
