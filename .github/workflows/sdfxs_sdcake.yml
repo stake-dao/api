@@ -1,4 +1,4 @@
-name: Bot sdFXS, sdCake and sdSpectra
+name: Bot sdFXS and sdSpectra
 
 on:
   schedule:
@@ -49,14 +49,6 @@ jobs:
         env:
           PYTHONPATH: script/
 
-      - name: Run the sdcake script
-        run: |
-          cd ${{ env.DEVOPS_DIR }}
-          python script/lockers/sdcake_working_supply.py
-        shell: bash
-        env:
-          PYTHONPATH: script/
-
       - name: Run the sdspectra script
         run: |
           cd ${{ env.DEVOPS_DIR }}
@@ -73,12 +65,10 @@ jobs:
           path: ${{ env.TARGET_DEVOPS_DIR }}
         if: always()
         
-      - name: Copy sdfxs & sdcake data to target repo
+      - name: Copy sdfxs & sdspectra data to target repo
         run: |
           cp "${{ env.DEVOPS_DIR }}/json/sdfxs/sdfxs-working-supply.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
           cp "${{ env.DEVOPS_DIR }}/json/sdfxs/sdfxs-working-supply-users.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
-          cp "${{ env.DEVOPS_DIR }}/json/sdcake/sdcake-working-supply.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
-          cp "${{ env.DEVOPS_DIR }}/json/sdcake/sdcake-working-supply-users.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
           cp "${{ env.DEVOPS_DIR }}/json/sdspectra/sdspectra-working-supply.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
           cp "${{ env.DEVOPS_DIR }}/json/sdspectra/sdspectra-working-supply-users.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/lockers"
 
@@ -90,7 +80,7 @@ jobs:
           git config pull.rebase false
           git pull
           git add .
-          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update sdFXS & sdCAKE data"
+          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update sdFXS & sdSPECTRA data"
           git merge --strategy=ours origin/main
           git pull
           git push
