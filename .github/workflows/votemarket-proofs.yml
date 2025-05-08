@@ -12,7 +12,7 @@ on:
 
 env:
   ETHEREUM_MAINNET_RPC_URL: "https://small-greatest-model.quiknode.pro/${{ secrets.QUICKNODE_API_KEY }}"
-  ARBITRUM_MAINNET_RPC_URL: "https://endpoints.omniatech.io/v1/arbitrum/one/public"
+  ARBITRUM_MAINNET_RPC_URL: "https://api.zan.top/arb-one"
   OPTIMISM_MAINNET_RPC_URL: "https://optimism.rpc.subquery.network/public"
   BASE_MAINNET_RPC_URL: "https://base.rpc.subquery.network/public"
   POLYGON_MAINNET_RPC_URL: "https://polygon.lava.build"
