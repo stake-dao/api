@@ -13,17 +13,17 @@
   "license": "AGPL-3.0-only",
   "dependencies": {
     "@hono/node-server": "^1.14.1",
-    "@stake-dao/constants": "^0.4.42",
-    "@stake-dao/reader": "^0.4.82",
+    "@stake-dao/constants": "^0.4.43",
+    "@stake-dao/reader": "^0.4.83",
     "dotenv": "^16.5.0",
-    "hono": "^4.7.8",
+    "hono": "^4.7.9",
     "memoizee": "^0.4.17",
     "parquetjs": "^0.11.2",
-    "viem": "^2.29.0"
+    "viem": "^2.29.2"
   },
   "devDependencies": {
     "@types/memoizee": "^0.4.12",
-    "@types/node": "^20.17.41",
+    "@types/node": "^20.17.46",
     "prettier": "^3.5.3",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3"
