@@ -4,8 +4,27 @@ import { mainnet } from 'viem/chains'
 import { MEMO_MAX_AGE, getPrices, publicClient } from '../utils'
 import { RPC } from '../constants'
 import { tokens } from '@stake-dao/constants'
+import fs from 'fs'
+import path from 'path'
 
 require('dotenv').config()
+
+interface GaugeHolder {
+  user: string
+  balance: string
+}
+
+interface Gauge {
+  id: string
+  holders: GaugeHolder[]
+  holder_count: number
+}
+
+interface PendleGaugeHolders {
+  'lp-holder': string
+  gauge_count: number
+  gauges: Gauge[]
+}
 
 export const getPendleMainnet = memoize(
   async () => {
@@ -39,3 +58,38 @@ export const getPendle = memoize(async () => {
     fetched: true,
   }
 })
+
+export const getPendleGaugeHoldersMainnet = memoize(
+  async (): Promise<PendleGaugeHolders | null> => {
+    const filePath = path.join('api/strategies/pendle/gauge-holders.json')
+
+    return new Promise((resolve) => {
+      fs.readFile(filePath, 'utf8', (err, data) => {
+        if (err) {
+          console.error(`Error reading file ${filePath}: ${err}`)
+          resolve(null)
+          return
+        }
+
+        try {
+          const jsonData: PendleGaugeHolders = JSON.parse(data)
+          resolve(jsonData)
+        } catch (error) {
+          console.error(`Error parsing JSON from ${filePath}: ${error}`)
+          resolve(null)
+        }
+      })
+    })
+  },
+  { maxAge: MEMO_MAX_AGE },
+)
+
+export const getPendleGaugeHolders = memoize(
+  async (): Promise<PendleGaugeHolders | null> => {
+    const [pendleGaugeHolders] = await Promise.all([getPendleGaugeHoldersMainnet()])
+    return pendleGaugeHolders
+  },
+  { maxAge: MEMO_MAX_AGE },
+)
+
+
