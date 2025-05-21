@@ -56,7 +56,7 @@ jobs:
 
       - name: Copy pendle gauge holders data to target repo
         run: |
-          cp "${{ env.DEVOPS_DIR }}/stakedao-pendle-holders.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/strategies/pendle/gauge-holders.json"
+          cp "${{ env.DEVOPS_DIR }}/stakedao-pendle-holders.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/strategies/pendle/holders/index.json"
 
       - name: Commit and push changes to repo
         run: |
