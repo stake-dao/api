@@ -60,10 +60,11 @@ jobs:
 
       - name: Commit and push if changes found
         run: |
+          cd ${{ env.TARGET_DEVOPS_DIR }}
           git config --local user.email "action@github.com"
           git config --local user.name "Stake DAO API update"
           git add api/strategies/pendle/holders
-          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Pendle Gauge Holders data"
+          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Pendle Gauge Holders data" || exit 0
           git pull --rebase origin main
           git push origin main
         shell: bash
