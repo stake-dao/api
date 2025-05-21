@@ -66,7 +66,7 @@ strategies.get('/pendle/1', async (c) => {
   return c.json(data)
 })
 
-strategies.get('/pendle/gauge-holders', async (c) => {
+strategies.get('/pendle/holders', async (c) => {
   const data = await getPendleGaugeHolders()
   return c.json(data)
 })

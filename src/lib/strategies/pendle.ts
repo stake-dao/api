@@ -61,7 +61,7 @@ export const getPendle = memoize(async () => {
 
 export const getPendleGaugeHoldersMainnet = memoize(
   async (): Promise<PendleGaugeHolders | null> => {
-    const filePath = path.join('api/strategies/pendle/gauge-holders.json')
+    const filePath = path.join('api/strategies/pendle/holders/index.json')
 
     return new Promise((resolve) => {
       fs.readFile(filePath, 'utf8', (err, data) => {
