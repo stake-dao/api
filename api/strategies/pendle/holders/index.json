@@ -802,8 +802,13 @@
     },
     {
       "id": "0xB54Cf602bC6D16032C61c723Ba3ebC9660599C7B",
-      "holders": [],
-      "holder_count": 0
+      "holders": [
+        {
+          "user": "0x6A1DDf4b96Db63F0F4b21911c7077B35d878F0f5",
+          "balance": "4320941166146628090650"
+        }
+      ],
+      "holder_count": 1
     },
     {
       "id": "0xB6821835e049fF6C732774d16fc146C9C59c699f",
@@ -1205,10 +1210,6 @@
           "balance": "9950545480026076176921"
         },
         {
-          "user": "0x6A1DDf4b96Db63F0F4b21911c7077B35d878F0f5",
-          "balance": "5765889706900406743470"
-        },
-        {
           "user": "0xf1Dd55Cdb935F3a95529E44473EA1565745E43c2",
           "balance": "5087668445362282854782"
         },
@@ -1237,7 +1238,7 @@
           "balance": "9884825121153969254"
         }
       ],
-      "holder_count": 14
+      "holder_count": 13
     },
     {
       "id": "0xf6EfaBE0A0DA2b23ab42De4ee9205833400ecC16",
