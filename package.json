@@ -14,7 +14,7 @@
   "dependencies": {
     "@hono/node-server": "^1.14.3",
     "@stake-dao/constants": "^0.4.44",
-    "@stake-dao/reader": "^0.4.86",
+    "@stake-dao/reader": "^0.4.87",
     "dotenv": "^16.5.0",
     "hono": "^4.7.10",
     "memoizee": "^0.4.17",
@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@types/memoizee": "^0.4.12",
-    "@types/node": "^20.17.50",
+    "@types/node": "^20.17.51",
     "prettier": "^3.5.3",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3"
