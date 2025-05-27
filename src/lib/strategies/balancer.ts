@@ -12,7 +12,6 @@ export const getBalancerMainnet = memoize(
     return fetchBalancer({
       provider: publicClient[mainnet.id],
       explorerApiKey: process.env.ETHERSCAN_TOKEN as string,
-      explorer: 'etherscan.io',
       chainId: mainnet.id,
       sdtEmissionData: sdtEmissionData as SdtEmissionData,
     })

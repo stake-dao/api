@@ -19,7 +19,6 @@ export const getPancakeMainnet = memoize(
       rpc: RPC[mainnet.id],
       explorerApiKey: process.env.ETHERSCAN_TOKEN as string,
       chainId: mainnet.id,
-      explorer: 'etherscan.io',
       prices,
     })
   },
@@ -36,9 +35,8 @@ export const getPancakeBsc = memoize(
     return fetchPancakeswap({
       provider: publicClient[bsc.id],
       rpc: RPC[bsc.id],
-      explorerApiKey: process.env.BSCSCAN_TOKEN as string,
+      explorerApiKey: process.env.ETHERSCAN_TOKEN as string,
       chainId: bsc.id,
-      explorer: 'bscscan.com',
       prices,
     })
   },
@@ -55,9 +53,8 @@ export const getPancakeArbitrum = memoize(
     return fetchPancakeswap({
       provider: publicClient[arbitrum.id],
       rpc: RPC[arbitrum.id],
-      explorerApiKey: process.env.ARBISCAN_TOKEN as string,
+      explorerApiKey: process.env.ETHERSCAN_TOKEN as string,
       chainId: arbitrum.id,
-      explorer: 'arbiscan.io',
       prices,
     })
   },

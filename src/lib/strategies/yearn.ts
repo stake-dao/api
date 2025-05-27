@@ -22,7 +22,6 @@ export const getYearnMainnet = memoize(
       provider: publicClient[mainnet.id],
       rpc: RPC[mainnet.id],
       explorerApiKey: process.env.ETHERSCAN_TOKEN as string,
-      explorer: 'etherscan.io',
       chainId: mainnet.id,
     })
   },
