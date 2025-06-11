@@ -354,3 +354,61 @@ export type BuiltStrat = {
   underlyingReward?: Coin
 }
 ```
+
+### Pendle Holders data
+
+Endpoint : [/api/strategies/pendle/holders](https://api.stakedao.org/api/strategies/pendle/holders)
+
+Data type :
+
+```
+{
+  "lp-holder": string,  // Pendle locker address
+  "gauge_count": number,
+  "gauges": [
+    {
+      "id": string,  // Gauge address
+      "lpt": string,  // PT token address (if available)
+      "lpt_symbol": string,  // PT token symbol (if available)
+      "holders": [
+        {
+          "user": string,  // User address
+          "balance": string  // Current balance
+        }
+      ],
+      "holder_count": number,  // Current number of holders
+      "historical_data": [  // All users who have ever held tokens
+        {
+          "user": string,  // User address
+          "entry_block": number,  // Block when user first entered
+          "entry_ts": string,  // Timestamp when user first entered
+          "max_balance": string,  // Maximum balance user ever held
+          "exit_block": number,  // Block when user exited (if applicable)
+          "exit_ts": string,  // Timestamp when user exited (if applicable)
+          "is_past_user": boolean  // True if user has exited
+        }
+      ],
+      "past_users": [  // Users who have exited the market
+        {
+          "user": string,
+          "entry_block": number,
+          "entry_ts": string,
+          "max_balance": string,
+          "exit_block": number,
+          "exit_ts": string,
+          "is_past_user": true
+        }
+      ],
+      "total_unique_users": number,  // Total unique users (current + past)
+      "past_users_count": number  // Number of users who have exited
+    }
+  ]
+}
+```
+
+This endpoint provides comprehensive data about Pendle gauge holders, including:
+- Current holders with their balances
+- Historical data for all users who have ever held tokens
+- Past users who have entered and exited the market
+- Entry/exit timestamps and blocks for tracking user behavior
+- Maximum balances held by each user
