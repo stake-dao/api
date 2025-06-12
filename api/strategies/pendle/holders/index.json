@@ -3997,6 +3997,10 @@
           "balance": "233705067240218534850844"
         },
         {
+          "user": "0x74438a716C9f2F4C3bF9868653c940F31C8ad2fe",
+          "balance": "59955001755281717963724"
+        },
+        {
           "user": "0x0BDa59997765a113BeA8cA9Cba319B35fB287Fc8",
           "balance": "52352746481727259811678"
         },
@@ -4007,10 +4011,6 @@
         {
           "user": "0x0d8163aEE1BEc6338B979e34b6Cb31013fe82516",
           "balance": "23664498625221047951125"
-        },
-        {
-          "user": "0x74438a716C9f2F4C3bF9868653c940F31C8ad2fe",
-          "balance": "15611569157531582807692"
         },
         {
           "user": "0x5c0c8D1cF51AC8E8D970051ac69dbDb1315B6036",
@@ -4044,6 +4044,13 @@
       "holder_count": 12,
       "historical_data": [
         {
+          "user": "0x74438a716C9f2F4C3bF9868653c940F31C8ad2fe",
+          "entry_block": 22644406,
+          "entry_ts": "1749198971",
+          "max_balance": "59955001755281717963724",
+          "is_past_user": false
+        },
+        {
           "user": "0x5BC81274740A73D33ec8539182c326b8b58004C2",
           "entry_block": 22686572,
           "entry_ts": "1749708227",
@@ -4055,13 +4062,6 @@
           "entry_block": 22680111,
           "entry_ts": "1749630299",
           "max_balance": "891793115583352259807",
-          "is_past_user": false
-        },
-        {
-          "user": "0x74438a716C9f2F4C3bF9868653c940F31C8ad2fe",
-          "entry_block": 22644406,
-          "entry_ts": "1749198971",
-          "max_balance": "15611569157531582807692",
           "is_past_user": false
         },
         {
@@ -7320,13 +7320,6 @@
           "entry_ts": "1745402855",
           "max_balance": "1000000000000000000",
           "is_past_user": false
-        },
-        {
-          "user": "0xeed360aC2DE169d85DcD41D486DdB3Fc73D91bF4",
-          "entry_block": 22088497,
-          "entry_ts": "1742478791",
-          "max_balance": "701682244340725521",
-          "is_past_user": false
         }
       ],
       "past_users": [
@@ -7349,7 +7342,7 @@
           "is_past_user": true
         }
       ],
-      "total_unique_users": 5,
+      "total_unique_users": 4,
       "past_users_count": 2
     },
     {
