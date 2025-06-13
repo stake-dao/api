@@ -983,12 +983,23 @@
       "lpt_symbol": "PT-eWETH-2-18DEC2025",
       "holders": [
         {
+          "user": "0x719a143654a0C4621F49FA77077800ef3F5C3b40",
+          "balance": "12174188258821565"
+        },
+        {
           "user": "0x35c79714b4DBA8b9Cb3F02E9b39A3dbdd392B80b",
           "balance": "7617178040000000"
         }
       ],
-      "holder_count": 1,
+      "holder_count": 2,
       "historical_data": [
+        {
+          "user": "0x719a143654a0C4621F49FA77077800ef3F5C3b40",
+          "entry_block": 22695561,
+          "entry_ts": "1749816803",
+          "max_balance": "12174188258821565",
+          "is_past_user": false
+        },
         {
           "user": "0xbc2E07a461ef6194545c4BBAd0e3F64679331eA9",
           "entry_block": 22660207,
@@ -1017,7 +1028,7 @@
           "is_past_user": true
         }
       ],
-      "total_unique_users": 2,
+      "total_unique_users": 3,
       "past_users_count": 1
     },
     {
