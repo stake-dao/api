@@ -1435,11 +1435,24 @@
       "id": "0x291aB92A72541ac7dC188f8cC3250a612fa77Af1",
       "lpt": "0x88C4F34B86907b7221c0061f7a0bBeC9391Ea727",
       "lpt_symbol": "PT-RUSD-31JUL2025",
-      "holders": [],
-      "holder_count": 0,
-      "historical_data": [],
+      "holders": [
+        {
+          "user": "0xb331299f0E75FcAc35C8ac37A70E0C8967be7416",
+          "balance": "37575473007270688997"
+        }
+      ],
+      "holder_count": 1,
+      "historical_data": [
+        {
+          "user": "0xb331299f0E75FcAc35C8ac37A70E0C8967be7416",
+          "entry_block": 22695891,
+          "entry_ts": "1749820763",
+          "max_balance": "37575473007270688997",
+          "is_past_user": false
+        }
+      ],
       "past_users": [],
-      "total_unique_users": 0,
+      "total_unique_users": 1,
       "past_users_count": 0
     },
     {
@@ -7317,17 +7330,9 @@
         }
       ],
       "holder_count": 4,
-      "historical_data": [
-        {
-          "user": "0x18Ca32BC90EAd44a3E6f633f146789958Ef00ac7",
-          "entry_block": 22567309,
-          "entry_ts": "1748266667",
-          "max_balance": "1039571853218133017429",
-          "is_past_user": false
-        }
-      ],
+      "historical_data": [],
       "past_users": [],
-      "total_unique_users": 1,
+      "total_unique_users": 0,
       "past_users_count": 0
     },
     {
