@@ -2770,9 +2770,21 @@
       "id": "0x48242eaCc9EEe0E29318bac13899cd27aB5c31B6",
       "lpt": "0x34280882267ffa6383B363E278B027Be083bBe3b",
       "lpt_symbol": "PT-stETH-30DEC2027",
-      "holders": [],
-      "holder_count": 0,
+      "holders": [
+        {
+          "user": "0x71d78cC7bE6cF5dC70B286D472435D12A0d7eD54",
+          "balance": "1282067238255776652"
+        }
+      ],
+      "holder_count": 1,
       "historical_data": [
+        {
+          "user": "0x71d78cC7bE6cF5dC70B286D472435D12A0d7eD54",
+          "entry_block": 22709958,
+          "entry_ts": "1749990767",
+          "max_balance": "1282067238255776652",
+          "is_past_user": false
+        },
         {
           "user": "0x099473C43c936BEF919Bd0c3962Da21299e0d298",
           "entry_block": 19601694,
@@ -2812,7 +2824,7 @@
           "is_past_user": true
         }
       ],
-      "total_unique_users": 2,
+      "total_unique_users": 3,
       "past_users_count": 2
     },
     {
