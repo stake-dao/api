@@ -1434,11 +1434,24 @@
       "id": "0x1F2DF663E25089aacB3E6801613Bb82a2e178376",
       "lpt": "0xE467c5C54748f0125d729280F90DeD77C4e720a4",
       "lpt_symbol": "PT-sBOLD-27NOV2025",
-      "holders": [],
-      "holder_count": 0,
-      "historical_data": [],
+      "holders": [
+        {
+          "user": "0x2A0F0fb9Cb40DF7C5916C786d20dcc9818E6C3Cd",
+          "balance": "8462077275904914503991"
+        }
+      ],
+      "holder_count": 1,
+      "historical_data": [
+        {
+          "user": "0x2A0F0fb9Cb40DF7C5916C786d20dcc9818E6C3Cd",
+          "entry_block": 22751658,
+          "entry_ts": "1750494671",
+          "max_balance": "8462077275904914503991",
+          "is_past_user": false
+        }
+      ],
       "past_users": [],
-      "total_unique_users": 0,
+      "total_unique_users": 1,
       "past_users_count": 0
     },
     {
