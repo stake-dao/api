@@ -1832,11 +1832,24 @@
       "id": "0x29c3a9F1436B83700Ea0F0244c1b3D33D3F5a282",
       "lpt": "0x1BD78377DFbCA2043e38b692D2E0b32396b4772d",
       "lpt_symbol": "PT-ysyBOLD-27NOV2025",
-      "holders": [],
-      "holder_count": 0,
-      "historical_data": [],
+      "holders": [
+        {
+          "user": "0xC8233a46F57Add754f32Cf9e25A85aAe8a7D5f29",
+          "balance": "8698545724079043105825"
+        }
+      ],
+      "holder_count": 1,
+      "historical_data": [
+        {
+          "user": "0xC8233a46F57Add754f32Cf9e25A85aAe8a7D5f29",
+          "entry_block": 22773612,
+          "entry_ts": "1750759955",
+          "max_balance": "8698545724079043105825",
+          "is_past_user": false
+        }
+      ],
       "past_users": [],
-      "total_unique_users": 0,
+      "total_unique_users": 1,
       "past_users_count": 0
     },
     {
