@@ -270,25 +270,32 @@
       "id": "0x06d472ED4aba6b88E0587b3e5E15f79089632eDD",
       "lpt": "0xD009A734028e3aa0839eB69DAB4A594AbcfAE728",
       "lpt_symbol": "PT-liquidBera-BTC-scaled18-28AUG2025",
-      "holders": [
-        {
-          "user": "0x35c79714b4DBA8b9Cb3F02E9b39A3dbdd392B80b",
-          "balance": "195507587641567"
-        }
-      ],
-      "holder_count": 1,
+      "holders": [],
+      "holder_count": 0,
       "historical_data": [
         {
           "user": "0x35c79714b4DBA8b9Cb3F02E9b39A3dbdd392B80b",
           "entry_block": 22637549,
           "entry_ts": "1749116039",
           "max_balance": "195507587641567",
-          "is_past_user": false
+          "exit_block": 22795307,
+          "exit_ts": "1751021627",
+          "is_past_user": true
         }
       ],
-      "past_users": [],
+      "past_users": [
+        {
+          "user": "0x35c79714b4DBA8b9Cb3F02E9b39A3dbdd392B80b",
+          "entry_block": 22637549,
+          "entry_ts": "1749116039",
+          "max_balance": "195507587641567",
+          "exit_block": 22795307,
+          "exit_ts": "1751021627",
+          "is_past_user": true
+        }
+      ],
       "total_unique_users": 1,
-      "past_users_count": 0
+      "past_users_count": 1
     },
     {
       "id": "0x0701c34b7D7417EC33c712D40e48A672Cebe03C6",
@@ -6105,6 +6112,13 @@
           "is_past_user": true
         },
         {
+          "user": "0xd72b821a1d9180FFAC4375f6F11142211a025657",
+          "entry_block": 22497401,
+          "entry_ts": "1747419995",
+          "max_balance": "55129404762327889930",
+          "is_past_user": false
+        },
+        {
           "user": "0x1A162A5FdaEbb0113f7B83Ed87A43BCF0B6a4D1E",
           "entry_block": 22080413,
           "entry_ts": "1742381195",
@@ -6112,13 +6126,6 @@
           "exit_block": 22497401,
           "exit_ts": "1747419995",
           "is_past_user": true
-        },
-        {
-          "user": "0xd72b821a1d9180FFAC4375f6F11142211a025657",
-          "entry_block": 22497401,
-          "entry_ts": "1747419995",
-          "max_balance": "55129404762327889930",
-          "is_past_user": false
         },
         {
           "user": "0x19e7BEd7868cDF2C6EcE204314BD6bfE915BCA21",
@@ -7500,30 +7507,10 @@
       "lpt_symbol": "PT-USDe-31JUL2025",
       "holders": [],
       "holder_count": 0,
-      "historical_data": [
-        {
-          "user": "0x51D50B68614FCdd766302eC34784F0663db27C97",
-          "entry_block": 21910782,
-          "entry_ts": "1740334955",
-          "max_balance": "17976195692370409679801",
-          "exit_block": 21910800,
-          "exit_ts": "1740335183",
-          "is_past_user": true
-        }
-      ],
-      "past_users": [
-        {
-          "user": "0x51D50B68614FCdd766302eC34784F0663db27C97",
-          "entry_block": 21910782,
-          "entry_ts": "1740334955",
-          "max_balance": "17976195692370409679801",
-          "exit_block": 21910800,
-          "exit_ts": "1740335183",
-          "is_past_user": true
-        }
-      ],
-      "total_unique_users": 1,
-      "past_users_count": 1
+      "historical_data": [],
+      "past_users": [],
+      "total_unique_users": 0,
+      "past_users_count": 0
     },
     {
       "id": "0xc1d01CA014D512E2991067C4D2442A3d3D420565",
