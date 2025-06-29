@@ -2628,14 +2628,18 @@
       "id": "0x3E2DFeaCA18DCAcb60C54B8C7EEFD40626973047",
       "lpt": "0x2bf616c236d1AbD31FF105247a774E6E738b5f4E",
       "lpt_symbol": "PT-scrvUSD-26JUN2025",
-      "holders": [
+      "holders": [],
+      "holder_count": 0,
+      "historical_data": [
         {
           "user": "0x1E8f4d6198E3B7d44e65a12D2C91783c8DEb2ba2",
-          "balance": "21391263065532918746467"
-        }
-      ],
-      "holder_count": 1,
-      "historical_data": [
+          "entry_block": 22200221,
+          "entry_ts": "1743825995",
+          "max_balance": "21391263065532918746467",
+          "exit_block": 22809613,
+          "exit_ts": "1751194415",
+          "is_past_user": true
+        },
         {
           "user": "0x85B3C124A704aE638622A1e99310F22eEE7279c6",
           "entry_block": 22190655,
@@ -2644,16 +2648,18 @@
           "exit_block": 22223014,
           "exit_ts": "1744101215",
           "is_past_user": true
-        },
+        }
+      ],
+      "past_users": [
         {
           "user": "0x1E8f4d6198E3B7d44e65a12D2C91783c8DEb2ba2",
           "entry_block": 22200221,
           "entry_ts": "1743825995",
           "max_balance": "21391263065532918746467",
-          "is_past_user": false
-        }
-      ],
-      "past_users": [
+          "exit_block": 22809613,
+          "exit_ts": "1751194415",
+          "is_past_user": true
+        },
         {
           "user": "0x85B3C124A704aE638622A1e99310F22eEE7279c6",
           "entry_block": 22190655,
@@ -2665,7 +2671,7 @@
         }
       ],
       "total_unique_users": 2,
-      "past_users_count": 1
+      "past_users_count": 2
     },
     {
       "id": "0x4006B39490f039ACa977f21A7641e827Ad7b6c0B",
