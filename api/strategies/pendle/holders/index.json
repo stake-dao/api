@@ -4938,7 +4938,7 @@
       "holders": [
         {
           "user": "0x1251871b7c7Ec8D6E3Ec19302Fb5A15B219A9103",
-          "balance": "211509963403332799"
+          "balance": "235500748599387226"
         },
         {
           "user": "0xb331299f0E75FcAc35C8ac37A70E0C8967be7416",
@@ -4952,6 +4952,13 @@
       "holder_count": 3,
       "historical_data": [
         {
+          "user": "0x1251871b7c7Ec8D6E3Ec19302Fb5A15B219A9103",
+          "entry_block": 22564646,
+          "entry_ts": "1748234375",
+          "max_balance": "235500748599387226",
+          "is_past_user": false
+        },
+        {
           "user": "0x9722E41c607819926794118aC50aa2a4c84c5f71",
           "entry_block": 22522432,
           "entry_ts": "1747723499",
@@ -4959,13 +4966,6 @@
           "exit_block": 22751319,
           "exit_ts": "1750490579",
           "is_past_user": true
-        },
-        {
-          "user": "0x1251871b7c7Ec8D6E3Ec19302Fb5A15B219A9103",
-          "entry_block": 22564646,
-          "entry_ts": "1748234375",
-          "max_balance": "211509963403332799",
-          "is_past_user": false
         },
         {
           "user": "0xb331299f0E75FcAc35C8ac37A70E0C8967be7416",
@@ -6312,6 +6312,13 @@
           "is_past_user": true
         },
         {
+          "user": "0xd72b821a1d9180FFAC4375f6F11142211a025657",
+          "entry_block": 22497401,
+          "entry_ts": "1747419995",
+          "max_balance": "55129404762327889930",
+          "is_past_user": false
+        },
+        {
           "user": "0x1A162A5FdaEbb0113f7B83Ed87A43BCF0B6a4D1E",
           "entry_block": 22080413,
           "entry_ts": "1742381195",
@@ -6319,13 +6326,6 @@
           "exit_block": 22497401,
           "exit_ts": "1747419995",
           "is_past_user": true
-        },
-        {
-          "user": "0xd72b821a1d9180FFAC4375f6F11142211a025657",
-          "entry_block": 22497401,
-          "entry_ts": "1747419995",
-          "max_balance": "55129404762327889930",
-          "is_past_user": false
         },
         {
           "user": "0x19e7BEd7868cDF2C6EcE204314BD6bfE915BCA21",
