@@ -5673,11 +5673,24 @@
       "id": "0xA1e7762d4A41B55B7c3581570eF38F1F445b6cA0",
       "lpt": "0x55F06992E4C3ed17Df830dA37644885c0c34EDdA",
       "lpt_symbol": "PT-RLP-4SEP2025",
-      "holders": [],
-      "holder_count": 0,
-      "historical_data": [],
+      "holders": [
+        {
+          "user": "0x923ed3D633bC2418ed0604e962A272b0860e553E",
+          "balance": "373148095156435925"
+        }
+      ],
+      "holder_count": 1,
+      "historical_data": [
+        {
+          "user": "0x923ed3D633bC2418ed0604e962A272b0860e553E",
+          "entry_block": 22894394,
+          "entry_ts": "1752218327",
+          "max_balance": "373148095156435925",
+          "is_past_user": false
+        }
+      ],
       "past_users": [],
-      "total_unique_users": 0,
+      "total_unique_users": 1,
       "past_users_count": 0
     },
     {
@@ -7277,30 +7290,10 @@
         }
       ],
       "holder_count": 1,
-      "historical_data": [
-        {
-          "user": "0xdDBF9868D960FD2433BA762FAf46024881cd9916",
-          "entry_block": 22856923,
-          "entry_ts": "1751765759",
-          "max_balance": "20000000000000000000",
-          "exit_block": 22857061,
-          "exit_ts": "1751767415",
-          "is_past_user": true
-        }
-      ],
-      "past_users": [
-        {
-          "user": "0xdDBF9868D960FD2433BA762FAf46024881cd9916",
-          "entry_block": 22856923,
-          "entry_ts": "1751765759",
-          "max_balance": "20000000000000000000",
-          "exit_block": 22857061,
-          "exit_ts": "1751767415",
-          "is_past_user": true
-        }
-      ],
-      "total_unique_users": 1,
-      "past_users_count": 1
+      "historical_data": [],
+      "past_users": [],
+      "total_unique_users": 0,
+      "past_users_count": 0
     },
     {
       "id": "0xE82D49EB49A550699592bba7B706D526749F59f9",
