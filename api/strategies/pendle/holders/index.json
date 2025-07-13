@@ -3403,32 +3403,40 @@
         {
           "user": "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0",
           "balance": "22000000000"
-        },
-        {
-          "user": "0x7E6E09fD7fbC2c48b51306EA61D20B32e40999f4",
-          "balance": "8950000000"
         }
       ],
-      "holder_count": 2,
+      "holder_count": 1,
       "historical_data": [
+        {
+          "user": "0x7E6E09fD7fbC2c48b51306EA61D20B32e40999f4",
+          "entry_block": 22811582,
+          "entry_ts": "1751218211",
+          "max_balance": "8950000000",
+          "exit_block": 22910292,
+          "exit_ts": "1752410111",
+          "is_past_user": true
+        },
         {
           "user": "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0",
           "entry_block": 22834433,
           "entry_ts": "1751494223",
           "max_balance": "22000000000",
           "is_past_user": false
-        },
+        }
+      ],
+      "past_users": [
         {
           "user": "0x7E6E09fD7fbC2c48b51306EA61D20B32e40999f4",
           "entry_block": 22811582,
           "entry_ts": "1751218211",
           "max_balance": "8950000000",
-          "is_past_user": false
+          "exit_block": 22910292,
+          "exit_ts": "1752410111",
+          "is_past_user": true
         }
       ],
-      "past_users": [],
       "total_unique_users": 2,
-      "past_users_count": 0
+      "past_users_count": 1
     },
     {
       "id": "0x5D7401D0EB63b4291B47E37CaaafED3C79bff265",
@@ -6365,6 +6373,13 @@
           "is_past_user": false
         },
         {
+          "user": "0x75F256ECa494266771cbcb28E4EDA9d5fbCA430A",
+          "entry_block": 22671925,
+          "entry_ts": "1749531503",
+          "max_balance": "23028953368828431585",
+          "is_past_user": false
+        },
+        {
           "user": "0x657975E1EDd5593977695426Ab393203451BC8D6",
           "entry_block": 20908757,
           "entry_ts": "1728244751",
@@ -6372,13 +6387,6 @@
           "exit_block": 22671925,
           "exit_ts": "1749531503",
           "is_past_user": true
-        },
-        {
-          "user": "0x75F256ECa494266771cbcb28E4EDA9d5fbCA430A",
-          "entry_block": 22671925,
-          "entry_ts": "1749531503",
-          "max_balance": "23028953368828431585",
-          "is_past_user": false
         },
         {
           "user": "0x6A1DDf4b96Db63F0F4b21911c7077B35d878F0f5",
@@ -7207,20 +7215,11 @@
         },
         {
           "user": "0x2C4287B79B15aE63FbaaCd85a0302f6F172182fA",
-          "entry_block": 22257339,
-          "entry_ts": "1744514639",
-          "max_balance": "13612507689862276737",
+          "entry_block": 22578548,
+          "entry_ts": "1748402375",
+          "max_balance": "7487507689862276737",
           "exit_block": 22692782,
           "exit_ts": "1749783179",
-          "is_past_user": true
-        },
-        {
-          "user": "0xd1699002d9548DCA840268ba1bd1afa27E0ba62d",
-          "entry_block": 22246823,
-          "entry_ts": "1744388039",
-          "max_balance": "456062850943104352",
-          "exit_block": 22416519,
-          "exit_ts": "1746435743",
           "is_past_user": true
         }
       ],
@@ -7254,25 +7253,16 @@
         },
         {
           "user": "0x2C4287B79B15aE63FbaaCd85a0302f6F172182fA",
-          "entry_block": 22257339,
-          "entry_ts": "1744514639",
-          "max_balance": "13612507689862276737",
+          "entry_block": 22578548,
+          "entry_ts": "1748402375",
+          "max_balance": "7487507689862276737",
           "exit_block": 22692782,
           "exit_ts": "1749783179",
           "is_past_user": true
-        },
-        {
-          "user": "0xd1699002d9548DCA840268ba1bd1afa27E0ba62d",
-          "entry_block": 22246823,
-          "entry_ts": "1744388039",
-          "max_balance": "456062850943104352",
-          "exit_block": 22416519,
-          "exit_ts": "1746435743",
-          "is_past_user": true
         }
       ],
-      "total_unique_users": 5,
-      "past_users_count": 5
+      "total_unique_users": 4,
+      "past_users_count": 4
     },
     {
       "id": "0xE4c0a1C8cce80C1665668C9EC5FA43542b05485E",
