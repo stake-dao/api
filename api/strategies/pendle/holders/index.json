@@ -5594,10 +5594,21 @@
         {
           "user": "0xb957DccaA1CCFB1eB78B495B499801D591d8a403",
           "balance": "8329646875033260380996"
+        },
+        {
+          "user": "0x636dF4BD62E1Eb3477c0dBAFc8cD8C5Dd8B3A972",
+          "balance": "1877376486687908875556"
         }
       ],
-      "holder_count": 1,
+      "holder_count": 2,
       "historical_data": [
+        {
+          "user": "0x636dF4BD62E1Eb3477c0dBAFc8cD8C5Dd8B3A972",
+          "entry_block": 22953864,
+          "entry_ts": "1752935627",
+          "max_balance": "1877376486687908875556",
+          "is_past_user": false
+        },
         {
           "user": "0xA6a7a63F9EE0AC6e7f6bf8756C83e707AE4E43CC",
           "entry_block": 22302646,
@@ -5662,7 +5673,7 @@
           "is_past_user": true
         }
       ],
-      "total_unique_users": 4,
+      "total_unique_users": 5,
       "past_users_count": 3
     },
     {
@@ -6483,13 +6494,6 @@
           "is_past_user": false
         },
         {
-          "user": "0x75F256ECa494266771cbcb28E4EDA9d5fbCA430A",
-          "entry_block": 22671925,
-          "entry_ts": "1749531503",
-          "max_balance": "23028953368828431585",
-          "is_past_user": false
-        },
-        {
           "user": "0x657975E1EDd5593977695426Ab393203451BC8D6",
           "entry_block": 20908757,
           "entry_ts": "1728244751",
@@ -6497,6 +6501,13 @@
           "exit_block": 22671925,
           "exit_ts": "1749531503",
           "is_past_user": true
+        },
+        {
+          "user": "0x75F256ECa494266771cbcb28E4EDA9d5fbCA430A",
+          "entry_block": 22671925,
+          "entry_ts": "1749531503",
+          "max_balance": "23028953368828431585",
+          "is_past_user": false
         },
         {
           "user": "0x6A1DDf4b96Db63F0F4b21911c7077B35d878F0f5",
@@ -6531,6 +6542,13 @@
           "is_past_user": true
         },
         {
+          "user": "0xd72b821a1d9180FFAC4375f6F11142211a025657",
+          "entry_block": 22497401,
+          "entry_ts": "1747419995",
+          "max_balance": "55129404762327889930",
+          "is_past_user": false
+        },
+        {
           "user": "0x1A162A5FdaEbb0113f7B83Ed87A43BCF0B6a4D1E",
           "entry_block": 22080413,
           "entry_ts": "1742381195",
@@ -6538,13 +6556,6 @@
           "exit_block": 22497401,
           "exit_ts": "1747419995",
           "is_past_user": true
-        },
-        {
-          "user": "0xd72b821a1d9180FFAC4375f6F11142211a025657",
-          "entry_block": 22497401,
-          "entry_ts": "1747419995",
-          "max_balance": "55129404762327889930",
-          "is_past_user": false
         },
         {
           "user": "0x19e7BEd7868cDF2C6EcE204314BD6bfE915BCA21",
@@ -7225,15 +7236,6 @@
           "is_past_user": true
         },
         {
-          "user": "0x4700375B533D53F450F976358b074b0da90435e3",
-          "entry_block": 21400715,
-          "entry_ts": "1734178823",
-          "max_balance": "28292729986578413231963",
-          "exit_block": 21436488,
-          "exit_ts": "1734610355",
-          "is_past_user": true
-        },
-        {
           "user": "0x4dAf8ce9D729ca4F121381ec4B22123627C1C004",
           "entry_block": 21428893,
           "entry_ts": "1734518579",
@@ -7281,15 +7283,6 @@
           "is_past_user": true
         },
         {
-          "user": "0x4700375B533D53F450F976358b074b0da90435e3",
-          "entry_block": 21400715,
-          "entry_ts": "1734178823",
-          "max_balance": "28292729986578413231963",
-          "exit_block": 21436488,
-          "exit_ts": "1734610355",
-          "is_past_user": true
-        },
-        {
           "user": "0x4dAf8ce9D729ca4F121381ec4B22123627C1C004",
           "entry_block": 21428893,
           "entry_ts": "1734518579",
@@ -7308,8 +7301,8 @@
           "is_past_user": true
         }
       ],
-      "total_unique_users": 6,
-      "past_users_count": 6
+      "total_unique_users": 5,
+      "past_users_count": 5
     },
     {
       "id": "0xE185D04A60EC7E1433cA2F6768f9f4888555b6Ac",
