@@ -6505,6 +6505,13 @@
           "is_past_user": false
         },
         {
+          "user": "0x75F256ECa494266771cbcb28E4EDA9d5fbCA430A",
+          "entry_block": 22671925,
+          "entry_ts": "1749531503",
+          "max_balance": "23028953368828431585",
+          "is_past_user": false
+        },
+        {
           "user": "0x657975E1EDd5593977695426Ab393203451BC8D6",
           "entry_block": 20908757,
           "entry_ts": "1728244751",
@@ -6512,13 +6519,6 @@
           "exit_block": 22671925,
           "exit_ts": "1749531503",
           "is_past_user": true
-        },
-        {
-          "user": "0x75F256ECa494266771cbcb28E4EDA9d5fbCA430A",
-          "entry_block": 22671925,
-          "entry_ts": "1749531503",
-          "max_balance": "23028953368828431585",
-          "is_past_user": false
         },
         {
           "user": "0x6A1DDf4b96Db63F0F4b21911c7077B35d878F0f5",
@@ -7471,13 +7471,8 @@
       "id": "0xa41b85Cd80c4771D09D2F2EeA2dE98173eAf634B",
       "lpt": "0x2353193fa14A6477a4523e2C078e4063022FCf66",
       "lpt_symbol": "PT-iUSD-4SEP2025",
-      "holders": [
-        {
-          "user": "0x85542DbaECd0379BE7aD07Cd616d909ccd7a215F",
-          "balance": "2103730958000658074474"
-        }
-      ],
-      "holder_count": 1,
+      "holders": [],
+      "holder_count": 0,
       "historical_data": [],
       "past_users": [],
       "total_unique_users": 0,
