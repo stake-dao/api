@@ -4683,6 +4683,10 @@
           "balance": "15071696265652853697786"
         },
         {
+          "user": "0x9f1775c88fE7Ed36C57A35CEFEF4EF4d1c2D802B",
+          "balance": "14547956668258747905614"
+        },
+        {
           "user": "0x9BCd0C730EbDe6e7809fE1E17E3ccdBf82bf90Ab",
           "balance": "13244450026349432596974"
         },
@@ -4711,8 +4715,15 @@
           "balance": "2856620569463266031"
         }
       ],
-      "holder_count": 12,
+      "holder_count": 13,
       "historical_data": [
+        {
+          "user": "0x9f1775c88fE7Ed36C57A35CEFEF4EF4d1c2D802B",
+          "entry_block": 22953991,
+          "entry_ts": "1752937151",
+          "max_balance": "14547956668258747905614",
+          "is_past_user": false
+        },
         {
           "user": "0x9BCd0C730EbDe6e7809fE1E17E3ccdBf82bf90Ab",
           "entry_block": 22853497,
@@ -4836,7 +4847,7 @@
           "is_past_user": true
         }
       ],
-      "total_unique_users": 14,
+      "total_unique_users": 15,
       "past_users_count": 2
     },
     {
@@ -7243,15 +7254,6 @@
           "exit_block": 21436009,
           "exit_ts": "1734604583",
           "is_past_user": true
-        },
-        {
-          "user": "0x4e99F5Af29c39CC100E21477f72ff2984087d19F",
-          "entry_block": 21411135,
-          "entry_ts": "1734304547",
-          "max_balance": "25000000000000000000000",
-          "exit_block": 21430319,
-          "exit_ts": "1734535811",
-          "is_past_user": true
         }
       ],
       "past_users": [
@@ -7290,19 +7292,10 @@
           "exit_block": 21436009,
           "exit_ts": "1734604583",
           "is_past_user": true
-        },
-        {
-          "user": "0x4e99F5Af29c39CC100E21477f72ff2984087d19F",
-          "entry_block": 21411135,
-          "entry_ts": "1734304547",
-          "max_balance": "25000000000000000000000",
-          "exit_block": 21430319,
-          "exit_ts": "1734535811",
-          "is_past_user": true
         }
       ],
-      "total_unique_users": 5,
-      "past_users_count": 5
+      "total_unique_users": 4,
+      "past_users_count": 4
     },
     {
       "id": "0xE185D04A60EC7E1433cA2F6768f9f4888555b6Ac",
