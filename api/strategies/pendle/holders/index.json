@@ -5684,7 +5684,7 @@
       "holders": [
         {
           "user": "0xb957DccaA1CCFB1eB78B495B499801D591d8a403",
-          "balance": "8329646875033260380996"
+          "balance": "4999646875033260380996"
         },
         {
           "user": "0x636dF4BD62E1Eb3477c0dBAFc8cD8C5Dd8B3A972",
@@ -5693,6 +5693,13 @@
       ],
       "holder_count": 2,
       "historical_data": [
+        {
+          "user": "0xb957DccaA1CCFB1eB78B495B499801D591d8a403",
+          "entry_block": 22292911,
+          "entry_ts": "1744943483",
+          "max_balance": "8329646875033260380996",
+          "is_past_user": false
+        },
         {
           "user": "0x636dF4BD62E1Eb3477c0dBAFc8cD8C5Dd8B3A972",
           "entry_block": 22953864,
@@ -5726,13 +5733,6 @@
           "exit_block": 22306355,
           "exit_ts": "1745105543",
           "is_past_user": true
-        },
-        {
-          "user": "0xb957DccaA1CCFB1eB78B495B499801D591d8a403",
-          "entry_block": 22292911,
-          "entry_ts": "1744943483",
-          "max_balance": "8329646875033260380996",
-          "is_past_user": false
         }
       ],
       "past_users": [
@@ -6605,13 +6605,6 @@
           "is_past_user": false
         },
         {
-          "user": "0x75F256ECa494266771cbcb28E4EDA9d5fbCA430A",
-          "entry_block": 22671925,
-          "entry_ts": "1749531503",
-          "max_balance": "23028953368828431585",
-          "is_past_user": false
-        },
-        {
           "user": "0x657975E1EDd5593977695426Ab393203451BC8D6",
           "entry_block": 20908757,
           "entry_ts": "1728244751",
@@ -6619,6 +6612,13 @@
           "exit_block": 22671925,
           "exit_ts": "1749531503",
           "is_past_user": true
+        },
+        {
+          "user": "0x75F256ECa494266771cbcb28E4EDA9d5fbCA430A",
+          "entry_block": 22671925,
+          "entry_ts": "1749531503",
+          "max_balance": "23028953368828431585",
+          "is_past_user": false
         },
         {
           "user": "0x6A1DDf4b96Db63F0F4b21911c7077B35d878F0f5",
