@@ -1382,7 +1382,7 @@
         },
         {
           "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
-          "balance": "51953758919007179530271"
+          "balance": "58620212412269142537882"
         },
         {
           "user": "0x0a44F50Ed65afBd41f594e4B1E4366574bF32CA7",
@@ -1419,6 +1419,13 @@
       ],
       "holder_count": 10,
       "historical_data": [
+        {
+          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
+          "entry_block": 22478993,
+          "entry_ts": "1747196315",
+          "max_balance": "58620212412269142537882",
+          "is_past_user": false
+        },
         {
           "user": "0x3039de687b20ED25C30d25e3B7fE4177024E539b",
           "entry_block": 22931373,
@@ -1521,13 +1528,6 @@
           "exit_block": 22516666,
           "exit_ts": "1747653551",
           "is_past_user": true
-        },
-        {
-          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
-          "entry_block": 22478993,
-          "entry_ts": "1747196315",
-          "max_balance": "51953758919007179530271",
-          "is_past_user": false
         },
         {
           "user": "0x5e9eD3ecc680554F04be1ee2cC4556d8DD0baF1D",
