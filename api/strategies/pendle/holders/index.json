@@ -3538,6 +3538,10 @@
       "lpt_symbol": "PT-yvBalancer-GHO-USDf-29JAN2026",
       "holders": [
         {
+          "user": "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0",
+          "balance": "46192777820692638242795"
+        },
+        {
           "user": "0xAEd204B0aaE8770f6162594A05a346F696245647",
           "balance": "36157353021848141498464"
         },
@@ -3554,8 +3558,15 @@
           "balance": "1203986954982102279"
         }
       ],
-      "holder_count": 4,
+      "holder_count": 5,
       "historical_data": [
+        {
+          "user": "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0",
+          "entry_block": 22985190,
+          "entry_ts": "1753313855",
+          "max_balance": "46192777820692638242795",
+          "is_past_user": false
+        },
         {
           "user": "0x9D3D58eC58298B1E4236714979B61b590dC8D2c9",
           "entry_block": 22982519,
@@ -3586,7 +3597,7 @@
         }
       ],
       "past_users": [],
-      "total_unique_users": 4,
+      "total_unique_users": 5,
       "past_users_count": 0
     },
     {
@@ -6656,13 +6667,6 @@
           "is_past_user": false
         },
         {
-          "user": "0x75F256ECa494266771cbcb28E4EDA9d5fbCA430A",
-          "entry_block": 22671925,
-          "entry_ts": "1749531503",
-          "max_balance": "23028953368828431585",
-          "is_past_user": false
-        },
-        {
           "user": "0x657975E1EDd5593977695426Ab393203451BC8D6",
           "entry_block": 20908757,
           "entry_ts": "1728244751",
@@ -6670,6 +6674,13 @@
           "exit_block": 22671925,
           "exit_ts": "1749531503",
           "is_past_user": true
+        },
+        {
+          "user": "0x75F256ECa494266771cbcb28E4EDA9d5fbCA430A",
+          "entry_block": 22671925,
+          "entry_ts": "1749531503",
+          "max_balance": "23028953368828431585",
+          "is_past_user": false
         },
         {
           "user": "0x6A1DDf4b96Db63F0F4b21911c7077B35d878F0f5",
