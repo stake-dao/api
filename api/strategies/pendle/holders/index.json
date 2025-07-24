@@ -5933,25 +5933,32 @@
       "id": "0x9d9cC5a341F3Ff7d9D2e1df25450143956194A76",
       "lpt": "0x2e250f3E0Ca772E87f0C9E2aa55254F7Eb82EA58",
       "lpt_symbol": "PT-uptBTC-14AUG2025",
-      "holders": [
-        {
-          "user": "0xD100b6645EB05Bd88FF6491cb9f1C2688948B838",
-          "balance": "289977696120921654"
-        }
-      ],
-      "holder_count": 1,
+      "holders": [],
+      "holder_count": 0,
       "historical_data": [
         {
           "user": "0xD100b6645EB05Bd88FF6491cb9f1C2688948B838",
           "entry_block": 22573383,
           "entry_ts": "1748339987",
           "max_balance": "289977696120921654",
-          "is_past_user": false
+          "exit_block": 22987375,
+          "exit_ts": "1753340243",
+          "is_past_user": true
         }
       ],
-      "past_users": [],
+      "past_users": [
+        {
+          "user": "0xD100b6645EB05Bd88FF6491cb9f1C2688948B838",
+          "entry_block": 22573383,
+          "entry_ts": "1748339987",
+          "max_balance": "289977696120921654",
+          "exit_block": 22987375,
+          "exit_ts": "1753340243",
+          "is_past_user": true
+        }
+      ],
       "total_unique_users": 1,
-      "past_users_count": 0
+      "past_users_count": 1
     },
     {
       "id": "0xA1e7762d4A41B55B7c3581570eF38F1F445b6cA0",
@@ -6715,6 +6722,13 @@
           "is_past_user": true
         },
         {
+          "user": "0xd72b821a1d9180FFAC4375f6F11142211a025657",
+          "entry_block": 22497401,
+          "entry_ts": "1747419995",
+          "max_balance": "55129404762327889930",
+          "is_past_user": false
+        },
+        {
           "user": "0x1A162A5FdaEbb0113f7B83Ed87A43BCF0B6a4D1E",
           "entry_block": 22080413,
           "entry_ts": "1742381195",
@@ -6722,13 +6736,6 @@
           "exit_block": 22497401,
           "exit_ts": "1747419995",
           "is_past_user": true
-        },
-        {
-          "user": "0xd72b821a1d9180FFAC4375f6F11142211a025657",
-          "entry_block": 22497401,
-          "entry_ts": "1747419995",
-          "max_balance": "55129404762327889930",
-          "is_past_user": false
         },
         {
           "user": "0x19e7BEd7868cDF2C6EcE204314BD6bfE915BCA21",
