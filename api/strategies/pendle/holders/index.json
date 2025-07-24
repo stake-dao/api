@@ -1353,11 +1353,24 @@
       "id": "0x183cE9f76f818CEA10E73655dAdf248655010ced",
       "lpt": "0x9F4C227b0fB30a02430D573D657c76AC2de4cEE7",
       "lpt_symbol": "PT-tBTC-25SEP2025",
-      "holders": [],
-      "holder_count": 0,
-      "historical_data": [],
+      "holders": [
+        {
+          "user": "0x01F99e527454D8BC2835aA662CCf52CEa2C9Be3d",
+          "balance": "4189004388815624037"
+        }
+      ],
+      "holder_count": 1,
+      "historical_data": [
+        {
+          "user": "0x01F99e527454D8BC2835aA662CCf52CEa2C9Be3d",
+          "entry_block": 22990239,
+          "entry_ts": "1753374911",
+          "max_balance": "4189004388815624037",
+          "is_past_user": false
+        }
+      ],
       "past_users": [],
-      "total_unique_users": 0,
+      "total_unique_users": 1,
       "past_users_count": 0
     },
     {
