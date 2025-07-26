@@ -2452,6 +2452,10 @@
       "lpt_symbol": "PT-staking-USDS-25SEP2025",
       "holders": [
         {
+          "user": "0x81231357A913ec6E1f3aFbCe8E662632C1c8EEe5",
+          "balance": "43398156082864345895389"
+        },
+        {
           "user": "0x579B7E00d630AF04257C63b4B131EC0c4cbf7760",
           "balance": "10172948368814773080534"
         },
@@ -2460,8 +2464,15 @@
           "balance": "2498749139443106695489"
         }
       ],
-      "holder_count": 2,
+      "holder_count": 3,
       "historical_data": [
+        {
+          "user": "0x81231357A913ec6E1f3aFbCe8E662632C1c8EEe5",
+          "entry_block": 23001315,
+          "entry_ts": "1753508747",
+          "max_balance": "43398156082864345895389",
+          "is_past_user": false
+        },
         {
           "user": "0x579B7E00d630AF04257C63b4B131EC0c4cbf7760",
           "entry_block": 22994544,
@@ -2497,7 +2508,7 @@
           "is_past_user": true
         }
       ],
-      "total_unique_users": 3,
+      "total_unique_users": 4,
       "past_users_count": 1
     },
     {
@@ -7043,15 +7054,6 @@
           "is_past_user": true
         },
         {
-          "user": "0x5ebA23e44815999f23Bd0406d6B6988A8A06Cd61",
-          "entry_block": 20591267,
-          "entry_ts": "1724415719",
-          "max_balance": "213343417687886977",
-          "exit_block": 21207314,
-          "exit_ts": "1731845147",
-          "is_past_user": true
-        },
-        {
           "user": "0x03174f008c56cd02034955D81fdE78d5001F8197",
           "entry_block": 20891282,
           "entry_ts": "1728034343",
@@ -7260,15 +7262,6 @@
           "is_past_user": true
         },
         {
-          "user": "0x5ebA23e44815999f23Bd0406d6B6988A8A06Cd61",
-          "entry_block": 20591267,
-          "entry_ts": "1724415719",
-          "max_balance": "213343417687886977",
-          "exit_block": 21207314,
-          "exit_ts": "1731845147",
-          "is_past_user": true
-        },
-        {
           "user": "0x03174f008c56cd02034955D81fdE78d5001F8197",
           "entry_block": 20891282,
           "entry_ts": "1728034343",
@@ -7305,8 +7298,8 @@
           "is_past_user": true
         }
       ],
-      "total_unique_users": 35,
-      "past_users_count": 20
+      "total_unique_users": 34,
+      "past_users_count": 19
     },
     {
       "id": "0xC2c1332013c0E22fe5B21aDBd1f36Cd372004864",
