@@ -6208,11 +6208,24 @@
       "id": "0xA9E777664443b0f1b1D785dE22Ce254b6e65Aa93",
       "lpt": "0x4708E55da780a953FDed696CecB0E19164bA72f4",
       "lpt_symbol": "PT-yUSD-27NOV2025",
-      "holders": [],
-      "holder_count": 0,
-      "historical_data": [],
+      "holders": [
+        {
+          "user": "0xb67adf0C9284fe651330a6E04319A9508F69f1E9",
+          "balance": "95076162470825"
+        }
+      ],
+      "holder_count": 1,
+      "historical_data": [
+        {
+          "user": "0xb67adf0C9284fe651330a6E04319A9508F69f1E9",
+          "entry_block": 23010461,
+          "entry_ts": "1753619075",
+          "max_balance": "95076162470825",
+          "is_past_user": false
+        }
+      ],
       "past_users": [],
-      "total_unique_users": 0,
+      "total_unique_users": 1,
       "past_users_count": 0
     },
     {
@@ -7089,15 +7102,6 @@
           "is_past_user": true
         },
         {
-          "user": "0xF1f304DEF83D6CF4680a81C49cAC184a8119a538",
-          "entry_block": 20719572,
-          "entry_ts": "1725963527",
-          "max_balance": "1683506401023701092",
-          "exit_block": 20840205,
-          "exit_ts": "1727418959",
-          "is_past_user": true
-        },
-        {
           "user": "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0",
           "entry_block": 20766515,
           "entry_ts": "1726529975",
@@ -7263,19 +7267,10 @@
           "exit_block": 20897695,
           "exit_ts": "1728111539",
           "is_past_user": true
-        },
-        {
-          "user": "0xF1f304DEF83D6CF4680a81C49cAC184a8119a538",
-          "entry_block": 20719572,
-          "entry_ts": "1725963527",
-          "max_balance": "1683506401023701092",
-          "exit_block": 20840205,
-          "exit_ts": "1727418959",
-          "is_past_user": true
         }
       ],
-      "total_unique_users": 31,
-      "past_users_count": 17
+      "total_unique_users": 30,
+      "past_users_count": 16
     },
     {
       "id": "0xC2c1332013c0E22fe5B21aDBd1f36Cd372004864",
