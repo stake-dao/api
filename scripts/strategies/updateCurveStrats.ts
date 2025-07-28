@@ -1,6 +1,7 @@
 import { arbitrum, mainnet } from 'viem/chains'
-import { writeFileFromPromise } from '../utils'
+import { writeFile, writeFileFromPromise } from '../utils'
 import { getCurve, getCurveArbitrum, getCurveMainnet } from '../../src/lib/strategies/curve'
+import { getCurve_v2 } from '../../src/lib/strategies/v2/curve'
 
 const updateCurveStrats = async () => {
   const [curveDataMainnet, curveDataArbitrum, curveData] = await Promise.allSettled([
@@ -30,6 +31,33 @@ const updateCurveStrats = async () => {
   writeFileFromPromise({
     path: `api/strategies/curve/index.json`,
     data: curveData,
+    log: {
+      success: '✅ - Curve strategies have been updated!',
+      error: '❌ - An error occured during the Curve strategies update.',
+    },
+  })
+}
+
+export const updateCurveStrats_v2 = async () => {
+  const curveData = await getCurve_v2()
+  const chains = Object.keys(curveData)
+
+  for (const chainId of chains) {
+    if (curveData[chainId].length > 0) {
+      writeFile({
+        path: `api/strategies/v2/curve/${chainId}.json`,
+        data: JSON.stringify(curveData[chainId]),
+        log: {
+          success: `✅ - chainId ${chainId} - Curve strategies have been updated!`,
+          error: `❌ - chainId ${chainId} - An error occured during the Curve strategies update.`,
+        },
+      })
+    }
+  }
+
+  writeFile({
+    path: `api/strategies/v2/curve/index.json`,
+    data: JSON.stringify(chains.flatMap((chainId) => curveData[chainId])),
     log: {
       success: '✅ - Curve strategies have been updated!',
       error: '❌ - An error occured during the Curve strategies update.',

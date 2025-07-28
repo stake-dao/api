@@ -33,6 +33,9 @@ jobs:
     
       - name: Run script to update Strategies data
         run: pnpm tsx scripts/updateStrats.ts
+    
+      - name: Run script to update Strategies v2 data
+        run: pnpm tsx scripts/updateV2Strats.ts
 
       - name: Commit and push if changes found
         run: |
