@@ -5036,6 +5036,10 @@
           "balance": "5742051135919613817280"
         },
         {
+          "user": "0x3f0824791F21E9611E066eF1303d9464226d04Bd",
+          "balance": "1175182633875047385714"
+        },
+        {
           "user": "0x32F1cfA3ECD87bE9e46bd4A34aA38C9bc77e936e",
           "balance": "891793115583352259807"
         },
@@ -5048,8 +5052,15 @@
           "balance": "2856620569463266031"
         }
       ],
-      "holder_count": 13,
+      "holder_count": 14,
       "historical_data": [
+        {
+          "user": "0x3f0824791F21E9611E066eF1303d9464226d04Bd",
+          "entry_block": 23017862,
+          "entry_ts": "1753708367",
+          "max_balance": "1175182633875047385714",
+          "is_past_user": false
+        },
         {
           "user": "0x9f1775c88fE7Ed36C57A35CEFEF4EF4d1c2D802B",
           "entry_block": 22953991,
@@ -5180,7 +5191,7 @@
           "is_past_user": true
         }
       ],
-      "total_unique_users": 15,
+      "total_unique_users": 16,
       "past_users_count": 2
     },
     {
@@ -6918,6 +6929,13 @@
           "is_past_user": false
         },
         {
+          "user": "0x75F256ECa494266771cbcb28E4EDA9d5fbCA430A",
+          "entry_block": 22671925,
+          "entry_ts": "1749531503",
+          "max_balance": "23028953368828431585",
+          "is_past_user": false
+        },
+        {
           "user": "0x657975E1EDd5593977695426Ab393203451BC8D6",
           "entry_block": 20908757,
           "entry_ts": "1728244751",
@@ -6925,13 +6943,6 @@
           "exit_block": 22671925,
           "exit_ts": "1749531503",
           "is_past_user": true
-        },
-        {
-          "user": "0x75F256ECa494266771cbcb28E4EDA9d5fbCA430A",
-          "entry_block": 22671925,
-          "entry_ts": "1749531503",
-          "max_balance": "23028953368828431585",
-          "is_past_user": false
         },
         {
           "user": "0x6A1DDf4b96Db63F0F4b21911c7077B35d878F0f5",
@@ -6966,13 +6977,6 @@
           "is_past_user": true
         },
         {
-          "user": "0xd72b821a1d9180FFAC4375f6F11142211a025657",
-          "entry_block": 22497401,
-          "entry_ts": "1747419995",
-          "max_balance": "55129404762327889930",
-          "is_past_user": false
-        },
-        {
           "user": "0x1A162A5FdaEbb0113f7B83Ed87A43BCF0B6a4D1E",
           "entry_block": 22080413,
           "entry_ts": "1742381195",
@@ -6980,6 +6984,13 @@
           "exit_block": 22497401,
           "exit_ts": "1747419995",
           "is_past_user": true
+        },
+        {
+          "user": "0xd72b821a1d9180FFAC4375f6F11142211a025657",
+          "entry_block": 22497401,
+          "entry_ts": "1747419995",
+          "max_balance": "55129404762327889930",
+          "is_past_user": false
         },
         {
           "user": "0x19e7BEd7868cDF2C6EcE204314BD6bfE915BCA21",
@@ -7091,15 +7102,6 @@
           "entry_ts": "1728556811",
           "max_balance": "14096493592369454861",
           "is_past_user": false
-        },
-        {
-          "user": "0xC35602711F647B8c88016cAf1212861bb07e5a50",
-          "entry_block": 20721023,
-          "entry_ts": "1725981155",
-          "max_balance": "224577859361851110",
-          "exit_block": 20897695,
-          "exit_ts": "1728111539",
-          "is_past_user": true
         },
         {
           "user": "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0",
@@ -7258,19 +7260,10 @@
           "exit_block": 21103742,
           "exit_ts": "1730596211",
           "is_past_user": true
-        },
-        {
-          "user": "0xC35602711F647B8c88016cAf1212861bb07e5a50",
-          "entry_block": 20721023,
-          "entry_ts": "1725981155",
-          "max_balance": "224577859361851110",
-          "exit_block": 20897695,
-          "exit_ts": "1728111539",
-          "is_past_user": true
         }
       ],
-      "total_unique_users": 30,
-      "past_users_count": 16
+      "total_unique_users": 29,
+      "past_users_count": 15
     },
     {
       "id": "0xC2c1332013c0E22fe5B21aDBd1f36Cd372004864",
