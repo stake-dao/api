@@ -1,6 +1,6 @@
 import { zeroAddress } from 'viem'
 import { getOnlyboostData } from '@stake-dao/reader'
-import { arbitrum, base, fraxtal, mainnet, sonic } from 'viem/chains'
+import { arbitrum, base, fraxtal, mainnet, optimism, sonic } from 'viem/chains'
 
 const V2_FEES = 17
 
@@ -19,6 +19,7 @@ const baseTokens = {
     [fraxtal.id]: '0x331B9182088e2A7d6D3Fe4742AbA1fB231aEcc56',
     [arbitrum.id]: '0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978',
     [base.id]: '0x8Ee73c484A26e0A5df2Ee2a4960B789967dd0415',
+    [optimism.id]: '0x0994206dfE8De6Ec6920FF4D779B0d950605Fb53',
   },
   balancer: {
     [mainnet.id]: '0xba100000625a3754423978a60c9317c58a424e3D',
