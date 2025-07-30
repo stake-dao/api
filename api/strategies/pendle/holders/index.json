@@ -1331,13 +1331,6 @@
       "holder_count": 3,
       "historical_data": [
         {
-          "user": "0xF930EBBd05eF8b25B1797b9b2109DDC9B0d43063",
-          "entry_block": 22789422,
-          "entry_ts": "1750950611",
-          "max_balance": "180071562984990845083280",
-          "is_past_user": false
-        },
-        {
           "user": "0x52ea58f4FC3CEd48fa18E909226c1f8A0EF887DC",
           "entry_block": 22931869,
           "entry_ts": "1752670295",
@@ -1345,6 +1338,13 @@
           "exit_block": 23004475,
           "exit_ts": "1753546847",
           "is_past_user": true
+        },
+        {
+          "user": "0xF930EBBd05eF8b25B1797b9b2109DDC9B0d43063",
+          "entry_block": 22789422,
+          "entry_ts": "1750950611",
+          "max_balance": "180071562984990845083280",
+          "is_past_user": false
         },
         {
           "user": "0xb0e83C2D71A991017e0116d58c5765Abc57384af",
@@ -1379,25 +1379,32 @@
       "id": "0x183cE9f76f818CEA10E73655dAdf248655010ced",
       "lpt": "0x9F4C227b0fB30a02430D573D657c76AC2de4cEE7",
       "lpt_symbol": "PT-tBTC-25SEP2025",
-      "holders": [
-        {
-          "user": "0x01F99e527454D8BC2835aA662CCf52CEa2C9Be3d",
-          "balance": "4189004388815624037"
-        }
-      ],
-      "holder_count": 1,
+      "holders": [],
+      "holder_count": 0,
       "historical_data": [
         {
           "user": "0x01F99e527454D8BC2835aA662CCf52CEa2C9Be3d",
           "entry_block": 22990239,
           "entry_ts": "1753374911",
           "max_balance": "4189004388815624037",
-          "is_past_user": false
+          "exit_block": 23035057,
+          "exit_ts": "1753916171",
+          "is_past_user": true
         }
       ],
-      "past_users": [],
+      "past_users": [
+        {
+          "user": "0x01F99e527454D8BC2835aA662CCf52CEa2C9Be3d",
+          "entry_block": 22990239,
+          "entry_ts": "1753374911",
+          "max_balance": "4189004388815624037",
+          "exit_block": 23035057,
+          "exit_ts": "1753916171",
+          "is_past_user": true
+        }
+      ],
       "total_unique_users": 1,
-      "past_users_count": 0
+      "past_users_count": 1
     },
     {
       "id": "0x18Dda843Ec2D37dbB7e78527D643337B47A8Fe57",
@@ -7513,13 +7520,8 @@
       "id": "0xFcd390d314d7C270E08681506CBD589D157650FA",
       "lpt": "0x07b1711d4af74Af661DDe3b774741993B79fC59C",
       "lpt_symbol": "PT-tUSDe-25SEP2025",
-      "holders": [
-        {
-          "user": "0x01F99e527454D8BC2835aA662CCf52CEa2C9Be3d",
-          "balance": "95520665634117220533738"
-        }
-      ],
-      "holder_count": 1,
+      "holders": [],
+      "holder_count": 0,
       "historical_data": [],
       "past_users": [],
       "total_unique_users": 0,
