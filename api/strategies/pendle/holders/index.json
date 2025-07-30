@@ -1416,6 +1416,10 @@
       "lpt_symbol": "PT-sUSDf-25SEP2025",
       "holders": [
         {
+          "user": "0x651C5273b67eA2037d07d300aB5bb1ab07C506bb",
+          "balance": "86159043151891977134366"
+        },
+        {
           "user": "0x6A1DDf4b96Db63F0F4b21911c7077B35d878F0f5",
           "balance": "59111086737691399843127"
         },
@@ -1464,8 +1468,15 @@
           "balance": "2000000000000000000"
         }
       ],
-      "holder_count": 12,
+      "holder_count": 13,
       "historical_data": [
+        {
+          "user": "0x651C5273b67eA2037d07d300aB5bb1ab07C506bb",
+          "entry_block": 23032450,
+          "entry_ts": "1753884635",
+          "max_balance": "86159043151891977134366",
+          "is_past_user": false
+        },
         {
           "user": "0x62049e1AdAA5887D5777E5ac9dBF810c0f0446b1",
           "entry_block": 22993029,
@@ -1733,7 +1744,7 @@
           "is_past_user": true
         }
       ],
-      "total_unique_users": 22,
+      "total_unique_users": 23,
       "past_users_count": 10
     },
     {
