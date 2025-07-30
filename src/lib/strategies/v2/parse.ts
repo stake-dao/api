@@ -32,7 +32,7 @@ const baseTokens = {
   },
 }
 
-export const parseV2Strats = (rawStrats: any[]) => {
+export const parseV2Strats = (global: any, rawStrats: any[]) => {
   try {
     return rawStrats.map((s) => {
       const isLending = s.asset.name.startsWith('Llamalend')
@@ -68,6 +68,10 @@ export const parseV2Strats = (rawStrats: any[]) => {
       const convexSupply = BigInt(s.sidecarBalance)
       const stakeDaoSupply = totalSupply - convexSupply
 
+      // Optimal
+      const stakeDaoOptSupply = BigInt(metadata.optimalDepositBalance || '0') || stakeDaoSupply
+      const convexOptSupply = totalSupply - stakeDaoOptSupply
+
       const onlyboost = getOnlyboostData(
         {
           active: s.sidecar !== zeroAddress,
@@ -77,13 +81,13 @@ export const parseV2Strats = (rawStrats: any[]) => {
           stakeDaoSupply,
           convexStrategyHoldings: BigInt(metadata.convexTotalSupply || '0'),
           convexWorkingBalance: BigInt(metadata.workingBalanceConvex || '0'),
-          convexOptSupply: convexSupply, // TODO
-          stakeDaoOptSupply: stakeDaoSupply, // TODO
+          convexOptSupply,
+          stakeDaoOptSupply,
           claimableData: [],
         },
-        '1', // TODO
-        '1', // TODO
-        '799624226808879037328429575', // TODO
+        global[s.chainId === mainnet.id ? 'stakeDaoVeBoost' : 'stakeDaoVeBalance'],
+        global[s.chainId === mainnet.id ? 'convexVeBoost' : 'convexVeBalance'],
+        global.veCrvTotalSupply,
         BigInt(s.gauge.totalSupply),
         stakeDaoSupply,
         BigInt(metadata.workingBalance || '0'),
