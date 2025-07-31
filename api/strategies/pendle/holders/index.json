@@ -725,10 +725,6 @@
           "balance": "17380786955359628819070"
         },
         {
-          "user": "0xbba2379F5cc9A2f248C5Cf18aD72379AE2478F42",
-          "balance": "10754738105729199319275"
-        },
-        {
           "user": "0xd0A8A6dd88BD9405128f178347eCD60FaA631164",
           "balance": "8898711939862830728420"
         },
@@ -737,8 +733,17 @@
           "balance": "5146169697919652337737"
         }
       ],
-      "holder_count": 6,
+      "holder_count": 5,
       "historical_data": [
+        {
+          "user": "0xbba2379F5cc9A2f248C5Cf18aD72379AE2478F42",
+          "entry_block": 22524080,
+          "entry_ts": "1747743503",
+          "max_balance": "10754738105729199319275",
+          "exit_block": 23037670,
+          "exit_ts": "1753947755",
+          "is_past_user": true
+        },
         {
           "user": "0x494f3579E12a045ff1404241D25aE740DDb0Ca91",
           "entry_block": 22787636,
@@ -833,13 +838,6 @@
           "is_past_user": true
         },
         {
-          "user": "0xbba2379F5cc9A2f248C5Cf18aD72379AE2478F42",
-          "entry_block": 22524080,
-          "entry_ts": "1747743503",
-          "max_balance": "10754738105729199319275",
-          "is_past_user": false
-        },
-        {
           "user": "0x2C4287B79B15aE63FbaaCd85a0302f6F172182fA",
           "entry_block": 22450443,
           "entry_ts": "1746849155",
@@ -866,6 +864,15 @@
         }
       ],
       "past_users": [
+        {
+          "user": "0xbba2379F5cc9A2f248C5Cf18aD72379AE2478F42",
+          "entry_block": 22524080,
+          "entry_ts": "1747743503",
+          "max_balance": "10754738105729199319275",
+          "exit_block": 23037670,
+          "exit_ts": "1753947755",
+          "is_past_user": true
+        },
         {
           "user": "0x494f3579E12a045ff1404241D25aE740DDb0Ca91",
           "entry_block": 22787636,
@@ -958,7 +965,7 @@
         }
       ],
       "total_unique_users": 15,
-      "past_users_count": 10
+      "past_users_count": 11
     },
     {
       "id": "0x0Cc7F113c8060E62e079B81a27B7e23be6E1BC25",
