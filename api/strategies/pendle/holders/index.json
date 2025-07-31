@@ -4940,11 +4940,24 @@
       "id": "0x719564EEc9AEFa21C2F3b9d31ce03d30D2a01230",
       "lpt": "0xbdf3EA4673116698219c08A9AD6B51e4E68d22ab",
       "lpt_symbol": "PT-sUSN-30OCT2025",
-      "holders": [],
-      "holder_count": 0,
-      "historical_data": [],
+      "holders": [
+        {
+          "user": "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0",
+          "balance": "20074887281296757965336"
+        }
+      ],
+      "holder_count": 1,
+      "historical_data": [
+        {
+          "user": "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0",
+          "entry_block": 23041305,
+          "entry_ts": "1753991783",
+          "max_balance": "20074887281296757965336",
+          "is_past_user": false
+        }
+      ],
       "past_users": [],
-      "total_unique_users": 0,
+      "total_unique_users": 1,
       "past_users_count": 0
     },
     {
