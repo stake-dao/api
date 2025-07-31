@@ -1331,6 +1331,13 @@
       "holder_count": 3,
       "historical_data": [
         {
+          "user": "0xF930EBBd05eF8b25B1797b9b2109DDC9B0d43063",
+          "entry_block": 22789422,
+          "entry_ts": "1750950611",
+          "max_balance": "180071562984990845083280",
+          "is_past_user": false
+        },
+        {
           "user": "0x52ea58f4FC3CEd48fa18E909226c1f8A0EF887DC",
           "entry_block": 22931869,
           "entry_ts": "1752670295",
@@ -1338,13 +1345,6 @@
           "exit_block": 23004475,
           "exit_ts": "1753546847",
           "is_past_user": true
-        },
-        {
-          "user": "0xF930EBBd05eF8b25B1797b9b2109DDC9B0d43063",
-          "entry_block": 22789422,
-          "entry_ts": "1750950611",
-          "max_balance": "180071562984990845083280",
-          "is_past_user": false
         },
         {
           "user": "0xb0e83C2D71A991017e0116d58c5765Abc57384af",
@@ -3420,25 +3420,32 @@
       "id": "0x4787cAe31D2dd8A053a215dE2e71b6422fc38a5f",
       "lpt": "0xD7a432f7962123561a63E60e7396B6ba622651b1",
       "lpt_symbol": "PT-wsrUSD-31JUL2025",
-      "holders": [
-        {
-          "user": "0x330cdA958D6C4606bBE7952296342Bb882c7D167",
-          "balance": "7399520107205505354248"
-        }
-      ],
-      "holder_count": 1,
+      "holders": [],
+      "holder_count": 0,
       "historical_data": [
         {
           "user": "0x330cdA958D6C4606bBE7952296342Bb882c7D167",
           "entry_block": 22416414,
           "entry_ts": "1746434483",
           "max_balance": "15399520107205505354248",
-          "is_past_user": false
+          "exit_block": 23037457,
+          "exit_ts": "1753945187",
+          "is_past_user": true
         }
       ],
-      "past_users": [],
+      "past_users": [
+        {
+          "user": "0x330cdA958D6C4606bBE7952296342Bb882c7D167",
+          "entry_block": 22416414,
+          "entry_ts": "1746434483",
+          "max_balance": "15399520107205505354248",
+          "exit_block": 23037457,
+          "exit_ts": "1753945187",
+          "is_past_user": true
+        }
+      ],
       "total_unique_users": 1,
-      "past_users_count": 0
+      "past_users_count": 1
     },
     {
       "id": "0x48242eaCc9EEe0E29318bac13899cd27aB5c31B6",
