@@ -3588,12 +3588,23 @@
       "lpt_symbol": "PT-mMEV-30OCT2025",
       "holders": [
         {
+          "user": "0x1251871b7c7Ec8D6E3Ec19302Fb5A15B219A9103",
+          "balance": "277839677740404554"
+        },
+        {
           "user": "0x5Aa5D1Ce3c082b16F700D47576FE5Ea1Ac4045cF",
           "balance": "42041417985485548"
         }
       ],
-      "holder_count": 1,
+      "holder_count": 2,
       "historical_data": [
+        {
+          "user": "0x1251871b7c7Ec8D6E3Ec19302Fb5A15B219A9103",
+          "entry_block": 23039051,
+          "entry_ts": "1753964495",
+          "max_balance": "277839677740404554",
+          "is_past_user": false
+        },
         {
           "user": "0x5Aa5D1Ce3c082b16F700D47576FE5Ea1Ac4045cF",
           "entry_block": 22990862,
@@ -3603,7 +3614,7 @@
         }
       ],
       "past_users": [],
-      "total_unique_users": 1,
+      "total_unique_users": 2,
       "past_users_count": 0
     },
     {
