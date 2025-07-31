@@ -5120,10 +5120,6 @@
           "balance": "15071696265652853697786"
         },
         {
-          "user": "0x9f1775c88fE7Ed36C57A35CEFEF4EF4d1c2D802B",
-          "balance": "14547956668258747905614"
-        },
-        {
           "user": "0x9BCd0C730EbDe6e7809fE1E17E3ccdBf82bf90Ab",
           "balance": "13244450026349432596974"
         },
@@ -5152,8 +5148,17 @@
           "balance": "2856620569463266031"
         }
       ],
-      "holder_count": 12,
+      "holder_count": 11,
       "historical_data": [
+        {
+          "user": "0x9f1775c88fE7Ed36C57A35CEFEF4EF4d1c2D802B",
+          "entry_block": 22953991,
+          "entry_ts": "1752937151",
+          "max_balance": "14547956668258747905614",
+          "exit_block": 23037466,
+          "exit_ts": "1753945295",
+          "is_past_user": true
+        },
         {
           "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
           "entry_block": 22529627,
@@ -5177,13 +5182,6 @@
           "entry_block": 23017862,
           "entry_ts": "1753708367",
           "max_balance": "1175182633875047385714",
-          "is_past_user": false
-        },
-        {
-          "user": "0x9f1775c88fE7Ed36C57A35CEFEF4EF4d1c2D802B",
-          "entry_block": 22953991,
-          "entry_ts": "1752937151",
-          "max_balance": "14547956668258747905614",
           "is_past_user": false
         },
         {
@@ -5277,6 +5275,15 @@
       ],
       "past_users": [
         {
+          "user": "0x9f1775c88fE7Ed36C57A35CEFEF4EF4d1c2D802B",
+          "entry_block": 22953991,
+          "entry_ts": "1752937151",
+          "max_balance": "14547956668258747905614",
+          "exit_block": 23037466,
+          "exit_ts": "1753945295",
+          "is_past_user": true
+        },
+        {
           "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
           "entry_block": 22529627,
           "entry_ts": "1747810643",
@@ -5314,7 +5321,7 @@
         }
       ],
       "total_unique_users": 16,
-      "past_users_count": 4
+      "past_users_count": 5
     },
     {
       "id": "0x7FF4964A85A16291e90082e7ebB69dACC8437966",
