@@ -5190,10 +5190,6 @@
           "balance": "12435052053381347194758"
         },
         {
-          "user": "0x32F1cfA3ECD87bE9e46bd4A34aA38C9bc77e936e",
-          "balance": "891793115583352259807"
-        },
-        {
           "user": "0xdc9bC4b855BB8972c407C697EA09E6d3E4191835",
           "balance": "157240813426987247903"
         },
@@ -5202,8 +5198,17 @@
           "balance": "2856620569463266031"
         }
       ],
-      "holder_count": 8,
+      "holder_count": 7,
       "historical_data": [
+        {
+          "user": "0x32F1cfA3ECD87bE9e46bd4A34aA38C9bc77e936e",
+          "entry_block": 22680111,
+          "entry_ts": "1749630299",
+          "max_balance": "891793115583352259807",
+          "exit_block": 23044436,
+          "exit_ts": "1754029643",
+          "is_past_user": true
+        },
         {
           "user": "0x74438a716C9f2F4C3bF9868653c940F31C8ad2fe",
           "entry_block": 22644406,
@@ -5291,13 +5296,6 @@
           "is_past_user": false
         },
         {
-          "user": "0x32F1cfA3ECD87bE9e46bd4A34aA38C9bc77e936e",
-          "entry_block": 22680111,
-          "entry_ts": "1749630299",
-          "max_balance": "891793115583352259807",
-          "is_past_user": false
-        },
-        {
           "user": "0x0BDa59997765a113BeA8cA9Cba319B35fB287Fc8",
           "entry_block": 22575882,
           "entry_ts": "1748370143",
@@ -5334,6 +5332,15 @@
         }
       ],
       "past_users": [
+        {
+          "user": "0x32F1cfA3ECD87bE9e46bd4A34aA38C9bc77e936e",
+          "entry_block": 22680111,
+          "entry_ts": "1749630299",
+          "max_balance": "891793115583352259807",
+          "exit_block": 23044436,
+          "exit_ts": "1754029643",
+          "is_past_user": true
+        },
         {
           "user": "0x74438a716C9f2F4C3bF9868653c940F31C8ad2fe",
           "entry_block": 22644406,
@@ -5408,7 +5415,7 @@
         }
       ],
       "total_unique_users": 16,
-      "past_users_count": 8
+      "past_users_count": 9
     },
     {
       "id": "0x7FF4964A85A16291e90082e7ebB69dACC8437966",
