@@ -1359,13 +1359,6 @@
       "holder_count": 3,
       "historical_data": [
         {
-          "user": "0xF930EBBd05eF8b25B1797b9b2109DDC9B0d43063",
-          "entry_block": 22789422,
-          "entry_ts": "1750950611",
-          "max_balance": "180071562984990845083280",
-          "is_past_user": false
-        },
-        {
           "user": "0x52ea58f4FC3CEd48fa18E909226c1f8A0EF887DC",
           "entry_block": 22931869,
           "entry_ts": "1752670295",
@@ -1373,6 +1366,13 @@
           "exit_block": 23004475,
           "exit_ts": "1753546847",
           "is_past_user": true
+        },
+        {
+          "user": "0xF930EBBd05eF8b25B1797b9b2109DDC9B0d43063",
+          "entry_block": 22789422,
+          "entry_ts": "1750950611",
+          "max_balance": "180071562984990845083280",
+          "is_past_user": false
         },
         {
           "user": "0xb0e83C2D71A991017e0116d58c5765Abc57384af",
@@ -8096,10 +8096,6 @@
       "lpt_symbol": "PT-Curve-GHOUSR-31JUL2025",
       "holders": [
         {
-          "user": "0x4829603774dC21f0dAaE6e2AC7dd3f773cFD590f",
-          "balance": "1475303566808027944985"
-        },
-        {
           "user": "0xdBdEBA3172DB939e2dD475df173426C23873CCC3",
           "balance": "1004072270859048368672"
         },
@@ -8108,7 +8104,7 @@
           "balance": "9884825121153969254"
         }
       ],
-      "holder_count": 3,
+      "holder_count": 2,
       "historical_data": [],
       "past_users": [],
       "total_unique_users": 0,
