@@ -6894,6 +6894,10 @@
           "balance": "14941818813569144269608"
         },
         {
+          "user": "0x9BCd0C730EbDe6e7809fE1E17E3ccdBf82bf90Ab",
+          "balance": "13587422649286979253739"
+        },
+        {
           "user": "0x92898941d854a805248F9ff9bA900DBc2E94Ff24",
           "balance": "11965381340966531762376"
         },
@@ -6914,8 +6918,15 @@
           "balance": "727276091449553805580"
         }
       ],
-      "holder_count": 14,
+      "holder_count": 15,
       "historical_data": [
+        {
+          "user": "0x9BCd0C730EbDe6e7809fE1E17E3ccdBf82bf90Ab",
+          "entry_block": 23063288,
+          "entry_ts": "1754257259",
+          "max_balance": "13587422649286979253739",
+          "is_past_user": false
+        },
         {
           "user": "0x0d8163aEE1BEc6338B979e34b6Cb31013fe82516",
           "entry_block": 23063042,
@@ -7071,7 +7082,7 @@
           "is_past_user": true
         }
       ],
-      "total_unique_users": 17,
+      "total_unique_users": 18,
       "past_users_count": 3
     },
     {
@@ -7102,30 +7113,10 @@
       "lpt_symbol": "PT-sUSDE-26SEP2024",
       "holders": [],
       "holder_count": 0,
-      "historical_data": [
-        {
-          "user": "0x5c0c8D1cF51AC8E8D970051ac69dbDb1315B6036",
-          "entry_block": 20737227,
-          "entry_ts": "1726176671",
-          "max_balance": "15570105906176734995262",
-          "exit_block": 20912301,
-          "exit_ts": "1728287471",
-          "is_past_user": true
-        }
-      ],
-      "past_users": [
-        {
-          "user": "0x5c0c8D1cF51AC8E8D970051ac69dbDb1315B6036",
-          "entry_block": 20737227,
-          "entry_ts": "1726176671",
-          "max_balance": "15570105906176734995262",
-          "exit_block": 20912301,
-          "exit_ts": "1728287471",
-          "is_past_user": true
-        }
-      ],
-      "total_unique_users": 1,
-      "past_users_count": 1
+      "historical_data": [],
+      "past_users": [],
+      "total_unique_users": 0,
+      "past_users_count": 0
     },
     {
       "id": "0xBECDc2258d50798c54E92254e61D22aC977b3AE2",
