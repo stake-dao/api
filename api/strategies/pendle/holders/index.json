@@ -2906,11 +2906,24 @@
       "id": "0x3A7447Ce4B9BAdBc2469C2De8226C4bBAA6d7a3E",
       "lpt": "0x1821eC9c2D2C13f6b89D21301B93BD8D6667712b",
       "lpt_symbol": "PT-fGHO-18DEC2025",
-      "holders": [],
-      "holder_count": 0,
-      "historical_data": [],
+      "holders": [
+        {
+          "user": "0x634C51a4542a0aBE6AC70E168d39f889576e482a",
+          "balance": "89111491843701794016257"
+        }
+      ],
+      "holder_count": 1,
+      "historical_data": [
+        {
+          "user": "0x634C51a4542a0aBE6AC70E168d39f889576e482a",
+          "entry_block": 23062283,
+          "entry_ts": "1754245151",
+          "max_balance": "89111491843701794016257",
+          "is_past_user": false
+        }
+      ],
       "past_users": [],
-      "total_unique_users": 0,
+      "total_unique_users": 1,
       "past_users_count": 0
     },
     {
