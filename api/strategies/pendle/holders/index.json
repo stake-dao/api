@@ -1372,6 +1372,13 @@
       "holder_count": 3,
       "historical_data": [
         {
+          "user": "0xF930EBBd05eF8b25B1797b9b2109DDC9B0d43063",
+          "entry_block": 22789422,
+          "entry_ts": "1750950611",
+          "max_balance": "180071562984990845083280",
+          "is_past_user": false
+        },
+        {
           "user": "0x52ea58f4FC3CEd48fa18E909226c1f8A0EF887DC",
           "entry_block": 22931869,
           "entry_ts": "1752670295",
@@ -1379,13 +1386,6 @@
           "exit_block": 23004475,
           "exit_ts": "1753546847",
           "is_past_user": true
-        },
-        {
-          "user": "0xF930EBBd05eF8b25B1797b9b2109DDC9B0d43063",
-          "entry_block": 22789422,
-          "entry_ts": "1750950611",
-          "max_balance": "180071562984990845083280",
-          "is_past_user": false
         },
         {
           "user": "0xb0e83C2D71A991017e0116d58c5765Abc57384af",
@@ -7403,13 +7403,8 @@
       "id": "0xE6B69995426A77D04aF3b13fA62437b7Cd43136D",
       "lpt": "0x69295970dd33B135417C9b866d03C6f59f022f8b",
       "lpt_symbol": "PT-swETH-25JUN2026",
-      "holders": [
-        {
-          "user": "0xa66DaAF3e6736CcE993b56EceD596512a7911dF8",
-          "balance": "2418738084137355785"
-        }
-      ],
-      "holder_count": 1,
+      "holders": [],
+      "holder_count": 0,
       "historical_data": [],
       "past_users": [],
       "total_unique_users": 0,
