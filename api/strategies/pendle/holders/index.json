@@ -76,11 +76,13 @@
       "holders": [
         {
           "user": "0x8A5c3326fadb5D2569cDe6e16Ac1AcD38fE1392b",
-          "balance": "10664161111690513697722"
+          "balance": "10664161111690513697722",
+          "enteredAt": "1740033203"
         },
         {
           "user": "0x2E1531c10054b22d2564e020Dc3a95dcC0d940cc",
-          "balance": "5767896979381987060"
+          "balance": "5767896979381987060",
+          "enteredAt": "1743516515"
         }
       ],
       "holder_count": 2,
@@ -461,19 +463,23 @@
       "holders": [
         {
           "user": "0x0b9B90BCF3fA83A933668e072611AF7805fe84Ad",
-          "balance": "16154211003376693387919"
+          "balance": "16154211003376693387919",
+          "enteredAt": "1747298615"
         },
         {
           "user": "0x58143c449EB962de2A99Dc2c4D84Ddc4eAebe44f",
-          "balance": "4599287961704260371765"
+          "balance": "4599287961704260371765",
+          "enteredAt": "1753730363"
         },
         {
           "user": "0x5BC81274740A73D33ec8539182c326b8b58004C2",
-          "balance": "3977547956218966259428"
+          "balance": "3977547956218966259428",
+          "enteredAt": "1749708455"
         },
         {
           "user": "0x5795A24daf8684ced7063e2CDC770473548842A8",
-          "balance": "125330116962686706624"
+          "balance": "125330116962686706624",
+          "enteredAt": "1753982519"
         }
       ],
       "holder_count": 4,
@@ -555,7 +561,8 @@
       "holders": [
         {
           "user": "0x75069FE216759AD511Fe621e482Ed72D7d0A06Dc",
-          "balance": "1000000000000000000"
+          "balance": "1000000000000000000",
+          "enteredAt": "1739736119"
         }
       ],
       "holder_count": 1,
@@ -747,9 +754,9 @@
           "user": "0xd0A8A6dd88BD9405128f178347eCD60FaA631164",
           "entry_block": 22529911,
           "entry_ts": "1747814087",
-          "max_balance": "24700151817317852913558",
-          "exit_block": 22751874,
-          "exit_ts": "1750497263",
+          "max_balance": "24921283906063295721893",
+          "exit_block": 23041320,
+          "exit_ts": "1753991963",
           "is_past_user": true
         },
         {
@@ -884,9 +891,9 @@
           "user": "0xd0A8A6dd88BD9405128f178347eCD60FaA631164",
           "entry_block": 22529911,
           "entry_ts": "1747814087",
-          "max_balance": "24700151817317852913558",
-          "exit_block": 22751874,
-          "exit_ts": "1750497263",
+          "max_balance": "24921283906063295721893",
+          "exit_block": 23041320,
+          "exit_ts": "1753991963",
           "is_past_user": true
         },
         {
@@ -1358,15 +1365,18 @@
       "holders": [
         {
           "user": "0xF930EBBd05eF8b25B1797b9b2109DDC9B0d43063",
-          "balance": "180071562984990845083280"
+          "balance": "180071562984990845083280",
+          "enteredAt": "1750950611"
         },
         {
           "user": "0xb0e83C2D71A991017e0116d58c5765Abc57384af",
-          "balance": "110741490141481987301370"
+          "balance": "110741490141481987301370",
+          "enteredAt": "1751008571"
         },
         {
           "user": "0x8F564c7272177663309F704065fFB59F403d96a1",
-          "balance": "4804112075710906658072"
+          "balance": "4804112075710906658072",
+          "enteredAt": "1750925891"
         }
       ],
       "holder_count": 3,
@@ -1464,56 +1474,75 @@
       "lpt_symbol": "PT-sUSDf-25SEP2025",
       "holders": [
         {
-          "user": "0x6A1DDf4b96Db63F0F4b21911c7077B35d878F0f5",
-          "balance": "59111086737691399843127"
+          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
+          "balance": "77970720818320210333882",
+          "enteredAt": "1747196315"
         },
         {
-          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
-          "balance": "58620212412269142537882"
+          "user": "0x6A1DDf4b96Db63F0F4b21911c7077B35d878F0f5",
+          "balance": "59111086737691399843127",
+          "enteredAt": "1747755899"
         },
         {
           "user": "0x0a44F50Ed65afBd41f594e4B1E4366574bF32CA7",
-          "balance": "43606358199992851382337"
+          "balance": "43606358199992851382337",
+          "enteredAt": "1749258839"
         },
         {
           "user": "0x6AD0F44591d63f2341Bc789cBA870aAb7251Cd77",
-          "balance": "35010504159734379295397"
+          "balance": "35010504159734379295397",
+          "enteredAt": "1745487299"
         },
         {
           "user": "0x91603329393dfF73243bd570d7Bf1caE5c31ac5C",
-          "balance": "29540227325561682645010"
+          "balance": "29540227325561682645010",
+          "enteredAt": "1749978335"
         },
         {
           "user": "0x45Da7584cE6EEfd3FfeB88be905B5D72A37a0809",
-          "balance": "12693929245744567796944"
+          "balance": "12693929245744567796944",
+          "enteredAt": "1750403039"
         },
         {
           "user": "0x5496825dcE0284B0C903B365ADBf6D2e49615366",
-          "balance": "6248000000000000000000"
+          "balance": "6248000000000000000000",
+          "enteredAt": "1753253123"
         },
         {
           "user": "0xFc20A7cfc0Eb60169a9b7F173E4f221264C51b76",
-          "balance": "4377193990714756748764"
+          "balance": "4377193990714756748764",
+          "enteredAt": "1753353587"
         },
         {
           "user": "0x5e9eD3ecc680554F04be1ee2cC4556d8DD0baF1D",
-          "balance": "875250976334871440565"
+          "balance": "875250976334871440565",
+          "enteredAt": "1746031115"
         },
         {
           "user": "0xd85EF4F88975B03D735fcD3C5BD436C9D582Ee5E",
-          "balance": "7712411361734638447"
+          "balance": "7712411361734638447",
+          "enteredAt": "1752522359"
         },
         {
           "user": "0x2C1C56C538D92C3eCaFD7e01d32CDc93Cd1894d2",
-          "balance": "2055356205277281416"
+          "balance": "2055356205277281416",
+          "enteredAt": "1752555107"
         },
         {
           "user": "0x3039de687b20ED25C30d25e3B7fE4177024E539b",
-          "balance": "2000000000000000000"
+          "balance": "2000000000000000000",
+          "enteredAt": "1752664343"
         }
       ],
       "holder_count": 12,
       "historical_data": [
+        {
+          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
+          "entry_block": 22478993,
+          "entry_ts": "1747196315",
+          "max_balance": "77970720818320210333882",
+          "is_past_user": false
+        },
         {
           "user": "0x651C5273b67eA2037d07d300aB5bb1ab07C506bb",
           "entry_block": 23032450,
@@ -1562,13 +1591,6 @@
           "entry_block": 22980170,
           "entry_ts": "1753253123",
           "max_balance": "6248000000000000000000",
-          "is_past_user": false
-        },
-        {
-          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
-          "entry_block": 22478993,
-          "entry_ts": "1747196315",
-          "max_balance": "58620212412269142537882",
           "is_past_user": false
         },
         {
@@ -1820,15 +1842,18 @@
       "holders": [
         {
           "user": "0x2C4287B79B15aE63FbaaCd85a0302f6F172182fA",
-          "balance": "23126646146554859631889"
+          "balance": "23126646146554859631889",
+          "enteredAt": "1750561523"
         },
         {
           "user": "0x0BDa59997765a113BeA8cA9Cba319B35fB287Fc8",
-          "balance": "13642988742207066562946"
+          "balance": "13642988742207066562946",
+          "enteredAt": "1751091623"
         },
         {
           "user": "0x2A0F0fb9Cb40DF7C5916C786d20dcc9818E6C3Cd",
-          "balance": "8462077275904914503991"
+          "balance": "8462077275904914503991",
+          "enteredAt": "1750494671"
         }
       ],
       "holder_count": 3,
@@ -1910,7 +1935,8 @@
       "holders": [
         {
           "user": "0xb957DccaA1CCFB1eB78B495B499801D591d8a403",
-          "balance": "388830186468805603"
+          "balance": "388830186468805603",
+          "enteredAt": "1752629879"
         }
       ],
       "holder_count": 1,
@@ -2032,11 +2058,13 @@
       "holders": [
         {
           "user": "0x2E1531c10054b22d2564e020Dc3a95dcC0d940cc",
-          "balance": "3750746608776795145"
+          "balance": "3750746608776795145",
+          "enteredAt": "1748703431"
         },
         {
           "user": "0x0dD17B4b3aE9a19F409fa989AB4d64B711A1482A",
-          "balance": "1488051430950203796"
+          "balance": "1488051430950203796",
+          "enteredAt": "1748671343"
         }
       ],
       "holder_count": 2,
@@ -2248,7 +2276,8 @@
       "holders": [
         {
           "user": "0xC8233a46F57Add754f32Cf9e25A85aAe8a7D5f29",
-          "balance": "8698545724079043105825"
+          "balance": "8698545724079043105825",
+          "enteredAt": "1750759955"
         }
       ],
       "holder_count": 1,
@@ -2554,19 +2583,23 @@
       "holders": [
         {
           "user": "0x81231357A913ec6E1f3aFbCe8E662632C1c8EEe5",
-          "balance": "43398056082864345895389"
+          "balance": "43398056082864345895389",
+          "enteredAt": "1753508747"
         },
         {
           "user": "0x579B7E00d630AF04257C63b4B131EC0c4cbf7760",
-          "balance": "10172948368814773080534"
+          "balance": "10172948368814773080534",
+          "enteredAt": "1753426931"
         },
         {
           "user": "0xae84b9899B47CF95eA987c1e0C06B8B59EE1CE8C",
-          "balance": "2498749139443106695489"
+          "balance": "2498749139443106695489",
+          "enteredAt": "1753358291"
         },
         {
           "user": "0x0aA3059A1Ab878593A1346c5f89fA9D141C2e085",
-          "balance": "33751641982793687150"
+          "balance": "33751641982793687150",
+          "enteredAt": "1753604663"
         }
       ],
       "holder_count": 4,
@@ -2909,11 +2942,13 @@
       "holders": [
         {
           "user": "0x634C51a4542a0aBE6AC70E168d39f889576e482a",
-          "balance": "89111491843701794016257"
+          "balance": "89111491843701794016257",
+          "enteredAt": "1754245151"
         },
         {
           "user": "0x494f3579E12a045ff1404241D25aE740DDb0Ca91",
-          "balance": "61261121470818511944379"
+          "balance": "61261121470818511944379",
+          "enteredAt": "1754265443"
         }
       ],
       "holder_count": 2,
@@ -3469,7 +3504,8 @@
       "holders": [
         {
           "user": "0x000000e28fAA823d5B53ff6C2922c28335840375",
-          "balance": "4074472829170759388228"
+          "balance": "4074472829170759388228",
+          "enteredAt": "1753931807"
         }
       ],
       "holder_count": 1,
@@ -3535,7 +3571,8 @@
       "holders": [
         {
           "user": "0x71d78cC7bE6cF5dC70B286D472435D12A0d7eD54",
-          "balance": "1282067238255776652"
+          "balance": "1282067238255776652",
+          "enteredAt": "1749990767"
         }
       ],
       "holder_count": 1,
@@ -3649,11 +3686,13 @@
       "holders": [
         {
           "user": "0x1251871b7c7Ec8D6E3Ec19302Fb5A15B219A9103",
-          "balance": "277839677740404554"
+          "balance": "277839677740404554",
+          "enteredAt": "1753964495"
         },
         {
           "user": "0x5Aa5D1Ce3c082b16F700D47576FE5Ea1Ac4045cF",
-          "balance": "42041417985485548"
+          "balance": "42041417985485548",
+          "enteredAt": "1753382423"
         }
       ],
       "holder_count": 2,
@@ -3792,7 +3831,8 @@
       "holders": [
         {
           "user": "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0",
-          "balance": "99251953474492158734062"
+          "balance": "99251953474492158734062",
+          "enteredAt": "1750959935"
         }
       ],
       "holder_count": 1,
@@ -3853,19 +3893,23 @@
       "holders": [
         {
           "user": "0x76F768Dbeaa0264185b7a4952540656Ad7B54148",
-          "balance": "48943048582659270265240"
+          "balance": "48943048582659270265240",
+          "enteredAt": "1754050919"
         },
         {
           "user": "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0",
-          "balance": "46192777820692638242795"
+          "balance": "46192777820692638242795",
+          "enteredAt": "1753313855"
         },
         {
           "user": "0xd85EF4F88975B03D735fcD3C5BD436C9D582Ee5E",
-          "balance": "23740682291225767258"
+          "balance": "23740682291225767258",
+          "enteredAt": "1752832703"
         },
         {
           "user": "0x3039de687b20ED25C30d25e3B7fE4177024E539b",
-          "balance": "1203986954982102279"
+          "balance": "1203986954982102279",
+          "enteredAt": "1752665219"
         }
       ],
       "holder_count": 4,
@@ -3983,11 +4027,13 @@
       "holders": [
         {
           "user": "0x0BDa59997765a113BeA8cA9Cba319B35fB287Fc8",
-          "balance": "23043460204"
+          "balance": "23043460204",
+          "enteredAt": "1754084603"
         },
         {
           "user": "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0",
-          "balance": "22000000000"
+          "balance": "22000000000",
+          "enteredAt": "1751494223"
         }
       ],
       "holder_count": 2,
@@ -4138,11 +4184,25 @@
       "id": "0x60AA44ef5d95Aa00c636544b6987E1171C0bCCb9",
       "lpt": "0x2B10CffFC3e49F4aaE294d86072E5D2ec6332118",
       "lpt_symbol": "PT-ysWETH-30OCT2025",
-      "holders": [],
-      "holder_count": 0,
-      "historical_data": [],
+      "holders": [
+        {
+          "user": "0x35c79714b4DBA8b9Cb3F02E9b39A3dbdd392B80b",
+          "balance": "9800349645358021",
+          "enteredAt": "1754392031"
+        }
+      ],
+      "holder_count": 1,
+      "historical_data": [
+        {
+          "user": "0x35c79714b4DBA8b9Cb3F02E9b39A3dbdd392B80b",
+          "entry_block": 23074460,
+          "entry_ts": "1754392031",
+          "max_balance": "9800349645358021",
+          "is_past_user": false
+        }
+      ],
       "past_users": [],
-      "total_unique_users": 0,
+      "total_unique_users": 1,
       "past_users_count": 0
     },
     {
@@ -4245,7 +4305,8 @@
       "holders": [
         {
           "user": "0x6A1DDf4b96Db63F0F4b21911c7077B35d878F0f5",
-          "balance": "24175195026841597053530"
+          "balance": "24175195026841597053530",
+          "enteredAt": "1754053559"
         }
       ],
       "holder_count": 1,
@@ -5025,7 +5086,8 @@
       "holders": [
         {
           "user": "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0",
-          "balance": "20074887281296757965336"
+          "balance": "20074887281296757965336",
+          "enteredAt": "1753991783"
         }
       ],
       "holder_count": 1,
@@ -5257,11 +5319,13 @@
       "holders": [
         {
           "user": "0xdc9bC4b855BB8972c407C697EA09E6d3E4191835",
-          "balance": "157240813426987247903"
+          "balance": "157240813426987247903",
+          "enteredAt": "1745745899"
         },
         {
           "user": "0x5F90e68b9165A4f3d61bA5F116999D30785E5931",
-          "balance": "2856620569463266031"
+          "balance": "2856620569463266031",
+          "enteredAt": "1747987631"
         }
       ],
       "holder_count": 2,
@@ -5612,7 +5676,8 @@
       "holders": [
         {
           "user": "0x122ee07849CeaC5D3353C711f47a038e871D4836",
-          "balance": "395694594"
+          "balance": "395694594",
+          "enteredAt": "1746417419"
         }
       ],
       "holder_count": 1,
@@ -5925,6 +5990,15 @@
       "holder_count": 0,
       "historical_data": [
         {
+          "user": "0x7E6E09fD7fbC2c48b51306EA61D20B32e40999f4",
+          "entry_block": 22828910,
+          "entry_ts": "1751427527",
+          "max_balance": "9029710996",
+          "exit_block": 22910329,
+          "exit_ts": "1752410555",
+          "is_past_user": true
+        },
+        {
           "user": "0x4DB875E19804cb1728C444969aC639B84b6dB76c",
           "entry_block": 22811595,
           "entry_ts": "1751218367",
@@ -5945,6 +6019,15 @@
       ],
       "past_users": [
         {
+          "user": "0x7E6E09fD7fbC2c48b51306EA61D20B32e40999f4",
+          "entry_block": 22828910,
+          "entry_ts": "1751427527",
+          "max_balance": "9029710996",
+          "exit_block": 22910329,
+          "exit_ts": "1752410555",
+          "is_past_user": true
+        },
+        {
           "user": "0x4DB875E19804cb1728C444969aC639B84b6dB76c",
           "entry_block": 22811595,
           "entry_ts": "1751218367",
@@ -5963,8 +6046,8 @@
           "is_past_user": true
         }
       ],
-      "total_unique_users": 2,
-      "past_users_count": 2
+      "total_unique_users": 3,
+      "past_users_count": 3
     },
     {
       "id": "0x8Eb476FB6150C6C177402e7096954e271f98F984",
@@ -5995,7 +6078,8 @@
       "holders": [
         {
           "user": "0xd6ffc26607A60A0c5383533fd53F7C47c26D62D4",
-          "balance": "4983513051263533364"
+          "balance": "4983513051263533364",
+          "enteredAt": "1751296871"
         }
       ],
       "holder_count": 1,
@@ -6323,11 +6407,13 @@
       "holders": [
         {
           "user": "0x1C5606e7dE910B24E63686972db62c2129A8A488",
-          "balance": "18918226439786458984925"
+          "balance": "18918226439786458984925",
+          "enteredAt": "1753341755"
         },
         {
           "user": "0xb957DccaA1CCFB1eB78B495B499801D591d8a403",
-          "balance": "4999646875033260380996"
+          "balance": "4999646875033260380996",
+          "enteredAt": "1744943483"
         }
       ],
       "holder_count": 2,
@@ -6562,7 +6648,8 @@
       "holders": [
         {
           "user": "0x923ed3D633bC2418ed0604e962A272b0860e553E",
-          "balance": "434041014858604247"
+          "balance": "434041014858604247",
+          "enteredAt": "1752218327"
         }
       ],
       "holder_count": 1,
@@ -6586,11 +6673,13 @@
       "holders": [
         {
           "user": "0x01F99e527454D8BC2835aA662CCf52CEa2C9Be3d",
-          "balance": "46418826063935600"
+          "balance": "46418826063935600",
+          "enteredAt": "1753895603"
         },
         {
           "user": "0xb67adf0C9284fe651330a6E04319A9508F69f1E9",
-          "balance": "95076162470825"
+          "balance": "95076162470825",
+          "enteredAt": "1753619075"
         }
       ],
       "holder_count": 2,
@@ -6877,71 +6966,101 @@
       "holders": [
         {
           "user": "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0",
-          "balance": "148830249286150515163562"
+          "balance": "148830249286150515163562",
+          "enteredAt": "1751328407"
         },
         {
           "user": "0x74438a716C9f2F4C3bF9868653c940F31C8ad2fe",
-          "balance": "82025239919355750467891"
-        },
-        {
-          "user": "0x009AE54BF26FccAa4C5a1443ebDEd3E472849371",
-          "balance": "54248274974652063923457"
-        },
-        {
-          "user": "0x0BDa59997765a113BeA8cA9Cba319B35fB287Fc8",
-          "balance": "53742967970901961942061"
-        },
-        {
-          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
-          "balance": "43925674461471178928986"
+          "balance": "82025239919355750467891",
+          "enteredAt": "1749054731"
         },
         {
           "user": "0xb0F094C9e85a0Ee7B89214A3A67EFBC131022CC0",
-          "balance": "35947065497697588252858"
+          "balance": "71889755157358903695815",
+          "enteredAt": "1753850927"
+        },
+        {
+          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
+          "balance": "66099385750140661778822",
+          "enteredAt": "1753931495"
+        },
+        {
+          "user": "0x009AE54BF26FccAa4C5a1443ebDEd3E472849371",
+          "balance": "54248274974652063923457",
+          "enteredAt": "1753983983"
+        },
+        {
+          "user": "0x0BDa59997765a113BeA8cA9Cba319B35fB287Fc8",
+          "balance": "53742967970901961942061",
+          "enteredAt": "1754085551"
         },
         {
           "user": "0x0d8163aEE1BEc6338B979e34b6Cb31013fe82516",
-          "balance": "24278458546514040609839"
+          "balance": "24278458546514040609839",
+          "enteredAt": "1754254295"
         },
         {
           "user": "0x7C6Accd51cbbdd53354De581841803b4f79d48e7",
-          "balance": "15470249415952602169334"
+          "balance": "15470249415952602169334",
+          "enteredAt": "1754115191"
         },
         {
           "user": "0x9f1775c88fE7Ed36C57A35CEFEF4EF4d1c2D802B",
-          "balance": "14941818813569144269608"
+          "balance": "14941818813569144269608",
+          "enteredAt": "1754073263"
         },
         {
           "user": "0x9BCd0C730EbDe6e7809fE1E17E3ccdBf82bf90Ab",
-          "balance": "13587422649286979253739"
+          "balance": "13587422649286979253739",
+          "enteredAt": "1754257259"
         },
         {
           "user": "0x5a97f1e696CF19e32436dE91D57822Ffe5A3eae9",
-          "balance": "13358875840260278287675"
+          "balance": "13358875840260278287675",
+          "enteredAt": "1754260547"
         },
         {
           "user": "0x92898941d854a805248F9ff9bA900DBc2E94Ff24",
-          "balance": "11965381340966531762376"
+          "balance": "11965381340966531762376",
+          "enteredAt": "1752890531"
         },
         {
           "user": "0x33b36812B44463F020042BFbB7a2D8aa40B3a426",
-          "balance": "10574316043681121653509"
+          "balance": "10574316043681121653509",
+          "enteredAt": "1753086923"
         },
         {
           "user": "0x2f4B475a16aDbaC391E896A056a8Eb424d00A68b",
-          "balance": "10055905776198750717660"
+          "balance": "10055905776198750717660",
+          "enteredAt": "1751724047"
         },
         {
           "user": "0x32F1cfA3ECD87bE9e46bd4A34aA38C9bc77e936e",
-          "balance": "915590450910640391789"
+          "balance": "915590450910640391789",
+          "enteredAt": "1754032091"
         },
         {
           "user": "0xdBdEBA3172DB939e2dD475df173426C23873CCC3",
-          "balance": "727276091449553805580"
+          "balance": "727276091449553805580",
+          "enteredAt": "1749930623"
         }
       ],
       "holder_count": 16,
       "historical_data": [
+        {
+          "user": "0xb0F094C9e85a0Ee7B89214A3A67EFBC131022CC0",
+          "entry_block": 23029658,
+          "entry_ts": "1753850927",
+          "max_balance": "71889755157358903695815",
+          "is_past_user": false
+        },
+        {
+          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
+          "entry_block": 23036325,
+          "entry_ts": "1753931495",
+          "max_balance": "66099385750140661778822",
+          "is_past_user": false
+        },
         {
           "user": "0x5a97f1e696CF19e32436dE91D57822Ffe5A3eae9",
           "entry_block": 23063562,
@@ -7002,8 +7121,8 @@
         },
         {
           "user": "0x74438a716C9f2F4C3bF9868653c940F31C8ad2fe",
-          "entry_block": 22632483,
-          "entry_ts": "1749054731",
+          "entry_block": 23041976,
+          "entry_ts": "1753999919",
           "max_balance": "82025239919355750467891",
           "is_past_user": false
         },
@@ -7012,20 +7131,6 @@
           "entry_block": 23040662,
           "entry_ts": "1753983983",
           "max_balance": "54248274974652063923457",
-          "is_past_user": false
-        },
-        {
-          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
-          "entry_block": 23036325,
-          "entry_ts": "1753931495",
-          "max_balance": "43925674461471178928986",
-          "is_past_user": false
-        },
-        {
-          "user": "0xb0F094C9e85a0Ee7B89214A3A67EFBC131022CC0",
-          "entry_block": 23029658,
-          "entry_ts": "1753850927",
-          "max_balance": "35947065497697588252858",
           "is_past_user": false
         },
         {
@@ -7057,15 +7162,6 @@
           "is_past_user": false
         },
         {
-          "user": "0x9722E41c607819926794118aC50aa2a4c84c5f71",
-          "entry_block": 22600443,
-          "entry_ts": "1748667119",
-          "max_balance": "6007803075951929337083",
-          "exit_block": 22751311,
-          "exit_ts": "1750490483",
-          "is_past_user": true
-        },
-        {
           "user": "0xdBdEBA3172DB939e2dD475df173426C23873CCC3",
           "entry_block": 22704993,
           "entry_ts": "1749930623",
@@ -7082,19 +7178,10 @@
           "exit_block": 23046379,
           "exit_ts": "1754053079",
           "is_past_user": true
-        },
-        {
-          "user": "0x9722E41c607819926794118aC50aa2a4c84c5f71",
-          "entry_block": 22600443,
-          "entry_ts": "1748667119",
-          "max_balance": "6007803075951929337083",
-          "exit_block": 22751311,
-          "exit_ts": "1750490483",
-          "is_past_user": true
         }
       ],
-      "total_unique_users": 18,
-      "past_users_count": 2
+      "total_unique_users": 17,
+      "past_users_count": 1
     },
     {
       "id": "0xB6821835e049fF6C732774d16fc146C9C59c699f",
@@ -7180,62 +7267,81 @@
       "holders": [
         {
           "user": "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0",
-          "balance": "105990626118881503201"
+          "balance": "105990626118881503201",
+          "enteredAt": "1721788907"
         },
         {
           "user": "0xf75cbe67CAbbd61782e3464Ec1452DA96b4dA12D",
-          "balance": "69973275899255333226"
+          "balance": "69973275899255333226",
+          "enteredAt": "1743445295"
         },
         {
           "user": "0xd72b821a1d9180FFAC4375f6F11142211a025657",
-          "balance": "55129404762327889930"
+          "balance": "55129404762327889930",
+          "enteredAt": "1747419995"
         },
         {
           "user": "0xd1621A7040cd9D0bE444eF07621beAd1C1166ad4",
-          "balance": "25882600544593675899"
+          "balance": "25882600544593675899",
+          "enteredAt": "1750331627"
         },
         {
           "user": "0x75F256ECa494266771cbcb28E4EDA9d5fbCA430A",
-          "balance": "23028953368828431585"
+          "balance": "23028953368828431585",
+          "enteredAt": "1749531503"
         },
         {
           "user": "0x37E2E16Bf5E3433baecc1DA5559D609de307eAc9",
-          "balance": "19901064377947688026"
+          "balance": "19901064377947688026",
+          "enteredAt": "1726737023"
         },
         {
           "user": "0x76d5eb42A854A1cEAfFD99000341d4E4e7a4a70F",
-          "balance": "14096493592369454861"
+          "balance": "14096493592369454861",
+          "enteredAt": "1728556811"
         },
         {
           "user": "0x0BDa59997765a113BeA8cA9Cba319B35fB287Fc8",
-          "balance": "13808706481284483642"
+          "balance": "13808706481284483642",
+          "enteredAt": "1748119727"
         },
         {
           "user": "0x7B052756f8Cb2fDCD9DE2F1665D0D6648317346A",
-          "balance": "5284837573331749094"
+          "balance": "5284837573331749094",
+          "enteredAt": "1726416035"
+        },
+        {
+          "user": "0xe4F077BF767a57Ae9aAD77B0aB54CbdE0BEde65A",
+          "balance": "4901118074138468138",
+          "enteredAt": "1751443763"
         },
         {
           "user": "0x653726891810f768b3843b79831e8206802CCB05",
-          "balance": "4329626898683155753"
+          "balance": "4329626898683155753",
+          "enteredAt": "1735866035"
         },
         {
           "user": "0xDcDEdDc0B15519b465379D3Eb6C1ba566adDF8Ef",
-          "balance": "2919986578824851973"
+          "balance": "2919986578824851973",
+          "enteredAt": "1752240347"
         },
         {
           "user": "0xD52A931632A7655614030d99c96624A72AaaDC22",
-          "balance": "1248077913748626214"
+          "balance": "1248077913748626214",
+          "enteredAt": "1735844579"
         },
         {
           "user": "0x943c23BE6316736b6D029210ECeA2E2B0df2ef3E",
-          "balance": "448640612172432317"
+          "balance": "448640612172432317",
+          "enteredAt": "1725442691"
         },
         {
           "user": "0xD0c5b07e636fb02D158be4142D18a1ED74d7C01F",
-          "balance": "110052962963748186"
+          "balance": "110052962963748186",
+          "enteredAt": "1748461583"
         }
       ],
-      "holder_count": 14,
+      "holder_count": 15,
       "historical_data": [],
       "past_users": [],
       "total_unique_users": 0,
@@ -7259,23 +7365,28 @@
       "holders": [
         {
           "user": "0x536AAE2682222F9d3CFcc988200356C19E7cFc66",
-          "balance": "30861124470128815980806"
+          "balance": "30861124470128815980806",
+          "enteredAt": "1754252831"
         },
         {
           "user": "0x9f978df35a30C8978C3112a6D25f8e47F7A7437f",
-          "balance": "12327898764934207280004"
+          "balance": "12327898764934207280004",
+          "enteredAt": "1754077163"
         },
         {
-          "user": "0x96de89d208396526E32Efe1395091cFEa37eD529",
-          "balance": "165179173471972991895"
+          "user": "0xBA9aF7C71ebF964f12497E3F9707689590AE59B3",
+          "balance": "3703047777262588694868",
+          "enteredAt": "1754378303"
         },
         {
           "user": "0xd85EF4F88975B03D735fcD3C5BD436C9D582Ee5E",
-          "balance": "10992199792344667983"
+          "balance": "10992199792344667983",
+          "enteredAt": "1752832739"
         },
         {
           "user": "0x3039de687b20ED25C30d25e3B7fE4177024E539b",
-          "balance": "1248262360101253934"
+          "balance": "1248262360101253934",
+          "enteredAt": "1752731519"
         }
       ],
       "holder_count": 5,
@@ -7302,7 +7413,8 @@
       "holders": [
         {
           "user": "0x0dD17B4b3aE9a19F409fa989AB4d64B711A1482A",
-          "balance": "1325074311549192862"
+          "balance": "1325074311549192862",
+          "enteredAt": "1748671727"
         }
       ],
       "holder_count": 1,
@@ -7626,19 +7738,23 @@
       "holders": [
         {
           "user": "0x0BDa59997765a113BeA8cA9Cba319B35fB287Fc8",
-          "balance": "22146897163121710505356"
+          "balance": "22146897163121710505356",
+          "enteredAt": "1754098811"
         },
         {
           "user": "0x5275817b74021E97c980E95EdE6bbAc0D0d6f3a2",
-          "balance": "12739479669455574579163"
+          "balance": "12739479669455574579163",
+          "enteredAt": "1753998971"
         },
         {
           "user": "0x7C6Accd51cbbdd53354De581841803b4f79d48e7",
-          "balance": "6440446371238052073483"
+          "balance": "6440446371238052073483",
+          "enteredAt": "1754117111"
         },
         {
           "user": "0x5Aea0510A4BFd2E6eba3D932624efb412a5dDBE4",
-          "balance": "4428919371500444754855"
+          "balance": "4428919371500444754855",
+          "enteredAt": "1754216267"
         }
       ],
       "holder_count": 4,
@@ -7786,11 +7902,13 @@
       "holders": [
         {
           "user": "0xAd64Dcd3994D403f79109eBfc5Ed112658a0e337",
-          "balance": "1000000000000000000"
+          "balance": "1000000000000000000",
+          "enteredAt": "1745402855"
         },
         {
           "user": "0xeed360aC2DE169d85DcD41D486DdB3Fc73D91bF4",
-          "balance": "701682244340725521"
+          "balance": "701682244340725521",
+          "enteredAt": "1733051879"
         }
       ],
       "holder_count": 2,
@@ -7872,7 +7990,8 @@
       "holders": [
         {
           "user": "0xf67a00EA4508D180520ADe8279011075e1c3f727",
-          "balance": "3410"
+          "balance": "3410",
+          "enteredAt": "1719909815"
         }
       ],
       "holder_count": 1,
@@ -7954,98 +8073,116 @@
       "holders": [
         {
           "user": "0xf884974F3D70d58bA20D07a10a48ffd443635d0A",
-          "balance": "66511804210886732227214"
+          "balance": "66511804210886732227214",
+          "enteredAt": "1750895159"
         },
         {
           "user": "0x75F256ECa494266771cbcb28E4EDA9d5fbCA430A",
-          "balance": "63855733764246063413909"
+          "balance": "63855733764246063413909",
+          "enteredAt": "1749839243"
         },
         {
           "user": "0xC4a70Fc48985926773Fdb25162a46311443f4DBf",
-          "balance": "55762939833398713542737"
+          "balance": "55762939833398713542737",
+          "enteredAt": "1753396271"
         },
         {
           "user": "0x8067ef6f93b92099C652Da70b5A7f414011Be5bb",
-          "balance": "37493538663211783775367"
+          "balance": "37493538663211783775367",
+          "enteredAt": "1751133923"
         },
         {
           "user": "0x926eB5E50cb34E9836e7d93C645768CFB1e2B1Ce",
-          "balance": "33607039434868335486589"
+          "balance": "33607039434868335486589",
+          "enteredAt": "1753904183"
         },
         {
           "user": "0x1247F0cb8F7B0e2eDfa9750df07417D17b5127d6",
-          "balance": "29827718041046815776925"
+          "balance": "29827718041046815776925",
+          "enteredAt": "1750496855"
         },
         {
           "user": "0xd0A8A6dd88BD9405128f178347eCD60FaA631164",
-          "balance": "27490826024002906438373"
+          "balance": "27490826024002906438373",
+          "enteredAt": "1750229387"
         },
         {
           "user": "0x0BDa59997765a113BeA8cA9Cba319B35fB287Fc8",
-          "balance": "24761267269445725225811"
+          "balance": "24761267269445725225811",
+          "enteredAt": "1754156603"
         },
         {
           "user": "0x6623215826F8be557DAe02f03dd1187c72F590ba",
-          "balance": "19942021569484481366188"
+          "balance": "19942021569484481366188",
+          "enteredAt": "1750686983"
         },
         {
           "user": "0xfd8a63085804DCB95417fe33f9E49253522c68DD",
-          "balance": "19618887007719234021682"
+          "balance": "19618887007719234021682",
+          "enteredAt": "1752825875"
         },
         {
           "user": "0x5Aea0510A4BFd2E6eba3D932624efb412a5dDBE4",
-          "balance": "19164290014089621373489"
+          "balance": "19164290014089621373489",
+          "enteredAt": "1751241767"
         },
         {
           "user": "0x06573Db40707710D991b2519CA9B5C1a6c5C1Efa",
-          "balance": "18196003234116184224521"
+          "balance": "18196003234116184224521",
+          "enteredAt": "1750495439"
         },
         {
           "user": "0xcC3e470BdE93f9E6DdafC0f6489376D352a74eE4",
-          "balance": "13674479024832502931339"
+          "balance": "13674479024832502931339",
+          "enteredAt": "1751709455"
         },
         {
           "user": "0x063608D16D09E48e46329D6bF833cD31Dc341030",
-          "balance": "10954194897072193743106"
+          "balance": "10954194897072193743106",
+          "enteredAt": "1750284179"
         },
         {
           "user": "0xd6ffc26607A60A0c5383533fd53F7C47c26D62D4",
-          "balance": "10028740501058235964810"
-        },
-        {
-          "user": "0x792cbCd089A19904e5e681de6eb7d7637b36F1C2",
-          "balance": "8993009778421217401191"
+          "balance": "10028740501058235964810",
+          "enteredAt": "1749801707"
         },
         {
           "user": "0x244e97Be1311e1312ad5bb4ebceb4E47912021D9",
-          "balance": "8283439780410278835493"
+          "balance": "8283439780410278835493",
+          "enteredAt": "1750746719"
         },
         {
           "user": "0x343f5EA4cD99f508Bc72cF17D8E1388d5d889668",
-          "balance": "4688070566721929033419"
+          "balance": "4688070566721929033419",
+          "enteredAt": "1750130795"
         },
         {
           "user": "0xd22234192cf66368d36155327cC3b33b5Ad09425",
-          "balance": "4478260052567018116345"
+          "balance": "4478260052567018116345",
+          "enteredAt": "1751164019"
         },
         {
           "user": "0x7D7BaAD8978d4d25974b403B8C6789128b9001af",
-          "balance": "4136587812573730330542"
+          "balance": "4136587812573730330542",
+          "enteredAt": "1754287799"
         },
         {
           "user": "0x8cc8B8BAe27312AB93030381aC28a8c68b5A15Bc",
-          "balance": "2332651484966291867581"
+          "balance": "2332651484966291867581",
+          "enteredAt": "1750676255"
         },
         {
           "user": "0xFFCb6b2c766B06B78547ea147CFc2c974bDA2C4E",
-          "balance": "1251586963911595560987"
+          "balance": "1251586963911595560987",
+          "enteredAt": "1751086295"
         },
         {
           "user": "0x0dDAc437952c920e1D1Ac5C50E84260C81D9D6dc",
-          "balance": "483986285116760573925"
+          "balance": "483986285116760573925",
+          "enteredAt": "1754300111"
         }
       ],
-      "holder_count": 23,
+      "holder_count": 22,
       "historical_data": [],
       "past_users": [],
       "total_unique_users": 0,
@@ -8113,7 +8250,8 @@
       "holders": [
         {
           "user": "0x07188478c7B3E7CE94a45Eb6dCFdC366D0700Aa8",
-          "balance": "1938214313182456900940"
+          "balance": "1938214313182456900940",
+          "enteredAt": "1749907955"
         }
       ],
       "holder_count": 1,
@@ -8129,7 +8267,8 @@
       "holders": [
         {
           "user": "0x2cE07a3CE9Fb07C28E8d0a175aA3918cc1b1A07b",
-          "balance": "9884825121153969254"
+          "balance": "9884825121153969254",
+          "enteredAt": "1739907743"
         }
       ],
       "holder_count": 1,
