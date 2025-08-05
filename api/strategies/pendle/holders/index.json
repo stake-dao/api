@@ -4138,11 +4138,24 @@
       "id": "0x60AA44ef5d95Aa00c636544b6987E1171C0bCCb9",
       "lpt": "0x2B10CffFC3e49F4aaE294d86072E5D2ec6332118",
       "lpt_symbol": "PT-ysWETH-30OCT2025",
-      "holders": [],
-      "holder_count": 0,
-      "historical_data": [],
+      "holders": [
+        {
+          "user": "0x35c79714b4DBA8b9Cb3F02E9b39A3dbdd392B80b",
+          "balance": "9800349645358021"
+        }
+      ],
+      "holder_count": 1,
+      "historical_data": [
+        {
+          "user": "0x35c79714b4DBA8b9Cb3F02E9b39A3dbdd392B80b",
+          "entry_block": 23074460,
+          "entry_ts": "1754392031",
+          "max_balance": "9800349645358021",
+          "is_past_user": false
+        }
+      ],
       "past_users": [],
-      "total_unique_users": 0,
+      "total_unique_users": 1,
       "past_users_count": 0
     },
     {
@@ -7016,8 +7029,8 @@
         },
         {
           "user": "0x74438a716C9f2F4C3bF9868653c940F31C8ad2fe",
-          "entry_block": 22632483,
-          "entry_ts": "1749054731",
+          "entry_block": 22659689,
+          "entry_ts": "1749383531",
           "max_balance": "82025239919355750467891",
           "is_past_user": false
         },
