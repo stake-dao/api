@@ -1464,12 +1464,12 @@
       "lpt_symbol": "PT-sUSDf-25SEP2025",
       "holders": [
         {
-          "user": "0x6A1DDf4b96Db63F0F4b21911c7077B35d878F0f5",
-          "balance": "59111086737691399843127"
+          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
+          "balance": "77970720818320210333882"
         },
         {
-          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
-          "balance": "58620212412269142537882"
+          "user": "0x6A1DDf4b96Db63F0F4b21911c7077B35d878F0f5",
+          "balance": "59111086737691399843127"
         },
         {
           "user": "0x0a44F50Ed65afBd41f594e4B1E4366574bF32CA7",
@@ -1514,6 +1514,13 @@
       ],
       "holder_count": 12,
       "historical_data": [
+        {
+          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
+          "entry_block": 22478993,
+          "entry_ts": "1747196315",
+          "max_balance": "77970720818320210333882",
+          "is_past_user": false
+        },
         {
           "user": "0x651C5273b67eA2037d07d300aB5bb1ab07C506bb",
           "entry_block": 23032450,
@@ -1562,13 +1569,6 @@
           "entry_block": 22980170,
           "entry_ts": "1753253123",
           "max_balance": "6248000000000000000000",
-          "is_past_user": false
-        },
-        {
-          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
-          "entry_block": 22478993,
-          "entry_ts": "1747196315",
-          "max_balance": "58620212412269142537882",
           "is_past_user": false
         },
         {
@@ -6884,16 +6884,16 @@
           "balance": "82025239919355750467891"
         },
         {
+          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
+          "balance": "66099385750140661778822"
+        },
+        {
           "user": "0x009AE54BF26FccAa4C5a1443ebDEd3E472849371",
           "balance": "54248274974652063923457"
         },
         {
           "user": "0x0BDa59997765a113BeA8cA9Cba319B35fB287Fc8",
           "balance": "53742967970901961942061"
-        },
-        {
-          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
-          "balance": "43925674461471178928986"
         },
         {
           "user": "0xb0F094C9e85a0Ee7B89214A3A67EFBC131022CC0",
@@ -6942,6 +6942,13 @@
       ],
       "holder_count": 16,
       "historical_data": [
+        {
+          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
+          "entry_block": 23036325,
+          "entry_ts": "1753931495",
+          "max_balance": "66099385750140661778822",
+          "is_past_user": false
+        },
         {
           "user": "0x5a97f1e696CF19e32436dE91D57822Ffe5A3eae9",
           "entry_block": 23063562,
@@ -7012,13 +7019,6 @@
           "entry_block": 23040662,
           "entry_ts": "1753983983",
           "max_balance": "54248274974652063923457",
-          "is_past_user": false
-        },
-        {
-          "user": "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C",
-          "entry_block": 23036325,
-          "entry_ts": "1753931495",
-          "max_balance": "43925674461471178928986",
           "is_past_user": false
         },
         {
