@@ -2,7 +2,7 @@ name: Bot Pendle Gauge Holders
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Every 5 minutes
+    - cron: '*/10 * * * *'  # Every 5 minutes
   workflow_dispatch: # Allows the workflow to be triggered manually -
 
 env:
