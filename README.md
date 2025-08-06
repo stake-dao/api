@@ -357,269 +357,58 @@ export type BuiltStrat = {
 
 ### Pendle Holders data
 
-The Pendle holders API provides comprehensive data about gauge holders, their balances, and historical tracking.
+Endpoint : [/api/strategies/pendle/holders](https://api.stakedao.org/api/strategies/pendle/holders)
 
-#### Available Endpoints
+Data type :
 
-##### 1. Summary (Root Endpoint)
-**Endpoint**: [/api/strategies/pendle/holders](https://api.stakedao.org/api/strategies/pendle/holders)
-
-Returns a lightweight summary of all gauges.
-
-```typescript
-{
-  snapshot_date: string,
-  pendle_locker: string,
-  total_gauges: number,
-  total_current_holders: number,
-  all_time_unique_users: number,
-  average_holding_duration_days: number,
-  gauges: Array<{
-    gauge: string,
-    symbol: string,
-    current_holders: number,
-    all_time_users: number,
-    current_supply: string
-  }>
-}
 ```
-
-##### 2. Current Holders Snapshot
-**Endpoint**: [/api/strategies/pendle/holders/current](https://api.stakedao.org/api/strategies/pendle/holders/current)
-
-Get current holders for all gauges with their balances.
-
-```typescript
 {
-  snapshot_date: string,
-  pendle_locker: string,
-  total_gauges: number,
-  total_current_holders: number,
-  gauges: Array<{
-    gauge_id: string,
-    token: {
-      address: string,
-      symbol: string
-    },
-    current_holders: number,
-    current_supply: string,
-    holders: Array<{
-      user: string,
-      balance: string,
-      last_updated: number
-    }>
-  }>
-}
-```
-
-##### 3. Historical Holders Data
-**Endpoint**: [/api/strategies/pendle/holders/historical](https://api.stakedao.org/api/strategies/pendle/holders/historical)
-
-Get complete historical data including holding periods and durations.
-
-**Query Parameters**:
-- `gauge` (optional): Filter by specific gauge address
-- `token` (optional): Filter by specific token address (PT token)
-- `include_events` (optional, default: false): Include detailed event history
-
-Note: Use either `gauge` or `token` parameter, not both.
-
-```typescript
-{
-  snapshot_date: string,
-  pendle_locker: string,
-  gauges: Array<{
-    gauge_id: string,
-    token: {
-      address: string,
-      symbol: string
-    },
-    stats: {
-      current_holders: number,
-      all_time_users: number,
-      average_holding_duration_days: number
-    },
-    user_histories: Array<{
-      user: string,
-      first_seen_date: string,
-      last_seen_date: string,
-      is_current_holder: boolean,
-      max_balance: string,
-      total_holding_duration_days: number,
-      holding_periods: Array<{
-        entry_date: string,
-        exit_date: string | null,
-        duration_days: number
-      }>
-    }>
-  }>
-}
-```
-
-##### 4. Period Analysis
-**Endpoint**: [/api/strategies/pendle/holders/period](https://api.stakedao.org/api/strategies/pendle/holders/period)
-
-Get holders during a specific time period.
-
-**Query Parameters**:
-- `start_date` (required): ISO date string
-- `end_date` (required): ISO date string
-- `gauge` (optional): Filter by specific gauge address
-- `token` (optional): Filter by specific token address (PT token)
-- `min_duration_days` (optional): Minimum holding duration in the period
-
-Note: Use either `gauge` or `token` parameter, not both.
-
-```typescript
-{
-  period: {
-    start: string,
-    end: string
-  },
-  gauges: Array<{
-    gauge_id: string,
-    token: {
-      address: string,
-      symbol: string
-    },
-    holders_in_period: number,
-    holders: Array<{
-      user: string,
-      holding_duration_days: number,
-      max_balance_in_period: string,
-      is_current_holder: boolean,
-      entry_date: string,
-      exit_date: string | null
-    }>
-  }>
-}
-```
-
-##### 5. Holder Analytics
-**Endpoint**: [/api/strategies/pendle/holders/analytics](https://api.stakedao.org/api/strategies/pendle/holders/analytics)
-
-Get aggregated analytics and statistics.
-
-**Query Parameters**:
-- `gauge` (optional): Filter by specific gauge address
-
-```typescript
-{
-  snapshot_date: string,
-  summary: {
-    total_gauges: number,
-    total_current_holders: number,
-    all_time_unique_users: number,
-    average_holding_duration_days: number
-  },
-  holding_duration_distribution: {
-    less_than_day: number,
-    '1_to_7_days': number,
-    '7_to_30_days': number,
-    '30_to_90_days': number,
-    more_than_90_days: number
-  },
-  top_holders: Array<{
-    user: string,
-    gauge_id: string,
-    token: {
-      address: string,
-      symbol: string
-    },
-    max_balance: string,
-    total_holding_duration_days: number,
-    is_current_holder: boolean
-  }>,
-  gauge_analytics: Array<{
-    gauge_id: string,
-    token: {
-      address: string,
-      symbol: string
-    },
-    current_holders: number,
-    all_time_users: number,
-    average_holding_duration_days: number,
-    longest_holder: {
-      user: string,
-      duration_days: number
-    },
-    largest_holder: {
-      user: string,
-      max_balance: string
+  "lp-holder": string,  // Pendle locker address
+  "gauge_count": number,
+  "gauges": [
+    {
+      "id": string,  // Gauge address
+      "lpt": string,  // PT token address (if available)
+      "lpt_symbol": string,  // PT token symbol (if available)
+      "holders": [
+        {
+          "user": string,  // User address
+          "balance": string  // Current balance
+        }
+      ],
+      "holder_count": number,  // Current number of holders
+      "historical_data": [  // All users who have ever held tokens
+        {
+          "user": string,  // User address
+          "entry_block": number,  // Block when user first entered
+          "entry_ts": string,  // Timestamp when user first entered
+          "max_balance": string,  // Maximum balance user ever held
+          "exit_block": number,  // Block when user exited (if applicable)
+          "exit_ts": string,  // Timestamp when user exited (if applicable)
+          "is_past_user": boolean  // True if user has exited
+        }
+      ],
+      "past_users": [  // Users who have exited the market
+        {
+          "user": string,
+          "entry_block": number,
+          "entry_ts": string,
+          "max_balance": string,
+          "exit_block": number,
+          "exit_ts": string,
+          "is_past_user": true
+        }
+      ],
+      "total_unique_users": number,  // Total unique users (current + past)
+      "past_users_count": number  // Number of users who have exited
     }
-  }>
+  ]
 }
 ```
 
-##### 6. User History
-**Endpoint**: [/api/strategies/pendle/holders/user/{address}](https://api.stakedao.org/api/strategies/pendle/holders/user/0x...)
-
-Get complete history for a specific user across all gauges.
-
-```typescript
-{
-  user: string,
-  summary: {
-    total_gauges_participated: number,
-    is_current_holder: boolean,
-    total_holding_duration_days: number
-  },
-  gauge_participations: Array<{
-    gauge_id: string,
-    token: {
-      address: string,
-      symbol: string
-    },
-    is_current_holder: boolean,
-    max_balance: string,
-    total_holding_duration_days: number,
-    holding_periods: Array<{
-      entry_date: string,
-      exit_date: string | null,
-      duration_days: number
-    }>,
-    events: Array<{
-      type: 'deposit' | 'withdraw',
-      amount: string,
-      datetime: string
-    }>
-  }>
-}
-```
-
-#### Example Usage
-
-```bash
-# Get current holders
-curl https://api.stakedao.org/strategies/pendle/holders/current
-
-# Get historical data for a specific gauge
-curl "https://api.stakedao.org/strategies/pendle/holders/historical?gauge=0x03dE17a785d1CE9227ccA0388aE4ed176630b203&include_events=true"
-
-# Get historical data for a specific token
-curl "https://api.stakedao.org/strategies/pendle/holders/historical?token=0x4D7356369273c6373E6C5074fe540CB070acfE6b&include_events=true"
-
-# Get holders who held tokens in Q1 2024
-curl "https://api.stakedao.org/strategies/pendle/holders/period?start_date=2024-01-01&end_date=2024-03-31"
-
-# Get holders for a specific token in Q1 2024
-curl "https://api.stakedao.org/strategies/pendle/holders/period?start_date=2024-01-01&end_date=2024-03-31&token=0x4D7356369273c6373E6C5074fe540CB070acfE6b"
-
-# Get analytics for all gauges
-curl https://api.stakedao.org/strategies/pendle/holders/analytics
-
-# Get analytics for a specific token
-curl "https://api.stakedao.org/strategies/pendle/holders/analytics?token=0x4D7356369273c6373E6C5074fe540CB070acfE6b"
-
-# Get history for a specific user
-curl https://api.stakedao.org/strategies/pendle/holders/user/0x8A5c3326fadb5D2569cDe6e16Ac1AcD38fE1392b
-```
-
-#### Data Update Frequency
-
-The holder data is updated every 5 minutes via the GitHub workflow `pendle-gauge-holders.yml`.
-
-#### Notes
-
-- Gauges with zero holders are automatically filtered out from responses to reduce payload size
-- The `all_time_users` field represents the total number of unique users who have ever held tokens in a gauge
+This endpoint provides comprehensive data about Pendle gauge holders, including:
+- Current holders with their balances
+- Historical data for all users who have ever held tokens
+- Past users who have entered and exited the market
+- Entry/exit timestamps and blocks for tracking user behavior
+- Maximum balances held by each user

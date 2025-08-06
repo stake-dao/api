@@ -2,9 +2,8 @@ import { Hono } from 'hono'
 import { getCurve, getCurveArbitrum, getCurveMainnet } from './lib/strategies/curve'
 import { getYearn, getYearnMainnet } from './lib/strategies/yearn'
 import { getPancake, getPancakeArbitrum, getPancakeBsc, getPancakeMainnet } from './lib/strategies/pancakeswap'
-import { getPendle, getPendleMainnet } from './lib/strategies/pendle'
+import { getPendle, getPendleGaugeHolders, getPendleMainnet } from './lib/strategies/pendle'
 import { getBalancer, getBalancerMainnet } from './lib/strategies/balancer'
-import pendleHolders from './pendleHolders'
 
 const strategies = new Hono()
 
@@ -67,8 +66,10 @@ strategies.get('/pendle/1', async (c) => {
   return c.json(data)
 })
 
-// Mount the new Pendle holders endpoints
-strategies.route('/pendle/holders', pendleHolders)
+strategies.get('/pendle/holders', async (c) => {
+  const data = await getPendleGaugeHolders()
+  return c.json(data)
+})
 
 ////////////////////////////////////////////////////////////////
 /// --- BALANCER
