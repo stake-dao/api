@@ -363,52 +363,91 @@ Data type :
 
 ```
 {
-  "lp-holder": string,  // Pendle locker address
-  "gauge_count": number,
+  "metadata": {
+    "snapshot_date": string,  // ISO 8601 timestamp of data snapshot
+    "pendle_locker": string,  // Pendle locker address
+    "total_gauges": number,  // Total number of gauges
+    "total_current_holders": number,  // Total current holders across all gauges
+    "total_unique_users": number,  // Total unique users across all gauges
+    "average_holding_duration_days": number,  // Average holding duration in days
+    "gauges_summary": [  // Summary of all gauges
+      {
+        "gauge": string,  // Gauge address
+        "symbol": string,  // PT token symbol
+        "current_holders": number,  // Current number of holders
+        "total_users": number,  // Total unique users (current + past)
+        "current_supply": string  // Current total supply
+      }
+    ]
+  },
   "gauges": [
     {
-      "id": string,  // Gauge address
-      "lpt": string,  // PT token address (if available)
-      "lpt_symbol": string,  // PT token symbol (if available)
-      "holders": [
-        {
-          "user": string,  // User address
-          "balance": string  // Current balance
+      "gauge_id": string,  // Gauge address
+      "vault_id": string,  // Vault address (if available)
+      "token": {
+        "address": string,  // PT token address
+        "symbol": string  // PT token symbol
+      },
+      "stats": {
+        "total_deposited": string,  // Total amount ever deposited
+        "total_withdrawn": string,  // Total amount ever withdrawn
+        "current_supply": string,  // Current total supply
+        "current_holders": number,  // Current number of holders
+        "total_users": number  // Total unique users (current + past)
+      },
+      "current_holders": {  // Map of current holders
+        "[user_address]": {
+          "balance": string,  // Current balance
+          "last_updated": number  // Unix timestamp of last update
         }
-      ],
-      "holder_count": number,  // Current number of holders
-      "historical_data": [  // All users who have ever held tokens
-        {
-          "user": string,  // User address
-          "entry_block": number,  // Block when user first entered
-          "entry_ts": string,  // Timestamp when user first entered
-          "max_balance": string,  // Maximum balance user ever held
-          "exit_block": number,  // Block when user exited (if applicable)
-          "exit_ts": string,  // Timestamp when user exited (if applicable)
-          "is_past_user": boolean  // True if user has exited
+      },
+      "user_histories": {  // Map of all user histories
+        "[user_address]": {
+          "first_seen": number,  // Unix timestamp when first seen
+          "last_seen": number,  // Unix timestamp when last seen
+          "entry_timestamp": number,  // Unix timestamp of first entry
+          "exit_timestamp": number,  // Unix timestamp of exit (if applicable)
+          "entry_block": number,  // Block number of first entry
+          "exit_block": number,  // Block number of exit (if applicable)
+          "max_balance": number,  // Maximum balance ever held
+          "holding_periods": [  // Array of holding periods
+            {
+              "entry_timestamp": number,
+              "exit_timestamp": number,
+              "entry_block": number,
+              "exit_block": number,
+              "duration": number,  // Duration in seconds
+              "entry_date": string,  // ISO 8601 date
+              "exit_date": string,  // ISO 8601 date
+              "duration_days": number  // Duration in days
+            }
+          ],
+          "total_holding_duration": number,  // Total duration in seconds
+          "is_current_holder": boolean,  // Whether user currently holds tokens
+          "events": [  // Array of all deposit/withdraw events
+            {
+              "type": string,  // "DEPOSIT" or "WITHDRAW"
+              "amount": string,  // Amount deposited/withdrawn
+              "balance_after": string,  // Balance after the event
+              "block": number,  // Block number
+              "timestamp": number,  // Unix timestamp
+              "datetime": string  // ISO 8601 datetime
+            }
+          ],
+          "first_seen_date": string,  // ISO 8601 date
+          "last_seen_date": string,  // ISO 8601 date
+          "total_holding_duration_days": number  // Total duration in days
         }
-      ],
-      "past_users": [  // Users who have exited the market
-        {
-          "user": string,
-          "entry_block": number,
-          "entry_ts": string,
-          "max_balance": string,
-          "exit_block": number,
-          "exit_ts": string,
-          "is_past_user": true
-        }
-      ],
-      "total_unique_users": number,  // Total unique users (current + past)
-      "past_users_count": number  // Number of users who have exited
+      }
     }
   ]
 }
 ```
 
 This endpoint provides comprehensive data about Pendle gauge holders, including:
-- Current holders with their balances
-- Historical data for all users who have ever held tokens
-- Past users who have entered and exited the market
-- Entry/exit timestamps and blocks for tracking user behavior
+- Metadata with overall statistics and gauge summaries
+- Current holders with their balances and last update timestamps
+- Complete user histories with entry/exit tracking
+- Detailed event logs for all deposits and withdrawals
+- Holding period analysis with duration calculations
 - Maximum balances held by each user
