@@ -33,7 +33,7 @@ run-vm-all-platforms: get-current-period
 	@echo "Running vm_all_platforms.py..."
 	cd $(VOTEMARKET_PROOFS_SCRIPT_DEVOPS_DIR) && \
 	uv run src/votemarket_toolkit/external/vm_all_platforms.py \
-	curve balancer fxn frax \
+	curve balancer fxn frax pendle \
 	--epoch $(CURRENT_EPOCH) \
 	$(if $(BLOCK_NUMBER),--block $(BLOCK_NUMBER)) && \
 	cd - > /dev/null && \

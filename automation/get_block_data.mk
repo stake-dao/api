@@ -34,7 +34,7 @@ run-get-block-data: get-current-epoch
 	@echo "Running get_block_data.py..."
 	cd $(VOTEMARKET_PROOFS_SCRIPT_DEVOPS_DIR) && \
 	uv run src/votemarket_toolkit/external/vm_block_data.py \
-	curve balancer fxn frax \
+	curve balancer fxn frax pendle \
 	--epoch $(CURRENT_EPOCH) && \
 	cd - > /dev/null && \
 	echo "vm_block_data.py completed successfully"
