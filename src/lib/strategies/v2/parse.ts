@@ -1,4 +1,4 @@
-import { zeroAddress } from 'viem'
+import { formatUnits, zeroAddress } from 'viem'
 import { getOnlyboostData } from '@stake-dao/reader'
 import { arbitrum, base, fraxtal, mainnet, optimism, sonic } from 'viem/chains'
 
@@ -44,7 +44,10 @@ export const parseV2Strats = (global: any, rawStrats: any[]) => {
       if (name.length > 26 || lpToken?.name?.startsWith('CrossCurve')) name = lpToken.symbol
       if (isLending) name = s.asset.name
 
-      const lpPriceInUsd = Number(s.asset.price)
+      const lpPriceInUsd =
+        Number(s.gauge.totalSupply) > 0
+          ? Number(s.gauge.totalSupplyUSD) / Number(formatUnits(BigInt(s.gauge.totalSupply || '0'), 18))
+          : 0
 
       const compoundedYieldKey = isLending ? 'LENDING_INTEREST' : 'TRADING_FEES'
       const tradingApy = (s.gauge.aprDetails.find((el) => el.yieldType === compoundedYieldKey)?.aprUSD || 0) * 100

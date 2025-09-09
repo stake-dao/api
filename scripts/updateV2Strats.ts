@@ -1,11 +1,4 @@
-import updateCurveStrats, { updateCurveStrats_v2 } from './strategies/updateCurveStrats'
-import updateBalancerStrats from './strategies/updateBalancerStrats'
-import updateYearnStrats from './strategies/updateYearnStrats'
-import updatePancakeStrats from './strategies/updatePancakeStrats'
-import updatePendleStrats from './strategies/updatePendleStrats'
-import updateAngleStrats from './strategies/updateAngleStrats'
-import updatePassiveStrats from './strategies/updatePassiveStrats'
-import updateStakeDaoStrats from './strategies/updateStakeDaoStrats'
+import { updateCurveStrats_v2 } from './strategies/updateCurveStrats'
 
 const PROMISES_INDEX = {
   0: 'curve',

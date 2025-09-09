@@ -54,7 +54,10 @@ export const getCurveForChain_v2 = memoize(
   async (chainId: number) => {
     const { metadata, strats } = await getCurveFromGraph()
 
-    return parseV2Strats(metadata, strats.filter((s) => s.chainId === chainId))
+    return parseV2Strats(
+      metadata,
+      strats.filter((s) => s.chainId === chainId),
+    )
   },
   { maxAge: MEMO_MAX_AGE },
 )

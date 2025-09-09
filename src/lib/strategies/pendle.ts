@@ -90,5 +90,3 @@ export const getPendleGaugeHolders = memoize(
   },
   { maxAge: MEMO_MAX_AGE },
 )
-
-

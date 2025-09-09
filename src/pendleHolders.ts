@@ -5,7 +5,7 @@ import {
   getHoldersForPeriod,
   getHolderAnalytics,
   getUserHistory,
-  getGaugeSummary
+  getGaugeSummary,
 } from './lib/strategies/pendleHolders'
 
 const pendleHolders = new Hono()
@@ -33,7 +33,7 @@ pendleHolders.get('/historical', async (c) => {
   const gauge = c.req.query('gauge')
   const token = c.req.query('token')
   const includeEvents = c.req.query('include_events') === 'true'
-  
+
   const data = await getHistoricalHoldersData(gauge || token, includeEvents, !!token)
   if (!data) {
     return c.json({ error: 'Failed to fetch historical holders data' }, 500)
@@ -48,19 +48,19 @@ pendleHolders.get('/period', async (c) => {
   const gauge = c.req.query('gauge')
   const token = c.req.query('token')
   const minDurationDays = c.req.query('min_duration_days')
-  
+
   if (!startDate || !endDate) {
     return c.json({ error: 'start_date and end_date are required' }, 400)
   }
-  
+
   const data = await getHoldersForPeriod(
-    startDate, 
-    endDate, 
-    gauge || token, 
+    startDate,
+    endDate,
+    gauge || token,
     minDurationDays ? parseFloat(minDurationDays) : undefined,
-    !!token
+    !!token,
   )
-  
+
   if (!data) {
     return c.json({ error: 'Failed to fetch period holders data' }, 500)
   }
@@ -71,7 +71,7 @@ pendleHolders.get('/period', async (c) => {
 pendleHolders.get('/analytics', async (c) => {
   const gauge = c.req.query('gauge')
   const token = c.req.query('token')
-  
+
   const data = await getHolderAnalytics(gauge || token, !!token)
   if (!data) {
     return c.json({ error: 'Failed to fetch holder analytics' }, 500)
@@ -82,7 +82,7 @@ pendleHolders.get('/analytics', async (c) => {
 // 5. User History
 pendleHolders.get('/user/:address', async (c) => {
   const address = c.req.param('address')
-  
+
   const data = await getUserHistory(address)
   if (!data) {
     return c.json({ error: 'User not found' }, 404)
@@ -98,7 +98,5 @@ pendleHolders.get('/summary', async (c) => {
   }
   return c.json(data)
 })
-
-
 
 export default pendleHolders
