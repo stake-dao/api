@@ -1,0 +1,79 @@
+name: Bot SDT Gauges
+
+on:
+  schedule:
+    - cron: "0 9 * * */1" # At 09:00 on every day-of-week
+  workflow_dispatch: # Allows the workflow to be triggered manually -
+
+env:
+  TARGET_DEVOPS_DIR: target-devops
+  DEVOPS_DIR: devops
+  WEB3_ALCHEMY_API_KEY: ${{ secrets.WEB3_ALCHEMY_API_KEY }}
+  FRAXSCAN_TOKEN: ${{ secrets.FRAXSCAN_TOKEN }}
+  ETHERSCAN_TOKEN: ${{ secrets.ETHERSCAN_TOKEN }}
+  ETHERSCAN_API_KEY: ${{ secrets.ETHERSCAN_API_KEY }}
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          repository: stake-dao/automation-jobs
+          token: ${{ secrets.GIT_ACCESS_TOKEN }}
+          path: ${{ env.DEVOPS_DIR }}
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10.13"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r ${{ env.DEVOPS_DIR }}/requirements.txt
+        shell: bash
+
+      - name: Run the sdt gauges script
+        run: |
+          cd ${{ env.DEVOPS_DIR }}
+          python script/tg-bots/sdt-gauges/main.py
+        shell: bash
+        env:
+          PYTHONPATH: script/
+
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          repository: stake-dao/api
+          token: ${{ secrets.GIT_ACCESS_TOKEN }}
+          path: ${{ env.TARGET_DEVOPS_DIR }}
+        if: always()
+        
+      - name: Copy SDT gauges data to target repo
+        run: |
+          cp "${{ env.DEVOPS_DIR }}/json/tg-bots/sdt-gauges.json" "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/sdt"
+
+      - name: Commit and push changes to repo
+        run: |
+          cd "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}"
+          git config user.email "actions@github.com"
+          git config user.name "Stake DAO Automation"
+          git config pull.rebase false
+          git pull
+          git add .
+          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update SDT gauges data"
+          git merge --strategy=ours origin/main
+          git pull
+          git push
+        shell: bash
+        if: always()
+      
