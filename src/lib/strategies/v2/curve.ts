@@ -1,10 +1,9 @@
 import { One, tokens } from '@stake-dao/constants'
-import { SdtEmissionData, fetchCurve } from '@stake-dao/reader'
+import { SdtEmissionData, fetchCurve, parseV2Strats } from '@stake-dao/reader'
 import memoize from 'memoizee'
 import { arbitrum, base, fraxtal, gnosis, mainnet, optimism, sonic } from 'viem/chains'
 import { MEMO_MAX_AGE, getCurveGaugesWeights, getPrices, getSdtInflation, publicClient } from '../../utils'
 import { RPC } from '../../constants'
-import { parseV2Strats } from './parse'
 import { multicall } from 'viem/actions'
 import { formatUnits, parseAbi } from 'viem'
 
@@ -57,6 +56,7 @@ export const getCurveForChain_v2 = memoize(
     return parseV2Strats(
       metadata,
       strats.filter((s) => s.chainId === chainId),
+      undefined
     )
   },
   { maxAge: MEMO_MAX_AGE },
