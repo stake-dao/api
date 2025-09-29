@@ -12,20 +12,20 @@
   "author": "Stake DAO",
   "license": "AGPL-3.0-only",
   "dependencies": {
-    "@hono/node-server": "^1.19.4",
-    "@stake-dao/constants": "^0.4.52",
-    "@stake-dao/reader": "^0.4.101",
+    "@hono/node-server": "^1.19.5",
+    "@stake-dao/constants": "^0.4.53",
+    "@stake-dao/reader": "^0.4.102",
     "dotenv": "^16.6.1",
-    "hono": "^4.9.8",
+    "hono": "^4.9.9",
     "memoizee": "^0.4.17",
     "parquetjs": "^0.11.2",
-    "viem": "^2.37.8"
+    "viem": "^2.37.9"
   },
   "devDependencies": {
     "@types/memoizee": "^0.4.12",
     "@types/node": "^20.19.17",
     "prettier": "^3.6.2",
-    "tsx": "^4.20.5",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.2"
   }
 }
