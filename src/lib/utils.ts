@@ -1,4 +1,4 @@
-import { getPricesFromLlama, getSdtInflationData, getGaugesWeights } from '@stake-dao/reader'
+import { getPrices as getReaderPrices, getSdtInflationData, getGaugesWeights } from '@stake-dao/reader'
 import memoize from 'memoizee'
 import { createPublicClient, http } from 'viem'
 import { arbitrum, base, bsc, fraxtal, linea, mainnet, polygon } from 'viem/chains'
@@ -42,7 +42,7 @@ export const publicClient = {
   }),
 }
 
-export const getPrices = memoize(async (tokens: any[], chainId = 1) => getPricesFromLlama(tokens, chainId), {
+export const getPrices = memoize(async (tokens: any[], chainId = 1) => getReaderPrices(tokens, chainId), {
   maxAge: MEMO_MAX_AGE,
 })
 
