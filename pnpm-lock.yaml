@@ -12,11 +12,11 @@ importers:
         specifier: ^1.19.5
         version: 1.19.5(hono@4.9.9)
       '@stake-dao/constants':
-        specifier: ^0.4.53
-        version: 0.4.53
+        specifier: ^0.4.54
+        version: 0.4.54
       '@stake-dao/reader':
-        specifier: ^0.4.102
-        version: 0.4.102(graphql@16.9.0)(typescript@5.9.2)
+        specifier: ^0.4.103
+        version: 0.4.103(graphql@16.9.0)(typescript@5.9.3)
       dotenv:
         specifier: ^16.6.1
         version: 16.6.1
@@ -31,14 +31,14 @@ importers:
         version: 0.11.2
       viem:
         specifier: ^2.37.9
-        version: 2.37.9(typescript@5.9.2)
+        version: 2.37.9(typescript@5.9.3)
     devDependencies:
       '@types/memoizee':
         specifier: ^0.4.12
         version: 0.4.12
       '@types/node':
-        specifier: ^20.19.17
-        version: 20.19.17
+        specifier: ^20.19.19
+        version: 20.19.19
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
@@ -46,8 +46,8 @@ importers:
         specifier: ^4.20.6
         version: 4.20.6
       typescript:
-        specifier: ^5.9.2
-        version: 5.9.2
+        specifier: ^5.9.3
+        version: 5.9.3
 
 packages:
 
@@ -246,17 +246,17 @@ packages:
   '@scure/bip39@1.6.0':
     resolution: {integrity: sha512-+lF0BbLiJNwVlev4eKelw1WWLaiKXw7sSl8T6FvBlWkdX+94aGJ4o8XjUdlyhTCjd8c+B3KT3JfS8P0bLRNU6A==}
 
-  '@stake-dao/constants@0.4.53':
-    resolution: {integrity: sha512-plix7w1ZwLzk0xX/JXGMpPv8/aLqyR5LA/MVSAqesQVMbhqwH2dfazBS5GgB02CVNrnUqCHIyYSTW3iQzPqBgA==}
+  '@stake-dao/constants@0.4.54':
+    resolution: {integrity: sha512-+THbW2orKi9SV/T1KoS7dJg4koQ4zQyFhZjH3d/VCx533vpETBWMoeIxIM95Rin7HOY2MZ2r/X6UEyUYWr7Mtw==}
 
-  '@stake-dao/reader@0.4.102':
-    resolution: {integrity: sha512-gbJpsRDONqyYSkzntOIcxgRraruAeAk6LU04TMJS1kKEmpo2F9LEjp1YndgHf4YsWfPV2gpTAUS67uY7S8saKQ==}
+  '@stake-dao/reader@0.4.103':
+    resolution: {integrity: sha512-SjnkbWiXrNXoEyapNQwezAEcM3qWW7iTt7KGAiiWP2ut04a+CpYd2R28AhOxv2kZOJ60jGoI/0NMMz+E8ok76A==}
 
   '@types/memoizee@0.4.12':
     resolution: {integrity: sha512-EdtpwNYNhe3kZ+4TlXj/++pvBoU0KdrAICMzgI7vjWgu9sIvvUhu9XR8Ks4L6Wh3sxpZ22wkZR7yCLAqUjnZuQ==}
 
-  '@types/node@20.19.17':
-    resolution: {integrity: sha512-gfehUI8N1z92kygssiuWvLiwcbOB3IRktR6hTDgJlXMYh5OvkPSRmgfoBUmfZt+vhwJtX7v1Yw4KvvAf7c5QKQ==}
+  '@types/node@20.19.19':
+    resolution: {integrity: sha512-pb1Uqj5WJP7wrcbLU7Ru4QtA0+3kAXrkutGiD26wUKzSMgNNaPARTUDQmElUXp64kh3cWdou3Q0C7qwwxqSFmg==}
 
   abitype@1.0.8:
     resolution: {integrity: sha512-ZeiI6h3GnW06uYDLx0etQtX/p8E24UaHHBj57RSjK7YBFe7iuVn07EDpOeP451D06sF27VOz9JJPlIKJmXgkEg==}
@@ -461,8 +461,8 @@ packages:
   type@2.7.3:
     resolution: {integrity: sha512-8j+1QmAbPvLZow5Qpi6NCaN8FB60p/6x8/vfNqOk/hC+HuvFZhL4+WfekuhQLiqFZXOgQdrs3B+XxEmCc6b3FQ==}
 
-  typescript@5.9.2:
-    resolution: {integrity: sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==}
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -621,15 +621,15 @@ snapshots:
       '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
 
-  '@stake-dao/constants@0.4.53': {}
+  '@stake-dao/constants@0.4.54': {}
 
-  '@stake-dao/reader@0.4.102(graphql@16.9.0)(typescript@5.9.2)':
+  '@stake-dao/reader@0.4.103(graphql@16.9.0)(typescript@5.9.3)':
     dependencies:
-      '@stake-dao/constants': 0.4.53
+      '@stake-dao/constants': 0.4.54
       dayjs: 1.11.18
       graphql-request: 6.1.0(graphql@16.9.0)
       lodash-es: 4.17.21
-      viem: 2.35.0(typescript@5.9.2)
+      viem: 2.35.0(typescript@5.9.3)
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -640,17 +640,17 @@ snapshots:
 
   '@types/memoizee@0.4.12': {}
 
-  '@types/node@20.19.17':
+  '@types/node@20.19.19':
     dependencies:
       undici-types: 6.21.0
 
-  abitype@1.0.8(typescript@5.9.2):
+  abitype@1.0.8(typescript@5.9.3):
     optionalDependencies:
-      typescript: 5.9.2
+      typescript: 5.9.3
 
-  abitype@1.1.0(typescript@5.9.2):
+  abitype@1.1.0(typescript@5.9.3):
     optionalDependencies:
-      typescript: 5.9.2
+      typescript: 5.9.3
 
   base64-js@1.5.1: {}
 
@@ -809,7 +809,7 @@ snapshots:
 
   object-stream@0.0.1: {}
 
-  ox@0.8.7(typescript@5.9.2):
+  ox@0.8.7(typescript@5.9.3):
     dependencies:
       '@adraffy/ens-normalize': 1.11.1
       '@noble/ciphers': 1.3.0
@@ -817,14 +817,14 @@ snapshots:
       '@noble/hashes': 1.8.0
       '@scure/bip32': 1.7.0
       '@scure/bip39': 1.6.0
-      abitype: 1.0.8(typescript@5.9.2)
+      abitype: 1.0.8(typescript@5.9.3)
       eventemitter3: 5.0.1
     optionalDependencies:
-      typescript: 5.9.2
+      typescript: 5.9.3
     transitivePeerDependencies:
       - zod
 
-  ox@0.9.6(typescript@5.9.2):
+  ox@0.9.6(typescript@5.9.3):
     dependencies:
       '@adraffy/ens-normalize': 1.11.1
       '@noble/ciphers': 1.3.0
@@ -832,10 +832,10 @@ snapshots:
       '@noble/hashes': 1.8.0
       '@scure/bip32': 1.7.0
       '@scure/bip39': 1.6.0
-      abitype: 1.1.0(typescript@5.9.2)
+      abitype: 1.1.0(typescript@5.9.3)
       eventemitter3: 5.0.1
     optionalDependencies:
-      typescript: 5.9.2
+      typescript: 5.9.3
     transitivePeerDependencies:
       - zod
 
@@ -887,41 +887,41 @@ snapshots:
 
   type@2.7.3: {}
 
-  typescript@5.9.2: {}
+  typescript@5.9.3: {}
 
   undici-types@6.21.0: {}
 
   varint@5.0.2: {}
 
-  viem@2.35.0(typescript@5.9.2):
+  viem@2.35.0(typescript@5.9.3):
     dependencies:
       '@noble/curves': 1.9.6
       '@noble/hashes': 1.8.0
       '@scure/bip32': 1.7.0
       '@scure/bip39': 1.6.0
-      abitype: 1.0.8(typescript@5.9.2)
+      abitype: 1.0.8(typescript@5.9.3)
       isows: 1.0.7(ws@8.18.3)
-      ox: 0.8.7(typescript@5.9.2)
+      ox: 0.8.7(typescript@5.9.3)
       ws: 8.18.3
     optionalDependencies:
-      typescript: 5.9.2
+      typescript: 5.9.3
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
       - zod
 
-  viem@2.37.9(typescript@5.9.2):
+  viem@2.37.9(typescript@5.9.3):
     dependencies:
       '@noble/curves': 1.9.1
       '@noble/hashes': 1.8.0
       '@scure/bip32': 1.7.0
       '@scure/bip39': 1.6.0
-      abitype: 1.1.0(typescript@5.9.2)
+      abitype: 1.1.0(typescript@5.9.3)
       isows: 1.0.7(ws@8.18.3)
-      ox: 0.9.6(typescript@5.9.2)
+      ox: 0.9.6(typescript@5.9.3)
       ws: 8.18.3
     optionalDependencies:
-      typescript: 5.9.2
+      typescript: 5.9.3
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
