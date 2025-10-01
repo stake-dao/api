@@ -2,7 +2,7 @@ import { tokens } from '@stake-dao/constants'
 import { SdtEmissionData, fetchCurve } from '@stake-dao/reader'
 import memoize from 'memoizee'
 import { arbitrum, mainnet } from 'viem/chains'
-import { MEMO_MAX_AGE, getCurveGaugesWeights, getPrices, getSdtInflation, publicClient } from '../utils'
+import { MEMO_MAX_AGE, getCurveGaugesWeights, getPricesFromLlama, getSdtInflation, publicClient } from '../utils'
 import { RPC } from '../constants'
 
 require('dotenv').config()
@@ -10,7 +10,7 @@ require('dotenv').config()
 export const getCurveMainnet = memoize(
   async () => {
     const [pricesMainnet, sdtEmissionData, gaugesWeights] = await Promise.all([
-      getPrices(
+      getPricesFromLlama(
         tokens.filter((t) => t.chainId === mainnet.id),
         mainnet.id,
       ),
@@ -33,7 +33,7 @@ export const getCurveMainnet = memoize(
 export const getCurveArbitrum = memoize(
   async () => {
     const [pricesArbitrum, sdtEmissionData, gaugesWeights] = await Promise.all([
-      getPrices(
+      getPricesFromLlama(
         tokens.filter((t) => t.chainId === arbitrum.id),
         arbitrum.id,
       ),

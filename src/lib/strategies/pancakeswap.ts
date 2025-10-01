@@ -2,14 +2,14 @@ import { tokens } from '@stake-dao/constants'
 import { fetchPancakeswap } from '@stake-dao/reader'
 import memoize from 'memoizee'
 import { arbitrum, bsc, mainnet } from 'viem/chains'
-import { MEMO_MAX_AGE, getPrices, publicClient } from '../utils'
+import { MEMO_MAX_AGE, getPricesFromLlama, publicClient } from '../utils'
 import { RPC } from '../constants'
 
 require('dotenv').config()
 
 export const getPancakeMainnet = memoize(
   async () => {
-    const prices = await getPrices(
+    const prices = await getPricesFromLlama(
       tokens.filter((t) => t.chainId === mainnet.id),
       mainnet.id,
     )
@@ -27,7 +27,7 @@ export const getPancakeMainnet = memoize(
 
 export const getPancakeBsc = memoize(
   async () => {
-    const prices = await getPrices(
+    const prices = await getPricesFromLlama(
       tokens.filter((t) => t.chainId === bsc.id),
       bsc.id,
     )
@@ -45,7 +45,7 @@ export const getPancakeBsc = memoize(
 
 export const getPancakeArbitrum = memoize(
   async () => {
-    const prices = await getPrices(
+    const prices = await getPricesFromLlama(
       tokens.filter((t) => t.chainId === arbitrum.id),
       arbitrum.id,
     )

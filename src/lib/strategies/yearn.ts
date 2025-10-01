@@ -1,8 +1,8 @@
-import { yearnStrats, tokens } from '@stake-dao/constants'
-import { SdtEmissionData, fetchYearn } from '@stake-dao/reader'
+import { tokens } from '@stake-dao/constants'
+import { fetchYearn } from '@stake-dao/reader'
 import memoize from 'memoizee'
 import { mainnet } from 'viem/chains'
-import { MEMO_MAX_AGE, getPrices, getSdtInflation, publicClient } from '../utils'
+import { MEMO_MAX_AGE, getPricesFromLlama, getSdtInflation, publicClient } from '../utils'
 import { RPC } from '../constants'
 
 require('dotenv').config()
@@ -10,7 +10,7 @@ require('dotenv').config()
 export const getYearnMainnet = memoize(
   async () => {
     const [pricesMainnet, sdtEmissionData] = await Promise.all([
-      getPrices(
+      getPricesFromLlama(
         tokens.filter((t) => t.chainId === mainnet.id),
         mainnet.id,
       ),

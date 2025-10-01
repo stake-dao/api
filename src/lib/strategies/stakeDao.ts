@@ -2,7 +2,7 @@ import { tokenWithId } from '@stake-dao/constants'
 import { fetchStakeDao } from '@stake-dao/reader'
 import memoize from 'memoizee'
 import { mainnet } from 'viem/chains'
-import { MEMO_MAX_AGE, getPrices, publicClient } from '../utils'
+import { MEMO_MAX_AGE, getPricesFromLlama, publicClient } from '../utils'
 import { getLockersMainnet } from '../lockers'
 
 require('dotenv').config()
@@ -11,7 +11,7 @@ export const getStakeDaoMainnet = memoize(
   async () => {
     const [lockersMainnet, pricesMainnet] = await Promise.all([
       getLockersMainnet(),
-      getPrices([tokenWithId('sdt')], mainnet.id),
+      getPricesFromLlama([tokenWithId('sdt')], mainnet.id),
     ])
 
     return fetchStakeDao({

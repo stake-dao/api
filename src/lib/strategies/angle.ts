@@ -1,7 +1,7 @@
 import { fetchAngle } from '@stake-dao/reader'
 import memoize from 'memoizee'
 import { mainnet } from 'viem/chains'
-import { MEMO_MAX_AGE, getPrices, publicClient } from '../utils'
+import { MEMO_MAX_AGE, getPricesFromLlama, publicClient } from '../utils'
 import { RPC } from '../constants'
 import { tokens } from '@stake-dao/constants'
 
@@ -9,7 +9,7 @@ require('dotenv').config()
 
 export const getAngleMainnet = memoize(
   async () => {
-    const prices = await getPrices(
+    const prices = await getPricesFromLlama(
       tokens.filter((t) => t.chainId === mainnet.id),
       mainnet.id,
     )
