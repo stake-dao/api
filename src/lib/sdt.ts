@@ -9,7 +9,7 @@ require('dotenv').config()
 export const getSdtData = memoize(
   async () => {
     const prices = await getPrices(
-      tokens.filter((t) => t.chainId === mainnet.id && (t.id === 'sdt' || t.id === 'frax3crv')),
+      tokens.filter((t) => t.chainId === mainnet.id && t.id === 'sdt'),
       mainnet.id,
     )
 
