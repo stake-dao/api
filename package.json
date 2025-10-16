@@ -14,16 +14,16 @@
   "dependencies": {
     "@hono/node-server": "^1.19.5",
     "@stake-dao/constants": "^0.4.55",
-    "@stake-dao/reader": "^0.4.106",
+    "@stake-dao/reader": "^0.4.107",
     "dotenv": "^16.6.1",
-    "hono": "^4.9.9",
+    "hono": "^4.9.12",
     "memoizee": "^0.4.17",
     "parquetjs": "^0.11.2",
-    "viem": "^2.37.11"
+    "viem": "^2.38.2"
   },
   "devDependencies": {
     "@types/memoizee": "^0.4.12",
-    "@types/node": "^20.19.19",
+    "@types/node": "^20.19.21",
     "prettier": "^3.6.2",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3"
