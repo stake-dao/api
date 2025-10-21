@@ -1,10 +1,8 @@
-import { One, tokens } from '@stake-dao/constants'
-import { SdtEmissionData, fetchCurve, parseV2Strats } from '@stake-dao/reader'
+import { One } from '@stake-dao/constants'
+import { parseV2Strats } from '@stake-dao/reader'
 import memoize from 'memoizee'
 import { arbitrum, base, fraxtal, gnosis, mainnet, optimism, sonic } from 'viem/chains'
-import { MEMO_MAX_AGE, getCurveGaugesWeights, getPrices, getSdtInflation, publicClient } from '../../utils'
-import { RPC } from '../../constants'
-import { multicall } from 'viem/actions'
+import { MEMO_MAX_AGE, publicClient } from '../../utils'
 import { formatUnits, parseAbi } from 'viem'
 
 require('dotenv').config()
