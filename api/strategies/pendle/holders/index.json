@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "snapshot_date": "2025-11-03T04:48:26.895508+00:00",
+    "snapshot_date": "2025-11-03T04:57:33.891614+00:00",
     "pendle_locker": "0xD8fa8dC5aDeC503AcC5e026a98F32Ca5C1Fa289A",
     "total_gauges": 303,
-    "total_current_holders": 136,
+    "total_current_holders": 135,
     "total_unique_users": 823,
-    "average_holding_duration_days": 46.863830835695964,
+    "average_holding_duration_days": 46.86487503375186,
     "gauges_summary": [
       {
         "gauge": "0x00Bf7668d03ab16B62f8cc433a6791889Ef385d8",
@@ -759,9 +759,9 @@
       {
         "gauge": "0x596D7f4bbACd4003F9D129AaBd11b3E7De1FBfD3",
         "symbol": "PT-yvBalancer-GHO-USDf-29JAN2026",
-        "current_holders": 4,
+        "current_holders": 3,
         "total_users": 16,
-        "current_supply": "23025944669246207869537"
+        "current_supply": "25944669246207869537"
       },
       {
         "gauge": "0x5A5991960dADc2BFb78dd100b0bec1F15e8b4Ac6",
@@ -2753,13 +2753,13 @@
               "exit_timestamp": null,
               "entry_block": 23691196,
               "exit_block": null,
-              "duration": 305979,
+              "duration": 306526,
               "entry_date": "2025-10-30T15:48:47+00:00",
               "exit_date": null,
-              "duration_days": 3.541423611111111
+              "duration_days": 3.5477546296296296
             }
           ],
-          "total_holding_duration": 305979,
+          "total_holding_duration": 306526,
           "is_current_holder": true,
           "events": [
             {
@@ -2773,7 +2773,7 @@
           ],
           "first_seen_date": "2025-10-30T15:48:47+00:00",
           "last_seen_date": "2025-10-30T15:48:47+00:00",
-          "total_holding_duration_days": 3.541423611111111
+          "total_holding_duration_days": 3.5477546296296296
         }
       }
     },
@@ -3680,13 +3680,13 @@
               "exit_timestamp": null,
               "entry_block": 23040543,
               "exit_block": null,
-              "duration": 8162787,
+              "duration": 8163334,
               "entry_date": "2025-07-31T17:21:59+00:00",
               "exit_date": null,
-              "duration_days": 94.47670138888888
+              "duration_days": 94.4830324074074
             }
           ],
-          "total_holding_duration": 8162787,
+          "total_holding_duration": 8163334,
           "is_current_holder": true,
           "events": [
             {
@@ -3700,7 +3700,7 @@
           ],
           "first_seen_date": "2025-07-31T17:21:59+00:00",
           "last_seen_date": "2025-07-31T17:21:59+00:00",
-          "total_holding_duration_days": 94.47670138888888
+          "total_holding_duration_days": 94.4830324074074
         }
       }
     },
@@ -3739,13 +3739,13 @@
               "exit_timestamp": null,
               "entry_block": 21861210,
               "exit_block": null,
-              "duration": 22409187,
+              "duration": 22409734,
               "entry_date": "2025-02-16T20:01:59+00:00",
               "exit_date": null,
-              "duration_days": 259.36559027777776
+              "duration_days": 259.3719212962963
             }
           ],
-          "total_holding_duration": 22409187,
+          "total_holding_duration": 22409734,
           "is_current_holder": true,
           "events": [
             {
@@ -3759,7 +3759,7 @@
           ],
           "first_seen_date": "2025-02-16T20:01:59+00:00",
           "last_seen_date": "2025-02-16T20:01:59+00:00",
-          "total_holding_duration_days": 259.36559027777776
+          "total_holding_duration_days": 259.3719212962963
         },
         "0xaa080789B13E0e5051A4573A8DEfb7Eb3411DF6B": {
           "first_seen": 1739737343,
@@ -5649,13 +5649,13 @@
               "exit_timestamp": null,
               "entry_block": 23506511,
               "exit_block": null,
-              "duration": 2539047,
+              "duration": 2539594,
               "entry_date": "2025-10-04T19:30:59+00:00",
               "exit_date": null,
-              "duration_days": 29.387118055555554
+              "duration_days": 29.393449074074073
             }
           ],
-          "total_holding_duration": 2539047,
+          "total_holding_duration": 2539594,
           "is_current_holder": true,
           "events": [
             {
@@ -5669,7 +5669,7 @@
           ],
           "first_seen_date": "2025-10-04T19:30:59+00:00",
           "last_seen_date": "2025-10-04T19:30:59+00:00",
-          "total_holding_duration_days": 29.387118055555554
+          "total_holding_duration_days": 29.393449074074073
         },
         "0xaa080789B13E0e5051A4573A8DEfb7Eb3411DF6B": {
           "first_seen": 1759956023,
@@ -5685,13 +5685,13 @@
               "exit_timestamp": null,
               "entry_block": 23535470,
               "exit_block": null,
-              "duration": 2189283,
+              "duration": 2189830,
               "entry_date": "2025-10-08T20:40:23+00:00",
               "exit_date": null,
-              "duration_days": 25.33892361111111
+              "duration_days": 25.34525462962963
             }
           ],
-          "total_holding_duration": 2189283,
+          "total_holding_duration": 2189830,
           "is_current_holder": true,
           "events": [
             {
@@ -5705,7 +5705,7 @@
           ],
           "first_seen_date": "2025-10-08T20:40:23+00:00",
           "last_seen_date": "2025-10-08T20:40:23+00:00",
-          "total_holding_duration_days": 25.33892361111111
+          "total_holding_duration_days": 25.34525462962963
         }
       }
     },
@@ -6034,13 +6034,13 @@
               "exit_timestamp": null,
               "entry_block": 23658801,
               "exit_block": null,
-              "duration": 697791,
+              "duration": 698338,
               "entry_date": "2025-10-26T02:58:35+00:00",
               "exit_date": null,
-              "duration_days": 8.076284722222223
+              "duration_days": 8.08261574074074
             }
           ],
-          "total_holding_duration": 697791,
+          "total_holding_duration": 698338,
           "is_current_holder": true,
           "events": [
             {
@@ -6054,7 +6054,7 @@
           ],
           "first_seen_date": "2025-10-26T02:58:35+00:00",
           "last_seen_date": "2025-10-26T02:58:35+00:00",
-          "total_holding_duration_days": 8.076284722222223
+          "total_holding_duration_days": 8.08261574074074
         }
       }
     },
@@ -6101,13 +6101,13 @@
               "exit_timestamp": null,
               "entry_block": 22787371,
               "exit_block": null,
-              "duration": 11219415,
+              "duration": 11219962,
               "entry_date": "2025-06-26T08:18:11+00:00",
               "exit_date": null,
-              "duration_days": 129.85434027777777
+              "duration_days": 129.8606712962963
             }
           ],
-          "total_holding_duration": 11219415,
+          "total_holding_duration": 11219962,
           "is_current_holder": true,
           "events": [
             {
@@ -6121,7 +6121,7 @@
           ],
           "first_seen_date": "2025-06-26T08:18:11+00:00",
           "last_seen_date": "2025-06-26T08:18:11+00:00",
-          "total_holding_duration_days": 129.85434027777777
+          "total_holding_duration_days": 129.8606712962963
         },
         "0xF930EBBd05eF8b25B1797b9b2109DDC9B0d43063": {
           "first_seen": 1750950611,
@@ -6137,13 +6137,13 @@
               "exit_timestamp": null,
               "entry_block": 22789422,
               "exit_block": null,
-              "duration": 11194695,
+              "duration": 11195242,
               "entry_date": "2025-06-26T15:10:11+00:00",
               "exit_date": null,
-              "duration_days": 129.56822916666667
+              "duration_days": 129.5745601851852
             }
           ],
-          "total_holding_duration": 11194695,
+          "total_holding_duration": 11195242,
           "is_current_holder": true,
           "events": [
             {
@@ -6165,7 +6165,7 @@
           ],
           "first_seen_date": "2025-06-26T15:10:11+00:00",
           "last_seen_date": "2025-07-26T16:20:47+00:00",
-          "total_holding_duration_days": 129.56822916666667
+          "total_holding_duration_days": 129.5745601851852
         },
         "0xb0e83C2D71A991017e0116d58c5765Abc57384af": {
           "first_seen": 1751008571,
@@ -6181,13 +6181,13 @@
               "exit_timestamp": null,
               "entry_block": 22794225,
               "exit_block": null,
-              "duration": 11136735,
+              "duration": 11137282,
               "entry_date": "2025-06-27T07:16:11+00:00",
               "exit_date": null,
-              "duration_days": 128.89739583333332
+              "duration_days": 128.90372685185184
             }
           ],
-          "total_holding_duration": 11136735,
+          "total_holding_duration": 11137282,
           "is_current_holder": true,
           "events": [
             {
@@ -6201,7 +6201,7 @@
           ],
           "first_seen_date": "2025-06-27T07:16:11+00:00",
           "last_seen_date": "2025-06-27T07:16:11+00:00",
-          "total_holding_duration_days": 128.89739583333332
+          "total_holding_duration_days": 128.90372685185184
         },
         "0x52ea58f4FC3CEd48fa18E909226c1f8A0EF887DC": {
           "first_seen": 1752670295,
@@ -6427,13 +6427,13 @@
               "exit_timestamp": null,
               "entry_block": 22338009,
               "exit_block": null,
-              "duration": 16658007,
+              "duration": 16658554,
               "entry_date": "2025-04-24T09:34:59+00:00",
               "exit_date": null,
-              "duration_days": 192.80100694444445
+              "duration_days": 192.80733796296298
             }
           ],
-          "total_holding_duration": 16658007,
+          "total_holding_duration": 16658554,
           "is_current_holder": true,
           "events": [
             {
@@ -6447,7 +6447,7 @@
           ],
           "first_seen_date": "2025-04-24T09:34:59+00:00",
           "last_seen_date": "2025-04-24T09:34:59+00:00",
-          "total_holding_duration_days": 192.80100694444445
+          "total_holding_duration_days": 192.80733796296298
         },
         "0x60043E0a80294E8bC630d3862055AC894b2F8078": {
           "first_seen": 1745597267,
@@ -6623,13 +6623,13 @@
               "exit_timestamp": null,
               "entry_block": 22383103,
               "exit_block": null,
-              "duration": 16114191,
+              "duration": 16114738,
               "entry_date": "2025-04-30T16:38:35+00:00",
               "exit_date": null,
-              "duration_days": 186.50684027777777
+              "duration_days": 186.5131712962963
             }
           ],
-          "total_holding_duration": 16114191,
+          "total_holding_duration": 16114738,
           "is_current_holder": true,
           "events": [
             {
@@ -6643,7 +6643,7 @@
           ],
           "first_seen_date": "2025-04-30T16:38:35+00:00",
           "last_seen_date": "2025-04-30T16:38:35+00:00",
-          "total_holding_duration_days": 186.50684027777777
+          "total_holding_duration_days": 186.5131712962963
         },
         "0x216BE7c987b81A71BC0198B98752bB4A51bE18ec": {
           "first_seen": 1746492539,
@@ -7153,13 +7153,13 @@
               "exit_timestamp": null,
               "entry_block": 22919591,
               "exit_block": null,
-              "duration": 9622947,
+              "duration": 9623494,
               "entry_date": "2025-07-14T19:45:59+00:00",
               "exit_date": null,
-              "duration_days": 111.37670138888889
+              "duration_days": 111.38303240740741
             }
           ],
-          "total_holding_duration": 9622947,
+          "total_holding_duration": 9623494,
           "is_current_holder": true,
           "events": [
             {
@@ -7173,7 +7173,7 @@
           ],
           "first_seen_date": "2025-07-14T19:45:59+00:00",
           "last_seen_date": "2025-07-14T19:45:59+00:00",
-          "total_holding_duration_days": 111.37670138888889
+          "total_holding_duration_days": 111.38303240740741
         },
         "0x2C1C56C538D92C3eCaFD7e01d32CDc93Cd1894d2": {
           "first_seen": 1752555107,
@@ -7189,13 +7189,13 @@
               "exit_timestamp": null,
               "entry_block": 22922309,
               "exit_block": null,
-              "duration": 9590199,
+              "duration": 9590746,
               "entry_date": "2025-07-15T04:51:47+00:00",
               "exit_date": null,
-              "duration_days": 110.99767361111111
+              "duration_days": 111.00400462962963
             }
           ],
-          "total_holding_duration": 9590199,
+          "total_holding_duration": 9590746,
           "is_current_holder": true,
           "events": [
             {
@@ -7209,7 +7209,7 @@
           ],
           "first_seen_date": "2025-07-15T04:51:47+00:00",
           "last_seen_date": "2025-07-15T04:51:47+00:00",
-          "total_holding_duration_days": 110.99767361111111
+          "total_holding_duration_days": 111.00400462962963
         },
         "0x3039de687b20ED25C30d25e3B7fE4177024E539b": {
           "first_seen": 1752664343,
@@ -7225,13 +7225,13 @@
               "exit_timestamp": null,
               "entry_block": 22931373,
               "exit_block": null,
-              "duration": 9480963,
+              "duration": 9481510,
               "entry_date": "2025-07-16T11:12:23+00:00",
               "exit_date": null,
-              "duration_days": 109.73336805555556
+              "duration_days": 109.73969907407407
             }
           ],
-          "total_holding_duration": 9480963,
+          "total_holding_duration": 9481510,
           "is_current_holder": true,
           "events": [
             {
@@ -7253,7 +7253,7 @@
           ],
           "first_seen_date": "2025-07-16T11:12:23+00:00",
           "last_seen_date": "2025-07-16T11:38:59+00:00",
-          "total_holding_duration_days": 109.73336805555556
+          "total_holding_duration_days": 109.73969907407407
         },
         "0x76F768Dbeaa0264185b7a4952540656Ad7B54148": {
           "first_seen": 1753249199,
@@ -8227,13 +8227,13 @@
               "exit_timestamp": null,
               "entry_block": 23405388,
               "exit_block": null,
-              "duration": 3760539,
+              "duration": 3761086,
               "entry_date": "2025-09-20T16:12:47+00:00",
               "exit_date": null,
-              "duration_days": 43.52475694444445
+              "duration_days": 43.531087962962964
             }
           ],
-          "total_holding_duration": 3760539,
+          "total_holding_duration": 3761086,
           "is_current_holder": true,
           "events": [
             {
@@ -8247,7 +8247,7 @@
           ],
           "first_seen_date": "2025-09-20T16:12:47+00:00",
           "last_seen_date": "2025-09-20T16:12:47+00:00",
-          "total_holding_duration_days": 43.52475694444445
+          "total_holding_duration_days": 43.531087962962964
         },
         "0xBdE45ADc4c0694BD8C5021AD9d943D7418D9046a": {
           "first_seen": 1758439403,
@@ -8599,13 +8599,13 @@
               "exit_timestamp": null,
               "entry_block": 23491010,
               "exit_block": null,
-              "duration": 2726199,
+              "duration": 2726746,
               "entry_date": "2025-10-02T15:31:47+00:00",
               "exit_date": null,
-              "duration_days": 31.553229166666668
+              "duration_days": 31.559560185185184
             }
           ],
-          "total_holding_duration": 2782407,
+          "total_holding_duration": 2782954,
           "is_current_holder": true,
           "events": [
             {
@@ -8635,7 +8635,7 @@
           ],
           "first_seen_date": "2025-10-01T13:22:59+00:00",
           "last_seen_date": "2025-10-02T15:31:47+00:00",
-          "total_holding_duration_days": 32.203784722222224
+          "total_holding_duration_days": 32.21011574074074
         },
         "0x13B90df23158808185B247aB61EDe61b75d49E23": {
           "first_seen": 1760261663,
@@ -8739,13 +8739,13 @@
               "exit_timestamp": null,
               "entry_block": 23669552,
               "exit_block": null,
-              "duration": 567855,
+              "duration": 568402,
               "entry_date": "2025-10-27T15:04:11+00:00",
               "exit_date": null,
-              "duration_days": 6.572395833333333
+              "duration_days": 6.578726851851852
             }
           ],
-          "total_holding_duration": 567855,
+          "total_holding_duration": 568402,
           "is_current_holder": true,
           "events": [
             {
@@ -8759,7 +8759,7 @@
           ],
           "first_seen_date": "2025-10-27T15:04:11+00:00",
           "last_seen_date": "2025-10-27T15:04:11+00:00",
-          "total_holding_duration_days": 6.572395833333333
+          "total_holding_duration_days": 6.578726851851852
         }
       }
     },
@@ -8849,13 +8849,13 @@
               "exit_timestamp": null,
               "entry_block": 23644778,
               "exit_block": null,
-              "duration": 867231,
+              "duration": 867778,
               "entry_date": "2025-10-24T03:54:35+00:00",
               "exit_date": null,
-              "duration_days": 10.037395833333333
+              "duration_days": 10.043726851851853
             }
           ],
-          "total_holding_duration": 867231,
+          "total_holding_duration": 867778,
           "is_current_holder": true,
           "events": [
             {
@@ -8869,7 +8869,7 @@
           ],
           "first_seen_date": "2025-10-24T03:54:35+00:00",
           "last_seen_date": "2025-10-24T03:54:35+00:00",
-          "total_holding_duration_days": 10.037395833333333
+          "total_holding_duration_days": 10.043726851851853
         }
       }
     },
@@ -9659,13 +9659,13 @@
               "exit_timestamp": null,
               "entry_block": 22600791,
               "exit_block": null,
-              "duration": 13473963,
+              "duration": 13474510,
               "entry_date": "2025-05-31T06:02:23+00:00",
               "exit_date": null,
-              "duration_days": 155.94864583333333
+              "duration_days": 155.95497685185185
             }
           ],
-          "total_holding_duration": 13473963,
+          "total_holding_duration": 13474510,
           "is_current_holder": true,
           "events": [
             {
@@ -9679,7 +9679,7 @@
           ],
           "first_seen_date": "2025-05-31T06:02:23+00:00",
           "last_seen_date": "2025-05-31T06:02:23+00:00",
-          "total_holding_duration_days": 155.94864583333333
+          "total_holding_duration_days": 155.95497685185185
         },
         "0x2E1531c10054b22d2564e020Dc3a95dcC0d940cc": {
           "first_seen": 1748703431,
@@ -9927,13 +9927,13 @@
               "exit_timestamp": null,
               "entry_block": 22773612,
               "exit_block": null,
-              "duration": 11385351,
+              "duration": 11385898,
               "entry_date": "2025-06-24T10:12:35+00:00",
               "exit_date": null,
-              "duration_days": 131.77489583333335
+              "duration_days": 131.78122685185184
             }
           ],
-          "total_holding_duration": 11385351,
+          "total_holding_duration": 11385898,
           "is_current_holder": true,
           "events": [
             {
@@ -9947,7 +9947,7 @@
           ],
           "first_seen_date": "2025-06-24T10:12:35+00:00",
           "last_seen_date": "2025-06-24T10:12:35+00:00",
-          "total_holding_duration_days": 131.77489583333335
+          "total_holding_duration_days": 131.78122685185184
         },
         "0xeA0Cdd1636B0e60DcD98E57337E319091502D52F": {
           "first_seen": 1757774267,
@@ -11296,13 +11296,13 @@
               "exit_timestamp": null,
               "entry_block": 23482555,
               "exit_block": null,
-              "duration": 2828427,
+              "duration": 2828974,
               "entry_date": "2025-10-01T11:07:59+00:00",
               "exit_date": null,
-              "duration_days": 32.736423611111114
+              "duration_days": 32.74275462962963
             }
           ],
-          "total_holding_duration": 2828427,
+          "total_holding_duration": 2828974,
           "is_current_holder": true,
           "events": [
             {
@@ -11316,7 +11316,7 @@
           ],
           "first_seen_date": "2025-10-01T11:07:59+00:00",
           "last_seen_date": "2025-10-01T11:07:59+00:00",
-          "total_holding_duration_days": 32.736423611111114
+          "total_holding_duration_days": 32.74275462962963
         },
         "0xaa080789B13E0e5051A4573A8DEfb7Eb3411DF6B": {
           "first_seen": 1759955987,
@@ -11332,13 +11332,13 @@
               "exit_timestamp": null,
               "entry_block": 23535467,
               "exit_block": null,
-              "duration": 2189319,
+              "duration": 2189866,
               "entry_date": "2025-10-08T20:39:47+00:00",
               "exit_date": null,
-              "duration_days": 25.33934027777778
+              "duration_days": 25.345671296296295
             }
           ],
-          "total_holding_duration": 2189319,
+          "total_holding_duration": 2189866,
           "is_current_holder": true,
           "events": [
             {
@@ -11352,7 +11352,7 @@
           ],
           "first_seen_date": "2025-10-08T20:39:47+00:00",
           "last_seen_date": "2025-10-08T20:39:47+00:00",
-          "total_holding_duration_days": 25.33934027777778
+          "total_holding_duration_days": 25.345671296296295
         }
       }
     },
@@ -11579,13 +11579,13 @@
               "exit_timestamp": null,
               "entry_block": 23455770,
               "exit_block": null,
-              "duration": 3151935,
+              "duration": 3152482,
               "entry_date": "2025-09-27T17:16:11+00:00",
               "exit_date": null,
-              "duration_days": 36.48072916666667
+              "duration_days": 36.487060185185186
             }
           ],
-          "total_holding_duration": 3151935,
+          "total_holding_duration": 3152482,
           "is_current_holder": true,
           "events": [
             {
@@ -11599,7 +11599,7 @@
           ],
           "first_seen_date": "2025-09-27T17:16:11+00:00",
           "last_seen_date": "2025-09-27T17:16:11+00:00",
-          "total_holding_duration_days": 36.48072916666667
+          "total_holding_duration_days": 36.487060185185186
         },
         "0xA585a2096314a6FD183196c5C62B73d1B28656E7": {
           "first_seen": 1759449515,
@@ -11615,13 +11615,13 @@
               "exit_timestamp": null,
               "entry_block": 23493524,
               "exit_block": null,
-              "duration": 2695791,
+              "duration": 2696338,
               "entry_date": "2025-10-02T23:58:35+00:00",
               "exit_date": null,
-              "duration_days": 31.201284722222223
+              "duration_days": 31.207615740740742
             }
           ],
-          "total_holding_duration": 2695791,
+          "total_holding_duration": 2696338,
           "is_current_holder": true,
           "events": [
             {
@@ -11643,7 +11643,7 @@
           ],
           "first_seen_date": "2025-10-02T23:58:35+00:00",
           "last_seen_date": "2025-10-04T01:50:35+00:00",
-          "total_holding_duration_days": 31.201284722222223
+          "total_holding_duration_days": 31.207615740740742
         }
       }
     },
@@ -12167,13 +12167,13 @@
               "exit_timestamp": null,
               "entry_block": 23062283,
               "exit_block": null,
-              "duration": 7900155,
+              "duration": 7900702,
               "entry_date": "2025-08-03T18:19:11+00:00",
               "exit_date": null,
-              "duration_days": 91.43697916666666
+              "duration_days": 91.44331018518518
             }
           ],
-          "total_holding_duration": 7900155,
+          "total_holding_duration": 7900702,
           "is_current_holder": true,
           "events": [
             {
@@ -12187,7 +12187,7 @@
           ],
           "first_seen_date": "2025-08-03T18:19:11+00:00",
           "last_seen_date": "2025-08-03T18:19:11+00:00",
-          "total_holding_duration_days": 91.43697916666666
+          "total_holding_duration_days": 91.44331018518518
         },
         "0x494f3579E12a045ff1404241D25aE740DDb0Ca91": {
           "first_seen": 1754265443,
@@ -12203,13 +12203,13 @@
               "exit_timestamp": null,
               "entry_block": 23063967,
               "exit_block": null,
-              "duration": 7879863,
+              "duration": 7880410,
               "entry_date": "2025-08-03T23:57:23+00:00",
               "exit_date": null,
-              "duration_days": 91.20211805555556
+              "duration_days": 91.20844907407407
             }
           ],
-          "total_holding_duration": 7879863,
+          "total_holding_duration": 7880410,
           "is_current_holder": true,
           "events": [
             {
@@ -12223,7 +12223,7 @@
           ],
           "first_seen_date": "2025-08-03T23:57:23+00:00",
           "last_seen_date": "2025-08-03T23:57:23+00:00",
-          "total_holding_duration_days": 91.20211805555556
+          "total_holding_duration_days": 91.20844907407407
         },
         "0xd0A8A6dd88BD9405128f178347eCD60FaA631164": {
           "first_seen": 1754469563,
@@ -12371,13 +12371,13 @@
               "exit_timestamp": null,
               "entry_block": 23101275,
               "exit_block": null,
-              "duration": 7429659,
+              "duration": 7430206,
               "entry_date": "2025-08-09T05:00:47+00:00",
               "exit_date": null,
-              "duration_days": 85.99142361111112
+              "duration_days": 85.99775462962963
             }
           ],
-          "total_holding_duration": 7429659,
+          "total_holding_duration": 7430206,
           "is_current_holder": true,
           "events": [
             {
@@ -12407,7 +12407,7 @@
           ],
           "first_seen_date": "2025-08-09T05:00:47+00:00",
           "last_seen_date": "2025-10-12T10:42:23+00:00",
-          "total_holding_duration_days": 85.99142361111112
+          "total_holding_duration_days": 85.99775462962963
         },
         "0xe4F077BF767a57Ae9aAD77B0aB54CbdE0BEde65A": {
           "first_seen": 1755081023,
@@ -12467,13 +12467,13 @@
               "exit_timestamp": null,
               "entry_block": 23132406,
               "exit_block": null,
-              "duration": 7053855,
+              "duration": 7054402,
               "entry_date": "2025-08-13T13:24:11+00:00",
               "exit_date": null,
-              "duration_days": 81.64184027777777
+              "duration_days": 81.6481712962963
             }
           ],
-          "total_holding_duration": 7053855,
+          "total_holding_duration": 7054402,
           "is_current_holder": true,
           "events": [
             {
@@ -12487,7 +12487,7 @@
           ],
           "first_seen_date": "2025-08-13T13:24:11+00:00",
           "last_seen_date": "2025-08-13T13:24:11+00:00",
-          "total_holding_duration_days": 81.64184027777777
+          "total_holding_duration_days": 81.6481712962963
         },
         "0x5e777b59D6536dC61b4Fda906C980e4b09099c98": {
           "first_seen": 1755909095,
@@ -12591,13 +12591,13 @@
               "exit_timestamp": null,
               "entry_block": 23205929,
               "exit_block": null,
-              "duration": 6167319,
+              "duration": 6167866,
               "entry_date": "2025-08-23T19:39:47+00:00",
               "exit_date": null,
-              "duration_days": 71.38100694444445
+              "duration_days": 71.38733796296296
             }
           ],
-          "total_holding_duration": 6167319,
+          "total_holding_duration": 6167866,
           "is_current_holder": true,
           "events": [
             {
@@ -12619,7 +12619,7 @@
           ],
           "first_seen_date": "2025-08-23T19:39:47+00:00",
           "last_seen_date": "2025-09-13T08:14:23+00:00",
-          "total_holding_duration_days": 71.38100694444445
+          "total_holding_duration_days": 71.38733796296296
         },
         "0xf884974F3D70d58bA20D07a10a48ffd443635d0A": {
           "first_seen": 1756013039,
@@ -12635,13 +12635,13 @@
               "exit_timestamp": null,
               "entry_block": 23208835,
               "exit_block": null,
-              "duration": 6132267,
+              "duration": 6132814,
               "entry_date": "2025-08-24T05:23:59+00:00",
               "exit_date": null,
-              "duration_days": 70.9753125
+              "duration_days": 70.98164351851852
             }
           ],
-          "total_holding_duration": 6132267,
+          "total_holding_duration": 6132814,
           "is_current_holder": true,
           "events": [
             {
@@ -12655,7 +12655,7 @@
           ],
           "first_seen_date": "2025-08-24T05:23:59+00:00",
           "last_seen_date": "2025-08-24T05:23:59+00:00",
-          "total_holding_duration_days": 70.9753125
+          "total_holding_duration_days": 70.98164351851852
         },
         "0x8067ef6f93b92099C652Da70b5A7f414011Be5bb": {
           "first_seen": 1756370495,
@@ -12671,13 +12671,13 @@
               "exit_timestamp": null,
               "entry_block": 23238487,
               "exit_block": null,
-              "duration": 5774811,
+              "duration": 5775358,
               "entry_date": "2025-08-28T08:41:35+00:00",
               "exit_date": null,
-              "duration_days": 66.83809027777778
+              "duration_days": 66.84442129629629
             }
           ],
-          "total_holding_duration": 5774811,
+          "total_holding_duration": 5775358,
           "is_current_holder": true,
           "events": [
             {
@@ -12691,7 +12691,7 @@
           ],
           "first_seen_date": "2025-08-28T08:41:35+00:00",
           "last_seen_date": "2025-08-28T08:41:35+00:00",
-          "total_holding_duration_days": 66.83809027777778
+          "total_holding_duration_days": 66.84442129629629
         },
         "0x0b0C93344d2Aa35036263c666337F5a686cc9fbe": {
           "first_seen": 1756898495,
@@ -12751,13 +12751,13 @@
               "exit_timestamp": null,
               "entry_block": 23437715,
               "exit_block": null,
-              "duration": 3370227,
+              "duration": 3370774,
               "entry_date": "2025-09-25T04:37:59+00:00",
               "exit_date": null,
-              "duration_days": 39.00725694444444
+              "duration_days": 39.013587962962966
             }
           ],
-          "total_holding_duration": 3370227,
+          "total_holding_duration": 3370774,
           "is_current_holder": true,
           "events": [
             {
@@ -12771,7 +12771,7 @@
           ],
           "first_seen_date": "2025-09-25T04:37:59+00:00",
           "last_seen_date": "2025-09-25T04:37:59+00:00",
-          "total_holding_duration_days": 39.00725694444444
+          "total_holding_duration_days": 39.013587962962966
         },
         "0x977B9F0e8022A2E51C4aA7afE434C475c1E0dc07": {
           "first_seen": 1758792647,
@@ -12831,13 +12831,13 @@
               "exit_timestamp": null,
               "entry_block": 23453178,
               "exit_block": null,
-              "duration": 3183303,
+              "duration": 3183850,
               "entry_date": "2025-09-27T08:33:23+00:00",
               "exit_date": null,
-              "duration_days": 36.843784722222225
+              "duration_days": 36.85011574074074
             }
           ],
-          "total_holding_duration": 3183303,
+          "total_holding_duration": 3183850,
           "is_current_holder": true,
           "events": [
             {
@@ -12851,7 +12851,7 @@
           ],
           "first_seen_date": "2025-09-27T08:33:23+00:00",
           "last_seen_date": "2025-09-27T08:33:23+00:00",
-          "total_holding_duration_days": 36.843784722222225
+          "total_holding_duration_days": 36.85011574074074
         },
         "0xB457BCD0F3EC75a550b03F1AF7EA8134E380FddD": {
           "first_seen": 1758986411,
@@ -12935,13 +12935,13 @@
               "exit_timestamp": null,
               "entry_block": 23623532,
               "exit_block": null,
-              "duration": 1124823,
+              "duration": 1125370,
               "entry_date": "2025-10-21T04:21:23+00:00",
               "exit_date": null,
-              "duration_days": 13.018784722222222
+              "duration_days": 13.025115740740741
             }
           ],
-          "total_holding_duration": 1124823,
+          "total_holding_duration": 1125370,
           "is_current_holder": true,
           "events": [
             {
@@ -12955,7 +12955,7 @@
           ],
           "first_seen_date": "2025-10-21T04:21:23+00:00",
           "last_seen_date": "2025-10-21T04:21:23+00:00",
-          "total_holding_duration_days": 13.018784722222222
+          "total_holding_duration_days": 13.025115740740741
         },
         "0x0cF3145BbC62fFEF9e6429756dDc97E5f38E2E3e": {
           "first_seen": 1761525491,
@@ -12971,13 +12971,13 @@
               "exit_timestamp": null,
               "entry_block": 23665260,
               "exit_block": null,
-              "duration": 619815,
+              "duration": 620362,
               "entry_date": "2025-10-27T00:38:11+00:00",
               "exit_date": null,
-              "duration_days": 7.173784722222222
+              "duration_days": 7.1801157407407405
             }
           ],
-          "total_holding_duration": 619815,
+          "total_holding_duration": 620362,
           "is_current_holder": true,
           "events": [
             {
@@ -12991,7 +12991,7 @@
           ],
           "first_seen_date": "2025-10-27T00:38:11+00:00",
           "last_seen_date": "2025-10-27T00:38:11+00:00",
-          "total_holding_duration_days": 7.173784722222222
+          "total_holding_duration_days": 7.1801157407407405
         }
       }
     },
@@ -13477,13 +13477,13 @@
               "exit_timestamp": null,
               "entry_block": 23496766,
               "exit_block": null,
-              "duration": 2656695,
+              "duration": 2657242,
               "entry_date": "2025-10-03T10:50:11+00:00",
               "exit_date": null,
-              "duration_days": 30.748784722222222
+              "duration_days": 30.75511574074074
             }
           ],
-          "total_holding_duration": 2656695,
+          "total_holding_duration": 2657242,
           "is_current_holder": true,
           "events": [
             {
@@ -13497,7 +13497,7 @@
           ],
           "first_seen_date": "2025-10-03T10:50:11+00:00",
           "last_seen_date": "2025-10-03T10:50:11+00:00",
-          "total_holding_duration_days": 30.748784722222222
+          "total_holding_duration_days": 30.75511574074074
         },
         "0x3dC5A62d0Dd5756E5C1a317EF797E2C4BbFF0be5": {
           "first_seen": 1760669603,
@@ -13557,13 +13557,13 @@
               "exit_timestamp": null,
               "entry_block": 23653805,
               "exit_block": null,
-              "duration": 758043,
+              "duration": 758590,
               "entry_date": "2025-10-25T10:14:23+00:00",
               "exit_date": null,
-              "duration_days": 8.773645833333333
+              "duration_days": 8.779976851851853
             }
           ],
-          "total_holding_duration": 758043,
+          "total_holding_duration": 758590,
           "is_current_holder": true,
           "events": [
             {
@@ -13577,7 +13577,7 @@
           ],
           "first_seen_date": "2025-10-25T10:14:23+00:00",
           "last_seen_date": "2025-10-25T10:14:23+00:00",
-          "total_holding_duration_days": 8.773645833333333
+          "total_holding_duration_days": 8.779976851851853
         },
         "0xf1BC5dE15f4B56d9db4B3e6682832547D72844DE": {
           "first_seen": 1761561971,
@@ -13637,13 +13637,13 @@
               "exit_timestamp": null,
               "entry_block": 23700317,
               "exit_block": null,
-              "duration": 195507,
+              "duration": 196054,
               "entry_date": "2025-10-31T22:29:59+00:00",
               "exit_date": null,
-              "duration_days": 2.2628125
+              "duration_days": 2.2691435185185185
             }
           ],
-          "total_holding_duration": 195507,
+          "total_holding_duration": 196054,
           "is_current_holder": true,
           "events": [
             {
@@ -13657,7 +13657,7 @@
           ],
           "first_seen_date": "2025-10-31T22:29:59+00:00",
           "last_seen_date": "2025-10-31T22:29:59+00:00",
-          "total_holding_duration_days": 2.2628125
+          "total_holding_duration_days": 2.2691435185185185
         }
       }
     },
@@ -13902,13 +13902,13 @@
               "exit_timestamp": null,
               "entry_block": 23098469,
               "exit_block": null,
-              "duration": 7463499,
+              "duration": 7464046,
               "entry_date": "2025-08-08T19:36:47+00:00",
               "exit_date": null,
-              "duration_days": 86.38309027777778
+              "duration_days": 86.38942129629629
             }
           ],
-          "total_holding_duration": 7463499,
+          "total_holding_duration": 7464046,
           "is_current_holder": true,
           "events": [
             {
@@ -13954,7 +13954,7 @@
           ],
           "first_seen_date": "2025-08-08T19:36:47+00:00",
           "last_seen_date": "2025-09-27T15:24:23+00:00",
-          "total_holding_duration_days": 86.38309027777778
+          "total_holding_duration_days": 86.38942129629629
         },
         "0xaAabE4a03eA6F80062f1D7912F58f5a7e125b0A7": {
           "first_seen": 1757498495,
@@ -14154,13 +14154,13 @@
               "exit_timestamp": null,
               "entry_block": 23413382,
               "exit_block": null,
-              "duration": 3663939,
+              "duration": 3664486,
               "entry_date": "2025-09-21T19:02:47+00:00",
               "exit_date": null,
-              "duration_days": 42.40670138888889
+              "duration_days": 42.41303240740741
             }
           ],
-          "total_holding_duration": 3663939,
+          "total_holding_duration": 3664486,
           "is_current_holder": true,
           "events": [
             {
@@ -14174,7 +14174,7 @@
           ],
           "first_seen_date": "2025-09-21T19:02:47+00:00",
           "last_seen_date": "2025-09-21T19:02:47+00:00",
-          "total_holding_duration_days": 42.40670138888889
+          "total_holding_duration_days": 42.41303240740741
         },
         "0x155ddAc174DC33A1c7054B90aE8c31228776D147": {
           "first_seen": 1758575567,
@@ -15074,13 +15074,13 @@
               "exit_timestamp": null,
               "entry_block": 23338258,
               "exit_block": null,
-              "duration": 4570455,
+              "duration": 4571002,
               "entry_date": "2025-09-11T07:14:11+00:00",
               "exit_date": null,
-              "duration_days": 52.898784722222224
+              "duration_days": 52.90511574074074
             }
           ],
-          "total_holding_duration": 4570455,
+          "total_holding_duration": 4571002,
           "is_current_holder": true,
           "events": [
             {
@@ -15110,7 +15110,7 @@
           ],
           "first_seen_date": "2025-09-11T07:14:11+00:00",
           "last_seen_date": "2025-10-30T07:04:59+00:00",
-          "total_holding_duration_days": 52.898784722222224
+          "total_holding_duration_days": 52.90511574074074
         },
         "0xefceF7F134e8f24890AC57b333a8Dc710d0E6b5f": {
           "first_seen": 1757580479,
@@ -15170,13 +15170,13 @@
               "exit_timestamp": null,
               "entry_block": 23344853,
               "exit_block": null,
-              "duration": 4490847,
+              "duration": 4491394,
               "entry_date": "2025-09-12T05:20:59+00:00",
               "exit_date": null,
-              "duration_days": 51.97739583333333
+              "duration_days": 51.98372685185185
             }
           ],
-          "total_holding_duration": 4490847,
+          "total_holding_duration": 4491394,
           "is_current_holder": true,
           "events": [
             {
@@ -15190,7 +15190,7 @@
           ],
           "first_seen_date": "2025-09-12T05:20:59+00:00",
           "last_seen_date": "2025-09-12T05:20:59+00:00",
-          "total_holding_duration_days": 51.97739583333333
+          "total_holding_duration_days": 51.98372685185185
         },
         "0xeA0Cdd1636B0e60DcD98E57337E319091502D52F": {
           "first_seen": 1757732543,
@@ -15338,13 +15338,13 @@
               "exit_timestamp": null,
               "entry_block": 23353617,
               "exit_block": null,
-              "duration": 4385187,
+              "duration": 4385734,
               "entry_date": "2025-09-13T10:41:59+00:00",
               "exit_date": null,
-              "duration_days": 50.75447916666667
+              "duration_days": 50.760810185185186
             }
           ],
-          "total_holding_duration": 4385187,
+          "total_holding_duration": 4385734,
           "is_current_holder": true,
           "events": [
             {
@@ -15358,7 +15358,7 @@
           ],
           "first_seen_date": "2025-09-13T10:41:59+00:00",
           "last_seen_date": "2025-09-13T10:41:59+00:00",
-          "total_holding_duration_days": 50.75447916666667
+          "total_holding_duration_days": 50.760810185185186
         },
         "0x90A1B9A797F843914c945390aF2F72a51ba3f6f5": {
           "first_seen": 1757816147,
@@ -16052,13 +16052,13 @@
               "exit_timestamp": null,
               "entry_block": 23420263,
               "exit_block": null,
-              "duration": 3580707,
+              "duration": 3581254,
               "entry_date": "2025-09-22T18:09:59+00:00",
               "exit_date": null,
-              "duration_days": 41.44336805555555
+              "duration_days": 41.449699074074076
             }
           ],
-          "total_holding_duration": 3580707,
+          "total_holding_duration": 3581254,
           "is_current_holder": true,
           "events": [
             {
@@ -16072,7 +16072,7 @@
           ],
           "first_seen_date": "2025-09-22T18:09:59+00:00",
           "last_seen_date": "2025-09-22T18:09:59+00:00",
-          "total_holding_duration_days": 41.44336805555555
+          "total_holding_duration_days": 41.449699074074076
         },
         "0x9fC4577b6D5f1c8A7329C00BB8bBd329f74B1eef": {
           "first_seen": 1758654359,
@@ -16176,13 +16176,13 @@
               "exit_timestamp": null,
               "entry_block": 23433804,
               "exit_block": null,
-              "duration": 3417435,
+              "duration": 3417982,
               "entry_date": "2025-09-24T15:31:11+00:00",
               "exit_date": null,
-              "duration_days": 39.553645833333334
+              "duration_days": 39.55997685185185
             }
           ],
-          "total_holding_duration": 3417435,
+          "total_holding_duration": 3417982,
           "is_current_holder": true,
           "events": [
             {
@@ -16196,7 +16196,7 @@
           ],
           "first_seen_date": "2025-09-24T15:31:11+00:00",
           "last_seen_date": "2025-09-24T15:31:11+00:00",
-          "total_holding_duration_days": 39.553645833333334
+          "total_holding_duration_days": 39.55997685185185
         },
         "0x82E8936b187d83FD6eb2B7Dab5B19556e9DEFF1C": {
           "first_seen": 1758759887,
@@ -16300,13 +16300,13 @@
               "exit_timestamp": null,
               "entry_block": 23438704,
               "exit_block": null,
-              "duration": 3358251,
+              "duration": 3358798,
               "entry_date": "2025-09-25T07:57:35+00:00",
               "exit_date": null,
-              "duration_days": 38.86864583333333
+              "duration_days": 38.874976851851855
             }
           ],
-          "total_holding_duration": 3358251,
+          "total_holding_duration": 3358798,
           "is_current_holder": true,
           "events": [
             {
@@ -16320,7 +16320,7 @@
           ],
           "first_seen_date": "2025-09-25T07:57:35+00:00",
           "last_seen_date": "2025-09-25T07:57:35+00:00",
-          "total_holding_duration_days": 38.86864583333333
+          "total_holding_duration_days": 38.874976851851855
         },
         "0x0a44F50Ed65afBd41f594e4B1E4366574bF32CA7": {
           "first_seen": 1758793535,
@@ -16336,13 +16336,13 @@
               "exit_timestamp": null,
               "entry_block": 23439241,
               "exit_block": null,
-              "duration": 3351771,
+              "duration": 3352318,
               "entry_date": "2025-09-25T09:45:35+00:00",
               "exit_date": null,
-              "duration_days": 38.793645833333336
+              "duration_days": 38.79997685185185
             }
           ],
-          "total_holding_duration": 3351771,
+          "total_holding_duration": 3352318,
           "is_current_holder": true,
           "events": [
             {
@@ -16356,7 +16356,7 @@
           ],
           "first_seen_date": "2025-09-25T09:45:35+00:00",
           "last_seen_date": "2025-09-25T09:45:35+00:00",
-          "total_holding_duration_days": 38.793645833333336
+          "total_holding_duration_days": 38.79997685185185
         },
         "0xFc20A7cfc0Eb60169a9b7F173E4f221264C51b76": {
           "first_seen": 1758971543,
@@ -16372,13 +16372,13 @@
               "exit_timestamp": null,
               "entry_block": 23453962,
               "exit_block": null,
-              "duration": 3173763,
+              "duration": 3174310,
               "entry_date": "2025-09-27T11:12:23+00:00",
               "exit_date": null,
-              "duration_days": 36.73336805555556
+              "duration_days": 36.739699074074075
             }
           ],
-          "total_holding_duration": 3173763,
+          "total_holding_duration": 3174310,
           "is_current_holder": true,
           "events": [
             {
@@ -16400,7 +16400,7 @@
           ],
           "first_seen_date": "2025-09-27T11:12:23+00:00",
           "last_seen_date": "2025-10-04T21:42:35+00:00",
-          "total_holding_duration_days": 36.73336805555556
+          "total_holding_duration_days": 36.739699074074075
         },
         "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0": {
           "first_seen": 1759168439,
@@ -16416,13 +16416,13 @@
               "exit_timestamp": null,
               "entry_block": 23470267,
               "exit_block": null,
-              "duration": 2976867,
+              "duration": 2977414,
               "entry_date": "2025-09-29T17:53:59+00:00",
               "exit_date": null,
-              "duration_days": 34.454479166666665
+              "duration_days": 34.46081018518519
             }
           ],
-          "total_holding_duration": 2976867,
+          "total_holding_duration": 2977414,
           "is_current_holder": true,
           "events": [
             {
@@ -16436,7 +16436,7 @@
           ],
           "first_seen_date": "2025-09-29T17:53:59+00:00",
           "last_seen_date": "2025-09-29T17:53:59+00:00",
-          "total_holding_duration_days": 34.454479166666665
+          "total_holding_duration_days": 34.46081018518519
         },
         "0x8352C07E01Ad42F3DCEa34635bd7944F1f6482e6": {
           "first_seen": 1759327619,
@@ -16452,13 +16452,13 @@
               "exit_timestamp": null,
               "entry_block": 23483440,
               "exit_block": null,
-              "duration": 2817687,
+              "duration": 2818234,
               "entry_date": "2025-10-01T14:06:59+00:00",
               "exit_date": null,
-              "duration_days": 32.612118055555555
+              "duration_days": 32.61844907407407
             }
           ],
-          "total_holding_duration": 2817687,
+          "total_holding_duration": 2818234,
           "is_current_holder": true,
           "events": [
             {
@@ -16472,7 +16472,7 @@
           ],
           "first_seen_date": "2025-10-01T14:06:59+00:00",
           "last_seen_date": "2025-10-01T14:06:59+00:00",
-          "total_holding_duration_days": 32.612118055555555
+          "total_holding_duration_days": 32.61844907407407
         },
         "0x1fafb618033Fb07d3a99704a47451971976CB586": {
           "first_seen": 1759870775,
@@ -16488,13 +16488,13 @@
               "exit_timestamp": null,
               "entry_block": 23528421,
               "exit_block": null,
-              "duration": 2274531,
+              "duration": 2275078,
               "entry_date": "2025-10-07T20:59:35+00:00",
               "exit_date": null,
-              "duration_days": 26.325590277777778
+              "duration_days": 26.331921296296297
             }
           ],
-          "total_holding_duration": 2274531,
+          "total_holding_duration": 2275078,
           "is_current_holder": true,
           "events": [
             {
@@ -16508,7 +16508,7 @@
           ],
           "first_seen_date": "2025-10-07T20:59:35+00:00",
           "last_seen_date": "2025-10-07T20:59:35+00:00",
-          "total_holding_duration_days": 26.325590277777778
+          "total_holding_duration_days": 26.331921296296297
         },
         "0x7261160D1ac32722024C2af32f4F40D3795393E6": {
           "first_seen": 1760669123,
@@ -16524,13 +16524,13 @@
               "exit_timestamp": null,
               "entry_block": 23594483,
               "exit_block": null,
-              "duration": 1476183,
+              "duration": 1476730,
               "entry_date": "2025-10-17T02:45:23+00:00",
               "exit_date": null,
-              "duration_days": 17.085451388888888
+              "duration_days": 17.091782407407408
             }
           ],
-          "total_holding_duration": 1476183,
+          "total_holding_duration": 1476730,
           "is_current_holder": true,
           "events": [
             {
@@ -16544,7 +16544,7 @@
           ],
           "first_seen_date": "2025-10-17T02:45:23+00:00",
           "last_seen_date": "2025-10-17T02:45:23+00:00",
-          "total_holding_duration_days": 17.085451388888888
+          "total_holding_duration_days": 17.091782407407408
         },
         "0x7c5C5a0240231077432E3f3b7880De8865269a40": {
           "first_seen": 1760946107,
@@ -16604,13 +16604,13 @@
               "exit_timestamp": null,
               "entry_block": 23621700,
               "exit_block": null,
-              "duration": 1146987,
+              "duration": 1147534,
               "entry_date": "2025-10-20T22:11:59+00:00",
               "exit_date": null,
-              "duration_days": 13.2753125
+              "duration_days": 13.281643518518518
             }
           ],
-          "total_holding_duration": 1146987,
+          "total_holding_duration": 1147534,
           "is_current_holder": true,
           "events": [
             {
@@ -16632,7 +16632,7 @@
           ],
           "first_seen_date": "2025-10-20T22:11:59+00:00",
           "last_seen_date": "2025-10-20T22:21:35+00:00",
-          "total_holding_duration_days": 13.2753125
+          "total_holding_duration_days": 13.281643518518518
         },
         "0x62049e1AdAA5887D5777E5ac9dBF810c0f0446b1": {
           "first_seen": 1761377783,
@@ -16648,13 +16648,13 @@
               "exit_timestamp": null,
               "entry_block": 23653024,
               "exit_block": null,
-              "duration": 767523,
+              "duration": 768070,
               "entry_date": "2025-10-25T07:36:23+00:00",
               "exit_date": null,
-              "duration_days": 8.883368055555556
+              "duration_days": 8.889699074074073
             }
           ],
-          "total_holding_duration": 767523,
+          "total_holding_duration": 768070,
           "is_current_holder": true,
           "events": [
             {
@@ -16668,7 +16668,7 @@
           ],
           "first_seen_date": "2025-10-25T07:36:23+00:00",
           "last_seen_date": "2025-10-25T07:36:23+00:00",
-          "total_holding_duration_days": 8.883368055555556
+          "total_holding_duration_days": 8.889699074074073
         },
         "0x058BbFF7bE9d3CB50cDb9E6F6929f023F2763B98": {
           "first_seen": 1761490211,
@@ -16684,13 +16684,13 @@
               "exit_timestamp": null,
               "entry_block": 23662342,
               "exit_block": null,
-              "duration": 655095,
+              "duration": 655642,
               "entry_date": "2025-10-26T14:50:11+00:00",
               "exit_date": null,
-              "duration_days": 7.582118055555555
+              "duration_days": 7.588449074074074
             }
           ],
-          "total_holding_duration": 655095,
+          "total_holding_duration": 655642,
           "is_current_holder": true,
           "events": [
             {
@@ -16704,7 +16704,7 @@
           ],
           "first_seen_date": "2025-10-26T14:50:11+00:00",
           "last_seen_date": "2025-10-26T14:50:11+00:00",
-          "total_holding_duration_days": 7.582118055555555
+          "total_holding_duration_days": 7.588449074074074
         },
         "0x149f23a9945fa95A21E5bE4928F0DEb499173d79": {
           "first_seen": 1761921659,
@@ -16720,13 +16720,13 @@
               "exit_timestamp": null,
               "entry_block": 23697997,
               "exit_block": null,
-              "duration": 223647,
+              "duration": 224194,
               "entry_date": "2025-10-31T14:40:59+00:00",
               "exit_date": null,
-              "duration_days": 2.5885069444444446
+              "duration_days": 2.5948379629629628
             }
           ],
-          "total_holding_duration": 223647,
+          "total_holding_duration": 224194,
           "is_current_holder": true,
           "events": [
             {
@@ -16740,7 +16740,7 @@
           ],
           "first_seen_date": "2025-10-31T14:40:59+00:00",
           "last_seen_date": "2025-10-31T14:40:59+00:00",
-          "total_holding_duration_days": 2.5885069444444446
+          "total_holding_duration_days": 2.5948379629629628
         }
       }
     },
@@ -17015,13 +17015,13 @@
               "exit_timestamp": null,
               "entry_block": 22709958,
               "exit_block": null,
-              "duration": 12154539,
+              "duration": 12155086,
               "entry_date": "2025-06-15T12:32:47+00:00",
               "exit_date": null,
-              "duration_days": 140.67753472222222
+              "duration_days": 140.68386574074074
             }
           ],
-          "total_holding_duration": 12154539,
+          "total_holding_duration": 12155086,
           "is_current_holder": true,
           "events": [
             {
@@ -17035,7 +17035,7 @@
           ],
           "first_seen_date": "2025-06-15T12:32:47+00:00",
           "last_seen_date": "2025-06-15T12:32:47+00:00",
-          "total_holding_duration_days": 140.67753472222222
+          "total_holding_duration_days": 140.68386574074074
         },
         "0x13B90df23158808185B247aB61EDe61b75d49E23": {
           "first_seen": 1755597719,
@@ -17139,13 +17139,13 @@
               "exit_timestamp": null,
               "entry_block": 23607672,
               "exit_block": null,
-              "duration": 1316811,
+              "duration": 1317358,
               "entry_date": "2025-10-18T23:01:35+00:00",
               "exit_date": null,
-              "duration_days": 15.240868055555556
+              "duration_days": 15.247199074074073
             }
           ],
-          "total_holding_duration": 1316811,
+          "total_holding_duration": 1317358,
           "is_current_holder": true,
           "events": [
             {
@@ -17159,7 +17159,7 @@
           ],
           "first_seen_date": "2025-10-18T23:01:35+00:00",
           "last_seen_date": "2025-10-18T23:01:35+00:00",
-          "total_holding_duration_days": 15.240868055555556
+          "total_holding_duration_days": 15.247199074074073
         }
       }
     },
@@ -17662,13 +17662,13 @@
               "exit_timestamp": null,
               "entry_block": 23663422,
               "exit_block": null,
-              "duration": 642003,
+              "duration": 642550,
               "entry_date": "2025-10-26T18:28:23+00:00",
               "exit_date": null,
-              "duration_days": 7.430590277777778
+              "duration_days": 7.436921296296297
             }
           ],
-          "total_holding_duration": 642003,
+          "total_holding_duration": 642550,
           "is_current_holder": true,
           "events": [
             {
@@ -17690,7 +17690,7 @@
           ],
           "first_seen_date": "2025-10-26T18:28:23+00:00",
           "last_seen_date": "2025-10-27T11:13:35+00:00",
-          "total_holding_duration_days": 7.430590277777778
+          "total_holding_duration_days": 7.436921296296297
         }
       }
     },
@@ -17790,13 +17790,13 @@
               "exit_timestamp": null,
               "entry_block": 23181322,
               "exit_block": null,
-              "duration": 6464079,
+              "duration": 6464626,
               "entry_date": "2025-08-20T09:13:47+00:00",
               "exit_date": null,
-              "duration_days": 74.81572916666667
+              "duration_days": 74.82206018518518
             }
           ],
-          "total_holding_duration": 6464079,
+          "total_holding_duration": 6464626,
           "is_current_holder": true,
           "events": [
             {
@@ -17810,7 +17810,7 @@
           ],
           "first_seen_date": "2025-08-20T09:13:47+00:00",
           "last_seen_date": "2025-08-20T09:13:47+00:00",
-          "total_holding_duration_days": 74.81572916666667
+          "total_holding_duration_days": 74.82206018518518
         }
       }
     },
@@ -18103,16 +18103,12 @@
       },
       "stats": {
         "total_deposited": "351046077348164555931068",
-        "total_withdrawn": "328020132678918348061531",
-        "current_supply": "23025944669246207869537",
-        "current_holders": 4,
+        "total_withdrawn": "351020132678918348061531",
+        "current_supply": "25944669246207869537",
+        "current_holders": 3,
         "total_users": 16
       },
       "current_holders": {
-        "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0": {
-          "balance": "23000000000000000000000",
-          "last_updated": 1759938011
-        },
         "0xd85EF4F88975B03D735fcD3C5BD436C9D582Ee5E": {
           "balance": "23740682291225767258",
           "last_updated": 1752832703
@@ -18141,13 +18137,13 @@
               "exit_timestamp": null,
               "entry_block": 22931446,
               "exit_block": null,
-              "duration": 9480087,
+              "duration": 9480634,
               "entry_date": "2025-07-16T11:26:59+00:00",
               "exit_date": null,
-              "duration_days": 109.72322916666667
+              "duration_days": 109.72956018518518
             }
           ],
-          "total_holding_duration": 9480087,
+          "total_holding_duration": 9480634,
           "is_current_holder": true,
           "events": [
             {
@@ -18161,7 +18157,7 @@
           ],
           "first_seen_date": "2025-07-16T11:26:59+00:00",
           "last_seen_date": "2025-07-16T11:26:59+00:00",
-          "total_holding_duration_days": 109.72322916666667
+          "total_holding_duration_days": 109.72956018518518
         },
         "0xd85EF4F88975B03D735fcD3C5BD436C9D582Ee5E": {
           "first_seen": 1752832703,
@@ -18177,13 +18173,13 @@
               "exit_timestamp": null,
               "entry_block": 22945338,
               "exit_block": null,
-              "duration": 9312603,
+              "duration": 9313150,
               "entry_date": "2025-07-18T09:58:23+00:00",
               "exit_date": null,
-              "duration_days": 107.78475694444444
+              "duration_days": 107.79108796296296
             }
           ],
-          "total_holding_duration": 9312603,
+          "total_holding_duration": 9313150,
           "is_current_holder": true,
           "events": [
             {
@@ -18197,7 +18193,7 @@
           ],
           "first_seen_date": "2025-07-18T09:58:23+00:00",
           "last_seen_date": "2025-07-18T09:58:23+00:00",
-          "total_holding_duration_days": 107.78475694444444
+          "total_holding_duration_days": 107.79108796296296
         },
         "0xAEd204B0aaE8770f6162594A05a346F696245647": {
           "first_seen": 1753181507,
@@ -18289,26 +18285,26 @@
         },
         "0x71F12a5b0E60d2Ff8A87FD34E7dcff3c10c914b0": {
           "first_seen": 1753313855,
-          "last_seen": 1759938011,
+          "last_seen": 1762145711,
           "entry_timestamp": 1753313855,
-          "exit_timestamp": null,
+          "exit_timestamp": 1762145711,
           "entry_block": 22985190,
-          "exit_block": null,
+          "exit_block": 23716543,
           "max_balance": 46192777820692638242795,
           "holding_periods": [
             {
               "entry_timestamp": 1753313855,
-              "exit_timestamp": null,
+              "exit_timestamp": 1762145711,
               "entry_block": 22985190,
-              "exit_block": null,
-              "duration": 8831451,
+              "exit_block": 23716543,
+              "duration": 8831856,
               "entry_date": "2025-07-23T23:37:35+00:00",
-              "exit_date": null,
-              "duration_days": 102.21586805555556
+              "exit_date": "2025-11-03T04:55:11+00:00",
+              "duration_days": 102.22055555555555
             }
           ],
-          "total_holding_duration": 8831451,
-          "is_current_holder": true,
+          "total_holding_duration": 8831856,
+          "is_current_holder": false,
           "events": [
             {
               "type": "DEPOSIT",
@@ -18325,11 +18321,19 @@
               "block": 23533981,
               "timestamp": 1759938011,
               "datetime": "2025-10-08T15:40:11+00:00"
+            },
+            {
+              "type": "WITHDRAW",
+              "amount": "23000000000000000000000",
+              "balance_after": "0",
+              "block": 23716543,
+              "timestamp": 1762145711,
+              "datetime": "2025-11-03T04:55:11+00:00"
             }
           ],
           "first_seen_date": "2025-07-23T23:37:35+00:00",
-          "last_seen_date": "2025-10-08T15:40:11+00:00",
-          "total_holding_duration_days": 102.21586805555556
+          "last_seen_date": "2025-11-03T04:55:11+00:00",
+          "total_holding_duration_days": 102.22055555555555
         },
         "0x16F368BFAa9308a4B1728F5356001f58B914cAAb": {
           "first_seen": 1753446599,
@@ -18623,13 +18627,13 @@
               "exit_timestamp": null,
               "entry_block": 23142752,
               "exit_block": null,
-              "duration": 6928875,
+              "duration": 6929422,
               "entry_date": "2025-08-15T00:07:11+00:00",
               "exit_date": null,
-              "duration_days": 80.1953125
+              "duration_days": 80.20164351851852
             }
           ],
-          "total_holding_duration": 6928875,
+          "total_holding_duration": 6929422,
           "is_current_holder": true,
           "events": [
             {
@@ -18659,7 +18663,7 @@
           ],
           "first_seen_date": "2025-08-15T00:07:11+00:00",
           "last_seen_date": "2025-08-16T00:06:35+00:00",
-          "total_holding_duration_days": 80.1953125
+          "total_holding_duration_days": 80.20164351851852
         },
         "0x52C30EBc3f92E4ADD798908926694dCE2feA270d": {
           "first_seen": 1755425027,
@@ -19441,13 +19445,13 @@
               "exit_timestamp": null,
               "entry_block": 23239030,
               "exit_block": null,
-              "duration": 5768295,
+              "duration": 5768842,
               "entry_date": "2025-08-28T10:30:11+00:00",
               "exit_date": null,
-              "duration_days": 66.76267361111111
+              "duration_days": 66.76900462962963
             }
           ],
-          "total_holding_duration": 5768295,
+          "total_holding_duration": 5768842,
           "is_current_holder": true,
           "events": [
             {
@@ -19461,7 +19465,7 @@
           ],
           "first_seen_date": "2025-08-28T10:30:11+00:00",
           "last_seen_date": "2025-08-28T10:30:11+00:00",
-          "total_holding_duration_days": 66.76267361111111
+          "total_holding_duration_days": 66.76900462962963
         },
         "0xfd8a63085804DCB95417fe33f9E49253522c68DD": {
           "first_seen": 1756448879,
@@ -19521,13 +19525,13 @@
               "exit_timestamp": null,
               "entry_block": 23246206,
               "exit_block": null,
-              "duration": 5681751,
+              "duration": 5682298,
               "entry_date": "2025-08-29T10:32:35+00:00",
               "exit_date": null,
-              "duration_days": 65.76100694444445
+              "duration_days": 65.76733796296297
             }
           ],
-          "total_holding_duration": 5681751,
+          "total_holding_duration": 5682298,
           "is_current_holder": true,
           "events": [
             {
@@ -19541,7 +19545,7 @@
           ],
           "first_seen_date": "2025-08-29T10:32:35+00:00",
           "last_seen_date": "2025-08-29T10:32:35+00:00",
-          "total_holding_duration_days": 65.76100694444445
+          "total_holding_duration_days": 65.76733796296297
         },
         "0x063608D16D09E48e46329D6bF833cD31Dc341030": {
           "first_seen": 1756619975,
@@ -19557,13 +19561,13 @@
               "exit_timestamp": null,
               "entry_block": 23259190,
               "exit_block": null,
-              "duration": 5525331,
+              "duration": 5525878,
               "entry_date": "2025-08-31T05:59:35+00:00",
               "exit_date": null,
-              "duration_days": 63.95059027777778
+              "duration_days": 63.956921296296294
             }
           ],
-          "total_holding_duration": 5525331,
+          "total_holding_duration": 5525878,
           "is_current_holder": true,
           "events": [
             {
@@ -19577,7 +19581,7 @@
           ],
           "first_seen_date": "2025-08-31T05:59:35+00:00",
           "last_seen_date": "2025-08-31T05:59:35+00:00",
-          "total_holding_duration_days": 63.95059027777778
+          "total_holding_duration_days": 63.956921296296294
         },
         "0x33b36812B44463F020042BFbB7a2D8aa40B3a426": {
           "first_seen": 1759394831,
@@ -19593,13 +19597,13 @@
               "exit_timestamp": null,
               "entry_block": 23489003,
               "exit_block": null,
-              "duration": 2750475,
+              "duration": 2751022,
               "entry_date": "2025-10-02T08:47:11+00:00",
               "exit_date": null,
-              "duration_days": 31.83420138888889
+              "duration_days": 31.84053240740741
             }
           ],
-          "total_holding_duration": 2750475,
+          "total_holding_duration": 2751022,
           "is_current_holder": true,
           "events": [
             {
@@ -19613,7 +19617,7 @@
           ],
           "first_seen_date": "2025-10-02T08:47:11+00:00",
           "last_seen_date": "2025-10-02T08:47:11+00:00",
-          "total_holding_duration_days": 31.83420138888889
+          "total_holding_duration_days": 31.84053240740741
         },
         "0xbb5286a6d73B6cae296AB40Fe220708607479171": {
           "first_seen": 1760939867,
@@ -19629,13 +19633,13 @@
               "exit_timestamp": null,
               "entry_block": 23616884,
               "exit_block": null,
-              "duration": 1205439,
+              "duration": 1205986,
               "entry_date": "2025-10-20T05:57:47+00:00",
               "exit_date": null,
-              "duration_days": 13.951840277777778
+              "duration_days": 13.958171296296296
             }
           ],
-          "total_holding_duration": 1205439,
+          "total_holding_duration": 1205986,
           "is_current_holder": true,
           "events": [
             {
@@ -19649,7 +19653,7 @@
           ],
           "first_seen_date": "2025-10-20T05:57:47+00:00",
           "last_seen_date": "2025-10-20T05:57:47+00:00",
-          "total_holding_duration_days": 13.951840277777778
+          "total_holding_duration_days": 13.958171296296296
         }
       }
     },
@@ -20182,13 +20186,13 @@
               "exit_timestamp": null,
               "entry_block": 23074460,
               "exit_block": null,
-              "duration": 7753275,
+              "duration": 7753822,
               "entry_date": "2025-08-05T11:07:11+00:00",
               "exit_date": null,
-              "duration_days": 89.73697916666667
+              "duration_days": 89.74331018518518
             }
           ],
-          "total_holding_duration": 7753275,
+          "total_holding_duration": 7753822,
           "is_current_holder": true,
           "events": [
             {
@@ -20202,7 +20206,7 @@
           ],
           "first_seen_date": "2025-08-05T11:07:11+00:00",
           "last_seen_date": "2025-08-05T11:07:11+00:00",
-          "total_holding_duration_days": 89.73697916666667
+          "total_holding_duration_days": 89.74331018518518
         }
       }
     },
@@ -20241,13 +20245,13 @@
               "exit_timestamp": null,
               "entry_block": 23701198,
               "exit_block": null,
-              "duration": 184899,
+              "duration": 185446,
               "entry_date": "2025-11-01T01:26:47+00:00",
               "exit_date": null,
-              "duration_days": 2.140034722222222
+              "duration_days": 2.1463657407407406
             }
           ],
-          "total_holding_duration": 184899,
+          "total_holding_duration": 185446,
           "is_current_holder": true,
           "events": [
             {
@@ -20261,7 +20265,7 @@
           ],
           "first_seen_date": "2025-11-01T01:26:47+00:00",
           "last_seen_date": "2025-11-01T01:26:47+00:00",
-          "total_holding_duration_days": 2.140034722222222
+          "total_holding_duration_days": 2.1463657407407406
         }
       }
     },
@@ -20361,13 +20365,13 @@
               "exit_timestamp": null,
               "entry_block": 23636926,
               "exit_block": null,
-              "duration": 962451,
+              "duration": 962998,
               "entry_date": "2025-10-23T01:27:35+00:00",
               "exit_date": null,
-              "duration_days": 11.139479166666666
+              "duration_days": 11.145810185185185
             }
           ],
-          "total_holding_duration": 962451,
+          "total_holding_duration": 962998,
           "is_current_holder": true,
           "events": [
             {
@@ -20381,7 +20385,7 @@
           ],
           "first_seen_date": "2025-10-23T01:27:35+00:00",
           "last_seen_date": "2025-10-23T01:27:35+00:00",
-          "total_holding_duration_days": 11.139479166666666
+          "total_holding_duration_days": 11.145810185185185
         }
       }
     },
@@ -23497,13 +23501,13 @@
               "exit_timestamp": null,
               "entry_block": 23099503,
               "exit_block": null,
-              "duration": 7451007,
+              "duration": 7451554,
               "entry_date": "2025-08-08T23:04:59+00:00",
               "exit_date": null,
-              "duration_days": 86.23850694444444
+              "duration_days": 86.24483796296296
             }
           ],
-          "total_holding_duration": 7451007,
+          "total_holding_duration": 7451554,
           "is_current_holder": true,
           "events": [
             {
@@ -23525,7 +23529,7 @@
           ],
           "first_seen_date": "2025-08-08T23:04:59+00:00",
           "last_seen_date": "2025-08-18T20:39:59+00:00",
-          "total_holding_duration_days": 86.23850694444444
+          "total_holding_duration_days": 86.24483796296296
         },
         "0x8Ac286Ff7a2703Ee4BeD827450EA7a48b3353886": {
           "first_seen": 1754781119,
@@ -23595,13 +23599,13 @@
               "exit_timestamp": null,
               "entry_block": 23203258,
               "exit_block": null,
-              "duration": 6199575,
+              "duration": 6200122,
               "entry_date": "2025-08-23T10:42:11+00:00",
               "exit_date": null,
-              "duration_days": 71.75434027777777
+              "duration_days": 71.7606712962963
             }
           ],
-          "total_holding_duration": 7263807,
+          "total_holding_duration": 7264354,
           "is_current_holder": true,
           "events": [
             {
@@ -23631,7 +23635,7 @@
           ],
           "first_seen_date": "2025-08-11T03:04:23+00:00",
           "last_seen_date": "2025-08-23T10:42:11+00:00",
-          "total_holding_duration_days": 84.07184027777778
+          "total_holding_duration_days": 84.07817129629629
         }
       }
     },
@@ -23912,13 +23916,13 @@
               "exit_timestamp": null,
               "entry_block": 23689799,
               "exit_block": null,
-              "duration": 322887,
+              "duration": 323434,
               "entry_date": "2025-10-30T11:06:59+00:00",
               "exit_date": null,
-              "duration_days": 3.7371180555555554
+              "duration_days": 3.743449074074074
             }
           ],
-          "total_holding_duration": 322887,
+          "total_holding_duration": 323434,
           "is_current_holder": true,
           "events": [
             {
@@ -23932,7 +23936,7 @@
           ],
           "first_seen_date": "2025-10-30T11:06:59+00:00",
           "last_seen_date": "2025-10-30T11:06:59+00:00",
-          "total_holding_duration_days": 3.7371180555555554
+          "total_holding_duration_days": 3.743449074074074
         },
         "0x4b45D73b83686e69d08E61105FdB7F7b51f41Bc1": {
           "first_seen": 1761852563,
@@ -23948,13 +23952,13 @@
               "exit_timestamp": null,
               "entry_block": 23692288,
               "exit_block": null,
-              "duration": 292743,
+              "duration": 293290,
               "entry_date": "2025-10-30T19:29:23+00:00",
               "exit_date": null,
-              "duration_days": 3.3882291666666666
+              "duration_days": 3.394560185185185
             }
           ],
-          "total_holding_duration": 292743,
+          "total_holding_duration": 293290,
           "is_current_holder": true,
           "events": [
             {
@@ -23968,7 +23972,7 @@
           ],
           "first_seen_date": "2025-10-30T19:29:23+00:00",
           "last_seen_date": "2025-10-30T19:29:23+00:00",
-          "total_holding_duration_days": 3.3882291666666666
+          "total_holding_duration_days": 3.394560185185185
         }
       }
     },
@@ -24462,13 +24466,13 @@
               "exit_timestamp": null,
               "entry_block": 22544269,
               "exit_block": null,
-              "duration": 14157675,
+              "duration": 14158222,
               "entry_date": "2025-05-23T08:07:11+00:00",
               "exit_date": null,
-              "duration_days": 163.86197916666666
+              "duration_days": 163.86831018518518
             }
           ],
-          "total_holding_duration": 14157675,
+          "total_holding_duration": 14158222,
           "is_current_holder": true,
           "events": [
             {
@@ -24482,7 +24486,7 @@
           ],
           "first_seen_date": "2025-05-23T08:07:11+00:00",
           "last_seen_date": "2025-05-23T08:07:11+00:00",
-          "total_holding_duration_days": 163.86197916666666
+          "total_holding_duration_days": 163.86831018518518
         },
         "0x0BDa59997765a113BeA8cA9Cba319B35fB287Fc8": {
           "first_seen": 1748370143,
@@ -25839,13 +25843,13 @@
               "exit_timestamp": null,
               "entry_block": 23274345,
               "exit_block": null,
-              "duration": 5342199,
+              "duration": 5342746,
               "entry_date": "2025-09-02T08:51:47+00:00",
               "exit_date": null,
-              "duration_days": 61.83100694444445
+              "duration_days": 61.83733796296296
             }
           ],
-          "total_holding_duration": 5342199,
+          "total_holding_duration": 5342746,
           "is_current_holder": true,
           "events": [
             {
@@ -25859,7 +25863,7 @@
           ],
           "first_seen_date": "2025-09-02T08:51:47+00:00",
           "last_seen_date": "2025-09-02T08:51:47+00:00",
-          "total_holding_duration_days": 61.83100694444445
+          "total_holding_duration_days": 61.83733796296296
         }
       }
     },
@@ -26592,13 +26596,13 @@
               "exit_timestamp": null,
               "entry_block": 22818096,
               "exit_block": null,
-              "duration": 10848435,
+              "duration": 10848982,
               "entry_date": "2025-06-30T15:21:11+00:00",
               "exit_date": null,
-              "duration_days": 125.56059027777778
+              "duration_days": 125.5669212962963
             }
           ],
-          "total_holding_duration": 10848435,
+          "total_holding_duration": 10848982,
           "is_current_holder": true,
           "events": [
             {
@@ -26612,7 +26616,7 @@
           ],
           "first_seen_date": "2025-06-30T15:21:11+00:00",
           "last_seen_date": "2025-06-30T15:21:11+00:00",
-          "total_holding_duration_days": 125.56059027777778
+          "total_holding_duration_days": 125.5669212962963
         },
         "0x55e04EdB2835e7C815f90257F8854E35d3581902": {
           "first_seen": 1755913571,
@@ -26672,13 +26676,13 @@
               "exit_timestamp": null,
               "entry_block": 23339640,
               "exit_block": null,
-              "duration": 4553763,
+              "duration": 4554310,
               "entry_date": "2025-09-11T11:52:23+00:00",
               "exit_date": null,
-              "duration_days": 52.70559027777778
+              "duration_days": 52.711921296296296
             }
           ],
-          "total_holding_duration": 4553763,
+          "total_holding_duration": 4554310,
           "is_current_holder": true,
           "events": [
             {
@@ -26692,7 +26696,7 @@
           ],
           "first_seen_date": "2025-09-11T11:52:23+00:00",
           "last_seen_date": "2025-09-11T11:52:23+00:00",
-          "total_holding_duration_days": 52.70559027777778
+          "total_holding_duration_days": 52.711921296296296
         }
       }
     },
@@ -26940,13 +26944,13 @@
               "exit_timestamp": null,
               "entry_block": 23689322,
               "exit_block": null,
-              "duration": 328611,
+              "duration": 329158,
               "entry_date": "2025-10-30T09:31:35+00:00",
               "exit_date": null,
-              "duration_days": 3.8033680555555556
+              "duration_days": 3.809699074074074
             }
           ],
-          "total_holding_duration": 328611,
+          "total_holding_duration": 329158,
           "is_current_holder": true,
           "events": [
             {
@@ -26960,7 +26964,7 @@
           ],
           "first_seen_date": "2025-10-30T09:31:35+00:00",
           "last_seen_date": "2025-10-30T09:31:35+00:00",
-          "total_holding_duration_days": 3.8033680555555556
+          "total_holding_duration_days": 3.809699074074074
         }
       }
     },
@@ -27404,13 +27408,13 @@
               "exit_timestamp": null,
               "entry_block": 23097527,
               "exit_block": null,
-              "duration": 7474875,
+              "duration": 7475422,
               "entry_date": "2025-08-08T16:27:11+00:00",
               "exit_date": null,
-              "duration_days": 86.51475694444444
+              "duration_days": 86.52108796296297
             }
           ],
-          "total_holding_duration": 7474875,
+          "total_holding_duration": 7475422,
           "is_current_holder": true,
           "events": [
             {
@@ -27432,7 +27436,7 @@
           ],
           "first_seen_date": "2025-08-08T16:27:11+00:00",
           "last_seen_date": "2025-08-08T19:43:47+00:00",
-          "total_holding_duration_days": 86.51475694444444
+          "total_holding_duration_days": 86.52108796296297
         },
         "0xaAabE4a03eA6F80062f1D7912F58f5a7e125b0A7": {
           "first_seen": 1755007955,
@@ -29393,13 +29397,13 @@
               "exit_timestamp": null,
               "entry_block": 23010461,
               "exit_block": null,
-              "duration": 8526231,
+              "duration": 8526778,
               "entry_date": "2025-07-27T12:24:35+00:00",
               "exit_date": null,
-              "duration_days": 98.68322916666666
+              "duration_days": 98.68956018518519
             }
           ],
-          "total_holding_duration": 8526231,
+          "total_holding_duration": 8526778,
           "is_current_holder": true,
           "events": [
             {
@@ -29413,7 +29417,7 @@
           ],
           "first_seen_date": "2025-07-27T12:24:35+00:00",
           "last_seen_date": "2025-07-27T12:24:35+00:00",
-          "total_holding_duration_days": 98.68322916666666
+          "total_holding_duration_days": 98.68956018518519
         },
         "0x487f09e8504f148429aA03b3A743f9bBB27Df5B6": {
           "first_seen": 1753781747,
@@ -30242,13 +30246,13 @@
               "exit_timestamp": null,
               "entry_block": 23695301,
               "exit_block": null,
-              "duration": 256239,
+              "duration": 256786,
               "entry_date": "2025-10-31T05:37:47+00:00",
               "exit_date": null,
-              "duration_days": 2.9657291666666667
+              "duration_days": 2.9720601851851853
             }
           ],
-          "total_holding_duration": 256239,
+          "total_holding_duration": 256786,
           "is_current_holder": true,
           "events": [
             {
@@ -30262,7 +30266,7 @@
           ],
           "first_seen_date": "2025-10-31T05:37:47+00:00",
           "last_seen_date": "2025-10-31T05:37:47+00:00",
-          "total_holding_duration_days": 2.9657291666666667
+          "total_holding_duration_days": 2.9720601851851853
         }
       }
     },
@@ -31191,13 +31195,13 @@
               "exit_timestamp": null,
               "entry_block": 23063042,
               "exit_block": null,
-              "duration": 7891011,
+              "duration": 7891558,
               "entry_date": "2025-08-03T20:51:35+00:00",
               "exit_date": null,
-              "duration_days": 91.33114583333334
+              "duration_days": 91.33747685185185
             }
           ],
-          "total_holding_duration": 7891011,
+          "total_holding_duration": 7891558,
           "is_current_holder": true,
           "events": [
             {
@@ -31211,7 +31215,7 @@
           ],
           "first_seen_date": "2025-08-03T20:51:35+00:00",
           "last_seen_date": "2025-08-03T20:51:35+00:00",
-          "total_holding_duration_days": 91.33114583333334
+          "total_holding_duration_days": 91.33747685185185
         },
         "0x9BCd0C730EbDe6e7809fE1E17E3ccdBf82bf90Ab": {
           "first_seen": 1754257259,
@@ -32354,13 +32358,13 @@
               "exit_timestamp": null,
               "entry_block": 20676370,
               "exit_block": null,
-              "duration": 36702615,
+              "duration": 36703162,
               "entry_date": "2024-09-04T09:38:11+00:00",
               "exit_date": null,
-              "duration_days": 424.7987847222222
+              "duration_days": 424.80511574074075
             }
           ],
-          "total_holding_duration": 36702615,
+          "total_holding_duration": 36703162,
           "is_current_holder": true,
           "events": [
             {
@@ -32374,7 +32378,7 @@
           ],
           "first_seen_date": "2024-09-04T09:38:11+00:00",
           "last_seen_date": "2024-09-04T09:38:11+00:00",
-          "total_holding_duration_days": 424.7987847222222
+          "total_holding_duration_days": 424.80511574074075
         },
         "0xEf1EBa3C139b3f9aE8303D5aAFFC13AE175106Ee": {
           "first_seen": 1725511547,
@@ -32566,13 +32570,13 @@
               "exit_timestamp": null,
               "entry_block": 20757074,
               "exit_block": null,
-              "duration": 35729271,
+              "duration": 35729818,
               "entry_date": "2024-09-15T16:00:35+00:00",
               "exit_date": null,
-              "duration_days": 413.5332291666667
+              "duration_days": 413.53956018518517
             }
           ],
-          "total_holding_duration": 35729271,
+          "total_holding_duration": 35729818,
           "is_current_holder": true,
           "events": [
             {
@@ -32586,7 +32590,7 @@
           ],
           "first_seen_date": "2024-09-15T16:00:35+00:00",
           "last_seen_date": "2024-09-15T16:00:35+00:00",
-          "total_holding_duration_days": 413.5332291666667
+          "total_holding_duration_days": 413.53956018518517
         },
         "0x3eFed426257B1493e4FaD8f54361649642f5b43E": {
           "first_seen": 1726500659,
@@ -32926,13 +32930,13 @@
               "exit_timestamp": null,
               "entry_block": 20934670,
               "exit_block": null,
-              "duration": 33588495,
+              "duration": 33589042,
               "entry_date": "2024-10-10T10:40:11+00:00",
               "exit_date": null,
-              "duration_days": 388.75572916666664
+              "duration_days": 388.7620601851852
             }
           ],
-          "total_holding_duration": 33588495,
+          "total_holding_duration": 33589042,
           "is_current_holder": true,
           "events": [
             {
@@ -32946,7 +32950,7 @@
           ],
           "first_seen_date": "2024-10-10T10:40:11+00:00",
           "last_seen_date": "2024-10-10T10:40:11+00:00",
-          "total_holding_duration_days": 388.75572916666664
+          "total_holding_duration_days": 388.7620601851852
         },
         "0xEf80c44d996EbAC95aA62589986fb3FCDFE3f7d9": {
           "first_seen": 1729313747,
@@ -33102,13 +33106,13 @@
               "exit_timestamp": null,
               "entry_block": 21538754,
               "exit_block": null,
-              "duration": 26300727,
+              "duration": 26301274,
               "entry_date": "2025-01-02T19:02:59+00:00",
               "exit_date": null,
-              "duration_days": 304.4065625
+              "duration_days": 304.4128935185185
             }
           ],
-          "total_holding_duration": 26300727,
+          "total_holding_duration": 26301274,
           "is_current_holder": true,
           "events": [
             {
@@ -33122,7 +33126,7 @@
           ],
           "first_seen_date": "2025-01-02T19:02:59+00:00",
           "last_seen_date": "2025-01-02T19:02:59+00:00",
-          "total_holding_duration_days": 304.4065625
+          "total_holding_duration_days": 304.4128935185185
         },
         "0x653726891810f768b3843b79831e8206802CCB05": {
           "first_seen": 1735866035,
@@ -33138,13 +33142,13 @@
               "exit_timestamp": null,
               "entry_block": 21540535,
               "exit_block": null,
-              "duration": 26279271,
+              "duration": 26279818,
               "entry_date": "2025-01-03T01:00:35+00:00",
               "exit_date": null,
-              "duration_days": 304.1582291666667
+              "duration_days": 304.16456018518517
             }
           ],
-          "total_holding_duration": 26279271,
+          "total_holding_duration": 26279818,
           "is_current_holder": true,
           "events": [
             {
@@ -33158,7 +33162,7 @@
           ],
           "first_seen_date": "2025-01-03T01:00:35+00:00",
           "last_seen_date": "2025-01-03T01:00:35+00:00",
-          "total_holding_duration_days": 304.1582291666667
+          "total_holding_duration_days": 304.16456018518517
         },
         "0x35F29e44E9B7283aD0aD58BeB0730124730B5B4c": {
           "first_seen": 1736569799,
@@ -33436,13 +33440,13 @@
               "exit_timestamp": null,
               "entry_block": 22168648,
               "exit_block": null,
-              "duration": 18700011,
+              "duration": 18700558,
               "entry_date": "2025-03-31T18:21:35+00:00",
               "exit_date": null,
-              "duration_days": 216.4353125
+              "duration_days": 216.44164351851853
             }
           ],
-          "total_holding_duration": 18700011,
+          "total_holding_duration": 18700558,
           "is_current_holder": true,
           "events": [
             {
@@ -33480,7 +33484,7 @@
           ],
           "first_seen_date": "2025-03-31T18:21:35+00:00",
           "last_seen_date": "2025-07-01T08:50:35+00:00",
-          "total_holding_duration_days": 216.4353125
+          "total_holding_duration_days": 216.44164351851853
         },
         "0x19e7BEd7868cDF2C6EcE204314BD6bfE915BCA21": {
           "first_seen": 1745601815,
@@ -33780,13 +33784,13 @@
               "exit_timestamp": null,
               "entry_block": 22583434,
               "exit_block": null,
-              "duration": 13683723,
+              "duration": 13684270,
               "entry_date": "2025-05-28T19:46:23+00:00",
               "exit_date": null,
-              "duration_days": 158.3764236111111
+              "duration_days": 158.38275462962963
             }
           ],
-          "total_holding_duration": 13683723,
+          "total_holding_duration": 13684270,
           "is_current_holder": true,
           "events": [
             {
@@ -33800,7 +33804,7 @@
           ],
           "first_seen_date": "2025-05-28T19:46:23+00:00",
           "last_seen_date": "2025-05-28T19:46:23+00:00",
-          "total_holding_duration_days": 158.3764236111111
+          "total_holding_duration_days": 158.38275462962963
         },
         "0x75F256ECa494266771cbcb28E4EDA9d5fbCA430A": {
           "first_seen": 1749531503,
@@ -33816,13 +33820,13 @@
               "exit_timestamp": null,
               "entry_block": 22671925,
               "exit_block": null,
-              "duration": 12613803,
+              "duration": 12614350,
               "entry_date": "2025-06-10T04:58:23+00:00",
               "exit_date": null,
-              "duration_days": 145.99309027777778
+              "duration_days": 145.9994212962963
             }
           ],
-          "total_holding_duration": 12613803,
+          "total_holding_duration": 12614350,
           "is_current_holder": true,
           "events": [
             {
@@ -33844,7 +33848,7 @@
           ],
           "first_seen_date": "2025-06-10T04:58:23+00:00",
           "last_seen_date": "2025-10-18T22:55:59+00:00",
-          "total_holding_duration_days": 145.99309027777778
+          "total_holding_duration_days": 145.9994212962963
         },
         "0xd1621A7040cd9D0bE444eF07621beAd1C1166ad4": {
           "first_seen": 1750331627,
@@ -33860,13 +33864,13 @@
               "exit_timestamp": null,
               "entry_block": 22738153,
               "exit_block": null,
-              "duration": 11813679,
+              "duration": 11814226,
               "entry_date": "2025-06-19T11:13:47+00:00",
               "exit_date": null,
-              "duration_days": 136.73239583333333
+              "duration_days": 136.73872685185185
             }
           ],
-          "total_holding_duration": 11813679,
+          "total_holding_duration": 11814226,
           "is_current_holder": true,
           "events": [
             {
@@ -33888,7 +33892,7 @@
           ],
           "first_seen_date": "2025-06-19T11:13:47+00:00",
           "last_seen_date": "2025-08-25T12:00:11+00:00",
-          "total_holding_duration_days": 136.73239583333333
+          "total_holding_duration_days": 136.73872685185185
         },
         "0x223A7300C8A8E1B555f4929adf88C2210CeB998A": {
           "first_seen": 1751116511,
@@ -34000,13 +34004,13 @@
               "exit_timestamp": null,
               "entry_block": 22896220,
               "exit_block": null,
-              "duration": 9904959,
+              "duration": 9905506,
               "entry_date": "2025-07-11T13:25:47+00:00",
               "exit_date": null,
-              "duration_days": 114.64072916666667
+              "duration_days": 114.64706018518518
             }
           ],
-          "total_holding_duration": 9904959,
+          "total_holding_duration": 9905506,
           "is_current_holder": true,
           "events": [
             {
@@ -34020,7 +34024,7 @@
           ],
           "first_seen_date": "2025-07-11T13:25:47+00:00",
           "last_seen_date": "2025-07-11T13:25:47+00:00",
-          "total_holding_duration_days": 114.64072916666667
+          "total_holding_duration_days": 114.64706018518518
         },
         "0xF0ea0b3aaF06Ce5B09D484990D5D45A00Fe9F0B4": {
           "first_seen": 1755977339,
@@ -34036,13 +34040,13 @@
               "exit_timestamp": null,
               "entry_block": 23205876,
               "exit_block": null,
-              "duration": 6167967,
+              "duration": 6168514,
               "entry_date": "2025-08-23T19:28:59+00:00",
               "exit_date": null,
-              "duration_days": 71.38850694444444
+              "duration_days": 71.39483796296297
             }
           ],
-          "total_holding_duration": 6167967,
+          "total_holding_duration": 6168514,
           "is_current_holder": true,
           "events": [
             {
@@ -34056,7 +34060,7 @@
           ],
           "first_seen_date": "2025-08-23T19:28:59+00:00",
           "last_seen_date": "2025-08-23T19:28:59+00:00",
-          "total_holding_duration_days": 71.38850694444444
+          "total_holding_duration_days": 71.39483796296297
         },
         "0x9AeE301D7B11a6dc7293B7b6ba5f11cd048590dF": {
           "first_seen": 1756610231,
@@ -34204,13 +34208,13 @@
               "exit_timestamp": null,
               "entry_block": 23338117,
               "exit_block": null,
-              "duration": 4572159,
+              "duration": 4572706,
               "entry_date": "2025-09-11T06:45:47+00:00",
               "exit_date": null,
-              "duration_days": 52.918506944444445
+              "duration_days": 52.92483796296296
             }
           ],
-          "total_holding_duration": 4572159,
+          "total_holding_duration": 4572706,
           "is_current_holder": true,
           "events": [
             {
@@ -34224,7 +34228,7 @@
           ],
           "first_seen_date": "2025-09-11T06:45:47+00:00",
           "last_seen_date": "2025-09-11T06:45:47+00:00",
-          "total_holding_duration_days": 52.918506944444445
+          "total_holding_duration_days": 52.92483796296296
         },
         "0x7b8630C0E3D24F26Cb694995Fdc1a354047aEB9B": {
           "first_seen": 1758214079,
@@ -34240,13 +34244,13 @@
               "exit_timestamp": null,
               "entry_block": 23391255,
               "exit_block": null,
-              "duration": 3931227,
+              "duration": 3931774,
               "entry_date": "2025-09-18T16:47:59+00:00",
               "exit_date": null,
-              "duration_days": 45.5003125
+              "duration_days": 45.506643518518516
             }
           ],
-          "total_holding_duration": 3931227,
+          "total_holding_duration": 3931774,
           "is_current_holder": true,
           "events": [
             {
@@ -34260,7 +34264,7 @@
           ],
           "first_seen_date": "2025-09-18T16:47:59+00:00",
           "last_seen_date": "2025-09-18T16:47:59+00:00",
-          "total_holding_duration_days": 45.5003125
+          "total_holding_duration_days": 45.506643518518516
         },
         "0x544845005e42fE00a3C0E9735EEEC25Aa068b428": {
           "first_seen": 1759327943,
@@ -34276,13 +34280,13 @@
               "exit_timestamp": null,
               "entry_block": 23483467,
               "exit_block": null,
-              "duration": 2817363,
+              "duration": 2817910,
               "entry_date": "2025-10-01T14:12:23+00:00",
               "exit_date": null,
-              "duration_days": 32.60836805555556
+              "duration_days": 32.614699074074075
             }
           ],
-          "total_holding_duration": 2817363,
+          "total_holding_duration": 2817910,
           "is_current_holder": true,
           "events": [
             {
@@ -34304,7 +34308,7 @@
           ],
           "first_seen_date": "2025-10-01T14:12:23+00:00",
           "last_seen_date": "2025-10-02T05:40:47+00:00",
-          "total_holding_duration_days": 32.60836805555556
+          "total_holding_duration_days": 32.614699074074075
         },
         "0x2b9269fF78cAa0589a1D4A6408e77E956CF58Ce3": {
           "first_seen": 1759443791,
@@ -34320,13 +34324,13 @@
               "exit_timestamp": null,
               "entry_block": 23493053,
               "exit_block": null,
-              "duration": 2701515,
+              "duration": 2702062,
               "entry_date": "2025-10-02T22:23:11+00:00",
               "exit_date": null,
-              "duration_days": 31.267534722222223
+              "duration_days": 31.273865740740742
             }
           ],
-          "total_holding_duration": 2701515,
+          "total_holding_duration": 2702062,
           "is_current_holder": true,
           "events": [
             {
@@ -34340,7 +34344,7 @@
           ],
           "first_seen_date": "2025-10-02T22:23:11+00:00",
           "last_seen_date": "2025-10-02T22:23:11+00:00",
-          "total_holding_duration_days": 31.267534722222223
+          "total_holding_duration_days": 31.273865740740742
         },
         "0x149f23a9945fa95A21E5bE4928F0DEb499173d79": {
           "first_seen": 1761739187,
@@ -34356,13 +34360,13 @@
               "exit_timestamp": null,
               "entry_block": 23682909,
               "exit_block": null,
-              "duration": 406119,
+              "duration": 406666,
               "entry_date": "2025-10-29T11:59:47+00:00",
               "exit_date": null,
-              "duration_days": 4.700451388888889
+              "duration_days": 4.706782407407408
             }
           ],
-          "total_holding_duration": 406119,
+          "total_holding_duration": 406666,
           "is_current_holder": true,
           "events": [
             {
@@ -34392,7 +34396,7 @@
           ],
           "first_seen_date": "2025-10-29T11:59:47+00:00",
           "last_seen_date": "2025-11-01T18:32:23+00:00",
-          "total_holding_duration_days": 4.700451388888889
+          "total_holding_duration_days": 4.706782407407408
         }
       }
     },
@@ -34621,13 +34625,13 @@
               "exit_timestamp": null,
               "entry_block": 22936945,
               "exit_block": null,
-              "duration": 9413787,
+              "duration": 9414334,
               "entry_date": "2025-07-17T05:51:59+00:00",
               "exit_date": null,
-              "duration_days": 108.95586805555556
+              "duration_days": 108.96219907407408
             }
           ],
-          "total_holding_duration": 9413787,
+          "total_holding_duration": 9414334,
           "is_current_holder": true,
           "events": [
             {
@@ -34641,7 +34645,7 @@
           ],
           "first_seen_date": "2025-07-17T05:51:59+00:00",
           "last_seen_date": "2025-07-17T05:51:59+00:00",
-          "total_holding_duration_days": 108.95586805555556
+          "total_holding_duration_days": 108.96219907407408
         },
         "0xd85EF4F88975B03D735fcD3C5BD436C9D582Ee5E": {
           "first_seen": 1752832739,
@@ -34657,13 +34661,13 @@
               "exit_timestamp": null,
               "entry_block": 22945341,
               "exit_block": null,
-              "duration": 9312567,
+              "duration": 9313114,
               "entry_date": "2025-07-18T09:58:59+00:00",
               "exit_date": null,
-              "duration_days": 107.78434027777777
+              "duration_days": 107.7906712962963
             }
           ],
-          "total_holding_duration": 9312567,
+          "total_holding_duration": 9313114,
           "is_current_holder": true,
           "events": [
             {
@@ -34677,7 +34681,7 @@
           ],
           "first_seen_date": "2025-07-18T09:58:59+00:00",
           "last_seen_date": "2025-07-18T09:58:59+00:00",
-          "total_holding_duration_days": 107.78434027777777
+          "total_holding_duration_days": 107.7906712962963
         },
         "0x76F768Dbeaa0264185b7a4952540656Ad7B54148": {
           "first_seen": 1753423823,
@@ -35085,13 +35089,13 @@
               "exit_timestamp": null,
               "entry_block": 23121975,
               "exit_block": null,
-              "duration": 7179663,
+              "duration": 7180210,
               "entry_date": "2025-08-12T02:27:23+00:00",
               "exit_date": null,
-              "duration_days": 83.09795138888889
+              "duration_days": 83.10428240740741
             }
           ],
-          "total_holding_duration": 7179663,
+          "total_holding_duration": 7180210,
           "is_current_holder": true,
           "events": [
             {
@@ -35105,7 +35109,7 @@
           ],
           "first_seen_date": "2025-08-12T02:27:23+00:00",
           "last_seen_date": "2025-08-12T02:27:23+00:00",
-          "total_holding_duration_days": 83.09795138888889
+          "total_holding_duration_days": 83.10428240740741
         },
         "0x61BbEa00B54c4B5c4E569762BaFbFCe52Af0CB8f": {
           "first_seen": 1755140051,
@@ -35261,13 +35265,13 @@
               "exit_timestamp": null,
               "entry_block": 23143734,
               "exit_block": null,
-              "duration": 6916995,
+              "duration": 6917542,
               "entry_date": "2025-08-15T03:25:11+00:00",
               "exit_date": null,
-              "duration_days": 80.0578125
+              "duration_days": 80.06414351851852
             }
           ],
-          "total_holding_duration": 6916995,
+          "total_holding_duration": 6917542,
           "is_current_holder": true,
           "events": [
             {
@@ -35281,7 +35285,7 @@
           ],
           "first_seen_date": "2025-08-15T03:25:11+00:00",
           "last_seen_date": "2025-08-15T03:25:11+00:00",
-          "total_holding_duration_days": 80.0578125
+          "total_holding_duration_days": 80.06414351851852
         },
         "0x3E4C5a89D1c4782d8eb12F8f541ba76B34a48182": {
           "first_seen": 1755789719,
@@ -35297,13 +35301,13 @@
               "exit_timestamp": null,
               "entry_block": 23190322,
               "exit_block": null,
-              "duration": 6355587,
+              "duration": 6356134,
               "entry_date": "2025-08-21T15:21:59+00:00",
               "exit_date": null,
-              "duration_days": 73.56003472222223
+              "duration_days": 73.56636574074074
             }
           ],
-          "total_holding_duration": 6355587,
+          "total_holding_duration": 6356134,
           "is_current_holder": true,
           "events": [
             {
@@ -35317,7 +35321,7 @@
           ],
           "first_seen_date": "2025-08-21T15:21:59+00:00",
           "last_seen_date": "2025-08-21T15:21:59+00:00",
-          "total_holding_duration_days": 73.56003472222223
+          "total_holding_duration_days": 73.56636574074074
         },
         "0x90A1B9A797F843914c945390aF2F72a51ba3f6f5": {
           "first_seen": 1755865043,
@@ -35671,13 +35675,13 @@
               "exit_timestamp": null,
               "entry_block": 23346248,
               "exit_block": null,
-              "duration": 4474059,
+              "duration": 4474606,
               "entry_date": "2025-09-12T10:00:47+00:00",
               "exit_date": null,
-              "duration_days": 51.78309027777778
+              "duration_days": 51.7894212962963
             }
           ],
-          "total_holding_duration": 4474059,
+          "total_holding_duration": 4474606,
           "is_current_holder": true,
           "events": [
             {
@@ -35691,7 +35695,7 @@
           ],
           "first_seen_date": "2025-09-12T10:00:47+00:00",
           "last_seen_date": "2025-09-12T10:00:47+00:00",
-          "total_holding_duration_days": 51.78309027777778
+          "total_holding_duration_days": 51.7894212962963
         },
         "0x76b7c5EB758c66F166573b87B2096c385cfDf842": {
           "first_seen": 1757717615,
@@ -35847,13 +35851,13 @@
               "exit_timestamp": null,
               "entry_block": 23389926,
               "exit_block": null,
-              "duration": 3947247,
+              "duration": 3947794,
               "entry_date": "2025-09-18T12:20:59+00:00",
               "exit_date": null,
-              "duration_days": 45.68572916666667
+              "duration_days": 45.692060185185184
             }
           ],
-          "total_holding_duration": 3947247,
+          "total_holding_duration": 3947794,
           "is_current_holder": true,
           "events": [
             {
@@ -35867,7 +35871,7 @@
           ],
           "first_seen_date": "2025-09-18T12:20:59+00:00",
           "last_seen_date": "2025-09-18T12:20:59+00:00",
-          "total_holding_duration_days": 45.68572916666667
+          "total_holding_duration_days": 45.692060185185184
         },
         "0x7B9660fA30686e17107dce9d74fc7196243f9982": {
           "first_seen": 1758421763,
@@ -35883,13 +35887,13 @@
               "exit_timestamp": null,
               "entry_block": 23408449,
               "exit_block": null,
-              "duration": 3723543,
+              "duration": 3724090,
               "entry_date": "2025-09-21T02:29:23+00:00",
               "exit_date": null,
-              "duration_days": 43.0965625
+              "duration_days": 43.10289351851852
             }
           ],
-          "total_holding_duration": 3723543,
+          "total_holding_duration": 3724090,
           "is_current_holder": true,
           "events": [
             {
@@ -35903,7 +35907,7 @@
           ],
           "first_seen_date": "2025-09-21T02:29:23+00:00",
           "last_seen_date": "2025-09-21T02:29:23+00:00",
-          "total_holding_duration_days": 43.0965625
+          "total_holding_duration_days": 43.10289351851852
         },
         "0xC4b9E8B5bDfB8e93dBa6b90ea0F706CB40DB94e2": {
           "first_seen": 1758479783,
@@ -35919,13 +35923,13 @@
               "exit_timestamp": null,
               "entry_block": 23413251,
               "exit_block": null,
-              "duration": 3665523,
+              "duration": 3666070,
               "entry_date": "2025-09-21T18:36:23+00:00",
               "exit_date": null,
-              "duration_days": 42.42503472222222
+              "duration_days": 42.43136574074074
             }
           ],
-          "total_holding_duration": 3665523,
+          "total_holding_duration": 3666070,
           "is_current_holder": true,
           "events": [
             {
@@ -35939,7 +35943,7 @@
           ],
           "first_seen_date": "2025-09-21T18:36:23+00:00",
           "last_seen_date": "2025-09-21T18:36:23+00:00",
-          "total_holding_duration_days": 42.42503472222222
+          "total_holding_duration_days": 42.43136574074074
         },
         "0x5a9fEa47495900F5986fe99EEd9f1951C781e309": {
           "first_seen": 1758687239,
@@ -36225,13 +36229,13 @@
               "exit_timestamp": null,
               "entry_block": 22600823,
               "exit_block": null,
-              "duration": 13473579,
+              "duration": 13474126,
               "entry_date": "2025-05-31T06:08:47+00:00",
               "exit_date": null,
-              "duration_days": 155.9442013888889
+              "duration_days": 155.9505324074074
             }
           ],
-          "total_holding_duration": 13512219,
+          "total_holding_duration": 13512766,
           "is_current_holder": true,
           "events": [
             {
@@ -36261,7 +36265,7 @@
           ],
           "first_seen_date": "2025-05-26T23:24:59+00:00",
           "last_seen_date": "2025-05-31T06:08:47+00:00",
-          "total_holding_duration_days": 156.39142361111112
+          "total_holding_duration_days": 156.39775462962962
         },
         "0xeEA1c06e6e7911693daEAc000a8B1d7998Bb0330": {
           "first_seen": 1748325899,
@@ -37246,13 +37250,13 @@
               "exit_timestamp": null,
               "entry_block": 23661724,
               "exit_block": null,
-              "duration": 662511,
+              "duration": 663058,
               "entry_date": "2025-10-26T12:46:35+00:00",
               "exit_date": null,
-              "duration_days": 7.667951388888889
+              "duration_days": 7.674282407407407
             }
           ],
-          "total_holding_duration": 662511,
+          "total_holding_duration": 663058,
           "is_current_holder": true,
           "events": [
             {
@@ -37266,7 +37270,7 @@
           ],
           "first_seen_date": "2025-10-26T12:46:35+00:00",
           "last_seen_date": "2025-10-26T12:46:35+00:00",
-          "total_holding_duration_days": 7.667951388888889
+          "total_holding_duration_days": 7.674282407407407
         }
       }
     },
@@ -37309,13 +37313,13 @@
               "exit_timestamp": null,
               "entry_block": 23697728,
               "exit_block": null,
-              "duration": 226875,
+              "duration": 227422,
               "entry_date": "2025-10-31T13:47:11+00:00",
               "exit_date": null,
-              "duration_days": 2.6258680555555554
+              "duration_days": 2.632199074074074
             }
           ],
-          "total_holding_duration": 226875,
+          "total_holding_duration": 227422,
           "is_current_holder": true,
           "events": [
             {
@@ -37337,7 +37341,7 @@
           ],
           "first_seen_date": "2025-10-31T13:47:11+00:00",
           "last_seen_date": "2025-10-31T13:49:23+00:00",
-          "total_holding_duration_days": 2.6258680555555554
+          "total_holding_duration_days": 2.632199074074074
         },
         "0x2E18E736A88a125c3d31BD743B1EA361c1C27f5C": {
           "first_seen": 1761946691,
@@ -37353,13 +37357,13 @@
               "exit_timestamp": null,
               "entry_block": 23700061,
               "exit_block": null,
-              "duration": 198615,
+              "duration": 199162,
               "entry_date": "2025-10-31T21:38:11+00:00",
               "exit_date": null,
-              "duration_days": 2.2987847222222224
+              "duration_days": 2.3051157407407405
             }
           ],
-          "total_holding_duration": 198615,
+          "total_holding_duration": 199162,
           "is_current_holder": true,
           "events": [
             {
@@ -37373,7 +37377,7 @@
           ],
           "first_seen_date": "2025-10-31T21:38:11+00:00",
           "last_seen_date": "2025-10-31T21:38:11+00:00",
-          "total_holding_duration_days": 2.2987847222222224
+          "total_holding_duration_days": 2.3051157407407405
         }
       }
     },
@@ -37816,13 +37820,13 @@
               "exit_timestamp": null,
               "entry_block": 23462448,
               "exit_block": null,
-              "duration": 3071283,
+              "duration": 3071830,
               "entry_date": "2025-09-28T15:40:23+00:00",
               "exit_date": null,
-              "duration_days": 35.54725694444444
+              "duration_days": 35.553587962962965
             }
           ],
-          "total_holding_duration": 3071283,
+          "total_holding_duration": 3071830,
           "is_current_holder": true,
           "events": [
             {
@@ -37836,7 +37840,7 @@
           ],
           "first_seen_date": "2025-09-28T15:40:23+00:00",
           "last_seen_date": "2025-09-28T15:40:23+00:00",
-          "total_holding_duration_days": 35.54725694444444
+          "total_holding_duration_days": 35.553587962962965
         },
         "0x184AfF65DF0B4EF84F212b6011B2BbB5F1aC03d0": {
           "first_seen": 1759080347,
@@ -37852,13 +37856,13 @@
               "exit_timestamp": null,
               "entry_block": 23462972,
               "exit_block": null,
-              "duration": 3064959,
+              "duration": 3065506,
               "entry_date": "2025-09-28T17:25:47+00:00",
               "exit_date": null,
-              "duration_days": 35.4740625
+              "duration_days": 35.48039351851852
             }
           ],
-          "total_holding_duration": 3064959,
+          "total_holding_duration": 3065506,
           "is_current_holder": true,
           "events": [
             {
@@ -37872,7 +37876,7 @@
           ],
           "first_seen_date": "2025-09-28T17:25:47+00:00",
           "last_seen_date": "2025-09-28T17:25:47+00:00",
-          "total_holding_duration_days": 35.4740625
+          "total_holding_duration_days": 35.48039351851852
         },
         "0x2f4B475a16aDbaC391E896A056a8Eb424d00A68b": {
           "first_seen": 1761416135,
@@ -37888,13 +37892,13 @@
               "exit_timestamp": null,
               "entry_block": 23656200,
               "exit_block": null,
-              "duration": 729171,
+              "duration": 729718,
               "entry_date": "2025-10-25T18:15:35+00:00",
               "exit_date": null,
-              "duration_days": 8.439479166666667
+              "duration_days": 8.445810185185184
             }
           ],
-          "total_holding_duration": 729171,
+          "total_holding_duration": 729718,
           "is_current_holder": true,
           "events": [
             {
@@ -37908,7 +37912,7 @@
           ],
           "first_seen_date": "2025-10-25T18:15:35+00:00",
           "last_seen_date": "2025-10-25T18:15:35+00:00",
-          "total_holding_duration_days": 8.439479166666667
+          "total_holding_duration_days": 8.445810185185184
         },
         "0xf5b8158DBdD6382ac8070c93E03Bc49a3F28f4B8": {
           "first_seen": 1761423731,
@@ -37924,13 +37928,13 @@
               "exit_timestamp": null,
               "entry_block": 23656828,
               "exit_block": null,
-              "duration": 721575,
+              "duration": 722122,
               "entry_date": "2025-10-25T20:22:11+00:00",
               "exit_date": null,
-              "duration_days": 8.3515625
+              "duration_days": 8.357893518518518
             }
           ],
-          "total_holding_duration": 721575,
+          "total_holding_duration": 722122,
           "is_current_holder": true,
           "events": [
             {
@@ -37944,7 +37948,7 @@
           ],
           "first_seen_date": "2025-10-25T20:22:11+00:00",
           "last_seen_date": "2025-10-25T20:22:11+00:00",
-          "total_holding_duration_days": 8.3515625
+          "total_holding_duration_days": 8.357893518518518
         },
         "0xC80cE263A4434d576Fa6D5e35e1BE81750B1ae84": {
           "first_seen": 1761424367,
@@ -37960,13 +37964,13 @@
               "exit_timestamp": null,
               "entry_block": 23656881,
               "exit_block": null,
-              "duration": 720939,
+              "duration": 721486,
               "entry_date": "2025-10-25T20:32:47+00:00",
               "exit_date": null,
-              "duration_days": 8.344201388888889
+              "duration_days": 8.350532407407407
             }
           ],
-          "total_holding_duration": 720939,
+          "total_holding_duration": 721486,
           "is_current_holder": true,
           "events": [
             {
@@ -37980,7 +37984,7 @@
           ],
           "first_seen_date": "2025-10-25T20:32:47+00:00",
           "last_seen_date": "2025-10-25T20:32:47+00:00",
-          "total_holding_duration_days": 8.344201388888889
+          "total_holding_duration_days": 8.350532407407407
         },
         "0xC4E90182657DC503Beb7a29ECC512Fe977DdbA72": {
           "first_seen": 1761425231,
@@ -37996,13 +38000,13 @@
               "exit_timestamp": null,
               "entry_block": 23656951,
               "exit_block": null,
-              "duration": 720075,
+              "duration": 720622,
               "entry_date": "2025-10-25T20:47:11+00:00",
               "exit_date": null,
-              "duration_days": 8.33420138888889
+              "duration_days": 8.340532407407407
             }
           ],
-          "total_holding_duration": 720075,
+          "total_holding_duration": 720622,
           "is_current_holder": true,
           "events": [
             {
@@ -38016,7 +38020,7 @@
           ],
           "first_seen_date": "2025-10-25T20:47:11+00:00",
           "last_seen_date": "2025-10-25T20:47:11+00:00",
-          "total_holding_duration_days": 8.33420138888889
+          "total_holding_duration_days": 8.340532407407407
         }
       }
     },
@@ -38092,13 +38096,13 @@
               "exit_timestamp": null,
               "entry_block": 23324234,
               "exit_block": null,
-              "duration": 4740087,
+              "duration": 4740634,
               "entry_date": "2025-09-09T08:06:59+00:00",
               "exit_date": null,
-              "duration_days": 54.862118055555555
+              "duration_days": 54.86844907407407
             }
           ],
-          "total_holding_duration": 4740087,
+          "total_holding_duration": 4740634,
           "is_current_holder": true,
           "events": [
             {
@@ -38112,7 +38116,7 @@
           ],
           "first_seen_date": "2025-09-09T08:06:59+00:00",
           "last_seen_date": "2025-09-09T08:06:59+00:00",
-          "total_holding_duration_days": 54.862118055555555
+          "total_holding_duration_days": 54.86844907407407
         },
         "0x0ad8B94E2bFee8043F2CF81F55475d0A6059Cb7c": {
           "first_seen": 1758481043,
@@ -38128,13 +38132,13 @@
               "exit_timestamp": null,
               "entry_block": 23413355,
               "exit_block": null,
-              "duration": 3664263,
+              "duration": 3664810,
               "entry_date": "2025-09-21T18:57:23+00:00",
               "exit_date": null,
-              "duration_days": 42.41045138888889
+              "duration_days": 42.41678240740741
             }
           ],
-          "total_holding_duration": 3664263,
+          "total_holding_duration": 3664810,
           "is_current_holder": true,
           "events": [
             {
@@ -38148,7 +38152,7 @@
           ],
           "first_seen_date": "2025-09-21T18:57:23+00:00",
           "last_seen_date": "2025-09-21T18:57:23+00:00",
-          "total_holding_duration_days": 42.41045138888889
+          "total_holding_duration_days": 42.41678240740741
         },
         "0x76d5eb42A854A1cEAfFD99000341d4E4e7a4a70F": {
           "first_seen": 1758811367,
@@ -38208,13 +38212,13 @@
               "exit_timestamp": null,
               "entry_block": 23445757,
               "exit_block": null,
-              "duration": 3272955,
+              "duration": 3273502,
               "entry_date": "2025-09-26T07:39:11+00:00",
               "exit_date": null,
-              "duration_days": 37.88142361111111
+              "duration_days": 37.88775462962963
             }
           ],
-          "total_holding_duration": 3272955,
+          "total_holding_duration": 3273502,
           "is_current_holder": true,
           "events": [
             {
@@ -38244,7 +38248,7 @@
           ],
           "first_seen_date": "2025-09-26T07:39:11+00:00",
           "last_seen_date": "2025-10-29T08:16:23+00:00",
-          "total_holding_duration_days": 37.88142361111111
+          "total_holding_duration_days": 37.88775462962963
         },
         "0x0BDa59997765a113BeA8cA9Cba319B35fB287Fc8": {
           "first_seen": 1758997955,
@@ -38304,13 +38308,13 @@
               "exit_timestamp": null,
               "entry_block": 23463030,
               "exit_block": null,
-              "duration": 3064239,
+              "duration": 3064786,
               "entry_date": "2025-09-28T17:37:47+00:00",
               "exit_date": null,
-              "duration_days": 35.46572916666667
+              "duration_days": 35.472060185185185
             }
           ],
-          "total_holding_duration": 3064239,
+          "total_holding_duration": 3064786,
           "is_current_holder": true,
           "events": [
             {
@@ -38324,7 +38328,7 @@
           ],
           "first_seen_date": "2025-09-28T17:37:47+00:00",
           "last_seen_date": "2025-09-28T17:37:47+00:00",
-          "total_holding_duration_days": 35.46572916666667
+          "total_holding_duration_days": 35.472060185185185
         },
         "0x74438a716C9f2F4C3bF9868653c940F31C8ad2fe": {
           "first_seen": 1759213919,
@@ -38340,13 +38344,13 @@
               "exit_timestamp": null,
               "entry_block": 23474040,
               "exit_block": null,
-              "duration": 2931387,
+              "duration": 2931934,
               "entry_date": "2025-09-30T06:31:59+00:00",
               "exit_date": null,
-              "duration_days": 33.92809027777778
+              "duration_days": 33.93442129629629
             }
           ],
-          "total_holding_duration": 2931387,
+          "total_holding_duration": 2931934,
           "is_current_holder": true,
           "events": [
             {
@@ -38360,7 +38364,7 @@
           ],
           "first_seen_date": "2025-09-30T06:31:59+00:00",
           "last_seen_date": "2025-09-30T06:31:59+00:00",
-          "total_holding_duration_days": 33.92809027777778
+          "total_holding_duration_days": 33.93442129629629
         },
         "0x149f23a9945fa95A21E5bE4928F0DEb499173d79": {
           "first_seen": 1761921683,
@@ -38376,13 +38380,13 @@
               "exit_timestamp": null,
               "entry_block": 23697999,
               "exit_block": null,
-              "duration": 223623,
+              "duration": 224170,
               "entry_date": "2025-10-31T14:41:23+00:00",
               "exit_date": null,
-              "duration_days": 2.588229166666667
+              "duration_days": 2.5945601851851854
             }
           ],
-          "total_holding_duration": 223623,
+          "total_holding_duration": 224170,
           "is_current_holder": true,
           "events": [
             {
@@ -38396,7 +38400,7 @@
           ],
           "first_seen_date": "2025-10-31T14:41:23+00:00",
           "last_seen_date": "2025-10-31T14:41:23+00:00",
-          "total_holding_duration_days": 2.588229166666667
+          "total_holding_duration_days": 2.5945601851851854
         }
       }
     },
@@ -38971,13 +38975,13 @@
               "exit_timestamp": null,
               "entry_block": 23181349,
               "exit_block": null,
-              "duration": 6463755,
+              "duration": 6464302,
               "entry_date": "2025-08-20T09:19:11+00:00",
               "exit_date": null,
-              "duration_days": 74.81197916666666
+              "duration_days": 74.81831018518518
             }
           ],
-          "total_holding_duration": 6463755,
+          "total_holding_duration": 6464302,
           "is_current_holder": true,
           "events": [
             {
@@ -38991,7 +38995,7 @@
           ],
           "first_seen_date": "2025-08-20T09:19:11+00:00",
           "last_seen_date": "2025-08-20T09:19:11+00:00",
-          "total_holding_duration_days": 74.81197916666666
+          "total_holding_duration_days": 74.81831018518518
         }
       }
     },
@@ -39175,13 +39179,13 @@
               "exit_timestamp": null,
               "entry_block": 23687809,
               "exit_block": null,
-              "duration": 346923,
+              "duration": 347470,
               "entry_date": "2025-10-30T04:26:23+00:00",
               "exit_date": null,
-              "duration_days": 4.0153125
+              "duration_days": 4.021643518518519
             }
           ],
-          "total_holding_duration": 346923,
+          "total_holding_duration": 347470,
           "is_current_holder": true,
           "events": [
             {
@@ -39195,7 +39199,7 @@
           ],
           "first_seen_date": "2025-10-30T04:26:23+00:00",
           "last_seen_date": "2025-10-30T04:26:23+00:00",
-          "total_holding_duration_days": 4.0153125
+          "total_holding_duration_days": 4.021643518518519
         }
       }
     },
@@ -41161,13 +41165,13 @@
               "exit_timestamp": null,
               "entry_block": 21307310,
               "exit_block": null,
-              "duration": 29093427,
+              "duration": 29093974,
               "entry_date": "2024-12-01T11:17:59+00:00",
               "exit_date": null,
-              "duration_days": 336.7294791666667
+              "duration_days": 336.7358101851852
             }
           ],
-          "total_holding_duration": 29093427,
+          "total_holding_duration": 29093974,
           "is_current_holder": true,
           "events": [
             {
@@ -41205,7 +41209,7 @@
           ],
           "first_seen_date": "2024-12-01T11:17:59+00:00",
           "last_seen_date": "2025-03-20T13:53:11+00:00",
-          "total_holding_duration_days": 336.7294791666667
+          "total_holding_duration_days": 336.7358101851852
         },
         "0xc28F622742A0A1593A43cd867E14B54dB481Cc7B": {
           "first_seen": 1733076347,
@@ -41793,13 +41797,13 @@
               "exit_timestamp": null,
               "entry_block": 22331000,
               "exit_block": null,
-              "duration": 16742451,
+              "duration": 16742998,
               "entry_date": "2025-04-23T10:07:35+00:00",
               "exit_date": null,
-              "duration_days": 193.77836805555555
+              "duration_days": 193.78469907407407
             }
           ],
-          "total_holding_duration": 16742451,
+          "total_holding_duration": 16742998,
           "is_current_holder": true,
           "events": [
             {
@@ -41813,7 +41817,7 @@
           ],
           "first_seen_date": "2025-04-23T10:07:35+00:00",
           "last_seen_date": "2025-04-23T10:07:35+00:00",
-          "total_holding_duration_days": 193.77836805555555
+          "total_holding_duration_days": 193.78469907407407
         },
         "0x18Ca32BC90EAd44a3E6f633f146789958Ef00ac7": {
           "first_seen": 1748266667,
@@ -42212,13 +42216,13 @@
               "exit_timestamp": null,
               "entry_block": 20217713,
               "exit_block": null,
-              "duration": 42235491,
+              "duration": 42236038,
               "entry_date": "2024-07-02T08:43:35+00:00",
               "exit_date": null,
-              "duration_days": 488.8367013888889
+              "duration_days": 488.8430324074074
             }
           ],
-          "total_holding_duration": 42235491,
+          "total_holding_duration": 42236038,
           "is_current_holder": true,
           "events": [
             {
@@ -42240,7 +42244,7 @@
           ],
           "first_seen_date": "2024-07-02T08:43:35+00:00",
           "last_seen_date": "2024-07-12T06:11:59+00:00",
-          "total_holding_duration_days": 488.8367013888889
+          "total_holding_duration_days": 488.8430324074074
         }
       }
     },
@@ -44166,13 +44170,13 @@
               "exit_timestamp": null,
               "entry_block": 23531898,
               "exit_block": null,
-              "duration": 2232555,
+              "duration": 2233102,
               "entry_date": "2025-10-08T08:39:11+00:00",
               "exit_date": null,
-              "duration_days": 25.839756944444446
+              "duration_days": 25.84608796296296
             }
           ],
-          "total_holding_duration": 2232555,
+          "total_holding_duration": 2233102,
           "is_current_holder": true,
           "events": [
             {
@@ -44186,7 +44190,7 @@
           ],
           "first_seen_date": "2025-10-08T08:39:11+00:00",
           "last_seen_date": "2025-10-08T08:39:11+00:00",
-          "total_holding_duration_days": 25.839756944444446
+          "total_holding_duration_days": 25.84608796296296
         },
         "0x08412A55b4DD8ae3931F91D94a9b5FAE99d4cBf4": {
           "first_seen": 1760356583,
@@ -44202,13 +44206,13 @@
               "exit_timestamp": null,
               "entry_block": 23568634,
               "exit_block": null,
-              "duration": 1788723,
+              "duration": 1789270,
               "entry_date": "2025-10-13T11:56:23+00:00",
               "exit_date": null,
-              "duration_days": 20.7028125
+              "duration_days": 20.70914351851852
             }
           ],
-          "total_holding_duration": 1788723,
+          "total_holding_duration": 1789270,
           "is_current_holder": true,
           "events": [
             {
@@ -44222,7 +44226,7 @@
           ],
           "first_seen_date": "2025-10-13T11:56:23+00:00",
           "last_seen_date": "2025-10-13T11:56:23+00:00",
-          "total_holding_duration_days": 20.7028125
+          "total_holding_duration_days": 20.70914351851852
         },
         "0xF930EBBd05eF8b25B1797b9b2109DDC9B0d43063": {
           "first_seen": 1761296543,
@@ -44238,13 +44242,13 @@
               "exit_timestamp": null,
               "entry_block": 23646301,
               "exit_block": null,
-              "duration": 848763,
+              "duration": 849310,
               "entry_date": "2025-10-24T09:02:23+00:00",
               "exit_date": null,
-              "duration_days": 9.823645833333334
+              "duration_days": 9.829976851851852
             }
           ],
-          "total_holding_duration": 848763,
+          "total_holding_duration": 849310,
           "is_current_holder": true,
           "events": [
             {
@@ -44258,7 +44262,7 @@
           ],
           "first_seen_date": "2025-10-24T09:02:23+00:00",
           "last_seen_date": "2025-10-24T09:02:23+00:00",
-          "total_holding_duration_days": 9.823645833333334
+          "total_holding_duration_days": 9.829976851851852
         }
       }
     },
@@ -44402,13 +44406,13 @@
               "exit_timestamp": null,
               "entry_block": 23669606,
               "exit_block": null,
-              "duration": 567195,
+              "duration": 567742,
               "entry_date": "2025-10-27T15:15:11+00:00",
               "exit_date": null,
-              "duration_days": 6.5647569444444445
+              "duration_days": 6.571087962962963
             }
           ],
-          "total_holding_duration": 567195,
+          "total_holding_duration": 567742,
           "is_current_holder": true,
           "events": [
             {
@@ -44422,7 +44426,7 @@
           ],
           "first_seen_date": "2025-10-27T15:15:11+00:00",
           "last_seen_date": "2025-10-27T15:15:11+00:00",
-          "total_holding_duration_days": 6.5647569444444445
+          "total_holding_duration_days": 6.571087962962963
         }
       }
     },
@@ -45013,13 +45017,13 @@
               "exit_timestamp": null,
               "entry_block": 21875419,
               "exit_block": null,
-              "duration": 22237563,
+              "duration": 22238110,
               "entry_date": "2025-02-18T19:42:23+00:00",
               "exit_date": null,
-              "duration_days": 257.3792013888889
+              "duration_days": 257.3855324074074
             }
           ],
-          "total_holding_duration": 22237563,
+          "total_holding_duration": 22238110,
           "is_current_holder": true,
           "events": [
             {
@@ -45033,7 +45037,7 @@
           ],
           "first_seen_date": "2025-02-18T19:42:23+00:00",
           "last_seen_date": "2025-02-18T19:42:23+00:00",
-          "total_holding_duration_days": 257.3792013888889
+          "total_holding_duration_days": 257.3855324074074
         },
         "0xa74E066469467320B60d43ee86151cf6B54a60a8": {
           "first_seen": 1739961803,
