@@ -5,14 +5,14 @@ import curveStrats_v2 from '../api/strategies/v2/curve/index.json' with { type: 
 
 const updatePrices = async () => {
   const chainTokens: { [chainId: number]: any[] } = {}
-  const chainPrices: { 
-    [chainId: number]: { 
-      [tokenAddress: string]: { symbol: string; price: number } 
-    } 
+  const chainPrices: {
+    [chainId: number]: {
+      [tokenAddress: string]: { symbol: string; price: number }
+    }
   } = {}
 
   for (const t of tokens) {
-    if (typeof chainTokens[t.chainId] === "undefined") {
+    if (typeof chainTokens[t.chainId] === 'undefined') {
       chainPrices[t.chainId] = {}
       chainTokens[t.chainId] = []
     }
@@ -20,9 +20,9 @@ const updatePrices = async () => {
   }
 
   const chainIds = Object.keys(chainTokens)
-    
+
   for (const chainId of chainIds) {
-    console.log("Processing chain", chainId)
+    console.log('Processing chain', chainId)
 
     const prices = await getPrices(chainTokens[chainId], Number(chainId))
     for (const p of prices) chainPrices[chainId][p.address.toLowerCase()] = { symbol: p.symbol, price: p.usdPrice }

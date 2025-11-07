@@ -54,7 +54,7 @@ export const getCurveForChain_v2 = memoize(
     return parseV2Strats(
       metadata,
       strats.filter((s) => s.chainId === chainId),
-      undefined
+      undefined,
     )
   },
   { maxAge: MEMO_MAX_AGE },
