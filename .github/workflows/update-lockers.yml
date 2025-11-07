@@ -3,7 +3,7 @@ name: Update Lockers Data
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *' # Every 2 hours
+    - cron: '*/20 * * * *' # Every 20 minutes
 
 jobs:
   update:
