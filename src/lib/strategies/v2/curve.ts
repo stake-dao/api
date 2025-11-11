@@ -1,9 +1,11 @@
-import { One } from '@stake-dao/constants'
+import { One, tokenWithAddress } from '@stake-dao/constants'
 import { parseV2Strats } from '@stake-dao/reader'
 import memoize from 'memoizee'
 import { arbitrum, base, fraxtal, gnosis, mainnet, optimism, sonic } from 'viem/chains'
 import { MEMO_MAX_AGE, publicClient } from '../../utils'
 import { formatUnits, parseAbi } from 'viem'
+import baseTokens from '../../../baseTokens'
+import { fetchPrices } from '../../../prices'
 
 require('dotenv').config()
 
@@ -42,19 +44,31 @@ const getCurveFromGraph = memoize(
         convexVeBoost: formatUnits(res[4].result || One, 0),
       }))
 
-    return { metadata, strats: (stratsFromGraph?.Vault || []).filter((s) => s.protocolId === '0xc715e373') }
+    const tokens = Object.keys(baseTokens).flatMap((protocol) =>
+      Object.keys(baseTokens[protocol]).map((chainId) =>
+        tokenWithAddress(baseTokens[protocol][chainId], Number(chainId)),
+      ),
+    )
+
+    const baseRewardsPrices = await fetchPrices(tokens as any)
+
+    return {
+      metadata,
+      strats: (stratsFromGraph?.Vault || []).filter((s) => s.protocolId === '0xc715e373'),
+      baseRewardsPrices,
+    }
   },
   { maxAge: MEMO_MAX_AGE },
 )
 
 export const getCurveForChain_v2 = memoize(
   async (chainId: number) => {
-    const { metadata, strats } = await getCurveFromGraph()
+    const { metadata, strats, baseRewardsPrices } = await getCurveFromGraph()
 
     return parseV2Strats(
       metadata,
       strats.filter((s) => s.chainId === chainId),
-      undefined,
+      { baseRewardsPrices },
     )
   },
   { maxAge: MEMO_MAX_AGE },
