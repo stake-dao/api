@@ -1,7 +1,7 @@
 import { One, tokenWithAddress } from '@stake-dao/constants'
 import { parseV2Strats } from '@stake-dao/reader'
 import memoize from 'memoizee'
-import { arbitrum, base, fraxtal, gnosis, mainnet, optimism, sonic } from 'viem/chains'
+import { arbitrum, base, etherlink, fraxtal, gnosis, mainnet, optimism, sonic } from 'viem/chains'
 import { MEMO_MAX_AGE, publicClient } from '../../utils'
 import { formatUnits, parseAbi } from 'viem'
 import baseTokens from '../../../baseTokens'
@@ -83,6 +83,7 @@ export const getCurve_v2 = memoize(async () => {
     curveDataSonic,
     curveDataOptimism,
     curveDataGnosis,
+    curveDataEtherlink
   ] = await Promise.all([
     getCurveForChain_v2(mainnet.id),
     getCurveForChain_v2(arbitrum.id),
@@ -91,6 +92,7 @@ export const getCurve_v2 = memoize(async () => {
     getCurveForChain_v2(sonic.id),
     getCurveForChain_v2(optimism.id),
     getCurveForChain_v2(gnosis.id),
+    getCurveForChain_v2(etherlink.id),
   ])
 
   return {
@@ -101,5 +103,6 @@ export const getCurve_v2 = memoize(async () => {
     [sonic.id]: curveDataSonic,
     [optimism.id]: curveDataOptimism,
     [gnosis.id]: curveDataGnosis,
+    [etherlink.id]: curveDataEtherlink,
   }
 })
