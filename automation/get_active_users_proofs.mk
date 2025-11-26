@@ -39,7 +39,7 @@ run-vm-all-platforms:
 run-vm-active-proofs: get-current-period run-vm-all-platforms
 	@echo "Running vm_active_proofs.py..."
 	cd $(VOTEMARKET_PROOFS_SCRIPT_DEVOPS_DIR) && \
-	uv run src/votemarket_toolkit/external/vm_active_proofs.py \
+	uv run scripts/vm_active_proofs.py \
 	temp/all_platforms.json $(CURRENT_EPOCH) && \
 	cd - > /dev/null && \
 	echo "vm_active_proofs.py completed successfully"
