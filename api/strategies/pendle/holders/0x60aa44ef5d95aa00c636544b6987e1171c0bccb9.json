@@ -5,16 +5,20 @@
     "address": "0x2B10CffFC3e49F4aaE294d86072E5D2ec6332118",
     "symbol": "ysETH PENDLE LP"
   },
-  "last_block": 23912126,
-  "last_updated": "2025-11-30T14:38:36.703141+00:00",
+  "last_block": 23907877,
+  "last_updated": "2025-11-30T00:23:48.133338+00:00",
   "stats": {
-    "total_deposited": "0",
+    "total_deposited": "9800349645358021",
     "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
+    "current_supply": "9800349645358021",
+    "current_holders": 1,
     "total_users": 1
   },
-  "current_holders": {},
+  "current_holders": {
+    "0x35c79714b4dba8b9cb3f02e9b39a3dbdd392b80b": {
+      "balance": "9800349645358021"
+    }
+  },
   "user_histories": {
     "0x35c79714b4dba8b9cb3f02e9b39a3dbdd392b80b": {
       "first_seen": 1754392031,
@@ -34,7 +38,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",

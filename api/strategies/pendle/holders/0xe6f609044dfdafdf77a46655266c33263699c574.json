@@ -5,16 +5,20 @@
     "address": "0x41b5236DF40C4718A76d4342e83153556373C072",
     "symbol": "wsrUSD PENDLE LP"
   },
-  "last_block": 23912132,
-  "last_updated": "2025-11-30T14:39:42.321652+00:00",
+  "last_block": 23907893,
+  "last_updated": "2025-11-30T00:27:05.306277+00:00",
   "stats": {
-    "total_deposited": "0",
+    "total_deposited": "22542217156777240434180",
     "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
+    "current_supply": "22542217156777240434180",
+    "current_holders": 1,
     "total_users": 1
   },
-  "current_holders": {},
+  "current_holders": {
+    "0x402904e954aebee2e78b7b09595393cf05571333": {
+      "balance": "22542217156777240434180"
+    }
+  },
   "user_histories": {
     "0x402904e954aebee2e78b7b09595393cf05571333": {
       "first_seen": 1761482795,
@@ -34,7 +38,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",

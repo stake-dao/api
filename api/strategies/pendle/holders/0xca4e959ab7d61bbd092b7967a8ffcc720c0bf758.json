@@ -5,16 +5,23 @@
     "address": "0x048680F64d6DFf1748ba6D9a01F578433787e24B",
     "symbol": "USD0++ PENDLE LP"
   },
-  "last_block": 23912123,
-  "last_updated": "2025-11-30T14:37:51.619796+00:00",
+  "last_block": 23907865,
+  "last_updated": "2025-11-30T00:21:17.184308+00:00",
   "stats": {
-    "total_deposited": "0",
-    "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
+    "total_deposited": "850278554167238175546646",
+    "total_withdrawn": "850276852484993834821125",
+    "current_supply": "1701682244340725521",
+    "current_holders": 2,
     "total_users": 17
   },
-  "current_holders": {},
+  "current_holders": {
+    "0xad64dcd3994d403f79109ebfc5ed112658a0e337": {
+      "balance": "1000000000000000000"
+    },
+    "0xeed360ac2de169d85dcd41d486ddb3fc73d91bf4": {
+      "balance": "701682244340725521"
+    }
+  },
   "user_histories": {
     "0xfc4bcb1bbd09fef946a18f695135a641980161be": {
       "first_seen": 1732970759,
@@ -78,7 +85,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -707,7 +714,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",

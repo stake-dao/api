@@ -5,16 +5,23 @@
     "address": "0xC5ECdAfBEDe3c8436C9C09E60bFFaC3731A9B28E",
     "symbol": "rswETH PENDLE LP"
   },
-  "last_block": 23912125,
-  "last_updated": "2025-11-30T14:38:25.180754+00:00",
+  "last_block": 23907874,
+  "last_updated": "2025-11-30T00:23:15.504272+00:00",
   "stats": {
-    "total_deposited": "0",
-    "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
+    "total_deposited": "12016843145484330558",
+    "total_withdrawn": "7335166536034984",
+    "current_supply": "12009507978948295574",
+    "current_holders": 2,
     "total_users": 3
   },
-  "current_holders": {},
+  "current_holders": {
+    "0x4e76902faccd6feeef68ff0508a7caf75bce81b6": {
+      "balance": "7025994927684762210"
+    },
+    "0xd6ffc26607a60a0c5383533fd53f7c47c26d62d4": {
+      "balance": "4983513051263533364"
+    }
+  },
   "user_histories": {
     "0xd6ffc26607a60a0c5383533fd53f7c47c26d62d4": {
       "first_seen": 1751296871,
@@ -34,7 +41,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -111,7 +118,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",

@@ -5,16 +5,29 @@
     "address": "0xCC781b043933c10a04409b22aaDa3a3D1A7f29D4",
     "symbol": "stcUSD PENDLE LP"
   },
-  "last_block": 23912129,
-  "last_updated": "2025-11-30T14:39:06.730293+00:00",
+  "last_block": 23907885,
+  "last_updated": "2025-11-30T00:25:17.299932+00:00",
   "stats": {
-    "total_deposited": "0",
-    "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
+    "total_deposited": "497814108741052131422730",
+    "total_withdrawn": "425707624784865071734906",
+    "current_supply": "72106483956187059687824",
+    "current_holders": 4,
     "total_users": 5
   },
-  "current_holders": {},
+  "current_holders": {
+    "0x8e7e706433e3d9e833d224e1d07f0be3f68b5642": {
+      "balance": "27180774743837046593773"
+    },
+    "0x79b1a0eecca4ea3ea919396fc3f4c99e027e4729": {
+      "balance": "18465514752128557972774"
+    },
+    "0x92898941d854a805248f9ff9ba900dbc2e94ff24": {
+      "balance": "14304896943438063731946"
+    },
+    "0xca4bf71efe4bb447e003de0e0c0ffd5afb3c8f75": {
+      "balance": "12155297516783391389331"
+    }
+  },
   "user_histories": {
     "0xca4bf71efe4bb447e003de0e0c0ffd5afb3c8f75": {
       "first_seen": 1762389923,
@@ -34,7 +47,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -67,7 +80,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -100,7 +113,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -177,7 +190,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",

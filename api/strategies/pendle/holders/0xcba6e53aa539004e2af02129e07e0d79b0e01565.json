@@ -5,16 +5,38 @@
     "address": "0xc65B7a0f8Fc97e1D548860d866f4304E039EF016",
     "symbol": "USDf (USDf) PENDLE LP"
   },
-  "last_block": 23912126,
-  "last_updated": "2025-11-30T14:38:35.499881+00:00",
+  "last_block": 23907877,
+  "last_updated": "2025-11-30T00:23:45.100040+00:00",
   "stats": {
-    "total_deposited": "0",
-    "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
+    "total_deposited": "552979335428791807884478",
+    "total_withdrawn": "548984201956022309552188",
+    "current_supply": "3995133472769498332290",
+    "current_holders": 7,
     "total_users": 34
   },
-  "current_holders": {},
+  "current_holders": {
+    "0x74f441f09232978fe421ad4a84860bb46b19c2e3": {
+      "balance": "1900328253505773828782"
+    },
+    "0x719b51c6bb668c707ccefc81317603360b34f698": {
+      "balance": "1852685958016960414136"
+    },
+    "0x1ae01acfc04a308228c2dcd0d59fb73fbf1be672": {
+      "balance": "168862498810290804915"
+    },
+    "0xc4b9e8b5bdfb8e93dba6b90ea0f706cb40db94e2": {
+      "balance": "41145000000000000000"
+    },
+    "0x7b9660fa30686e17107dce9d74fc7196243f9982": {
+      "balance": "19871300284027362540"
+    },
+    "0xd85ef4f88975b03d735fcd3c5bd436c9d582ee5e": {
+      "balance": "10992199792344667983"
+    },
+    "0x3039de687b20ed25c30d25e3b7fe4177024e539b": {
+      "balance": "1248262360101253934"
+    }
+  },
   "user_histories": {
     "0x719a143654a0c4621f49fa77077800ef3f5c3b40": {
       "first_seen": 1752201815,
@@ -78,7 +100,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -111,7 +133,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -536,7 +558,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -709,7 +731,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -1308,7 +1330,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -1341,7 +1363,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -1374,7 +1396,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",

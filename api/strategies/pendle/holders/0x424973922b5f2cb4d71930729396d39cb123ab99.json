@@ -5,16 +5,20 @@
     "address": "0x8Bf03ACbF1C2aC2e487c80678De7873C954525D2",
     "symbol": "USDaf PENDLE LP"
   },
-  "last_block": 23912128,
-  "last_updated": "2025-11-30T14:38:51.325696+00:00",
+  "last_block": 23907881,
+  "last_updated": "2025-11-30T00:24:36.200751+00:00",
   "stats": {
-    "total_deposited": "0",
-    "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
+    "total_deposited": "174416407949010939953551",
+    "total_withdrawn": "174377977949010939953551",
+    "current_supply": "38430000000000000000",
+    "current_holders": 1,
     "total_users": 8
   },
-  "current_holders": {},
+  "current_holders": {
+    "0xc4b9e8b5bdfb8e93dba6b90ea0f706cb40db94e2": {
+      "balance": "38430000000000000000"
+    }
+  },
   "user_histories": {
     "0x07e87ec78792a0dd772d969289e4d97e9d4cead4": {
       "first_seen": 1754573291,
@@ -338,7 +342,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",

@@ -5,16 +5,29 @@
     "address": "0xbE570Be4238BD9019aA8D575204f1DAA27Ee0a15",
     "symbol": "asdPENDLE PENDLE LP"
   },
-  "last_block": 23912131,
-  "last_updated": "2025-11-30T14:39:28.937800+00:00",
+  "last_block": 23907891,
+  "last_updated": "2025-11-30T00:26:28.033017+00:00",
   "stats": {
-    "total_deposited": "0",
-    "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
+    "total_deposited": "9802991340374715724764",
+    "total_withdrawn": "460254686247048046030",
+    "current_supply": "9342736654127667678734",
+    "current_holders": 4,
     "total_users": 6
   },
-  "current_holders": {},
+  "current_holders": {
+    "0xf930ebbd05ef8b25b1797b9b2109ddc9b0d43063": {
+      "balance": "6528268623996689332364"
+    },
+    "0xb727fee36a2dc39a8b4c8c27b70fafadf6a47e95": {
+      "balance": "2318349174753438029197"
+    },
+    "0x8fcc8bf64de304c53a9fc4c34925bd72a6c934a0": {
+      "balance": "457484329417168010426"
+    },
+    "0x08412a55b4dd8ae3931f91d94a9b5fae99d4cbf4": {
+      "balance": "38634525960372306747"
+    }
+  },
   "user_histories": {
     "0xb727fee36a2dc39a8b4c8c27b70fafadf6a47e95": {
       "first_seen": 1759912751,
@@ -34,7 +47,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -67,7 +80,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -100,7 +113,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -221,7 +234,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",

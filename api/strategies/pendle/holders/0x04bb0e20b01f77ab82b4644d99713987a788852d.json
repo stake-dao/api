@@ -5,16 +5,20 @@
     "address": "0x0e3735d5Ee96d21426Ee40e7Dcb623513e0b6876",
     "symbol": "fxSAVE PENDLE LP"
   },
-  "last_block": 23912132,
-  "last_updated": "2025-11-30T14:39:38.918681+00:00",
+  "last_block": 23907893,
+  "last_updated": "2025-11-30T00:26:54.442244+00:00",
   "stats": {
-    "total_deposited": "0",
+    "total_deposited": "12875117595736694096742",
     "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
+    "current_supply": "12875117595736694096742",
+    "current_holders": 1,
     "total_users": 1
   },
-  "current_holders": {},
+  "current_holders": {
+    "0xa66daaf3e6736cce993b56eced596512a7911df8": {
+      "balance": "12875117595736694096742"
+    }
+  },
   "user_histories": {
     "0xa66daaf3e6736cce993b56eced596512a7911df8": {
       "first_seen": 1761839327,
@@ -34,7 +38,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",

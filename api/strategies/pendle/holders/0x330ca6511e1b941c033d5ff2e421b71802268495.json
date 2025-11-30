@@ -5,16 +5,23 @@
     "address": "0x39C3F8e0E7C6F44Dc8F0397FEb124517ba82e26E",
     "symbol": "wstUSR PENDLE LP"
   },
-  "last_block": 23912130,
-  "last_updated": "2025-11-30T14:39:23.190438+00:00",
+  "last_block": 23907889,
+  "last_updated": "2025-11-30T00:26:10.657511+00:00",
   "stats": {
-    "total_deposited": "0",
-    "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
+    "total_deposited": "4186026278047197863295",
+    "total_withdrawn": "799037027676526634099",
+    "current_supply": "3386989250370671229196",
+    "current_holders": 2,
     "total_users": 3
   },
-  "current_holders": {},
+  "current_holders": {
+    "0xaa080789b13e0e5051a4573a8defb7eb3411df6b": {
+      "balance": "2403796737815598295551"
+    },
+    "0x0ddac437952c920e1d1ac5c50e84260c81d9d6dc": {
+      "balance": "983192512555072933645"
+    }
+  },
   "user_histories": {
     "0x53982608b053663753edd19360d99d164268bb30": {
       "first_seen": 1758086411,
@@ -78,7 +85,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -111,7 +118,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",

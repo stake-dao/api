@@ -5,16 +5,20 @@
     "address": "0x3a4204255257698e379245EF94274ef3B2907296",
     "symbol": "mHYPER PENDLE LP"
   },
-  "last_block": 23912129,
-  "last_updated": "2025-11-30T14:39:10.586654+00:00",
+  "last_block": 23907886,
+  "last_updated": "2025-11-30T00:25:32.445252+00:00",
   "stats": {
-    "total_deposited": "0",
-    "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
+    "total_deposited": "676702002423039139",
+    "total_withdrawn": "676684982682970213",
+    "current_supply": "17019740068926",
+    "current_holders": 1,
     "total_users": 7
   },
-  "current_holders": {},
+  "current_holders": {
+    "0x35c79714b4dba8b9cb3f02e9b39a3dbdd392b80b": {
+      "balance": "17019740068926"
+    }
+  },
   "user_histories": {
     "0x35c79714b4dba8b9cb3f02e9b39a3dbdd392b80b": {
       "first_seen": 1759488611,
@@ -34,7 +38,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",

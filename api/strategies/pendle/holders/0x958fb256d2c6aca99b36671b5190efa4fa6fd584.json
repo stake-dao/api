@@ -5,16 +5,20 @@
     "address": "0xAf5669E4ed9a999667cd2b810878022cF54866d1",
     "symbol": "USD (Midas mEDGE) PENDLE LP"
   },
-  "last_block": 23912132,
-  "last_updated": "2025-11-30T14:39:46.163641+00:00",
+  "last_block": 23907894,
+  "last_updated": "2025-11-30T00:27:14.476653+00:00",
   "stats": {
-    "total_deposited": "0",
+    "total_deposited": "7842661524840386",
     "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
+    "current_supply": "7842661524840386",
+    "current_holders": 1,
     "total_users": 1
   },
-  "current_holders": {},
+  "current_holders": {
+    "0xf87f7d563558bebf1031bcf09ba6ca60097cc7ab": {
+      "balance": "7842661524840386"
+    }
+  },
   "user_histories": {
     "0xf87f7d563558bebf1031bcf09ba6ca60097cc7ab": {
       "first_seen": 1761816695,
@@ -34,7 +38,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",

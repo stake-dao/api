@@ -5,16 +5,20 @@
     "address": "0x4339Ffe2B7592Dc783ed13cCE310531aB366dEac",
     "symbol": "sUSDe (July 2025) PENDLE LP"
   },
-  "last_block": 23912123,
-  "last_updated": "2025-11-30T14:37:56.696841+00:00",
+  "last_block": 23907866,
+  "last_updated": "2025-11-30T00:21:31.185536+00:00",
   "stats": {
-    "total_deposited": "0",
-    "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
+    "total_deposited": "506650531042866557174873",
+    "total_withdrawn": "506647674422297093908842",
+    "current_supply": "2856620569463266031",
+    "current_holders": 1,
     "total_users": 16
   },
-  "current_holders": {},
+  "current_holders": {
+    "0x5f90e68b9165a4f3d61ba5f116999d30785e5931": {
+      "balance": "2856620569463266031"
+    }
+  },
   "user_histories": {
     "0x71f12a5b0e60d2ff8a87fd34e7dcff3c10c914b0": {
       "first_seen": 1743183971,
@@ -218,7 +222,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": false,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
