@@ -5,20 +5,16 @@
     "address": "0xc35ec9d0d39BFa41AF786E3cE91F904Dd5Fb2EaC",
     "symbol": "syrupUSDC PENDLE LP"
   },
-  "last_block": 23907892,
-  "last_updated": "2025-11-30T00:26:51.331491+00:00",
+  "last_block": 23912132,
+  "last_updated": "2025-11-30T14:39:37.788415+00:00",
   "stats": {
-    "total_deposited": "36161870425",
-    "total_withdrawn": "31299627649",
-    "current_supply": "4862242776",
-    "current_holders": 1,
+    "total_deposited": "0",
+    "total_withdrawn": "0",
+    "current_supply": "0",
+    "current_holders": 0,
     "total_users": 2
   },
-  "current_holders": {
-    "0x0322963b3b3d279cbc0f85c04cc9f92551536350": {
-      "balance": "4862242776"
-    }
-  },
+  "current_holders": {},
   "user_histories": {
     "0x6a1ddf4b96db63f0f4b21911c7077b35d878f0f5": {
       "first_seen": 1761777071,
@@ -98,7 +94,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",

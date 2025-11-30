@@ -5,20 +5,16 @@
     "address": "0xdA57ABF95a7C21eB9df08fBAADa182F749F6C62F",
     "symbol": "sENA PENDLE LP"
   },
-  "last_block": 23907866,
-  "last_updated": "2025-11-30T00:21:34.482013+00:00",
+  "last_block": 23912123,
+  "last_updated": "2025-11-30T14:37:57.613508+00:00",
   "stats": {
-    "total_deposited": "78742116584568676850919",
-    "total_withdrawn": "78616786467605990144295",
-    "current_supply": "125330116962686706624",
-    "current_holders": 1,
+    "total_deposited": "0",
+    "total_withdrawn": "0",
+    "current_supply": "0",
+    "current_holders": 0,
     "total_users": 6
   },
-  "current_holders": {
-    "0x5795a24daf8684ced7063e2cdc770473548842a8": {
-      "balance": "125330116962686706624"
-    }
-  },
+  "current_holders": {},
   "user_histories": {
     "0x305d1239e09103efed3f8a0e5e3770345ced81d6": {
       "first_seen": 1747106423,
@@ -274,7 +270,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",

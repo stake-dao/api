@@ -5,20 +5,16 @@
     "address": "0x7da97FbFAA3020f856C60EB4EF068079A9023Aca",
     "symbol": "hgETH PENDLE LP"
   },
-  "last_block": 23907870,
-  "last_updated": "2025-11-30T00:22:22.744509+00:00",
+  "last_block": 23912124,
+  "last_updated": "2025-11-30T14:38:11.983940+00:00",
   "stats": {
-    "total_deposited": "87546373624494089021",
-    "total_withdrawn": "63504577070714965468",
-    "current_supply": "24041796553779123553",
-    "current_holders": 1,
+    "total_deposited": "0",
+    "total_withdrawn": "0",
+    "current_supply": "0",
+    "current_holders": 0,
     "total_users": 4
   },
-  "current_holders": {
-    "0x23a2db008b42d0ef3a69dfef95bf05a257fdcaf7": {
-      "balance": "24041796553779123553"
-    }
-  },
+  "current_holders": {},
   "user_histories": {
     "0x87333e15b593e13d22ceb38046f3dee0b964ef37": {
       "first_seen": 1752046727,
@@ -126,7 +122,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",

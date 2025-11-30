@@ -5,20 +5,16 @@
     "address": "0xA00f596e9D03fe90c5d22C15B468e8Dce4d24dE0",
     "symbol": "rUSD PENDLE LP"
   },
-  "last_block": 23907893,
-  "last_updated": "2025-11-30T00:27:01.448528+00:00",
+  "last_block": 23912132,
+  "last_updated": "2025-11-30T14:39:41.250078+00:00",
   "stats": {
-    "total_deposited": "12920830850460698294956",
+    "total_deposited": "0",
     "total_withdrawn": "0",
-    "current_supply": "12920830850460698294956",
-    "current_holders": 1,
+    "current_supply": "0",
+    "current_holders": 0,
     "total_users": 1
   },
-  "current_holders": {
-    "0x402904e954aebee2e78b7b09595393cf05571333": {
-      "balance": "12920830850460698294956"
-    }
-  },
+  "current_holders": {},
   "user_histories": {
     "0x402904e954aebee2e78b7b09595393cf05571333": {
       "first_seen": 1761278075,
@@ -38,7 +34,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",

@@ -5,23 +5,16 @@
     "address": "0x53f940DB819400F226466f5aD330c177a4be6b3C",
     "symbol": "ARM-WETH-stETH PENDLE LP"
   },
-  "last_block": 23907885,
-  "last_updated": "2025-11-30T00:25:22.833058+00:00",
+  "last_block": 23912129,
+  "last_updated": "2025-11-30T14:39:07.641548+00:00",
   "stats": {
-    "total_deposited": "30048442818288834005",
-    "total_withdrawn": "14629441436147798740",
-    "current_supply": "15419001382141035265",
-    "current_holders": 2,
+    "total_deposited": "0",
+    "total_withdrawn": "0",
+    "current_supply": "0",
+    "current_holders": 0,
     "total_users": 4
   },
-  "current_holders": {
-    "0x23a2db008b42d0ef3a69dfef95bf05a257fdcaf7": {
-      "balance": "13705424888998440375"
-    },
-    "0x544845005e42fe00a3c0e9735eeec25aa068b428": {
-      "balance": "1713576493142594890"
-    }
-  },
+  "current_holders": {},
   "user_histories": {
     "0x544845005e42fe00a3c0e9735eeec25aa068b428": {
       "first_seen": 1759324979,
@@ -51,7 +44,7 @@
         }
       ],
       "total_holding_duration": 56208,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -188,7 +181,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",

@@ -5,20 +5,16 @@
     "address": "0x8585177b041CD3C3FBEc607fb620230259CD70dB",
     "symbol": "YU PENDLE LP"
   },
-  "last_block": 23907886,
-  "last_updated": "2025-11-30T00:25:39.535403+00:00",
+  "last_block": 23912129,
+  "last_updated": "2025-11-30T14:39:12.720181+00:00",
   "stats": {
-    "total_deposited": "28730575727082924427904",
-    "total_withdrawn": "497979377886585571884",
-    "current_supply": "28232596349196338856020",
-    "current_holders": 1,
+    "total_deposited": "0",
+    "total_withdrawn": "0",
+    "current_supply": "0",
+    "current_holders": 0,
     "total_users": 2
   },
-  "current_holders": {
-    "0xa585a2096314a6fd183196c5c62b73d1b28656e7": {
-      "balance": "28232596349196338856020"
-    }
-  },
+  "current_holders": {},
   "user_histories": {
     "0x8ac286ff7a2703ee4bed827450ea7a48b3353886": {
       "first_seen": 1758993371,
@@ -82,7 +78,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",

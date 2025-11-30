@@ -5,20 +5,16 @@
     "address": "0x82D810ededb09614144900F914e75Dd76700f19d",
     "symbol": "GHOUSR-gauge PENDLE LP"
   },
-  "last_block": 23907865,
-  "last_updated": "2025-11-30T00:21:24.281209+00:00",
+  "last_block": 23912123,
+  "last_updated": "2025-11-30T14:37:54.257268+00:00",
   "stats": {
-    "total_deposited": "2815647014073588456237010",
-    "total_withdrawn": "2815637129248467302267756",
-    "current_supply": "9884825121153969254",
-    "current_holders": 1,
+    "total_deposited": "0",
+    "total_withdrawn": "0",
+    "current_supply": "0",
+    "current_holders": 0,
     "total_users": 32
   },
-  "current_holders": {
-    "0x2ce07a3ce9fb07c28e8d0a175aa3918cc1b1a07b": {
-      "balance": "9884825121153969254"
-    }
-  },
+  "current_holders": {},
   "user_histories": {
     "0xb2acd3caab07d899ddab548794b16747d4922ca4": {
       "first_seen": 1739814695,
@@ -528,7 +524,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",

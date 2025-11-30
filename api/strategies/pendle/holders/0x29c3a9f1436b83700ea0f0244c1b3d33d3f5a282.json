@@ -5,20 +5,16 @@
     "address": "0x1BD78377DFbCA2043e38b692D2E0b32396b4772d",
     "symbol": "ysyBOLD PENDLE LP"
   },
-  "last_block": 23907872,
-  "last_updated": "2025-11-30T00:22:50.468136+00:00",
+  "last_block": 23912125,
+  "last_updated": "2025-11-30T14:38:20.639506+00:00",
   "stats": {
-    "total_deposited": "22852542499671146277971",
-    "total_withdrawn": "14153996775592103172146",
-    "current_supply": "8698545724079043105825",
-    "current_holders": 1,
+    "total_deposited": "0",
+    "total_withdrawn": "0",
+    "current_supply": "0",
+    "current_holders": 0,
     "total_users": 3
   },
-  "current_holders": {
-    "0xc8233a46f57add754f32cf9e25a85aae8a7d5f29": {
-      "balance": "8698545724079043105825"
-    }
-  },
+  "current_holders": {},
   "user_histories": {
     "0xc8233a46f57add754f32cf9e25a85aae8a7d5f29": {
       "first_seen": 1750759955,
@@ -38,7 +34,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",

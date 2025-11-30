@@ -5,23 +5,16 @@
     "address": "0x34280882267ffa6383B363E278B027Be083bBe3b",
     "symbol": "wstETH PENDLE LP"
   },
-  "last_block": 23907864,
-  "last_updated": "2025-11-30T00:21:14.126047+00:00",
+  "last_block": 23912122,
+  "last_updated": "2025-11-30T14:37:50.592620+00:00",
   "stats": {
-    "total_deposited": "18810434701208817044",
-    "total_withdrawn": "6889423962004830246",
-    "current_supply": "11921010739203986798",
-    "current_holders": 2,
+    "total_deposited": "0",
+    "total_withdrawn": "0",
+    "current_supply": "0",
+    "current_holders": 0,
     "total_users": 6
   },
-  "current_holders": {
-    "0x75f256eca494266771cbcb28e4eda9d5fbca430a": {
-      "balance": "10638943500948210146"
-    },
-    "0x71d78cc7be6cf5dc70b286d472435d12a0d7ed54": {
-      "balance": "1282067238255776652"
-    }
-  },
+  "current_holders": {},
   "user_histories": {
     "0xb957dccaa1ccfb1eb78b495b499801d591d8a403": {
       "first_seen": 1697496923,
@@ -129,7 +122,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -250,7 +243,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",

@@ -5,26 +5,16 @@
     "address": "0x51026Ab8B54767e67f7f5543C86bF718cf00Cb4C",
     "symbol": "yvBal-GHO-USDf PENDLE LP"
   },
-  "last_block": 23907877,
-  "last_updated": "2025-11-30T00:23:42.131801+00:00",
+  "last_block": 23912126,
+  "last_updated": "2025-11-30T14:38:34.170735+00:00",
   "stats": {
-    "total_deposited": "351046077348164555931068",
-    "total_withdrawn": "351020132678918348061531",
-    "current_supply": "25944669246207869537",
-    "current_holders": 3,
+    "total_deposited": "0",
+    "total_withdrawn": "0",
+    "current_supply": "0",
+    "current_holders": 0,
     "total_users": 16
   },
-  "current_holders": {
-    "0xd85ef4f88975b03d735fcd3c5bd436c9d582ee5e": {
-      "balance": "23740682291225767258"
-    },
-    "0x3039de687b20ed25c30d25e3b7fe4177024e539b": {
-      "balance": "1203986954982102279"
-    },
-    "0x7f3d8dc8263b94967759bf5c801c912535d25f6d": {
-      "balance": "1000000000000000000"
-    }
-  },
+  "current_holders": {},
   "user_histories": {
     "0x3039de687b20ed25c30d25e3b7fe4177024e539b": {
       "first_seen": 1752665219,
@@ -44,7 +34,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -77,7 +67,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -528,7 +518,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",

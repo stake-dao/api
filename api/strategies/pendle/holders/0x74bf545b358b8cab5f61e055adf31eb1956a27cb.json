@@ -5,23 +5,16 @@
     "address": "0x3d0EF4B41975c52A004C401Ee736428620C3BA71",
     "symbol": "sfrxUSD PENDLE LP"
   },
-  "last_block": 23907895,
-  "last_updated": "2025-11-30T00:27:23.902205+00:00",
+  "last_block": 23912132,
+  "last_updated": "2025-11-30T14:39:49.415682+00:00",
   "stats": {
-    "total_deposited": "49106128599621317498051",
-    "total_withdrawn": "1267932146470948469211",
-    "current_supply": "47838196453150369028840",
-    "current_holders": 2,
+    "total_deposited": "0",
+    "total_withdrawn": "0",
+    "current_supply": "0",
+    "current_holders": 0,
     "total_users": 3
   },
-  "current_holders": {
-    "0x4b45d73b83686e69d08e61105fdb7f7b51f41bc1": {
-      "balance": "25000000000000000000000"
-    },
-    "0x17359937bc169a348aaea90871765aca4071c8d3": {
-      "balance": "22838196453150369028840"
-    }
-  },
+  "current_holders": {},
   "user_histories": {
     "0x44791b9c211ede531d80c544d015ac904c5684f5": {
       "first_seen": 1761822419,
@@ -85,7 +78,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -118,7 +111,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",

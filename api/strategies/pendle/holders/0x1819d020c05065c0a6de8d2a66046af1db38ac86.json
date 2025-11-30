@@ -5,29 +5,16 @@
     "address": "0x2f8159644f045A388c1FC954e795202Dc1d34308",
     "symbol": "asdCRV PENDLE LP"
   },
-  "last_block": 23907871,
-  "last_updated": "2025-11-30T00:22:33.460854+00:00",
+  "last_block": 23912125,
+  "last_updated": "2025-11-30T14:38:15.439344+00:00",
   "stats": {
-    "total_deposited": "339185893952029560693115",
-    "total_withdrawn": "37738723367594977453549",
-    "current_supply": "301447170584434583239566",
-    "current_holders": 4,
+    "total_deposited": "0",
+    "total_withdrawn": "0",
+    "current_supply": "0",
+    "current_holders": 0,
     "total_users": 5
   },
-  "current_holders": {
-    "0xf930ebbd05ef8b25b1797b9b2109ddc9b0d43063": {
-      "balance": "180071562984990845083280"
-    },
-    "0xb0e83c2d71a991017e0116d58c5765abc57384af": {
-      "balance": "110741490141481987301370"
-    },
-    "0x8f564c7272177663309f704065ffb59f403d96a1": {
-      "balance": "10160348892573042657566"
-    },
-    "0x08412a55b4dd8ae3931f91d94a9b5fae99d4cbf4": {
-      "balance": "473768565388708197350"
-    }
-  },
+  "current_holders": {},
   "user_histories": {
     "0x8f564c7272177663309f704065ffb59f403d96a1": {
       "first_seen": 1750925891,
@@ -47,7 +34,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -88,7 +75,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -129,7 +116,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -206,7 +193,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",

@@ -5,23 +5,16 @@
     "address": "0xa8eeA676ba075A9B1630Bd9c2468Df6D804C4344",
     "symbol": "WOUSD PENDLE LP"
   },
-  "last_block": 23907881,
-  "last_updated": "2025-11-30T00:24:32.492884+00:00",
+  "last_block": 23912128,
+  "last_updated": "2025-11-30T14:38:50.414121+00:00",
   "stats": {
-    "total_deposited": "15922010899131729106553",
-    "total_withdrawn": "15522009899131729106553",
-    "current_supply": "400001000000000000000",
-    "current_holders": 2,
+    "total_deposited": "0",
+    "total_withdrawn": "0",
+    "current_supply": "0",
+    "current_holders": 0,
     "total_users": 3
   },
-  "current_holders": {
-    "0x402904e954aebee2e78b7b09595393cf05571333": {
-      "balance": "400000000000000000000"
-    },
-    "0x718768ac88faa92f228dbff271d687273e005503": {
-      "balance": "1000000000000000"
-    }
-  },
+  "current_holders": {},
   "user_histories": {
     "0x718768ac88faa92f228dbff271d687273e005503": {
       "first_seen": 1754694299,
@@ -41,7 +34,7 @@
         }
       ],
       "total_holding_duration": 0,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -136,7 +129,7 @@
         }
       ],
       "total_holding_duration": 1064232,
-      "is_current_holder": true,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
