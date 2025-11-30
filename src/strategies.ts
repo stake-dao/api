@@ -4,6 +4,15 @@ import { getYearn, getYearnMainnet } from './lib/strategies/yearn'
 import { getPancake, getPancakeArbitrum, getPancakeBsc, getPancakeMainnet } from './lib/strategies/pancakeswap'
 import { getPendle, getPendleGaugeHolders, getPendleMainnet } from './lib/strategies/pendle'
 import { getBalancer, getBalancerMainnet } from './lib/strategies/balancer'
+import {
+  getGaugeData,
+  getGaugeIds,
+  getCurrentHoldersSnapshot,
+  getHistoricalHoldersData,
+  getHoldersForPeriod,
+  getHolderAnalytics,
+  getUserHistory,
+} from './lib/strategies/pendleHolders'
 
 const strategies = new Hono()
 
@@ -66,8 +75,84 @@ strategies.get('/pendle/1', async (c) => {
   return c.json(data)
 })
 
+// Main holders endpoint - returns all gauge holders data
 strategies.get('/pendle/holders', async (c) => {
   const data = await getPendleGaugeHolders()
+  return c.json(data)
+})
+
+// List all gauge IDs
+strategies.get('/pendle/holders/gauges', async (c) => {
+  const gaugeIds = await getGaugeIds()
+  return c.json({
+    total: gaugeIds.length,
+    gauge_ids: gaugeIds,
+  })
+})
+
+// Current holders snapshot
+strategies.get('/pendle/holders/current', async (c) => {
+  const data = await getCurrentHoldersSnapshot()
+  if (!data) {
+    return c.json({ error: 'Failed to fetch current holders data' }, 500)
+  }
+  return c.json(data)
+})
+
+// Historical holders data
+strategies.get('/pendle/holders/historical', async (c) => {
+  const gauge = c.req.query('gauge')
+  const includeEvents = c.req.query('include_events') === 'true'
+
+  const data = await getHistoricalHoldersData(gauge, includeEvents)
+  return c.json(data)
+})
+
+// Period analysis
+strategies.get('/pendle/holders/period', async (c) => {
+  const startDate = c.req.query('start_date')
+  const endDate = c.req.query('end_date')
+  const gauge = c.req.query('gauge')
+  const minDurationDays = c.req.query('min_duration_days')
+
+  if (!startDate || !endDate) {
+    return c.json({ error: 'start_date and end_date are required' }, 400)
+  }
+
+  const data = await getHoldersForPeriod(
+    startDate,
+    endDate,
+    gauge,
+    minDurationDays ? parseFloat(minDurationDays) : undefined,
+  )
+
+  return c.json(data)
+})
+
+// Holder analytics
+strategies.get('/pendle/holders/analytics', async (c) => {
+  const gauge = c.req.query('gauge')
+  const data = await getHolderAnalytics(gauge)
+  return c.json(data)
+})
+
+// User history across all gauges
+strategies.get('/pendle/holders/user/:address', async (c) => {
+  const address = c.req.param('address')
+  const data = await getUserHistory(address)
+  if (!data) {
+    return c.json({ error: 'User not found' }, 404)
+  }
+  return c.json(data)
+})
+
+// Single gauge data - must be after other /pendle/holders/* routes
+strategies.get('/pendle/holders/:gaugeId', async (c) => {
+  const gaugeId = c.req.param('gaugeId')
+  const data = await getGaugeData(gaugeId)
+  if (!data) {
+    return c.json({ error: 'Gauge not found' }, 404)
+  }
   return c.json(data)
 })
 

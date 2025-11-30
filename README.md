@@ -158,7 +158,7 @@ Data type :
 
 Strategies data are available on the endpoints `/api/strategies/{protocol}`
 
-Available protocols : 
+Available protocols :
 
 - [curve](https://api.stakedao.org/api/strategies/curve)
 - [pendle](https://api.stakedao.org/api/strategies/pendle)
@@ -357,9 +357,22 @@ export type BuiltStrat = {
 
 ### Pendle Holders data
 
-Endpoint : [/api/strategies/pendle/holders](https://api.stakedao.org/api/strategies/pendle/holders)
+Base endpoint : [/api/strategies/pendle/holders](https://api.stakedao.org/api/strategies/pendle/holders)
 
-Data type :
+#### Available endpoints
+
+| Endpoint                                                                                                           | Description                        |
+| ------------------------------------------------------------------------------------------------------------------ | ---------------------------------- |
+| `/api/strategies/pendle/holders`                                                                                   | Get all holders data (all gauges)  |
+| `/api/strategies/pendle/holders/gauges`                                                                            | List all gauge IDs                 |
+| `/api/strategies/pendle/holders/current`                                                                           | Get current holders snapshot       |
+| `/api/strategies/pendle/holders/historical?gauge=0x...&include_events=true`                                        | Get historical data                |
+| `/api/strategies/pendle/holders/period?start_date=2024-01-01&end_date=2024-12-31&gauge=0x...&min_duration_days=30` | Period analysis                    |
+| `/api/strategies/pendle/holders/analytics?gauge=0x...`                                                             | Get holder analytics               |
+| `/api/strategies/pendle/holders/user/:address`                                                                     | Get user history across all gauges |
+| `/api/strategies/pendle/holders/:gaugeId`                                                                          | Get single gauge data              |
+
+#### Main endpoint data type (`/api/strategies/pendle/holders`)
 
 ```
 {
@@ -395,11 +408,8 @@ Data type :
         "current_holders": number,  // Current number of holders
         "total_users": number  // Total unique users (current + past)
       },
-      "current_holders": {  // Map of current holders
-        "[user_address]": {
-          "balance": string,  // Current balance
-          "last_updated": number  // Unix timestamp of last update
-        }
+      "current_holders": {  // Map of current holders (address -> balance)
+        "[user_address]": string
       },
       "user_histories": {  // Map of all user histories
         "[user_address]": {
@@ -444,9 +454,30 @@ Data type :
 }
 ```
 
+#### Single gauge endpoint (`/api/strategies/pendle/holders/:gaugeId`)
+
+Returns the same structure as a single gauge object from the main endpoint - useful for fetching data for a specific gauge without loading all gauges.
+
+#### User history endpoint (`/api/strategies/pendle/holders/user/:address`)
+
+```
+{
+  "address": string,
+  "total_gauges": number,
+  "gauges": [
+    {
+      "gauge_id": string,
+      "token": { "address": string, "symbol": string },
+      "history": { ... }  // Same as user_histories object above
+    }
+  ]
+}
+```
+
 This endpoint provides comprehensive data about Pendle gauge holders, including:
+
 - Metadata with overall statistics and gauge summaries
-- Current holders with their balances and last update timestamps
+- Current holders with their balances
 - Complete user histories with entry/exit tracking
 - Detailed event logs for all deposits and withdrawals
 - Holding period analysis with duration calculations
