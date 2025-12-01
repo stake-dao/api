@@ -5,14 +5,14 @@
     "address": "0x6d60eE6217A2a76859861962A6fB8A28F9DaC2a3",
     "symbol": "sGHO PENDLE LP"
   },
-  "last_block": 23919490,
-  "last_updated": "2025-12-01T15:21:45.687877+00:00",
+  "last_block": 23919558,
+  "last_updated": "2025-12-01T15:35:16.168384+00:00",
   "stats": {
-    "total_deposited": "262879234118752304687212",
+    "total_deposited": "262927382270846555182147",
     "total_withdrawn": "185816889072918674848601",
-    "current_supply": "77062345045833629838611",
-    "current_holders": 5,
-    "total_users": 9
+    "current_supply": "77110493197927880333546",
+    "current_holders": 6,
+    "total_users": 10
   },
   "current_holders": {
     "0xbb5286a6d73b6cae296ab40fe220708607479171": {
@@ -29,6 +29,9 @@
     },
     "0x0ddac437952c920e1d1ac5c50e84260c81d9d6dc": {
       "balance": "565265520764410276823"
+    },
+    "0xaa30936791b749a2b7e0e82a987b265f7d74cb79": {
+      "balance": "48148152094250494935"
     }
   },
   "user_histories": {
@@ -379,6 +382,39 @@
       ],
       "first_seen_date": "2025-10-20T05:57:47+00:00",
       "last_seen_date": "2025-10-20T05:57:47+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0xaa30936791b749a2b7e0e82a987b265f7d74cb79": {
+      "first_seen": 1764602855,
+      "last_seen": 1764602855,
+      "entry_timestamp": 1764602855,
+      "exit_timestamp": null,
+      "entry_block": 23919520,
+      "exit_block": null,
+      "max_balance": 48148152094250494935,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1764602855,
+          "exit_timestamp": null,
+          "entry_block": 23919520,
+          "exit_block": null,
+          "entry_date": "2025-12-01T15:27:35+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "48148152094250494935",
+          "balance_after": "48148152094250494935",
+          "block": 23919520,
+          "timestamp": 1764602855,
+          "datetime": "2025-12-01T15:27:35+00:00"
+        }
+      ],
+      "first_seen_date": "2025-12-01T15:27:35+00:00",
+      "last_seen_date": "2025-12-01T15:27:35+00:00",
       "total_holding_duration_days": 0
     }
   }
