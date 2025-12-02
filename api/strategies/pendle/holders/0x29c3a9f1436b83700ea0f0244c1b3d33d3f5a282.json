@@ -5,40 +5,39 @@
     "address": "0x1BD78377DFbCA2043e38b692D2E0b32396b4772d",
     "symbol": "ysyBOLD PENDLE LP"
   },
-  "last_block": 23924419,
-  "last_updated": "2025-12-02T07:53:49.055555+00:00",
+  "last_block": 23924487,
+  "last_updated": "2025-12-02T08:07:15.089154+00:00",
   "stats": {
     "total_deposited": "22852542499671146277971",
-    "total_withdrawn": "14153996775592103172146",
-    "current_supply": "8698545724079043105825",
-    "current_holders": 1,
+    "total_withdrawn": "22852542499671146277971",
+    "current_supply": "0",
+    "current_holders": 0,
     "total_users": 3
   },
-  "current_holders": {
-    "0xc8233a46f57add754f32cf9e25a85aae8a7d5f29": {
-      "balance": "8698545724079043105825"
-    }
-  },
+  "current_holders": {},
   "user_histories": {
     "0xc8233a46f57add754f32cf9e25a85aae8a7d5f29": {
       "first_seen": 1750759955,
-      "last_seen": 1750759955,
+      "last_seen": 1764662087,
       "entry_timestamp": 1750759955,
-      "exit_timestamp": null,
+      "exit_timestamp": 1764662087,
       "entry_block": 22773612,
-      "exit_block": null,
+      "exit_block": 23924425,
       "max_balance": 8698545724079043105825,
       "holding_periods": [
         {
           "entry_timestamp": 1750759955,
-          "exit_timestamp": null,
+          "exit_timestamp": 1764662087,
           "entry_block": 22773612,
-          "exit_block": null,
-          "entry_date": "2025-06-24T10:12:35+00:00"
+          "exit_block": 23924425,
+          "entry_date": "2025-06-24T10:12:35+00:00",
+          "duration": 13902132,
+          "exit_date": "2025-12-02T07:54:47+00:00",
+          "duration_days": 160.90430555555557
         }
       ],
-      "total_holding_duration": 0,
-      "is_current_holder": true,
+      "total_holding_duration": 13902132,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -47,11 +46,19 @@
           "block": 22773612,
           "timestamp": 1750759955,
           "datetime": "2025-06-24T10:12:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "8698545724079043105825",
+          "balance_after": "0",
+          "block": 23924425,
+          "timestamp": 1764662087,
+          "datetime": "2025-12-02T07:54:47+00:00"
         }
       ],
       "first_seen_date": "2025-06-24T10:12:35+00:00",
-      "last_seen_date": "2025-06-24T10:12:35+00:00",
-      "total_holding_duration_days": 0
+      "last_seen_date": "2025-12-02T07:54:47+00:00",
+      "total_holding_duration_days": 160.90430555555557
     },
     "0xea0cdd1636b0e60dcd98e57337e319091502d52f": {
       "first_seen": 1757774267,
