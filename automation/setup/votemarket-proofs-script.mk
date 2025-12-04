@@ -1,7 +1,7 @@
 # Votemarket-proofs-script configuration
 VOTEMARKET_PROOFS_SCRIPT_REPO := stake-dao/votemarket-proofs-script
 VOTEMARKET_PROOFS_SCRIPT_DEVOPS_DIR := temp/votemarket-proofs-script
-VOTEMARKET_PROOFS_SCRIPT_BRANCH ?= main
+VOTEMARKET_PROOFS_SCRIPT_BRANCH ?= old-main
 
 .PHONY: checkout-votemarket-proofs-script install-votemarket-proofs-script-deps clean-votemarket-proofs-script
 checkout-votemarket-proofs-script:
