@@ -5,40 +5,39 @@
     "address": "0x3a4204255257698e379245EF94274ef3B2907296",
     "symbol": "mHYPER PENDLE LP"
   },
-  "last_block": 23946724,
-  "last_updated": "2025-12-05T12:23:39.949925+00:00",
+  "last_block": 23946842,
+  "last_updated": "2025-12-05T12:47:33.332243+00:00",
   "stats": {
     "total_deposited": "676702002423039139",
-    "total_withdrawn": "676684982682970213",
-    "current_supply": "17019740068926",
-    "current_holders": 1,
+    "total_withdrawn": "676702002423039139",
+    "current_supply": "0",
+    "current_holders": 0,
     "total_users": 7
   },
-  "current_holders": {
-    "0x35c79714b4dba8b9cb3f02e9b39a3dbdd392b80b": {
-      "balance": "17019740068926"
-    }
-  },
+  "current_holders": {},
   "user_histories": {
     "0x35c79714b4dba8b9cb3f02e9b39a3dbdd392b80b": {
       "first_seen": 1759488611,
-      "last_seen": 1759488611,
+      "last_seen": 1764938075,
       "entry_timestamp": 1759488611,
-      "exit_timestamp": null,
+      "exit_timestamp": 1764938075,
       "entry_block": 23496766,
-      "exit_block": null,
+      "exit_block": 23946778,
       "max_balance": 17019740068926,
       "holding_periods": [
         {
           "entry_timestamp": 1759488611,
-          "exit_timestamp": null,
+          "exit_timestamp": 1764938075,
           "entry_block": 23496766,
-          "exit_block": null,
-          "entry_date": "2025-10-03T10:50:11+00:00"
+          "exit_block": 23946778,
+          "entry_date": "2025-10-03T10:50:11+00:00",
+          "duration": 5449464,
+          "exit_date": "2025-12-05T12:34:35+00:00",
+          "duration_days": 63.0725
         }
       ],
-      "total_holding_duration": 0,
-      "is_current_holder": true,
+      "total_holding_duration": 5449464,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -47,11 +46,19 @@
           "block": 23496766,
           "timestamp": 1759488611,
           "datetime": "2025-10-03T10:50:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "17019740068926",
+          "balance_after": "0",
+          "block": 23946778,
+          "timestamp": 1764938075,
+          "datetime": "2025-12-05T12:34:35+00:00"
         }
       ],
       "first_seen_date": "2025-10-03T10:50:11+00:00",
-      "last_seen_date": "2025-10-03T10:50:11+00:00",
-      "total_holding_duration_days": 0
+      "last_seen_date": "2025-12-05T12:34:35+00:00",
+      "total_holding_duration_days": 63.0725
     },
     "0x3dc5a62d0dd5756e5c1a317ef797e2c4bbff0be5": {
       "first_seen": 1760669603,
