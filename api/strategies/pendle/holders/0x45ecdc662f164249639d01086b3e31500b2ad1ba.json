@@ -5,14 +5,14 @@
     "address": "0xEB5819B31A0378407F43aBa2F3E9d16b40aa5ec7",
     "symbol": "sUSDf PENDLE LP"
   },
-  "last_block": 23952685,
-  "last_updated": "2025-12-06T08:35:00.556319+00:00",
+  "last_block": 23952745,
+  "last_updated": "2025-12-06T08:47:35.757544+00:00",
   "stats": {
-    "total_deposited": "2903798049853769662555311",
+    "total_deposited": "2904037620524355362702057",
     "total_withdrawn": "2612634788745514513682009",
-    "current_supply": "291163261108255148873302",
-    "current_holders": 14,
-    "total_users": 41
+    "current_supply": "291402831778840849020048",
+    "current_holders": 15,
+    "total_users": 42
   },
   "current_holders": {
     "0x1fafb618033fb07d3a99704a47451971976cb586": {
@@ -50,6 +50,9 @@
     },
     "0x149f23a9945fa95a21e5be4928f0deb499173d79": {
       "balance": "485240861985025054816"
+    },
+    "0xcdf198a569fee3af4d4e2aa82f4b696c21a64396": {
+      "balance": "239570670585700146746"
     },
     "0xc4b9e8b5bdfb8e93dba6b90ea0f706cb40db94e2": {
       "balance": "49570000000000000000"
@@ -1897,6 +1900,39 @@
       ],
       "first_seen_date": "2025-12-03T17:11:23+00:00",
       "last_seen_date": "2025-12-03T17:11:23+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0xcdf198a569fee3af4d4e2aa82f4b696c21a64396": {
+      "first_seen": 1765010807,
+      "last_seen": 1765010807,
+      "entry_timestamp": 1765010807,
+      "exit_timestamp": null,
+      "entry_block": 23952742,
+      "exit_block": null,
+      "max_balance": 239570670585700146746,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1765010807,
+          "exit_timestamp": null,
+          "entry_block": 23952742,
+          "exit_block": null,
+          "entry_date": "2025-12-06T08:46:47+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "239570670585700146746",
+          "balance_after": "239570670585700146746",
+          "block": 23952742,
+          "timestamp": 1765010807,
+          "datetime": "2025-12-06T08:46:47+00:00"
+        }
+      ],
+      "first_seen_date": "2025-12-06T08:46:47+00:00",
+      "last_seen_date": "2025-12-06T08:46:47+00:00",
       "total_holding_duration_days": 0
     }
   }
