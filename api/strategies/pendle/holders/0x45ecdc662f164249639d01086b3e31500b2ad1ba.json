@@ -5,12 +5,12 @@
     "address": "0xEB5819B31A0378407F43aBa2F3E9d16b40aa5ec7",
     "symbol": "sUSDf PENDLE LP"
   },
-  "last_block": 23952311,
-  "last_updated": "2025-12-06T07:19:28.257631+00:00",
+  "last_block": 23952363,
+  "last_updated": "2025-12-06T07:29:55.164365+00:00",
   "stats": {
-    "total_deposited": "2902818086737615980904104",
+    "total_deposited": "2903798049853769662555311",
     "total_withdrawn": "2612634788745514513682009",
-    "current_supply": "290183297992101467222095",
+    "current_supply": "291163261108255148873302",
     "current_holders": 14,
     "total_users": 41
   },
@@ -39,11 +39,11 @@
     "0x65b75050255bd57a8bd155f85b91b403c6aa1ee0": {
       "balance": "4952942619418077289634"
     },
+    "0x37a0d44253bbad1b1d1b5f6db8a84edeaa9fa760": {
+      "balance": "2423991770495386804898"
+    },
     "0xb93d314d64fcd63e2a786249787fd02267238d19": {
       "balance": "2401637403729539945204"
-    },
-    "0x37a0d44253bbad1b1d1b5f6db8a84edeaa9fa760": {
-      "balance": "1444028654341705153691"
     },
     "0x47930c76790c865217472f2ddb4d14c640ee450a": {
       "balance": "597440421419507146122"
@@ -1794,12 +1794,12 @@
     },
     "0x37a0d44253bbad1b1d1b5f6db8a84edeaa9fa760": {
       "first_seen": 1763965355,
-      "last_seen": 1763965355,
+      "last_seen": 1765006031,
       "entry_timestamp": 1763965355,
       "exit_timestamp": null,
       "entry_block": 23866910,
       "exit_block": null,
-      "max_balance": 1444028654341705153691,
+      "max_balance": 2423991770495386804898,
       "holding_periods": [
         {
           "entry_timestamp": 1763965355,
@@ -1819,10 +1819,18 @@
           "block": 23866910,
           "timestamp": 1763965355,
           "datetime": "2025-11-24T06:22:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "979963116153681651207",
+          "balance_after": "2423991770495386804898",
+          "block": 23952350,
+          "timestamp": 1765006031,
+          "datetime": "2025-12-06T07:27:11+00:00"
         }
       ],
       "first_seen_date": "2025-11-24T06:22:35+00:00",
-      "last_seen_date": "2025-11-24T06:22:35+00:00",
+      "last_seen_date": "2025-12-06T07:27:11+00:00",
       "total_holding_duration_days": 0
     },
     "0x54fb9590bd47be3349b5f3aaf2e40484b5320dd0": {
