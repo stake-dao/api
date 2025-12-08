@@ -2,7 +2,7 @@ name: Bot Delegation vote reminder
 
 on:
   schedule:
-    - cron: "0 1 * * *" # At 1am
+    - cron: "*/15 * * * *" # Every 15 min
   workflow_dispatch: # Allows the workflow to be triggered manually -
 
 env:
