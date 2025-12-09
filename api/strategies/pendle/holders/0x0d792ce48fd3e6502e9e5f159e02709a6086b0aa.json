@@ -1,0 +1,64 @@
+{
+  "gauge_id": "0x0d792CE48FD3e6502E9E5f159E02709a6086b0aa",
+  "vault_id": "0x9557B6aaadDf16A898e630e14955d1c8C486475C",
+  "token": {
+    "address": "0x8322B96F7aFF9Bf405A5A321C7CA5aaC748716e0",
+    "symbol": "USD (Midas mEDGE) PENDLE LP"
+  },
+  "last_block": 23976056,
+  "last_updated": "2025-12-09T15:18:13.242558+00:00",
+  "stats": {
+    "total_deposited": "7498181483444116",
+    "total_withdrawn": "7498181483444116",
+    "current_supply": "0",
+    "current_holders": 0,
+    "total_users": 1
+  },
+  "current_holders": {},
+  "user_histories": {
+    "0xf87f7d563558bebf1031bcf09ba6ca60097cc7ab": {
+      "first_seen": 1754911115,
+      "last_seen": 1761815975,
+      "entry_timestamp": 1754911115,
+      "exit_timestamp": 1761815975,
+      "entry_block": 23117460,
+      "exit_block": 23689262,
+      "max_balance": 7498181483444116,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1754911115,
+          "exit_timestamp": 1761815975,
+          "entry_block": 23117460,
+          "exit_block": 23689262,
+          "duration": 6904860,
+          "entry_date": "2025-08-11T11:18:35+00:00",
+          "exit_date": "2025-10-30T09:19:35+00:00",
+          "duration_days": 79.9173611111111
+        }
+      ],
+      "total_holding_duration": 6904860,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "7498181483444116",
+          "balance_after": "7498181483444116",
+          "block": 23117460,
+          "timestamp": 1754911115,
+          "datetime": "2025-08-11T11:18:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "7498181483444116",
+          "balance_after": "0",
+          "block": 23689262,
+          "timestamp": 1761815975,
+          "datetime": "2025-10-30T09:19:35+00:00"
+        }
+      ],
+      "first_seen_date": "2025-08-11T11:18:35+00:00",
+      "last_seen_date": "2025-10-30T09:19:35+00:00",
+      "total_holding_duration_days": 79.9173611111111
+    }
+  }
+}

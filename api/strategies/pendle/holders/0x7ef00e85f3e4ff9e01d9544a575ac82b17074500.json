@@ -1,0 +1,64 @@
+{
+  "gauge_id": "0x7Ef00E85F3e4FF9e01d9544A575aC82B17074500",
+  "vault_id": "0x352342f85E048460cbcDDE7f6f59cD22EF4d7C99",
+  "token": {
+    "address": "0x4c60AB7cE24D4D7268317f44b6DC3d6530864E86",
+    "symbol": "uniBTC PENDLE LP"
+  },
+  "last_block": 23976053,
+  "last_updated": "2025-12-09T15:17:46.659095+00:00",
+  "stats": {
+    "total_deposited": "17859",
+    "total_withdrawn": "17859",
+    "current_supply": "0",
+    "current_holders": 0,
+    "total_users": 1
+  },
+  "current_holders": {},
+  "user_histories": {
+    "0x35c79714b4dba8b9cb3f02e9b39a3dbdd392b80b": {
+      "first_seen": 1749116447,
+      "last_seen": 1751021159,
+      "entry_timestamp": 1749116447,
+      "exit_timestamp": 1751021159,
+      "entry_block": 22637582,
+      "exit_block": 22795269,
+      "max_balance": 17859,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1749116447,
+          "exit_timestamp": 1751021159,
+          "entry_block": 22637582,
+          "exit_block": 22795269,
+          "duration": 1904712,
+          "entry_date": "2025-06-05T09:40:47+00:00",
+          "exit_date": "2025-06-27T10:45:59+00:00",
+          "duration_days": 22.045277777777777
+        }
+      ],
+      "total_holding_duration": 1904712,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "17859",
+          "balance_after": "17859",
+          "block": 22637582,
+          "timestamp": 1749116447,
+          "datetime": "2025-06-05T09:40:47+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "17859",
+          "balance_after": "0",
+          "block": 22795269,
+          "timestamp": 1751021159,
+          "datetime": "2025-06-27T10:45:59+00:00"
+        }
+      ],
+      "first_seen_date": "2025-06-05T09:40:47+00:00",
+      "last_seen_date": "2025-06-27T10:45:59+00:00",
+      "total_holding_duration_days": 22.045277777777777
+    }
+  }
+}

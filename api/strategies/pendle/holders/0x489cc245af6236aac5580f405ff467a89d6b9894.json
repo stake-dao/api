@@ -1,0 +1,90 @@
+{
+  "gauge_id": "0x489cC245af6236aaC5580f405fF467A89d6b9894",
+  "vault_id": "0x3Bc3C820479712744aB60A33d3CE19Fe75cd8C2C",
+  "token": {
+    "address": "0xC7d566F5Cd575FdAd0e982Bd238d9abCf29807ea",
+    "symbol": "weETHs PENDLE LP"
+  },
+  "last_block": 23976054,
+  "last_updated": "2025-12-09T15:17:57.612916+00:00",
+  "stats": {
+    "total_deposited": "11214626167975566",
+    "total_withdrawn": "11214626167975566",
+    "current_supply": "0",
+    "current_holders": 0,
+    "total_users": 1
+  },
+  "current_holders": {},
+  "user_histories": {
+    "0x55e04edb2835e7c815f90257f8854e35d3581902": {
+      "first_seen": 1755914003,
+      "last_seen": 1761234323,
+      "entry_timestamp": 1755914003,
+      "exit_timestamp": 1761234323,
+      "entry_block": 23200627,
+      "exit_block": 23641178,
+      "max_balance": 5607313083987783,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1755914003,
+          "exit_timestamp": 1758689171,
+          "entry_block": 23200627,
+          "exit_block": 23430597,
+          "duration": 2775168,
+          "entry_date": "2025-08-23T01:53:23+00:00",
+          "exit_date": "2025-09-24T04:46:11+00:00",
+          "duration_days": 32.12
+        },
+        {
+          "entry_timestamp": 1758719819,
+          "exit_timestamp": 1761234323,
+          "entry_block": 23433139,
+          "exit_block": 23641178,
+          "duration": 2514504,
+          "entry_date": "2025-09-24T13:16:59+00:00",
+          "exit_date": "2025-10-23T15:45:23+00:00",
+          "duration_days": 29.103055555555557
+        }
+      ],
+      "total_holding_duration": 5289672,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "5607313083987783",
+          "balance_after": "5607313083987783",
+          "block": 23200627,
+          "timestamp": 1755914003,
+          "datetime": "2025-08-23T01:53:23+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "5607313083987783",
+          "balance_after": "0",
+          "block": 23430597,
+          "timestamp": 1758689171,
+          "datetime": "2025-09-24T04:46:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "5607313083987783",
+          "balance_after": "5607313083987783",
+          "block": 23433139,
+          "timestamp": 1758719819,
+          "datetime": "2025-09-24T13:16:59+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "5607313083987783",
+          "balance_after": "0",
+          "block": 23641178,
+          "timestamp": 1761234323,
+          "datetime": "2025-10-23T15:45:23+00:00"
+        }
+      ],
+      "first_seen_date": "2025-08-23T01:53:23+00:00",
+      "last_seen_date": "2025-10-23T15:45:23+00:00",
+      "total_holding_duration_days": 61.223055555555554
+    }
+  }
+}

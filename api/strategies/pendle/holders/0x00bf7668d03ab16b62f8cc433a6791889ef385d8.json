@@ -1,0 +1,124 @@
+{
+  "gauge_id": "0x00Bf7668d03ab16B62f8cc433a6791889Ef385d8",
+  "vault_id": "0xaB7622564376c9C9b9CBC4C6564A9668d0F50C97",
+  "token": {
+    "address": "0x307c15f808914Df5a5DbE17E5608f84953fFa023",
+    "symbol": "cUSD PENDLE LP"
+  },
+  "last_block": 23976057,
+  "last_updated": "2025-12-09T15:18:34.099030+00:00",
+  "stats": {
+    "total_deposited": "230522027238305952317299",
+    "total_withdrawn": "230522027238305952317299",
+    "current_supply": "0",
+    "current_holders": 0,
+    "total_users": 2
+  },
+  "current_holders": {},
+  "user_histories": {
+    "0x95f615c88f791351b414322a0a7f9cc7354ae19f": {
+      "first_seen": 1757075699,
+      "last_seen": 1759270235,
+      "entry_timestamp": 1757075699,
+      "exit_timestamp": 1759270235,
+      "entry_block": 23296938,
+      "exit_block": 23478701,
+      "max_balance": 1454887916823764200487,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1757075699,
+          "exit_timestamp": 1759270235,
+          "entry_block": 23296938,
+          "exit_block": 23478701,
+          "duration": 2194536,
+          "entry_date": "2025-09-05T12:34:59+00:00",
+          "exit_date": "2025-09-30T22:10:35+00:00",
+          "duration_days": 25.399722222222223
+        }
+      ],
+      "total_holding_duration": 2194536,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "312013513128485776236",
+          "balance_after": "312013513128485776236",
+          "block": 23296938,
+          "timestamp": 1757075699,
+          "datetime": "2025-09-05T12:34:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "1142874403695278424251",
+          "balance_after": "1454887916823764200487",
+          "block": 23442587,
+          "timestamp": 1758833903,
+          "datetime": "2025-09-25T20:58:23+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "1454887916823764200487",
+          "balance_after": "0",
+          "block": 23478701,
+          "timestamp": 1759270235,
+          "datetime": "2025-09-30T22:10:35+00:00"
+        }
+      ],
+      "first_seen_date": "2025-09-05T12:34:59+00:00",
+      "last_seen_date": "2025-09-30T22:10:35+00:00",
+      "total_holding_duration_days": 25.399722222222223
+    },
+    "0x9d269caf80970c7e854c99db8b0c20868825546b": {
+      "first_seen": 1759498187,
+      "last_seen": 1759509035,
+      "entry_timestamp": 1759498187,
+      "exit_timestamp": 1759509035,
+      "entry_block": 23497557,
+      "exit_block": 23498458,
+      "max_balance": 229067139321482188116812,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1759498187,
+          "exit_timestamp": 1759509035,
+          "entry_block": 23497557,
+          "exit_block": 23498458,
+          "duration": 10848,
+          "entry_date": "2025-10-03T13:29:47+00:00",
+          "exit_date": "2025-10-03T16:30:35+00:00",
+          "duration_days": 0.12555555555555556
+        }
+      ],
+      "total_holding_duration": 10848,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "137436220449448267529207",
+          "balance_after": "137436220449448267529207",
+          "block": 23497557,
+          "timestamp": 1759498187,
+          "datetime": "2025-10-03T13:29:47+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "91630918872033920587605",
+          "balance_after": "229067139321482188116812",
+          "block": 23497679,
+          "timestamp": 1759499663,
+          "datetime": "2025-10-03T13:54:23+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "229067139321482188116812",
+          "balance_after": "0",
+          "block": 23498458,
+          "timestamp": 1759509035,
+          "datetime": "2025-10-03T16:30:35+00:00"
+        }
+      ],
+      "first_seen_date": "2025-10-03T13:29:47+00:00",
+      "last_seen_date": "2025-10-03T16:30:35+00:00",
+      "total_holding_duration_days": 0.12555555555555556
+    }
+  }
+}

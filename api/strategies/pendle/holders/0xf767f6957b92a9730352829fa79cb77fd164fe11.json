@@ -1,0 +1,64 @@
+{
+  "gauge_id": "0xf767f6957b92a9730352829fA79cb77FD164fE11",
+  "vault_id": "0x760830131414f8C425C96932a6150Bf500e6A1D7",
+  "token": {
+    "address": "0x6Cc1594bc1125fC2357Fedf58A0C1b5E0f16e483",
+    "symbol": "scETH  PENDLE LP"
+  },
+  "last_block": 23976056,
+  "last_updated": "2025-12-09T15:18:24.794611+00:00",
+  "stats": {
+    "total_deposited": "76012875537324979",
+    "total_withdrawn": "76012875537324979",
+    "current_supply": "0",
+    "current_holders": 0,
+    "total_users": 1
+  },
+  "current_holders": {},
+  "user_histories": {
+    "0x13b90df23158808185b247ab61ede61b75d49e23": {
+      "first_seen": 1755862199,
+      "last_seen": 1755917591,
+      "entry_timestamp": 1755862199,
+      "exit_timestamp": 1755917591,
+      "entry_block": 23196325,
+      "exit_block": 23200924,
+      "max_balance": 76012875537324979,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1755862199,
+          "exit_timestamp": 1755917591,
+          "entry_block": 23196325,
+          "exit_block": 23200924,
+          "duration": 55392,
+          "entry_date": "2025-08-22T11:29:59+00:00",
+          "exit_date": "2025-08-23T02:53:11+00:00",
+          "duration_days": 0.6411111111111111
+        }
+      ],
+      "total_holding_duration": 55392,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "76012875537324979",
+          "balance_after": "76012875537324979",
+          "block": 23196325,
+          "timestamp": 1755862199,
+          "datetime": "2025-08-22T11:29:59+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "76012875537324979",
+          "balance_after": "0",
+          "block": 23200924,
+          "timestamp": 1755917591,
+          "datetime": "2025-08-23T02:53:11+00:00"
+        }
+      ],
+      "first_seen_date": "2025-08-22T11:29:59+00:00",
+      "last_seen_date": "2025-08-23T02:53:11+00:00",
+      "total_holding_duration_days": 0.6411111111111111
+    }
+  }
+}

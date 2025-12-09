@@ -1,0 +1,64 @@
+{
+  "gauge_id": "0x72cceF22f4A9d55e6D0F445E851F83eBb142e0d8",
+  "vault_id": "0x21a37F35cC7fC11014ed6401cA879a60533C387E",
+  "token": {
+    "address": "0x8AF9872eeE05c7Ca1c24295426E4d71b4AF5B559",
+    "symbol": "vyUSD PENDLE LP"
+  },
+  "last_block": 23976056,
+  "last_updated": "2025-12-09T15:18:13.877560+00:00",
+  "stats": {
+    "total_deposited": "5654057562766",
+    "total_withdrawn": "5654057562766",
+    "current_supply": "0",
+    "current_holders": 0,
+    "total_users": 1
+  },
+  "current_holders": {},
+  "user_histories": {
+    "0x55e04edb2835e7c815f90257f8854e35d3581902": {
+      "first_seen": 1757615471,
+      "last_seen": 1761264215,
+      "entry_timestamp": 1757615471,
+      "exit_timestamp": 1761264215,
+      "entry_block": 23341625,
+      "exit_block": 23643637,
+      "max_balance": 5654057562766,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1757615471,
+          "exit_timestamp": 1761264215,
+          "entry_block": 23341625,
+          "exit_block": 23643637,
+          "duration": 3648744,
+          "entry_date": "2025-09-11T18:31:11+00:00",
+          "exit_date": "2025-10-24T00:03:35+00:00",
+          "duration_days": 42.23083333333334
+        }
+      ],
+      "total_holding_duration": 3648744,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "5654057562766",
+          "balance_after": "5654057562766",
+          "block": 23341625,
+          "timestamp": 1757615471,
+          "datetime": "2025-09-11T18:31:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "5654057562766",
+          "balance_after": "0",
+          "block": 23643637,
+          "timestamp": 1761264215,
+          "datetime": "2025-10-24T00:03:35+00:00"
+        }
+      ],
+      "first_seen_date": "2025-09-11T18:31:11+00:00",
+      "last_seen_date": "2025-10-24T00:03:35+00:00",
+      "total_holding_duration_days": 42.23083333333334
+    }
+  }
+}

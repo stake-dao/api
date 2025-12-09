@@ -1,0 +1,57 @@
+{
+  "gauge_id": "0x2d898c1ab3E240696fF6d5D3BC7846880472dFA4",
+  "vault_id": "0x26cf756e0956040604F556A52d051C1C0fC18269",
+  "token": {
+    "address": "0x41264F35ef7eF8c4905ca98052E8D7480F12859e",
+    "symbol": "jrUSDe PENDLE LP"
+  },
+  "last_block": 23976058,
+  "last_updated": "2025-12-09T15:18:45.010008+00:00",
+  "stats": {
+    "total_deposited": "1292963458886646788756",
+    "total_withdrawn": "0",
+    "current_supply": "1292963458886646788756",
+    "current_holders": 1,
+    "total_users": 1
+  },
+  "current_holders": {
+    "0xe1009b65e306625713ce113b9b10ca7096b8e555": {
+      "balance": "1292963458886646788756"
+    }
+  },
+  "user_histories": {
+    "0xe1009b65e306625713ce113b9b10ca7096b8e555": {
+      "first_seen": 1764610391,
+      "last_seen": 1764610391,
+      "entry_timestamp": 1764610391,
+      "exit_timestamp": null,
+      "entry_block": 23920144,
+      "exit_block": null,
+      "max_balance": 1292963458886646788756,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1764610391,
+          "exit_timestamp": null,
+          "entry_block": 23920144,
+          "exit_block": null,
+          "entry_date": "2025-12-01T17:33:11+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "1292963458886646788756",
+          "balance_after": "1292963458886646788756",
+          "block": 23920144,
+          "timestamp": 1764610391,
+          "datetime": "2025-12-01T17:33:11+00:00"
+        }
+      ],
+      "first_seen_date": "2025-12-01T17:33:11+00:00",
+      "last_seen_date": "2025-12-01T17:33:11+00:00",
+      "total_holding_duration_days": 0
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "gauge_id": "0x6326fb03D5b9401684d43B609d05B2678A730e2C",
+  "vault_id": "0xAB72d81e784Bd7a03dBb66BDA401Cdeb8cB96Cc7",
+  "token": {
+    "address": "0xFE8ACf962F9a67D67B858819aCEE296dfDa878Dd",
+    "symbol": "USD (Midas mMEV) PENDLE LP"
+  },
+  "last_block": 23976058,
+  "last_updated": "2025-12-09T15:18:50.905831+00:00",
+  "stats": {
+    "total_deposited": "58608879552011596",
+    "total_withdrawn": "58608879552011596",
+    "current_supply": "0",
+    "current_holders": 0,
+    "total_users": 1
+  },
+  "current_holders": {},
+  "user_histories": {
+    "0x582a2f8d6190a2d1fccf19e9da83ccd9893fbfd0": {
+      "first_seen": 1761960407,
+      "last_seen": 1762208255,
+      "entry_timestamp": 1761960407,
+      "exit_timestamp": 1762208255,
+      "entry_block": 23701198,
+      "exit_block": 23721727,
+      "max_balance": 58608879552011596,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1761960407,
+          "exit_timestamp": 1762208255,
+          "entry_block": 23701198,
+          "exit_block": 23721727,
+          "duration": 247848,
+          "entry_date": "2025-11-01T01:26:47+00:00",
+          "exit_date": "2025-11-03T22:17:35+00:00",
+          "duration_days": 2.868611111111111
+        }
+      ],
+      "total_holding_duration": 247848,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "58608879552011596",
+          "balance_after": "58608879552011596",
+          "block": 23701198,
+          "timestamp": 1761960407,
+          "datetime": "2025-11-01T01:26:47+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "58608879552011596",
+          "balance_after": "0",
+          "block": 23721727,
+          "timestamp": 1762208255,
+          "datetime": "2025-11-03T22:17:35+00:00"
+        }
+      ],
+      "first_seen_date": "2025-11-01T01:26:47+00:00",
+      "last_seen_date": "2025-11-03T22:17:35+00:00",
+      "total_holding_duration_days": 2.868611111111111
+    }
+  }
+}

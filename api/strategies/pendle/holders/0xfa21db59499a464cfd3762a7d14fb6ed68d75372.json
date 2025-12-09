@@ -1,0 +1,64 @@
+{
+  "gauge_id": "0xfA21DB59499A464cFD3762A7D14FB6ed68D75372",
+  "vault_id": "0x0D93e80489bde5DBD9733956A68CB02c2c88c40F",
+  "token": {
+    "address": "0x83FBF88733474f8d6b27A6c7df24F83c07846301",
+    "symbol": "sAID PENDLE LP"
+  },
+  "last_block": 23976060,
+  "last_updated": "2025-12-09T15:19:03.636656+00:00",
+  "stats": {
+    "total_deposited": "340205474947675086958",
+    "total_withdrawn": "340205474947675086958",
+    "current_supply": "0",
+    "current_holders": 0,
+    "total_users": 1
+  },
+  "current_holders": {},
+  "user_histories": {
+    "0xc82e26f38df2c3ab2eb6a9af92744cba413257c9": {
+      "first_seen": 1762553891,
+      "last_seen": 1762716287,
+      "entry_timestamp": 1762553891,
+      "exit_timestamp": 1762716287,
+      "entry_block": 23750321,
+      "exit_block": 23763773,
+      "max_balance": 340205474947675086958,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1762553891,
+          "exit_timestamp": 1762716287,
+          "entry_block": 23750321,
+          "exit_block": 23763773,
+          "duration": 162396,
+          "entry_date": "2025-11-07T22:18:11+00:00",
+          "exit_date": "2025-11-09T19:24:47+00:00",
+          "duration_days": 1.8795833333333334
+        }
+      ],
+      "total_holding_duration": 162396,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "340205474947675086958",
+          "balance_after": "340205474947675086958",
+          "block": 23750321,
+          "timestamp": 1762553891,
+          "datetime": "2025-11-07T22:18:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "340205474947675086958",
+          "balance_after": "0",
+          "block": 23763773,
+          "timestamp": 1762716287,
+          "datetime": "2025-11-09T19:24:47+00:00"
+        }
+      ],
+      "first_seen_date": "2025-11-07T22:18:11+00:00",
+      "last_seen_date": "2025-11-09T19:24:47+00:00",
+      "total_holding_duration_days": 1.8795833333333334
+    }
+  }
+}

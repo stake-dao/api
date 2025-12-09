@@ -1,0 +1,64 @@
+{
+  "gauge_id": "0x13b4ADD6f70641E18039A5C6E015C03D8e73bc5D",
+  "vault_id": "0x2eebd5EeF9d349a7cC4b61383157bDB9b6F1b4EC",
+  "token": {
+    "address": "0xdc4EF8ED77f975519777DF3A6e36cEBACc978962",
+    "symbol": "spETH PENDLE LP"
+  },
+  "last_block": 23976058,
+  "last_updated": "2025-12-09T15:18:46.301729+00:00",
+  "stats": {
+    "total_deposited": "3745988750264194400",
+    "total_withdrawn": "3745988750264194400",
+    "current_supply": "0",
+    "current_holders": 0,
+    "total_users": 1
+  },
+  "current_holders": {},
+  "user_histories": {
+    "0x402904e954aebee2e78b7b09595393cf05571333": {
+      "first_seen": 1761447515,
+      "last_seen": 1763980271,
+      "entry_timestamp": 1761447515,
+      "exit_timestamp": 1763980271,
+      "entry_block": 23658801,
+      "exit_block": 23868138,
+      "max_balance": 3745988750264194400,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1761447515,
+          "exit_timestamp": 1763980271,
+          "entry_block": 23658801,
+          "exit_block": 23868138,
+          "duration": 2532756,
+          "entry_date": "2025-10-26T02:58:35+00:00",
+          "exit_date": "2025-11-24T10:31:11+00:00",
+          "duration_days": 29.314305555555556
+        }
+      ],
+      "total_holding_duration": 2532756,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "3745988750264194400",
+          "balance_after": "3745988750264194400",
+          "block": 23658801,
+          "timestamp": 1761447515,
+          "datetime": "2025-10-26T02:58:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "3745988750264194400",
+          "balance_after": "0",
+          "block": 23868138,
+          "timestamp": 1763980271,
+          "datetime": "2025-11-24T10:31:11+00:00"
+        }
+      ],
+      "first_seen_date": "2025-10-26T02:58:35+00:00",
+      "last_seen_date": "2025-11-24T10:31:11+00:00",
+      "total_holding_duration_days": 29.314305555555556
+    }
+  }
+}
