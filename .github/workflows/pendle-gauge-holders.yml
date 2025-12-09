@@ -45,6 +45,7 @@ jobs:
         shell: bash
         env:
           PYTHONPATH: script/
+          ETHERSCAN_API_KEY: ${{ secrets.EXPLORER_KEY }}
 
       - name: Checkout target repository
         uses: actions/checkout@v4
