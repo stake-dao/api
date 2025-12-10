@@ -5,21 +5,21 @@
     "address": "0x2f8159644f045A388c1FC954e795202Dc1d34308",
     "symbol": "asdCRV PENDLE LP"
   },
-  "last_block": 23982255,
-  "last_updated": "2025-12-10T12:17:49.573406+00:00",
+  "last_block": 23982355,
+  "last_updated": "2025-12-10T12:37:51.191862+00:00",
   "stats": {
     "total_deposited": "339185893952029560693115",
-    "total_withdrawn": "37738723367594977453549",
-    "current_supply": "301447170584434583239566",
+    "total_withdrawn": "107738723367594977453549",
+    "current_supply": "231447170584434583239566",
     "current_holders": 4,
     "total_users": 5
   },
   "current_holders": {
-    "0xf930ebbd05ef8b25b1797b9b2109ddc9b0d43063": {
-      "balance": "180071562984990845083280"
-    },
     "0xb0e83c2d71a991017e0116d58c5765abc57384af": {
       "balance": "110741490141481987301370"
+    },
+    "0xf930ebbd05ef8b25b1797b9b2109ddc9b0d43063": {
+      "balance": "110071562984990845083280"
     },
     "0x8f564c7272177663309f704065ffb59f403d96a1": {
       "balance": "10160348892573042657566"
@@ -72,7 +72,7 @@
     },
     "0xf930ebbd05ef8b25b1797b9b2109ddc9b0d43063": {
       "first_seen": 1750950611,
-      "last_seen": 1753546847,
+      "last_seen": 1765370015,
       "entry_timestamp": 1750950611,
       "exit_timestamp": null,
       "entry_block": 22789422,
@@ -105,10 +105,18 @@
           "block": 23004475,
           "timestamp": 1753546847,
           "datetime": "2025-07-26T16:20:47+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "70000000000000000000000",
+          "balance_after": "110071562984990845083280",
+          "block": 23982334,
+          "timestamp": 1765370015,
+          "datetime": "2025-12-10T12:33:35+00:00"
         }
       ],
       "first_seen_date": "2025-06-26T15:10:11+00:00",
-      "last_seen_date": "2025-07-26T16:20:47+00:00",
+      "last_seen_date": "2025-12-10T12:33:35+00:00",
       "total_holding_duration_days": 0
     },
     "0xb0e83c2d71a991017e0116d58c5765abc57384af": {
