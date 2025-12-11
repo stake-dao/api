@@ -5,39 +5,40 @@
     "address": "0x7057c9e6f213bbb9B845FC57010034E9e4A69E8A",
     "symbol": "Morpho-PT USDC PENDLE LP"
   },
-  "last_block": 23989734,
-  "last_updated": "2025-12-11T13:28:32.543828+00:00",
+  "last_block": 23989845,
+  "last_updated": "2025-12-11T13:50:52.904461+00:00",
   "stats": {
-    "total_deposited": "20898789678614325775373",
+    "total_deposited": "41797579357228651550746",
     "total_withdrawn": "20898789678614325775373",
-    "current_supply": "0",
-    "current_holders": 0,
+    "current_supply": "20898789678614325775373",
+    "current_holders": 1,
     "total_users": 1
   },
-  "current_holders": {},
+  "current_holders": {
+    "0x85b3c124a704ae638622a1e99310f22eee7279c6": {
+      "balance": "20898789678614325775373"
+    }
+  },
   "user_histories": {
     "0x85b3c124a704ae638622a1e99310f22eee7279c6": {
       "first_seen": 1755376727,
       "last_seen": 1755760967,
       "entry_timestamp": 1755376727,
-      "exit_timestamp": 1755760967,
+      "exit_timestamp": null,
       "entry_block": 23156044,
-      "exit_block": 23187939,
-      "max_balance": 20898789678614325775373,
+      "exit_block": null,
+      "max_balance": 41797579357228651550746,
       "holding_periods": [
         {
           "entry_timestamp": 1755376727,
-          "exit_timestamp": 1755760967,
+          "exit_timestamp": null,
           "entry_block": 23156044,
-          "exit_block": 23187939,
-          "duration": 384240,
-          "entry_date": "2025-08-16T20:38:47+00:00",
-          "exit_date": "2025-08-21T07:22:47+00:00",
-          "duration_days": 4.447222222222222
+          "exit_block": null,
+          "entry_date": "2025-08-16T20:38:47+00:00"
         }
       ],
-      "total_holding_duration": 384240,
-      "is_current_holder": false,
+      "total_holding_duration": 0,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -48,9 +49,17 @@
           "datetime": "2025-08-16T20:38:47+00:00"
         },
         {
+          "type": "DEPOSIT",
+          "amount": "20898789678614325775373",
+          "balance_after": "41797579357228651550746",
+          "block": 23156044,
+          "timestamp": 1755376727,
+          "datetime": "2025-08-16T20:38:47+00:00"
+        },
+        {
           "type": "WITHDRAW",
           "amount": "20898789678614325775373",
-          "balance_after": "0",
+          "balance_after": "20898789678614325775373",
           "block": 23187939,
           "timestamp": 1755760967,
           "datetime": "2025-08-21T07:22:47+00:00"
@@ -58,7 +67,7 @@
       ],
       "first_seen_date": "2025-08-16T20:38:47+00:00",
       "last_seen_date": "2025-08-21T07:22:47+00:00",
-      "total_holding_duration_days": 4.447222222222222
+      "total_holding_duration_days": 0
     }
   }
 }

@@ -5,39 +5,40 @@
     "address": "0x8322B96F7aFF9Bf405A5A321C7CA5aaC748716e0",
     "symbol": "USD (Midas mEDGE) PENDLE LP"
   },
-  "last_block": 23989733,
-  "last_updated": "2025-12-11T13:28:19.294299+00:00",
+  "last_block": 23989842,
+  "last_updated": "2025-12-11T13:50:28.560948+00:00",
   "stats": {
-    "total_deposited": "7498181483444116",
+    "total_deposited": "14996362966888232",
     "total_withdrawn": "7498181483444116",
-    "current_supply": "0",
-    "current_holders": 0,
+    "current_supply": "7498181483444116",
+    "current_holders": 1,
     "total_users": 1
   },
-  "current_holders": {},
+  "current_holders": {
+    "0xf87f7d563558bebf1031bcf09ba6ca60097cc7ab": {
+      "balance": "7498181483444116"
+    }
+  },
   "user_histories": {
     "0xf87f7d563558bebf1031bcf09ba6ca60097cc7ab": {
       "first_seen": 1754911115,
       "last_seen": 1761815975,
       "entry_timestamp": 1754911115,
-      "exit_timestamp": 1761815975,
+      "exit_timestamp": null,
       "entry_block": 23117460,
-      "exit_block": 23689262,
-      "max_balance": 7498181483444116,
+      "exit_block": null,
+      "max_balance": 14996362966888232,
       "holding_periods": [
         {
           "entry_timestamp": 1754911115,
-          "exit_timestamp": 1761815975,
+          "exit_timestamp": null,
           "entry_block": 23117460,
-          "exit_block": 23689262,
-          "duration": 6904860,
-          "entry_date": "2025-08-11T11:18:35+00:00",
-          "exit_date": "2025-10-30T09:19:35+00:00",
-          "duration_days": 79.9173611111111
+          "exit_block": null,
+          "entry_date": "2025-08-11T11:18:35+00:00"
         }
       ],
-      "total_holding_duration": 6904860,
-      "is_current_holder": false,
+      "total_holding_duration": 0,
+      "is_current_holder": true,
       "events": [
         {
           "type": "DEPOSIT",
@@ -48,9 +49,17 @@
           "datetime": "2025-08-11T11:18:35+00:00"
         },
         {
+          "type": "DEPOSIT",
+          "amount": "7498181483444116",
+          "balance_after": "14996362966888232",
+          "block": 23117460,
+          "timestamp": 1754911115,
+          "datetime": "2025-08-11T11:18:35+00:00"
+        },
+        {
           "type": "WITHDRAW",
           "amount": "7498181483444116",
-          "balance_after": "0",
+          "balance_after": "7498181483444116",
           "block": 23689262,
           "timestamp": 1761815975,
           "datetime": "2025-10-30T09:19:35+00:00"
@@ -58,7 +67,7 @@
       ],
       "first_seen_date": "2025-08-11T11:18:35+00:00",
       "last_seen_date": "2025-10-30T09:19:35+00:00",
-      "total_holding_duration_days": 79.9173611111111
+      "total_holding_duration_days": 0
     }
   }
 }
