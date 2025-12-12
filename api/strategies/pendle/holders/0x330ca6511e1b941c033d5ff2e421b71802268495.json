@@ -5,21 +5,21 @@
     "address": "0x39C3F8e0E7C6F44Dc8F0397FEb124517ba82e26E",
     "symbol": "wstUSR PENDLE LP"
   },
-  "last_block": 23995983,
-  "last_updated": "2025-12-12T10:34:22.918102+00:00",
+  "last_block": 23996065,
+  "last_updated": "2025-12-12T10:50:52.545484+00:00",
   "stats": {
-    "total_deposited": "4634618560569146699576",
+    "total_deposited": "6526624116453676527058",
     "total_withdrawn": "799037027676526634099",
-    "current_supply": "3835581532892620065477",
+    "current_supply": "5727587088777149892959",
     "current_holders": 2,
     "total_users": 3
   },
   "current_holders": {
+    "0x0ddac437952c920e1d1ac5c50e84260c81d9d6dc": {
+      "balance": "3323790350961551597408"
+    },
     "0xaa080789b13e0e5051a4573a8defb7eb3411df6b": {
       "balance": "2403796737815598295551"
-    },
-    "0x0ddac437952c920e1d1ac5c50e84260c81d9d6dc": {
-      "balance": "1431784795077021769926"
     }
   },
   "user_histories": {
@@ -69,12 +69,12 @@
     },
     "0x0ddac437952c920e1d1ac5c50e84260c81d9d6dc": {
       "first_seen": 1759316879,
-      "last_seen": 1765011731,
+      "last_seen": 1765535891,
       "entry_timestamp": 1759316879,
       "exit_timestamp": null,
       "entry_block": 23482555,
       "exit_block": null,
-      "max_balance": 1431784795077021769926,
+      "max_balance": 3323790350961551597408,
       "holding_periods": [
         {
           "entry_timestamp": 1759316879,
@@ -102,10 +102,26 @@
           "block": 23952817,
           "timestamp": 1765011731,
           "datetime": "2025-12-06T09:02:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "946002777942264913741",
+          "balance_after": "2377787573019286683667",
+          "block": 23996002,
+          "timestamp": 1765535891,
+          "datetime": "2025-12-12T10:38:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "946002777942264913741",
+          "balance_after": "3323790350961551597408",
+          "block": 23996002,
+          "timestamp": 1765535891,
+          "datetime": "2025-12-12T10:38:11+00:00"
         }
       ],
       "first_seen_date": "2025-10-01T11:07:59+00:00",
-      "last_seen_date": "2025-12-06T09:02:11+00:00",
+      "last_seen_date": "2025-12-12T10:38:11+00:00",
       "total_holding_duration_days": 0
     },
     "0xaa080789b13e0e5051a4573a8defb7eb3411df6b": {
