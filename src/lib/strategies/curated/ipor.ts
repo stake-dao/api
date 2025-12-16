@@ -5,6 +5,15 @@ import { MEMO_MAX_AGE, publicClient } from '../../utils'
 
 require('dotenv').config()
 
+export const getIporMainnet = memoize(
+  async () =>
+    fetchIporVaults({
+      provider: publicClient[mainnet.id],
+      chainId: mainnet.id,
+    }),
+  { maxAge: MEMO_MAX_AGE },
+)
+
 export const getIporArbitrum = memoize(
   async () =>
     fetchIporVaults({
@@ -15,7 +24,7 @@ export const getIporArbitrum = memoize(
 )
 
 export const getIpor = memoize(async () => {
-  const [iporArbitrum] = await Promise.all([getIporArbitrum()])
+  const [iporMainnet, iporArbitrum] = await Promise.all([getIporMainnet(), getIporArbitrum()])
 
-  return [...iporArbitrum]
+  return [...iporMainnet, ...iporArbitrum]
 })

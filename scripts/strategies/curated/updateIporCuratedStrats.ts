@@ -1,4 +1,4 @@
-import { arbitrum } from 'viem/chains'
+import { arbitrum, mainnet } from 'viem/chains'
 import { writeFile } from '../../utils'
 import { getIpor } from '../../../src/lib/strategies/curated/ipor'
 import dayjs from 'dayjs'
@@ -8,7 +8,7 @@ dayjs.extend(utc)
 
 const updateIporCuratedStrats = async () => {
   const history = {}
-  const res = { [arbitrum.id]: [] }
+  const res = { [mainnet.id]: [], [arbitrum.id]: [] }
 
   const iporData = await getIpor()
 
@@ -31,6 +31,15 @@ const updateIporCuratedStrats = async () => {
   }
 
   writeFile({
+    path: `api/strategies/curated/ipor/${mainnet.id}.json`,
+    data: JSON.stringify(res[mainnet.id]),
+    log: {
+      success: '✅ - IPOR Mainnet curated strategies have been updated!',
+      error: '❌ - An error occured during the IPOR Mainnet curated strategies update.',
+    },
+  })
+
+  writeFile({
     path: `api/strategies/curated/ipor/${arbitrum.id}.json`,
     data: JSON.stringify(res[arbitrum.id]),
     log: {
@@ -41,7 +50,7 @@ const updateIporCuratedStrats = async () => {
 
   writeFile({
     path: `api/strategies/curated/ipor/index.json`,
-    data: JSON.stringify([...res[arbitrum.id]]),
+    data: JSON.stringify([...res[mainnet.id], ...res[arbitrum.id]]),
     log: {
       success: '✅ - IPOR curated strategies have been updated!',
       error: '❌ - An error occured during the IPOR curated strategies update.',
