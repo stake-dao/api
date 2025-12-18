@@ -5,15 +5,61 @@
     "address": "0x6CB9A013604A567a5834fadD411165B1ca616783",
     "symbol": "reUSDe PENDLE LP"
   },
-  "last_block": 24037086,
-  "last_updated": "2025-12-18T04:25:01.049616+00:00",
+  "last_block": 24037196,
+  "last_updated": "2025-12-18T04:46:58.347536+00:00",
   "stats": {
-    "total_deposited": "0",
+    "total_deposited": "826964367382396641454",
     "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
-    "total_users": 0
+    "current_supply": "826964367382396641454",
+    "current_holders": 1,
+    "total_users": 1
   },
-  "current_holders": {},
-  "user_histories": {}
+  "current_holders": {
+    "0xe57c3dc8c3069243307f218e7d67ec94664e03b7": {
+      "balance": "826964367382396641454"
+    }
+  },
+  "user_histories": {
+    "0xe57c3dc8c3069243307f218e7d67ec94664e03b7": {
+      "first_seen": 1766032355,
+      "last_seen": 1766032355,
+      "entry_timestamp": 1766032355,
+      "exit_timestamp": null,
+      "entry_block": 24037125,
+      "exit_block": null,
+      "max_balance": 826964367382396641454,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1766032355,
+          "exit_timestamp": null,
+          "entry_block": 24037125,
+          "exit_block": null,
+          "entry_date": "2025-12-18T04:32:35+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "413482183691198320727",
+          "balance_after": "413482183691198320727",
+          "block": 24037125,
+          "timestamp": 1766032355,
+          "datetime": "2025-12-18T04:32:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "413482183691198320727",
+          "balance_after": "826964367382396641454",
+          "block": 24037125,
+          "timestamp": 1766032355,
+          "datetime": "2025-12-18T04:32:35+00:00"
+        }
+      ],
+      "first_seen_date": "2025-12-18T04:32:35+00:00",
+      "last_seen_date": "2025-12-18T04:32:35+00:00",
+      "total_holding_duration_days": 0
+    }
+  }
 }
