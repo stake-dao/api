@@ -5,31 +5,28 @@
     "address": "0x53f940DB819400F226466f5aD330c177a4be6b3C",
     "symbol": "ARM-WETH-stETH PENDLE LP"
   },
-  "last_block": 24038329,
-  "last_updated": "2025-12-18T08:34:49.791913+00:00",
+  "last_block": 24038411,
+  "last_updated": "2025-12-18T08:51:46.354093+00:00",
   "stats": {
     "total_deposited": "30048442818288834005",
-    "total_withdrawn": "14629441436147798740",
-    "current_supply": "15419001382141035265",
-    "current_holders": 2,
+    "total_withdrawn": "16343017929290393630",
+    "current_supply": "13705424888998440375",
+    "current_holders": 1,
     "total_users": 4
   },
   "current_holders": {
     "0x23a2db008b42d0ef3a69dfef95bf05a257fdcaf7": {
       "balance": "13705424888998440375"
-    },
-    "0x544845005e42fe00a3c0e9735eeec25aa068b428": {
-      "balance": "1713576493142594890"
     }
   },
   "user_histories": {
     "0x544845005e42fe00a3c0e9735eeec25aa068b428": {
       "first_seen": 1759324979,
-      "last_seen": 1759419107,
+      "last_seen": 1766047835,
       "entry_timestamp": 1759324979,
-      "exit_timestamp": null,
+      "exit_timestamp": 1766047835,
       "entry_block": 23483222,
-      "exit_block": null,
+      "exit_block": 24038406,
       "max_balance": 1713576493142594890,
       "holding_periods": [
         {
@@ -44,14 +41,17 @@
         },
         {
           "entry_timestamp": 1759419107,
-          "exit_timestamp": null,
+          "exit_timestamp": 1766047835,
           "entry_block": 23491010,
-          "exit_block": null,
-          "entry_date": "2025-10-02T15:31:47+00:00"
+          "exit_block": 24038406,
+          "entry_date": "2025-10-02T15:31:47+00:00",
+          "duration": 6628728,
+          "exit_date": "2025-12-18T08:50:35+00:00",
+          "duration_days": 76.7213888888889
         }
       ],
-      "total_holding_duration": 56208,
-      "is_current_holder": true,
+      "total_holding_duration": 6684936,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -76,11 +76,19 @@
           "block": 23491010,
           "timestamp": 1759419107,
           "datetime": "2025-10-02T15:31:47+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "1713576493142594890",
+          "balance_after": "0",
+          "block": 24038406,
+          "timestamp": 1766047835,
+          "datetime": "2025-12-18T08:50:35+00:00"
         }
       ],
       "first_seen_date": "2025-10-01T13:22:59+00:00",
-      "last_seen_date": "2025-10-02T15:31:47+00:00",
-      "total_holding_duration_days": 0.6505555555555556
+      "last_seen_date": "2025-12-18T08:50:35+00:00",
+      "total_holding_duration_days": 77.37194444444444
     },
     "0x13b90df23158808185b247ab61ede61b75d49e23": {
       "first_seen": 1760261663,
