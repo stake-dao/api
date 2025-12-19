@@ -5,19 +5,16 @@
     "address": "0x40b7380796751D15005197fB488b0449bD691E46",
     "symbol": "USDS-SPK PENDLE LP"
   },
-  "last_block": 24047988,
-  "last_updated": "2025-12-19T16:58:58.489521+00:00",
+  "last_block": 24048048,
+  "last_updated": "2025-12-19T17:10:58.900273+00:00",
   "stats": {
     "total_deposited": "211167484547565805908438",
-    "total_withdrawn": "113678968777813778748442",
-    "current_supply": "97488515769752027159996",
-    "current_holders": 6,
+    "total_withdrawn": "135446708459436758924112",
+    "current_supply": "75720776088129046984326",
+    "current_holders": 5,
     "total_users": 13
   },
   "current_holders": {
-    "0xf5b8158dbdd6382ac8070c93e03bc49a3f28f4b8": {
-      "balance": "21767739681622980175670"
-    },
     "0xc80ce263a4434d576fa6d5e35e1be81750b1ae84": {
       "balance": "17993888947817766746102"
     },
@@ -478,23 +475,26 @@
     },
     "0xf5b8158dbdd6382ac8070c93e03bc49a3f28f4b8": {
       "first_seen": 1761423731,
-      "last_seen": 1761423731,
+      "last_seen": 1766163587,
       "entry_timestamp": 1761423731,
-      "exit_timestamp": null,
+      "exit_timestamp": 1766163587,
       "entry_block": 23656828,
-      "exit_block": null,
+      "exit_block": 24047993,
       "max_balance": 21767739681622980175670,
       "holding_periods": [
         {
           "entry_timestamp": 1761423731,
-          "exit_timestamp": null,
+          "exit_timestamp": 1766163587,
           "entry_block": 23656828,
-          "exit_block": null,
-          "entry_date": "2025-10-25T20:22:11+00:00"
+          "exit_block": 24047993,
+          "entry_date": "2025-10-25T20:22:11+00:00",
+          "duration": 4739856,
+          "exit_date": "2025-12-19T16:59:47+00:00",
+          "duration_days": 54.85944444444444
         }
       ],
-      "total_holding_duration": 0,
-      "is_current_holder": true,
+      "total_holding_duration": 4739856,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -503,11 +503,19 @@
           "block": 23656828,
           "timestamp": 1761423731,
           "datetime": "2025-10-25T20:22:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "21767739681622980175670",
+          "balance_after": "0",
+          "block": 24047993,
+          "timestamp": 1766163587,
+          "datetime": "2025-12-19T16:59:47+00:00"
         }
       ],
       "first_seen_date": "2025-10-25T20:22:11+00:00",
-      "last_seen_date": "2025-10-25T20:22:11+00:00",
-      "total_holding_duration_days": 0
+      "last_seen_date": "2025-12-19T16:59:47+00:00",
+      "total_holding_duration_days": 54.85944444444444
     },
     "0xc80ce263a4434d576fa6d5e35e1be81750b1ae84": {
       "first_seen": 1761424367,
