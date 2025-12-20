@@ -5,12 +5,12 @@
     "address": "0xEB5819B31A0378407F43aBa2F3E9d16b40aa5ec7",
     "symbol": "sUSDf PENDLE LP"
   },
-  "last_block": 24053490,
-  "last_updated": "2025-12-20T11:23:36.613735+00:00",
+  "last_block": 24053555,
+  "last_updated": "2025-12-20T11:36:39.374372+00:00",
   "stats": {
     "total_deposited": "2904037620524355362702057",
-    "total_withdrawn": "2661345350081983223533991",
-    "current_supply": "242692270442372139168066",
+    "total_withdrawn": "2661450350081983223533991",
+    "current_supply": "242587270442372139168066",
     "current_holders": 12,
     "total_users": 42
   },
@@ -31,7 +31,7 @@
       "balance": "9929857414748093325185"
     },
     "0x54fb9590bd47be3349b5f3aaf2e40484b5320dd0": {
-      "balance": "5396347827501585712966"
+      "balance": "5291347827501585712966"
     },
     "0x65b75050255bd57a8bd155f85b91b403c6aa1ee0": {
       "balance": "4952942619418077289634"
@@ -1840,7 +1840,7 @@
     },
     "0x54fb9590bd47be3349b5f3aaf2e40484b5320dd0": {
       "first_seen": 1764022127,
-      "last_seen": 1764022127,
+      "last_seen": 1766230115,
       "entry_timestamp": 1764022127,
       "exit_timestamp": null,
       "entry_block": 23871572,
@@ -1865,10 +1865,18 @@
           "block": 23871572,
           "timestamp": 1764022127,
           "datetime": "2025-11-24T22:08:47+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "105000000000000000000",
+          "balance_after": "5291347827501585712966",
+          "block": 24053515,
+          "timestamp": 1766230115,
+          "datetime": "2025-12-20T11:28:35+00:00"
         }
       ],
       "first_seen_date": "2025-11-24T22:08:47+00:00",
-      "last_seen_date": "2025-11-24T22:08:47+00:00",
+      "last_seen_date": "2025-12-20T11:28:35+00:00",
       "total_holding_duration_days": 0
     },
     "0xb93d314d64fcd63e2a786249787fd02267238d19": {
