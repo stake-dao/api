@@ -5,24 +5,24 @@
     "address": "0x13333E7CAf39a9f9203852E0817D923a3c2f549A",
     "symbol": "USDaf PENDLE LP"
   },
-  "last_block": 24084575,
-  "last_updated": "2025-12-24T19:29:45.692299+00:00",
+  "last_block": 24084622,
+  "last_updated": "2025-12-24T19:39:07.198954+00:00",
   "stats": {
     "total_deposited": "180436846215291740070",
-    "total_withdrawn": "0",
-    "current_supply": "180436846215291740070",
+    "total_withdrawn": "90218423107645870035",
+    "current_supply": "90218423107645870035",
     "current_holders": 1,
     "total_users": 1
   },
   "current_holders": {
     "0xc2c53b1b9c4ecdced7c545795a9cfa3f7912baec": {
-      "balance": "180436846215291740070"
+      "balance": "90218423107645870035"
     }
   },
   "user_histories": {
     "0xc2c53b1b9c4ecdced7c545795a9cfa3f7912baec": {
       "first_seen": 1766426639,
-      "last_seen": 1766426639,
+      "last_seen": 1766604779,
       "entry_timestamp": 1766426639,
       "exit_timestamp": null,
       "entry_block": 24069820,
@@ -55,10 +55,18 @@
           "block": 24069820,
           "timestamp": 1766426639,
           "datetime": "2025-12-22T18:03:59+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "90218423107645870035",
+          "balance_after": "90218423107645870035",
+          "block": 24084592,
+          "timestamp": 1766604779,
+          "datetime": "2025-12-24T19:32:59+00:00"
         }
       ],
       "first_seen_date": "2025-12-22T18:03:59+00:00",
-      "last_seen_date": "2025-12-22T18:03:59+00:00",
+      "last_seen_date": "2025-12-24T19:32:59+00:00",
       "total_holding_duration_days": 0
     }
   }
