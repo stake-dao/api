@@ -5,12 +5,12 @@
     "address": "0x0e3735d5Ee96d21426Ee40e7Dcb623513e0b6876",
     "symbol": "fxSAVE PENDLE LP"
   },
-  "last_block": 24082760,
-  "last_updated": "2025-12-24T13:24:57.209909+00:00",
+  "last_block": 24082860,
+  "last_updated": "2025-12-24T13:44:54.162995+00:00",
   "stats": {
     "total_deposited": "108102910897679861629954",
-    "total_withdrawn": "10146483626384080132770",
-    "current_supply": "97956427271295781497184",
+    "total_withdrawn": "23157620621401014590599",
+    "current_supply": "84945290276278847039355",
     "current_holders": 4,
     "total_users": 4
   },
@@ -19,7 +19,7 @@
       "balance": "48912552059141138352014"
     },
     "0x061b84fde0aa74ecbf8ecdb0481576fee9ae35aa": {
-      "balance": "36022273990033868915658"
+      "balance": "23011136995016934457829"
     },
     "0xa66daaf3e6736cce993b56eced596512a7911df8": {
       "balance": "12875117595736694096742"
@@ -154,7 +154,7 @@
     },
     "0x061b84fde0aa74ecbf8ecdb0481576fee9ae35aa": {
       "first_seen": 1765806611,
-      "last_seen": 1766372195,
+      "last_seen": 1766583287,
       "entry_timestamp": 1765806611,
       "exit_timestamp": null,
       "entry_block": 24018410,
@@ -195,10 +195,18 @@
           "block": 24065307,
           "timestamp": 1766372195,
           "datetime": "2025-12-22T02:56:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "13011136995016934457829",
+          "balance_after": "23011136995016934457829",
+          "block": 24082810,
+          "timestamp": 1766583287,
+          "datetime": "2025-12-24T13:34:47+00:00"
         }
       ],
       "first_seen_date": "2025-12-15T13:50:11+00:00",
-      "last_seen_date": "2025-12-22T02:56:35+00:00",
+      "last_seen_date": "2025-12-24T13:34:47+00:00",
       "total_holding_duration_days": 0
     }
   }
