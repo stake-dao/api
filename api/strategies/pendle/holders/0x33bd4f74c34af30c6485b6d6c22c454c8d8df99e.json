@@ -5,15 +5,61 @@
     "address": "0xcFD848b9f6fEf552204014ac67901223AD6bf679",
     "symbol": "wstETH PENDLE LP"
   },
-  "last_block": 24095465,
-  "last_updated": "2025-12-26T07:59:20.155614+00:00",
+  "last_block": 24095546,
+  "last_updated": "2025-12-26T08:15:40.929124+00:00",
   "stats": {
-    "total_deposited": "0",
+    "total_deposited": "121740000000000000",
     "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
-    "total_users": 0
+    "current_supply": "121740000000000000",
+    "current_holders": 1,
+    "total_users": 1
   },
-  "current_holders": {},
-  "user_histories": {}
+  "current_holders": {
+    "0xa04cbcbf43abd445aeac02d6ea070c2275c2eaf5": {
+      "balance": "121740000000000000"
+    }
+  },
+  "user_histories": {
+    "0xa04cbcbf43abd445aeac02d6ea070c2275c2eaf5": {
+      "first_seen": 1766736455,
+      "last_seen": 1766736455,
+      "entry_timestamp": 1766736455,
+      "exit_timestamp": null,
+      "entry_block": 24095507,
+      "exit_block": null,
+      "max_balance": 121740000000000000,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1766736455,
+          "exit_timestamp": null,
+          "entry_block": 24095507,
+          "exit_block": null,
+          "entry_date": "2025-12-26T08:07:35+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "60870000000000000",
+          "balance_after": "60870000000000000",
+          "block": 24095507,
+          "timestamp": 1766736455,
+          "datetime": "2025-12-26T08:07:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "60870000000000000",
+          "balance_after": "121740000000000000",
+          "block": 24095507,
+          "timestamp": 1766736455,
+          "datetime": "2025-12-26T08:07:35+00:00"
+        }
+      ],
+      "first_seen_date": "2025-12-26T08:07:35+00:00",
+      "last_seen_date": "2025-12-26T08:07:35+00:00",
+      "total_holding_duration_days": 0
+    }
+  }
 }
