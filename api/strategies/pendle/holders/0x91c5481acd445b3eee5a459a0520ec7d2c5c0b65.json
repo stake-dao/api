@@ -5,15 +5,61 @@
     "address": "0xf5929a1C332ceaB7918A4593a43Db2B9aC20095f",
     "symbol": "reUSD PENDLE LP"
   },
-  "last_block": 24131930,
-  "last_updated": "2025-12-31T10:12:31.912045+00:00",
+  "last_block": 24132009,
+  "last_updated": "2025-12-31T10:28:16.947287+00:00",
   "stats": {
-    "total_deposited": "0",
+    "total_deposited": "38732990760965634",
     "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
-    "total_users": 0
+    "current_supply": "38732990760965634",
+    "current_holders": 1,
+    "total_users": 1
   },
-  "current_holders": {},
-  "user_histories": {}
+  "current_holders": {
+    "0xe158c62b09dccf69009822199ab6d31a683245dc": {
+      "balance": "38732990760965634"
+    }
+  },
+  "user_histories": {
+    "0xe158c62b09dccf69009822199ab6d31a683245dc": {
+      "first_seen": 1767176507,
+      "last_seen": 1767176507,
+      "entry_timestamp": 1767176507,
+      "exit_timestamp": null,
+      "entry_block": 24131977,
+      "exit_block": null,
+      "max_balance": 38732990760965634,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1767176507,
+          "exit_timestamp": null,
+          "entry_block": 24131977,
+          "exit_block": null,
+          "entry_date": "2025-12-31T10:21:47+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "19366495380482817",
+          "balance_after": "19366495380482817",
+          "block": 24131977,
+          "timestamp": 1767176507,
+          "datetime": "2025-12-31T10:21:47+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "19366495380482817",
+          "balance_after": "38732990760965634",
+          "block": 24131977,
+          "timestamp": 1767176507,
+          "datetime": "2025-12-31T10:21:47+00:00"
+        }
+      ],
+      "first_seen_date": "2025-12-31T10:21:47+00:00",
+      "last_seen_date": "2025-12-31T10:21:47+00:00",
+      "total_holding_duration_days": 0
+    }
+  }
 }
