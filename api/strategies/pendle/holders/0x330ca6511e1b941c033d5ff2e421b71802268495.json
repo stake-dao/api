@@ -5,18 +5,18 @@
     "address": "0x39C3F8e0E7C6F44Dc8F0397FEb124517ba82e26E",
     "symbol": "wstUSR PENDLE LP"
   },
-  "last_block": 24136038,
-  "last_updated": "2025-12-31T23:57:25.402828+00:00",
+  "last_block": 24136277,
+  "last_updated": "2026-01-01T00:45:13.210218+00:00",
   "stats": {
-    "total_deposited": "6526624116453676527058",
+    "total_deposited": "10429494313743652629984",
     "total_withdrawn": "799037027676526634099",
-    "current_supply": "5727587088777149892959",
+    "current_supply": "9630457286067125995885",
     "current_holders": 2,
     "total_users": 3
   },
   "current_holders": {
     "0x0ddac437952c920e1d1ac5c50e84260c81d9d6dc": {
-      "balance": "3323790350961551597408"
+      "balance": "7226660548251527700334"
     },
     "0xaa080789b13e0e5051a4573a8defb7eb3411df6b": {
       "balance": "2403796737815598295551"
@@ -69,12 +69,12 @@
     },
     "0x0ddac437952c920e1d1ac5c50e84260c81d9d6dc": {
       "first_seen": 1759316879,
-      "last_seen": 1765535891,
+      "last_seen": 1767225443,
       "entry_timestamp": 1759316879,
       "exit_timestamp": null,
       "entry_block": 23482555,
       "exit_block": null,
-      "max_balance": 3323790350961551597408,
+      "max_balance": 7226660548251527700334,
       "holding_periods": [
         {
           "entry_timestamp": 1759316879,
@@ -118,10 +118,26 @@
           "block": 23996002,
           "timestamp": 1765535891,
           "datetime": "2025-12-12T10:38:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "1951435098644988051463",
+          "balance_after": "5275225449606539648871",
+          "block": 24136039,
+          "timestamp": 1767225443,
+          "datetime": "2025-12-31T23:57:23+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "1951435098644988051463",
+          "balance_after": "7226660548251527700334",
+          "block": 24136039,
+          "timestamp": 1767225443,
+          "datetime": "2025-12-31T23:57:23+00:00"
         }
       ],
       "first_seen_date": "2025-10-01T11:07:59+00:00",
-      "last_seen_date": "2025-12-12T10:38:11+00:00",
+      "last_seen_date": "2025-12-31T23:57:23+00:00",
       "total_holding_duration_days": 0
     },
     "0xaa080789b13e0e5051a4573a8defb7eb3411df6b": {
