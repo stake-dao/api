@@ -5,15 +5,61 @@
     "address": "0xfCe3F966A131c46A51B896CEea3917BC4c302577",
     "symbol": "ynRWAx PENDLE LP"
   },
-  "last_block": 24138308,
-  "last_updated": "2026-01-01T07:32:54.676723+00:00",
+  "last_block": 24138383,
+  "last_updated": "2026-01-01T07:48:13.842988+00:00",
   "stats": {
-    "total_deposited": "0",
+    "total_deposited": "18245611219139878",
     "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
-    "total_users": 0
+    "current_supply": "18245611219139878",
+    "current_holders": 1,
+    "total_users": 1
   },
-  "current_holders": {},
-  "user_histories": {}
+  "current_holders": {
+    "0x114b2f6cfff22d1ab14b94de3dc869816af2617b": {
+      "balance": "18245611219139878"
+    }
+  },
+  "user_histories": {
+    "0x114b2f6cfff22d1ab14b94de3dc869816af2617b": {
+      "first_seen": 1767252779,
+      "last_seen": 1767252779,
+      "entry_timestamp": 1767252779,
+      "exit_timestamp": null,
+      "entry_block": 24138309,
+      "exit_block": null,
+      "max_balance": 18245611219139878,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1767252779,
+          "exit_timestamp": null,
+          "entry_block": 24138309,
+          "exit_block": null,
+          "entry_date": "2026-01-01T07:32:59+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "9122805609569939",
+          "balance_after": "9122805609569939",
+          "block": 24138309,
+          "timestamp": 1767252779,
+          "datetime": "2026-01-01T07:32:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "9122805609569939",
+          "balance_after": "18245611219139878",
+          "block": 24138309,
+          "timestamp": 1767252779,
+          "datetime": "2026-01-01T07:32:59+00:00"
+        }
+      ],
+      "first_seen_date": "2026-01-01T07:32:59+00:00",
+      "last_seen_date": "2026-01-01T07:32:59+00:00",
+      "total_holding_duration_days": 0
+    }
+  }
 }
