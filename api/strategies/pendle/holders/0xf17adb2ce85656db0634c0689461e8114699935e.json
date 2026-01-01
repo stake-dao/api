@@ -5,18 +5,18 @@
     "address": "0xbE570Be4238BD9019aA8D575204f1DAA27Ee0a15",
     "symbol": "asdPENDLE PENDLE LP"
   },
-  "last_block": 24141144,
-  "last_updated": "2026-01-01T17:01:52.642488+00:00",
+  "last_block": 24141237,
+  "last_updated": "2026-01-01T17:20:33.909866+00:00",
   "stats": {
     "total_deposited": "28163028415214971805759",
-    "total_withdrawn": "1199551926393073259230",
-    "current_supply": "26963476488821898546529",
+    "total_withdrawn": "1963737326393073259230",
+    "current_supply": "26199291088821898546529",
     "current_holders": 7,
     "total_users": 10
   },
   "current_holders": {
     "0x7ecf3629e27b410d6a277cdca9c99240706eebec": {
-      "balance": "11202698013378364459308"
+      "balance": "10438512613378364459308"
     },
     "0xf930ebbd05ef8b25b1797b9b2109ddc9b0d43063": {
       "balance": "6528268623996689332364"
@@ -345,7 +345,7 @@
     },
     "0x7ecf3629e27b410d6a277cdca9c99240706eebec": {
       "first_seen": 1766824007,
-      "last_seen": 1767116939,
+      "last_seen": 1767287867,
       "entry_timestamp": 1766824007,
       "exit_timestamp": null,
       "entry_block": 24102762,
@@ -426,10 +426,18 @@
           "block": 24127041,
           "timestamp": 1767116939,
           "datetime": "2025-12-30T17:48:59+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "764185400000000000000",
+          "balance_after": "10438512613378364459308",
+          "block": 24141224,
+          "timestamp": 1767287867,
+          "datetime": "2026-01-01T17:17:47+00:00"
         }
       ],
       "first_seen_date": "2025-12-27T08:26:47+00:00",
-      "last_seen_date": "2025-12-30T17:48:59+00:00",
+      "last_seen_date": "2026-01-01T17:17:47+00:00",
       "total_holding_duration_days": 0
     },
     "0xcdbe2929b64dff847b993202beba275fb960d859": {
