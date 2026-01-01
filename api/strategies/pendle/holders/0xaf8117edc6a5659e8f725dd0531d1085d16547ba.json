@@ -5,18 +5,21 @@
     "address": "0xfCe3F966A131c46A51B896CEea3917BC4c302577",
     "symbol": "ynRWAx PENDLE LP"
   },
-  "last_block": 24143137,
-  "last_updated": "2026-01-01T23:42:56.332323+00:00",
+  "last_block": 24143206,
+  "last_updated": "2026-01-01T23:56:53.251264+00:00",
   "stats": {
-    "total_deposited": "18245611219139878",
+    "total_deposited": "18435010640294606",
     "total_withdrawn": "0",
-    "current_supply": "18245611219139878",
-    "current_holders": 1,
-    "total_users": 1
+    "current_supply": "18435010640294606",
+    "current_holders": 2,
+    "total_users": 2
   },
   "current_holders": {
     "0x114b2f6cfff22d1ab14b94de3dc869816af2617b": {
       "balance": "18245611219139878"
+    },
+    "0x385c8a11519e84f41374445b67fe6966bfface4d": {
+      "balance": "189399421154728"
     }
   },
   "user_histories": {
@@ -59,6 +62,47 @@
       ],
       "first_seen_date": "2026-01-01T07:32:59+00:00",
       "last_seen_date": "2026-01-01T07:32:59+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0x385c8a11519e84f41374445b67fe6966bfface4d": {
+      "first_seen": 1767311303,
+      "last_seen": 1767311303,
+      "entry_timestamp": 1767311303,
+      "exit_timestamp": null,
+      "entry_block": 24143165,
+      "exit_block": null,
+      "max_balance": 189399421154728,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1767311303,
+          "exit_timestamp": null,
+          "entry_block": 24143165,
+          "exit_block": null,
+          "entry_date": "2026-01-01T23:48:23+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "94699710577364",
+          "balance_after": "94699710577364",
+          "block": 24143165,
+          "timestamp": 1767311303,
+          "datetime": "2026-01-01T23:48:23+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "94699710577364",
+          "balance_after": "189399421154728",
+          "block": 24143165,
+          "timestamp": 1767311303,
+          "datetime": "2026-01-01T23:48:23+00:00"
+        }
+      ],
+      "first_seen_date": "2026-01-01T23:48:23+00:00",
+      "last_seen_date": "2026-01-01T23:48:23+00:00",
       "total_holding_duration_days": 0
     }
   }
