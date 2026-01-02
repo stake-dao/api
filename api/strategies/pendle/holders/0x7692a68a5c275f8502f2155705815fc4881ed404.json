@@ -5,23 +5,23 @@
     "address": "0x2ec28D05d86a1FC4DE199726F7DdC8f83D23b5a5",
     "symbol": "asdCRV PENDLE LP"
   },
-  "last_block": 24148865,
-  "last_updated": "2026-01-02T18:53:07.830050+00:00",
+  "last_block": 24148945,
+  "last_updated": "2026-01-02T19:09:16.905868+00:00",
   "stats": {
-    "total_deposited": "500574620138247559033573",
+    "total_deposited": "756341195132982556684149",
     "total_withdrawn": "80666213379415853011191",
-    "current_supply": "419908406758831706022382",
+    "current_supply": "675674981753566703672958",
     "current_holders": 3,
     "total_users": 3
   },
   "current_holders": {
+    "0xf930ebbd05ef8b25b1797b9b2109ddc9b0d43063": {
+      "balance": "336432788374150850661767"
+    },
     "0xb0e83c2d71a991017e0116d58c5765abc57384af": {
       "balance": "258575980000000000000000"
     },
     "0x52ea58f4fc3ced48fa18e909226c1f8a0ef887dc": {
-      "balance": "80666213379415853011191"
-    },
-    "0xf930ebbd05ef8b25b1797b9b2109ddc9b0d43063": {
       "balance": "80666213379415853011191"
     }
   },
@@ -118,12 +118,12 @@
     },
     "0xf930ebbd05ef8b25b1797b9b2109ddc9b0d43063": {
       "first_seen": 1767367055,
-      "last_seen": 1767367055,
+      "last_seen": 1767380687,
       "entry_timestamp": 1767367055,
       "exit_timestamp": null,
       "entry_block": 24147792,
       "exit_block": null,
-      "max_balance": 80666213379415853011191,
+      "max_balance": 336432788374150850661767,
       "holding_periods": [
         {
           "entry_timestamp": 1767367055,
@@ -143,10 +143,26 @@
           "block": 24147792,
           "timestamp": 1767367055,
           "datetime": "2026-01-02T15:17:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "127883287497367498825288",
+          "balance_after": "208549500876783351836479",
+          "block": 24148924,
+          "timestamp": 1767380687,
+          "datetime": "2026-01-02T19:04:47+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "127883287497367498825288",
+          "balance_after": "336432788374150850661767",
+          "block": 24148924,
+          "timestamp": 1767380687,
+          "datetime": "2026-01-02T19:04:47+00:00"
         }
       ],
       "first_seen_date": "2026-01-02T15:17:35+00:00",
-      "last_seen_date": "2026-01-02T15:17:35+00:00",
+      "last_seen_date": "2026-01-02T19:04:47+00:00",
       "total_holding_duration_days": 0
     }
   }
