@@ -5,18 +5,18 @@
     "address": "0xfCe3F966A131c46A51B896CEea3917BC4c302577",
     "symbol": "ynRWAx PENDLE LP"
   },
-  "last_block": 24147220,
-  "last_updated": "2026-01-02T13:22:25.809830+00:00",
+  "last_block": 24147331,
+  "last_updated": "2026-01-02T13:44:56.360075+00:00",
   "stats": {
-    "total_deposited": "18435010640294606",
-    "total_withdrawn": "9122805609569939",
-    "current_supply": "9312205030724667",
+    "total_deposited": "36680621859434484",
+    "total_withdrawn": "18245611219139878",
+    "current_supply": "18435010640294606",
     "current_holders": 2,
     "total_users": 2
   },
   "current_holders": {
     "0x114b2f6cfff22d1ab14b94de3dc869816af2617b": {
-      "balance": "9122805609569939"
+      "balance": "18245611219139878"
     },
     "0x385c8a11519e84f41374445b67fe6966bfface4d": {
       "balance": "189399421154728"
@@ -25,12 +25,12 @@
   "user_histories": {
     "0x114b2f6cfff22d1ab14b94de3dc869816af2617b": {
       "first_seen": 1767252779,
-      "last_seen": 1767319199,
+      "last_seen": 1767360863,
       "entry_timestamp": 1767252779,
       "exit_timestamp": null,
       "entry_block": 24138309,
       "exit_block": null,
-      "max_balance": 18245611219139878,
+      "max_balance": 27368416828709817,
       "holding_periods": [
         {
           "entry_timestamp": 1767252779,
@@ -66,10 +66,34 @@
           "block": 24143819,
           "timestamp": 1767319199,
           "datetime": "2026-01-02T01:59:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "9122805609569939",
+          "balance_after": "18245611219139878",
+          "block": 24147269,
+          "timestamp": 1767360731,
+          "datetime": "2026-01-02T13:32:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "9122805609569939",
+          "balance_after": "27368416828709817",
+          "block": 24147269,
+          "timestamp": 1767360731,
+          "datetime": "2026-01-02T13:32:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "9122805609569939",
+          "balance_after": "18245611219139878",
+          "block": 24147280,
+          "timestamp": 1767360863,
+          "datetime": "2026-01-02T13:34:23+00:00"
         }
       ],
       "first_seen_date": "2026-01-01T07:32:59+00:00",
-      "last_seen_date": "2026-01-02T01:59:59+00:00",
+      "last_seen_date": "2026-01-02T13:34:23+00:00",
       "total_holding_duration_days": 0
     },
     "0x385c8a11519e84f41374445b67fe6966bfface4d": {
