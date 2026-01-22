@@ -1,0 +1,64 @@
+{
+  "gauge_id": "0xcfdDCfe0Bb8FfeAdcf9a7C69A41D00A7B157fffa",
+  "vault_id": "0x96929336dc112672E30A283F85f96B1FBa88a653",
+  "token": {
+    "address": "0x79f06a8dC564717A9aD418049d0BE9A60f2646c0",
+    "symbol": "alUSD PENDLE LP"
+  },
+  "last_block": 24024434,
+  "last_updated": "2025-12-16T10:00:41.450816+00:00",
+  "stats": {
+    "total_deposited": "952215574525437",
+    "total_withdrawn": "952215574525437",
+    "current_supply": "0",
+    "current_holders": 0,
+    "total_users": 1
+  },
+  "current_holders": {},
+  "user_histories": {
+    "0xb240fc887d66efb49e5e8f63c5fe525a30656ae2": {
+      "first_seen": 1758376115,
+      "last_seen": 1761179531,
+      "entry_timestamp": 1758376115,
+      "exit_timestamp": 1761179531,
+      "entry_block": 23404673,
+      "exit_block": 23636650,
+      "max_balance": 952215574525437,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1758376115,
+          "exit_timestamp": 1761179531,
+          "entry_block": 23404673,
+          "exit_block": 23636650,
+          "duration": 2803416,
+          "entry_date": "2025-09-20T13:48:35+00:00",
+          "exit_date": "2025-10-23T00:32:11+00:00",
+          "duration_days": 32.44694444444445
+        }
+      ],
+      "total_holding_duration": 2803416,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "952215574525437",
+          "balance_after": "952215574525437",
+          "block": 23404673,
+          "timestamp": 1758376115,
+          "datetime": "2025-09-20T13:48:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "952215574525437",
+          "balance_after": "0",
+          "block": 23636650,
+          "timestamp": 1761179531,
+          "datetime": "2025-10-23T00:32:11+00:00"
+        }
+      ],
+      "first_seen_date": "2025-09-20T13:48:35+00:00",
+      "last_seen_date": "2025-10-23T00:32:11+00:00",
+      "total_holding_duration_days": 32.44694444444445
+    }
+  }
+}

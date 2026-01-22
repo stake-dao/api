@@ -1,0 +1,73 @@
+{
+  "gauge_id": "0x301B9436dFf75771CE3e1b44b064aDF28Fa3a780",
+  "vault_id": "0x64C7D88f5fa42dd6B157B2B142CED38a1aAd2066",
+  "token": {
+    "address": "0x634dc4B08818021FA55a16044495B02Ad45EC430",
+    "symbol": "upUSDC PENDLE LP"
+  },
+  "last_block": 24289553,
+  "last_updated": "2026-01-22T09:53:01.297592+00:00",
+  "stats": {
+    "total_deposited": "3981622794",
+    "total_withdrawn": "1990811397",
+    "current_supply": "1990811397",
+    "current_holders": 1,
+    "total_users": 1
+  },
+  "current_holders": {
+    "0xe97db597b9eee7ea812bb1dbdb16f27383513068": {
+      "balance": "1990811397"
+    }
+  },
+  "user_histories": {
+    "0xe97db597b9eee7ea812bb1dbdb16f27383513068": {
+      "first_seen": 1767906911,
+      "last_seen": 1768387499,
+      "entry_timestamp": 1767906911,
+      "exit_timestamp": null,
+      "entry_block": 24192578,
+      "exit_block": null,
+      "max_balance": 3981622794,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1767906911,
+          "exit_timestamp": null,
+          "entry_block": 24192578,
+          "exit_block": null,
+          "entry_date": "2026-01-08T21:15:11+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "1990811397",
+          "balance_after": "1990811397",
+          "block": 24192578,
+          "timestamp": 1767906911,
+          "datetime": "2026-01-08T21:15:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "1990811397",
+          "balance_after": "3981622794",
+          "block": 24192578,
+          "timestamp": 1767906911,
+          "datetime": "2026-01-08T21:15:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "1990811397",
+          "balance_after": "1990811397",
+          "block": 24232424,
+          "timestamp": 1768387499,
+          "datetime": "2026-01-14T10:44:59+00:00"
+        }
+      ],
+      "first_seen_date": "2026-01-08T21:15:11+00:00",
+      "last_seen_date": "2026-01-14T10:44:59+00:00",
+      "total_holding_duration_days": 0
+    }
+  }
+}

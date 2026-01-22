@@ -1,0 +1,64 @@
+{
+  "gauge_id": "0x1e269B609734A078C38e4F53A29BcB2C4f11B6ea",
+  "vault_id": "0x3944Ff476c908a3aB4B16A2084A0f5cE3645c719",
+  "token": {
+    "address": "0xA00f596e9D03fe90c5d22C15B468e8Dce4d24dE0",
+    "symbol": "rUSD PENDLE LP"
+  },
+  "last_block": 24289555,
+  "last_updated": "2026-01-22T09:53:17.834644+00:00",
+  "stats": {
+    "total_deposited": "12920830850460698294956",
+    "total_withdrawn": "12920830850460698294956",
+    "current_supply": "0",
+    "current_holders": 0,
+    "total_users": 1
+  },
+  "current_holders": {},
+  "user_histories": {
+    "0x402904e954aebee2e78b7b09595393cf05571333": {
+      "first_seen": 1761278075,
+      "last_seen": 1767840455,
+      "entry_timestamp": 1761278075,
+      "exit_timestamp": 1767840455,
+      "entry_block": 23644778,
+      "exit_block": 24187072,
+      "max_balance": 12920830850460698294956,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1761278075,
+          "exit_timestamp": 1767840455,
+          "entry_block": 23644778,
+          "exit_block": 24187072,
+          "entry_date": "2025-10-24T03:54:35+00:00",
+          "duration": 6562380,
+          "exit_date": "2026-01-08T02:47:35+00:00",
+          "duration_days": 75.95347222222222
+        }
+      ],
+      "total_holding_duration": 6562380,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "12920830850460698294956",
+          "balance_after": "12920830850460698294956",
+          "block": 23644778,
+          "timestamp": 1761278075,
+          "datetime": "2025-10-24T03:54:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "12920830850460698294956",
+          "balance_after": "0",
+          "block": 24187072,
+          "timestamp": 1767840455,
+          "datetime": "2026-01-08T02:47:35+00:00"
+        }
+      ],
+      "first_seen_date": "2025-10-24T03:54:35+00:00",
+      "last_seen_date": "2026-01-08T02:47:35+00:00",
+      "total_holding_duration_days": 75.95347222222222
+    }
+  }
+}

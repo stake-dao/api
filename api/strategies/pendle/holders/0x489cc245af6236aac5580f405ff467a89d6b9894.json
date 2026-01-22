@@ -1,0 +1,97 @@
+{
+  "gauge_id": "0x489cC245af6236aaC5580f405fF467A89d6b9894",
+  "vault_id": "0x3Bc3C820479712744aB60A33d3CE19Fe75cd8C2C",
+  "token": {
+    "address": "0xC7d566F5Cd575FdAd0e982Bd238d9abCf29807ea",
+    "symbol": "weETHs PENDLE LP"
+  },
+  "last_block": 24289550,
+  "last_updated": "2026-01-22T09:52:23.803929+00:00",
+  "stats": {
+    "total_deposited": "22429252335951132",
+    "total_withdrawn": "11214626167975566",
+    "current_supply": "11214626167975566",
+    "current_holders": 1,
+    "total_users": 1
+  },
+  "current_holders": {
+    "0x55e04edb2835e7c815f90257f8854e35d3581902": {
+      "balance": "11214626167975566"
+    }
+  },
+  "user_histories": {
+    "0x55e04edb2835e7c815f90257f8854e35d3581902": {
+      "first_seen": 1755914003,
+      "last_seen": 1761234323,
+      "entry_timestamp": 1755914003,
+      "exit_timestamp": null,
+      "entry_block": 23200627,
+      "exit_block": null,
+      "max_balance": 16821939251963349,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1755914003,
+          "exit_timestamp": null,
+          "entry_block": 23200627,
+          "exit_block": null,
+          "entry_date": "2025-08-23T01:53:23+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "5607313083987783",
+          "balance_after": "5607313083987783",
+          "block": 23200627,
+          "timestamp": 1755914003,
+          "datetime": "2025-08-23T01:53:23+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "5607313083987783",
+          "balance_after": "11214626167975566",
+          "block": 23200627,
+          "timestamp": 1755914003,
+          "datetime": "2025-08-23T01:53:23+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "5607313083987783",
+          "balance_after": "5607313083987783",
+          "block": 23430597,
+          "timestamp": 1758689171,
+          "datetime": "2025-09-24T04:46:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "5607313083987783",
+          "balance_after": "11214626167975566",
+          "block": 23433139,
+          "timestamp": 1758719819,
+          "datetime": "2025-09-24T13:16:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "5607313083987783",
+          "balance_after": "16821939251963349",
+          "block": 23433139,
+          "timestamp": 1758719819,
+          "datetime": "2025-09-24T13:16:59+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "5607313083987783",
+          "balance_after": "11214626167975566",
+          "block": 23641178,
+          "timestamp": 1761234323,
+          "datetime": "2025-10-23T15:45:23+00:00"
+        }
+      ],
+      "first_seen_date": "2025-08-23T01:53:23+00:00",
+      "last_seen_date": "2025-10-23T15:45:23+00:00",
+      "total_holding_duration_days": 0
+    }
+  }
+}

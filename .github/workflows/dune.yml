@@ -1,0 +1,50 @@
+name: Dune
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *' # Every day
+
+env:
+  TARGET_DEVOPS_DIR: target-devops
+  DEVOPS_DIR: devops
+  GIT_ACCESS_TOKEN: ${{ secrets.GIT_ACCESS_TOKEN }}
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          repository: stake-dao/automation-jobs
+          token: ${{ secrets.GIT_ACCESS_TOKEN }}
+          path: ${{ env.DEVOPS_DIR }}
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10.13"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r ${{ env.DEVOPS_DIR }}/requirements.txt
+        shell: bash
+
+      - name: Run Dune scripts
+        run: |
+          cd ${{ env.DEVOPS_DIR }}
+          python script/dune/dune_debank_current_data_script.py
+          python script/dune/dune_lockers_current_data_script.py
+          python script/dune/dune_strategies_current_data_script.py
+        shell: bash
+        env:
+          PYTHONPATH: script/

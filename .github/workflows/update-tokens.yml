@@ -1,0 +1,37 @@
+name: Update Tokens Data
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run script to update Tokens data
+        run: pnpm tsx scripts/updateTokens.ts
+
+      - name: Commit and push if changes found
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Stake DAO API update"
+          git add api/tokens
+          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update tokens data"
+          git push
+        shell: bash

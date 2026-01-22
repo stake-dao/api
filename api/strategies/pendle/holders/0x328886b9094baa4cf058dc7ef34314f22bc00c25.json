@@ -1,0 +1,89 @@
+{
+  "gauge_id": "0x328886b9094bAA4CF058Dc7Ef34314F22Bc00c25",
+  "vault_id": "0x848136eDe7Fd8aE1a30f21eaBe8379C3C433DfED",
+  "token": {
+    "address": "0x4eaA571EaFCD96f51728756BD7F396459BB9B869",
+    "symbol": "USDe (Nov 2025) PENDLE LP"
+  },
+  "last_block": 24024432,
+  "last_updated": "2025-12-16T10:00:14.247666+00:00",
+  "stats": {
+    "total_deposited": "645995892626292035309500",
+    "total_withdrawn": "322997946313146017654750",
+    "current_supply": "322997946313146017654750",
+    "current_holders": 1,
+    "total_users": 1
+  },
+  "current_holders": {
+    "0xba0511fa1ade6d10e42548ba960fac0df4809d08": {
+      "balance": "322997946313146017654750"
+    }
+  },
+  "user_histories": {
+    "0xba0511fa1ade6d10e42548ba960fac0df4809d08": {
+      "first_seen": 1758191375,
+      "last_seen": 1758375623,
+      "entry_timestamp": 1758191375,
+      "exit_timestamp": null,
+      "entry_block": 23389374,
+      "exit_block": null,
+      "max_balance": 645995892626292035309500,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1758191375,
+          "exit_timestamp": null,
+          "entry_block": 23389374,
+          "exit_block": null,
+          "entry_date": "2025-09-18T10:29:35+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "322997946313146017654750",
+          "balance_after": "322997946313146017654750",
+          "block": 23389374,
+          "timestamp": 1758191375,
+          "datetime": "2025-09-18T10:29:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "322997946313146017654750",
+          "balance_after": "645995892626292035309500",
+          "block": 23389374,
+          "timestamp": 1758191375,
+          "datetime": "2025-09-18T10:29:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "276860946313146017654750",
+          "balance_after": "369134946313146017654750",
+          "block": 23395570,
+          "timestamp": 1758266135,
+          "datetime": "2025-09-19T07:15:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "6137000000000000000000",
+          "balance_after": "362997946313146017654750",
+          "block": 23404613,
+          "timestamp": 1758375395,
+          "datetime": "2025-09-20T13:36:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "40000000000000000000000",
+          "balance_after": "322997946313146017654750",
+          "block": 23404632,
+          "timestamp": 1758375623,
+          "datetime": "2025-09-20T13:40:23+00:00"
+        }
+      ],
+      "first_seen_date": "2025-09-18T10:29:35+00:00",
+      "last_seen_date": "2025-09-20T13:40:23+00:00",
+      "total_holding_duration_days": 0
+    }
+  }
+}

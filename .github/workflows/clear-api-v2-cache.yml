@@ -1,0 +1,53 @@
+name: Clear cloudflare and api-v2 cache
+
+on:
+  workflow_dispatch: # Allows the workflow to be triggered manually -
+
+env:
+  TARGET_DEVOPS_DIR: target-devops
+  DEVOPS_DIR: devops
+  WEB3_ALCHEMY_API_KEY: ${{ secrets.WEB3_ALCHEMY_API_KEY }}
+  FRAXSCAN_TOKEN: ${{ secrets.FRAXSCAN_TOKEN }}
+  ETHERSCAN_TOKEN: ${{ secrets.ETHERSCAN_TOKEN }}
+  CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+  CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+  WORKER_USERNAME: ${{ secrets.WORKER_USERNAME }}
+  WORKER_PASSWORD: ${{ secrets.WORKER_PASSWORD }}
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          repository: stake-dao/automation-jobs
+          token: ${{ secrets.GIT_ACCESS_TOKEN }}
+          path: ${{ env.DEVOPS_DIR }}
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10.13"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r ${{ env.DEVOPS_DIR }}/requirements.txt
+        shell: bash
+
+      - name: Run the script
+        run: |
+          cd ${{ env.DEVOPS_DIR }}
+          python script/votemarket/v2/reset_api_cache.py
+        shell: bash
+        env:
+          PYTHONPATH: script/
+      
