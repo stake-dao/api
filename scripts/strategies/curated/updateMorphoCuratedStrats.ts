@@ -19,7 +19,7 @@ const updateMorphoCuratedStrats = async () => {
     },
   })
 
-  saveHistory("morpho", morphoData)
+  saveHistory('morpho', morphoData)
 }
 
 export default updateMorphoCuratedStrats

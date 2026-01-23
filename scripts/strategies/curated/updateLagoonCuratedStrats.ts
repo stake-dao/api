@@ -19,7 +19,7 @@ const updateLagoonCuratedStrats = async () => {
     },
   })
 
-  saveHistory("lagoon", lagoonData)
+  saveHistory('lagoon', lagoonData)
 }
 
 export default updateLagoonCuratedStrats
