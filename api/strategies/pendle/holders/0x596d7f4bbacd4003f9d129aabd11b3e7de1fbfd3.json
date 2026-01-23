@@ -5,12 +5,12 @@
     "address": "0x51026Ab8B54767e67f7f5543C86bF718cf00Cb4C",
     "symbol": "yvBal-GHO-USDf PENDLE LP"
   },
-  "last_block": 24294128,
-  "last_updated": "2026-01-23T01:12:53.774247+00:00",
+  "last_block": 24294385,
+  "last_updated": "2026-01-23T02:04:28.552870+00:00",
   "stats": {
     "total_deposited": "702092154696329111862136",
-    "total_withdrawn": "351020132678918348061531",
-    "current_supply": "351072022017410763800605",
+    "total_withdrawn": "351021132678918348061531",
+    "current_supply": "351071022017410763800605",
     "current_holders": 16,
     "total_users": 16
   },
@@ -40,7 +40,7 @@
       "balance": "12667144364846797457059"
     },
     "0x7f3d8dc8263b94967759bf5c801c912535d25f6d": {
-      "balance": "12059000000000000000000"
+      "balance": "12058000000000000000000"
     },
     "0xfc20a7cfc0eb60169a9b7f173e4f221264c51b76": {
       "balance": "6226713093555010650142"
@@ -621,7 +621,7 @@
     },
     "0x7f3d8dc8263b94967759bf5c801c912535d25f6d": {
       "first_seen": 1755216431,
-      "last_seen": 1755302795,
+      "last_seen": 1769133527,
       "entry_timestamp": 1755216431,
       "exit_timestamp": null,
       "entry_block": 23142752,
@@ -678,10 +678,18 @@
           "block": 23149916,
           "timestamp": 1755302795,
           "datetime": "2025-08-16T00:06:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "1000000000000000000",
+          "balance_after": "12058000000000000000000",
+          "block": 24294357,
+          "timestamp": 1769133527,
+          "datetime": "2026-01-23T01:58:47+00:00"
         }
       ],
       "first_seen_date": "2025-08-15T00:07:11+00:00",
-      "last_seen_date": "2025-08-16T00:06:35+00:00",
+      "last_seen_date": "2026-01-23T01:58:47+00:00",
       "total_holding_duration_days": 0
     },
     "0x52c30ebc3f92e4add798908926694dce2fea270d": {
