@@ -5,12 +5,12 @@
     "address": "0x7da97FbFAA3020f856C60EB4EF068079A9023Aca",
     "symbol": "hgETH PENDLE LP"
   },
-  "last_block": 24298295,
-  "last_updated": "2026-01-23T15:11:34.536131+00:00",
+  "last_block": 24298407,
+  "last_updated": "2026-01-23T15:34:10.603319+00:00",
   "stats": {
     "total_deposited": "111347967753333436261",
-    "total_withdrawn": "69759377414897245449",
-    "current_supply": "41588590338436190812",
+    "total_withdrawn": "75295241816975895867",
+    "current_supply": "36052725936357540394",
     "current_holders": 4,
     "total_users": 7
   },
@@ -18,11 +18,11 @@
     "0x23a2db008b42d0ef3a69dfef95bf05a257fdcaf7": {
       "balance": "24041796553779123553"
     },
-    "0xc25b8fd380755af384a8ee6a2afba973b0030675": {
-      "balance": "11071728804157300836"
-    },
     "0x04261f3a4f4e244b80ed7e3d8b7ff28abd6c4dc9": {
       "balance": "6254800344182279981"
+    },
+    "0xc25b8fd380755af384a8ee6a2afba973b0030675": {
+      "balance": "5535864402078650418"
     },
     "0x31632636d664895f1bd9d03f5f7c162a2a6980eb": {
       "balance": "220264636317486442"
@@ -204,7 +204,7 @@
     },
     "0xc25b8fd380755af384a8ee6a2afba973b0030675": {
       "first_seen": 1767642275,
-      "last_seen": 1767642275,
+      "last_seen": 1769182007,
       "entry_timestamp": 1767642275,
       "exit_timestamp": null,
       "entry_block": 24170635,
@@ -237,10 +237,18 @@
           "block": 24170635,
           "timestamp": 1767642275,
           "datetime": "2026-01-05T19:44:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "5535864402078650418",
+          "balance_after": "5535864402078650418",
+          "block": 24298372,
+          "timestamp": 1769182007,
+          "datetime": "2026-01-23T15:26:47+00:00"
         }
       ],
       "first_seen_date": "2026-01-05T19:44:35+00:00",
-      "last_seen_date": "2026-01-05T19:44:35+00:00",
+      "last_seen_date": "2026-01-23T15:26:47+00:00",
       "total_holding_duration_days": 0
     },
     "0x04261f3a4f4e244b80ed7e3d8b7ff28abd6c4dc9": {
