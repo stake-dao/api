@@ -5,21 +5,18 @@
     "address": "0xCC781b043933c10a04409b22aaDa3a3D1A7f29D4",
     "symbol": "stcUSD PENDLE LP"
   },
-  "last_block": 24329446,
-  "last_updated": "2026-01-27T23:26:45.562661+00:00",
+  "last_block": 24329513,
+  "last_updated": "2026-01-27T23:40:15.488845+00:00",
   "stats": {
     "total_deposited": "498236460953442492769432",
-    "total_withdrawn": "453310751741092479675381",
-    "current_supply": "44925709212350013094051",
-    "current_holders": 3,
+    "total_withdrawn": "467615648684530543407327",
+    "current_supply": "30620812268911949362105",
+    "current_holders": 2,
     "total_users": 6
   },
   "current_holders": {
     "0x79b1a0eecca4ea3ea919396fc3f4c99e027e4729": {
       "balance": "18465514752128557972774"
-    },
-    "0x92898941d854a805248f9ff9ba900dbc2e94ff24": {
-      "balance": "14304896943438063731946"
     },
     "0xca4bf71efe4bb447e003de0e0c0ffd5afb3c8f75": {
       "balance": "12155297516783391389331"
@@ -182,23 +179,26 @@
     },
     "0x92898941d854a805248f9ff9ba900dbc2e94ff24": {
       "first_seen": 1762618799,
-      "last_seen": 1762618799,
+      "last_seen": 1769556815,
       "entry_timestamp": 1762618799,
-      "exit_timestamp": null,
+      "exit_timestamp": 1769556815,
       "entry_block": 23755690,
-      "exit_block": null,
+      "exit_block": 24329481,
       "max_balance": 14304896943438063731946,
       "holding_periods": [
         {
           "entry_timestamp": 1762618799,
-          "exit_timestamp": null,
+          "exit_timestamp": 1769556815,
           "entry_block": 23755690,
-          "exit_block": null,
-          "entry_date": "2025-11-08T16:19:59+00:00"
+          "exit_block": 24329481,
+          "entry_date": "2025-11-08T16:19:59+00:00",
+          "duration": 6938016,
+          "exit_date": "2026-01-27T23:33:35+00:00",
+          "duration_days": 80.30111111111111
         }
       ],
-      "total_holding_duration": 0,
-      "is_current_holder": true,
+      "total_holding_duration": 6938016,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -207,11 +207,19 @@
           "block": 23755690,
           "timestamp": 1762618799,
           "datetime": "2025-11-08T16:19:59+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "14304896943438063731946",
+          "balance_after": "0",
+          "block": 24329481,
+          "timestamp": 1769556815,
+          "datetime": "2026-01-27T23:33:35+00:00"
         }
       ],
       "first_seen_date": "2025-11-08T16:19:59+00:00",
-      "last_seen_date": "2025-11-08T16:19:59+00:00",
-      "total_holding_duration_days": 0
+      "last_seen_date": "2026-01-27T23:33:35+00:00",
+      "total_holding_duration_days": 80.30111111111111
     },
     "0xc7bbd408e3955378f60d7b30d4d0376f6c48a1d4": {
       "first_seen": 1764788327,
