@@ -5,12 +5,12 @@
     "address": "0x6D8C4DE7071D5AeE27fc3a810764E62a4a00Ceb9",
     "symbol": "sNUSD PENDLE LP"
   },
-  "last_block": 24325942,
-  "last_updated": "2026-01-27T11:42:49.191014+00:00",
+  "last_block": 24326002,
+  "last_updated": "2026-01-27T11:54:41.539234+00:00",
   "stats": {
     "total_deposited": "1188064513362662566420418",
-    "total_withdrawn": "538898303030077854750822",
-    "current_supply": "649166210332584711669596",
+    "total_withdrawn": "542871908950761132381395",
+    "current_supply": "645192604411901434039023",
     "current_holders": 4,
     "total_users": 4
   },
@@ -25,7 +25,7 @@
       "balance": "102320695461140301657628"
     },
     "0xe97db597b9eee7ea812bb1dbdb16f27383513068": {
-      "balance": "7947211841366555261146"
+      "balance": "3973605920683277630573"
     }
   },
   "user_histories": {
@@ -170,7 +170,7 @@
     },
     "0xe97db597b9eee7ea812bb1dbdb16f27383513068": {
       "first_seen": 1769002871,
-      "last_seen": 1769004839,
+      "last_seen": 1769514395,
       "entry_timestamp": 1769002871,
       "exit_timestamp": null,
       "entry_block": 24283528,
@@ -219,10 +219,18 @@
           "block": 24283691,
           "timestamp": 1769004839,
           "datetime": "2026-01-21T14:13:59+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "3973605920683277630573",
+          "balance_after": "3973605920683277630573",
+          "block": 24325962,
+          "timestamp": 1769514395,
+          "datetime": "2026-01-27T11:46:35+00:00"
         }
       ],
       "first_seen_date": "2026-01-21T13:41:11+00:00",
-      "last_seen_date": "2026-01-21T14:13:59+00:00",
+      "last_seen_date": "2026-01-27T11:46:35+00:00",
       "total_holding_duration_days": 0
     }
   }
