@@ -5,12 +5,12 @@
     "address": "0xCA6E93Df62f12E6cC6F4Caf1BD6dbD6D40d2bc8a",
     "symbol": "msyrupUSDp PENDLE LP"
   },
-  "last_block": 24335611,
-  "last_updated": "2026-01-28T20:04:20.645224+00:00",
+  "last_block": 24335712,
+  "last_updated": "2026-01-28T20:24:32.907835+00:00",
   "stats": {
     "total_deposited": "163482653041830354",
-    "total_withdrawn": "77013529921467183",
-    "current_supply": "86469123120363171",
+    "total_withdrawn": "81741326520915177",
+    "current_supply": "81741326520915177",
     "current_holders": 3,
     "total_users": 3
   },
@@ -22,7 +22,7 @@
       "balance": "23976483091468334"
     },
     "0x9f1775c88fe7ed36c57a35cefef4ef4d1c2d802b": {
-      "balance": "9455593198895988"
+      "balance": "4727796599447994"
     }
   },
   "user_histories": {
@@ -126,7 +126,7 @@
     },
     "0x9f1775c88fe7ed36c57a35cefef4ef4d1c2d802b": {
       "first_seen": 1769517155,
-      "last_seen": 1769517155,
+      "last_seen": 1769631779,
       "entry_timestamp": 1769517155,
       "exit_timestamp": null,
       "entry_block": 24326190,
@@ -159,10 +159,18 @@
           "block": 24326190,
           "timestamp": 1769517155,
           "datetime": "2026-01-27T12:32:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "4727796599447994",
+          "balance_after": "4727796599447994",
+          "block": 24335705,
+          "timestamp": 1769631779,
+          "datetime": "2026-01-28T20:22:59+00:00"
         }
       ],
       "first_seen_date": "2026-01-27T12:32:35+00:00",
-      "last_seen_date": "2026-01-27T12:32:35+00:00",
+      "last_seen_date": "2026-01-28T20:22:59+00:00",
       "total_holding_duration_days": 0
     }
   }
