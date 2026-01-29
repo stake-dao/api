@@ -5,15 +5,61 @@
     "address": "0xFb6a09634A3C1aC05318F85321980d1208372793",
     "symbol": "savUSD PENDLE LP"
   },
-  "last_block": 24342848,
-  "last_updated": "2026-01-29T20:17:31.113120+00:00",
+  "last_block": 24342942,
+  "last_updated": "2026-01-29T20:36:27.036623+00:00",
   "stats": {
-    "total_deposited": "0",
+    "total_deposited": "178591638152095493210858",
     "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
-    "total_users": 0
+    "current_supply": "178591638152095493210858",
+    "current_holders": 1,
+    "total_users": 1
   },
-  "current_holders": {},
-  "user_histories": {}
+  "current_holders": {
+    "0x5efc983b68e28518de10fe8bf632de7878faadcf": {
+      "balance": "178591638152095493210858"
+    }
+  },
+  "user_histories": {
+    "0x5efc983b68e28518de10fe8bf632de7878faadcf": {
+      "first_seen": 1769718599,
+      "last_seen": 1769718599,
+      "entry_timestamp": 1769718599,
+      "exit_timestamp": null,
+      "entry_block": 24342911,
+      "exit_block": null,
+      "max_balance": 178591638152095493210858,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1769718599,
+          "exit_timestamp": null,
+          "entry_block": 24342911,
+          "exit_block": null,
+          "entry_date": "2026-01-29T20:29:59+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "89295819076047746605429",
+          "balance_after": "89295819076047746605429",
+          "block": 24342911,
+          "timestamp": 1769718599,
+          "datetime": "2026-01-29T20:29:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "89295819076047746605429",
+          "balance_after": "178591638152095493210858",
+          "block": 24342911,
+          "timestamp": 1769718599,
+          "datetime": "2026-01-29T20:29:59+00:00"
+        }
+      ],
+      "first_seen_date": "2026-01-29T20:29:59+00:00",
+      "last_seen_date": "2026-01-29T20:29:59+00:00",
+      "total_holding_duration_days": 0
+    }
+  }
 }
