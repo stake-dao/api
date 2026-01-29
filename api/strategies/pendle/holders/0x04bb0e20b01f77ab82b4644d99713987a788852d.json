@@ -5,13 +5,13 @@
     "address": "0x0e3735d5Ee96d21426Ee40e7Dcb623513e0b6876",
     "symbol": "fxSAVE PENDLE LP"
   },
-  "last_block": 24338709,
-  "last_updated": "2026-01-29T06:27:00.106020+00:00",
+  "last_block": 24338829,
+  "last_updated": "2026-01-29T06:51:16.872818+00:00",
   "stats": {
     "total_deposited": "108102910897679861629954",
-    "total_withdrawn": "23157620621401014590599",
-    "current_supply": "84945290276278847039355",
-    "current_holders": 4,
+    "total_withdrawn": "36032738217137708687341",
+    "current_supply": "72070172680542152942613",
+    "current_holders": 3,
     "total_users": 4
   },
   "current_holders": {
@@ -21,9 +21,6 @@
     "0x061b84fde0aa74ecbf8ecdb0481576fee9ae35aa": {
       "balance": "23011136995016934457829"
     },
-    "0xa66daaf3e6736cce993b56eced596512a7911df8": {
-      "balance": "12875117595736694096742"
-    },
     "0xf9149b963ed9cd8bac918d70044a45d47413287c": {
       "balance": "146483626384080132770"
     }
@@ -31,23 +28,26 @@
   "user_histories": {
     "0xa66daaf3e6736cce993b56eced596512a7911df8": {
       "first_seen": 1761839327,
-      "last_seen": 1761839327,
+      "last_seen": 1769668727,
       "entry_timestamp": 1761839327,
-      "exit_timestamp": null,
+      "exit_timestamp": 1769668727,
       "entry_block": 23691196,
-      "exit_block": null,
+      "exit_block": 24338768,
       "max_balance": 12875117595736694096742,
       "holding_periods": [
         {
           "entry_timestamp": 1761839327,
-          "exit_timestamp": null,
+          "exit_timestamp": 1769668727,
           "entry_block": 23691196,
-          "exit_block": null,
-          "entry_date": "2025-10-30T15:48:47+00:00"
+          "exit_block": 24338768,
+          "entry_date": "2025-10-30T15:48:47+00:00",
+          "duration": 7829400,
+          "exit_date": "2026-01-29T06:38:47+00:00",
+          "duration_days": 90.61805555555556
         }
       ],
-      "total_holding_duration": 0,
-      "is_current_holder": true,
+      "total_holding_duration": 7829400,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -56,11 +56,19 @@
           "block": 23691196,
           "timestamp": 1761839327,
           "datetime": "2025-10-30T15:48:47+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "12875117595736694096742",
+          "balance_after": "0",
+          "block": 24338768,
+          "timestamp": 1769668727,
+          "datetime": "2026-01-29T06:38:47+00:00"
         }
       ],
       "first_seen_date": "2025-10-30T15:48:47+00:00",
-      "last_seen_date": "2025-10-30T15:48:47+00:00",
-      "total_holding_duration_days": 0
+      "last_seen_date": "2026-01-29T06:38:47+00:00",
+      "total_holding_duration_days": 90.61805555555556
     },
     "0xd0b53c43d3e0b58909c38487aa0c3af7dfa2d8c0": {
       "first_seen": 1765469339,
