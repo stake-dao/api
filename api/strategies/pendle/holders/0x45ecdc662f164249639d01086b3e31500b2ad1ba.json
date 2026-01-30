@@ -5,19 +5,16 @@
     "address": "0xEB5819B31A0378407F43aBa2F3E9d16b40aa5ec7",
     "symbol": "sUSDf PENDLE LP"
   },
-  "last_block": 24350699,
-  "last_updated": "2026-01-30T22:34:15.914981+00:00",
+  "last_block": 24350789,
+  "last_updated": "2026-01-30T22:52:13.460494+00:00",
   "stats": {
     "total_deposited": "2904995840529771780965489",
-    "total_withdrawn": "2826720361250325117366724",
-    "current_supply": "78275479279446663598765",
-    "current_holders": 7,
+    "total_withdrawn": "2875767881755427358154549",
+    "current_supply": "29227958774344422810940",
+    "current_holders": 6,
     "total_users": 42
   },
   "current_holders": {
-    "0x71f12a5b0e60d2ff8a87fd34e7dcff3c10c914b0": {
-      "balance": "49047520505102240787825"
-    },
     "0x5bf35b1afcb8c7a2d01ab924c709206196c8ad3c": {
       "balance": "17371753577150909364885"
     },
@@ -1402,23 +1399,26 @@
     },
     "0x71f12a5b0e60d2ff8a87fd34e7dcff3c10c914b0": {
       "first_seen": 1759168439,
-      "last_seen": 1759168439,
+      "last_seen": 1769812523,
       "entry_timestamp": 1759168439,
-      "exit_timestamp": null,
+      "exit_timestamp": 1769812523,
       "entry_block": 23470267,
-      "exit_block": null,
+      "exit_block": 24350706,
       "max_balance": 49047520505102240787825,
       "holding_periods": [
         {
           "entry_timestamp": 1759168439,
-          "exit_timestamp": null,
+          "exit_timestamp": 1769812523,
           "entry_block": 23470267,
-          "exit_block": null,
-          "entry_date": "2025-09-29T17:53:59+00:00"
+          "exit_block": 24350706,
+          "entry_date": "2025-09-29T17:53:59+00:00",
+          "duration": 10644084,
+          "exit_date": "2026-01-30T22:35:23+00:00",
+          "duration_days": 123.19541666666667
         }
       ],
-      "total_holding_duration": 0,
-      "is_current_holder": true,
+      "total_holding_duration": 10644084,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -1427,11 +1427,19 @@
           "block": 23470267,
           "timestamp": 1759168439,
           "datetime": "2025-09-29T17:53:59+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "49047520505102240787825",
+          "balance_after": "0",
+          "block": 24350706,
+          "timestamp": 1769812523,
+          "datetime": "2026-01-30T22:35:23+00:00"
         }
       ],
       "first_seen_date": "2025-09-29T17:53:59+00:00",
-      "last_seen_date": "2025-09-29T17:53:59+00:00",
-      "total_holding_duration_days": 0
+      "last_seen_date": "2026-01-30T22:35:23+00:00",
+      "total_holding_duration_days": 123.19541666666667
     },
     "0x8352c07e01ad42f3dcea34635bd7944f1f6482e6": {
       "first_seen": 1759327619,
