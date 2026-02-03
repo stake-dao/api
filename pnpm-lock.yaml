@@ -15,8 +15,8 @@ importers:
         specifier: ^0.5.9
         version: 0.5.9
       '@stake-dao/reader':
-        specifier: ^0.5.27
-        version: 0.5.27(graphql@16.12.0)(typescript@5.9.3)
+        specifier: ^0.5.29
+        version: 0.5.29(graphql@16.12.0)(typescript@5.9.3)
       dayjs:
         specifier: ^1.11.19
         version: 1.11.19
@@ -33,15 +33,15 @@ importers:
         specifier: ^0.11.2
         version: 0.11.2
       viem:
-        specifier: ^2.45.0
-        version: 2.45.0(typescript@5.9.3)
+        specifier: ^2.45.1
+        version: 2.45.1(typescript@5.9.3)
     devDependencies:
       '@types/memoizee':
         specifier: ^0.4.12
         version: 0.4.12
       '@types/node':
-        specifier: ^20.19.30
-        version: 20.19.30
+        specifier: ^20.19.31
+        version: 20.19.31
       prettier:
         specifier: ^3.8.1
         version: 3.8.1
@@ -252,14 +252,14 @@ packages:
   '@stake-dao/constants@0.5.9':
     resolution: {integrity: sha512-jPef8O1/qLAyd2IjFh9DuIH7G3tiBZF5glIaJgGYqPPg/f91mtJGLL8K3RwQpidkVBRXV2tJ+qA/xlqEMe86DQ==}
 
-  '@stake-dao/reader@0.5.27':
-    resolution: {integrity: sha512-C8KmCGM1uMD25g7sFV4KoYFbL+Ct9QXIM0HhAdy5OH6JbhpjKlsB34wojNRlNLcmkCmm61tqhcBxdiXgBVOhgg==}
+  '@stake-dao/reader@0.5.29':
+    resolution: {integrity: sha512-Rpqfz6dHssBvcm9HUZwywtaF5UA4cq4CyrzF15snyXjAF4e3WgjlXQx6k0dWKNabAQyk7x+bqOU9nd+2cKJFIw==}
 
   '@types/memoizee@0.4.12':
     resolution: {integrity: sha512-EdtpwNYNhe3kZ+4TlXj/++pvBoU0KdrAICMzgI7vjWgu9sIvvUhu9XR8Ks4L6Wh3sxpZ22wkZR7yCLAqUjnZuQ==}
 
-  '@types/node@20.19.30':
-    resolution: {integrity: sha512-WJtwWJu7UdlvzEAUm484QNg5eAoq5QR08KDNx7g45Usrs2NtOPiX8ugDqmKdXkyL03rBqU5dYNYVQetEpBHq2g==}
+  '@types/node@20.19.31':
+    resolution: {integrity: sha512-5jsi0wpncvTD33Sh1UCgacK37FFwDn+EG7wCmEvs62fCvBL+n8/76cAYDok21NF6+jaVWIqKwCZyX7Vbu8eB3A==}
 
   abitype@1.0.8:
     resolution: {integrity: sha512-ZeiI6h3GnW06uYDLx0etQtX/p8E24UaHHBj57RSjK7YBFe7iuVn07EDpOeP451D06sF27VOz9JJPlIKJmXgkEg==}
@@ -347,8 +347,8 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
-  get-tsconfig@4.13.0:
-    resolution: {integrity: sha512-1VKTZJCwBrvbd+Wn3AOgQP/2Av+TfTCOlE4AcRJE72W1ksZXbAx8PPBR9RzgTeSPzlPMHrbANMH3LbltH73wxQ==}
+  get-tsconfig@4.13.1:
+    resolution: {integrity: sha512-EoY1N2xCn44xU6750Sx7OjOIT59FkmstNc3X6y5xpz7D5cBtZRe/3pSlTkDJgqsOk3WwZPkWfonhhUJfttQo3w==}
 
   graphql-request@6.1.0:
     resolution: {integrity: sha512-p+XPfS4q7aIpKVcgmnZKhMNqhltk20hfXtkaIkTfjjmiKMJ5xrt5c743cL03y/K7y1rg3WrIC49xGiEQ4mxdNw==}
@@ -483,8 +483,8 @@ packages:
       typescript:
         optional: true
 
-  viem@2.45.0:
-    resolution: {integrity: sha512-iVA9qrAgRdtpWa80lCZ6Jri6XzmLOwwA1wagX2HnKejKeliFLpON0KOdyfqvcy+gUpBVP59LBxP2aKiL3aj8fg==}
+  viem@2.45.1:
+    resolution: {integrity: sha512-LN6Pp7vSfv50LgwhkfSbIXftAM5J89lP9x8TeDa8QM7o41IxlHrDh0F9X+FfnCWtsz11pEVV5sn+yBUoOHNqYA==}
     peerDependencies:
       typescript: '>=5.0.4'
     peerDependenciesMeta:
@@ -638,7 +638,7 @@ snapshots:
 
   '@stake-dao/constants@0.5.9': {}
 
-  '@stake-dao/reader@0.5.27(graphql@16.12.0)(typescript@5.9.3)':
+  '@stake-dao/reader@0.5.29(graphql@16.12.0)(typescript@5.9.3)':
     dependencies:
       '@stake-dao/constants': 0.5.9
       dayjs: 1.11.19
@@ -655,7 +655,7 @@ snapshots:
 
   '@types/memoizee@0.4.12': {}
 
-  '@types/node@20.19.30':
+  '@types/node@20.19.31':
     dependencies:
       undici-types: 6.21.0
 
@@ -768,7 +768,7 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
-  get-tsconfig@4.13.0:
+  get-tsconfig@4.13.1:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
@@ -896,7 +896,7 @@ snapshots:
   tsx@4.21.0:
     dependencies:
       esbuild: 0.27.2
-      get-tsconfig: 4.13.0
+      get-tsconfig: 4.13.1
     optionalDependencies:
       fsevents: 2.3.3
 
@@ -925,7 +925,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  viem@2.45.0(typescript@5.9.3):
+  viem@2.45.1(typescript@5.9.3):
     dependencies:
       '@noble/curves': 1.9.1
       '@noble/hashes': 1.8.0
