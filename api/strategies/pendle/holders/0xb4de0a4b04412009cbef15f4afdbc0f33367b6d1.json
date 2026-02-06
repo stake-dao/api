@@ -5,21 +5,21 @@
     "address": "0xFb6a09634A3C1aC05318F85321980d1208372793",
     "symbol": "savUSD PENDLE LP"
   },
-  "last_block": 24397027,
-  "last_updated": "2026-02-06T09:56:43.134428+00:00",
+  "last_block": 24397153,
+  "last_updated": "2026-02-06T10:21:59.571631+00:00",
   "stats": {
-    "total_deposited": "520740755317807601078238",
+    "total_deposited": "693589021229975273877838",
     "total_withdrawn": "0",
-    "current_supply": "520740755317807601078238",
+    "current_supply": "693589021229975273877838",
     "current_holders": 6,
     "total_users": 6
   },
   "current_holders": {
+    "0x726e9e074b5ad64f30f4e54f60492a3fc4378b21": {
+      "balance": "366833561211878121798632"
+    },
     "0x5efc983b68e28518de10fe8bf632de7878faadcf": {
       "balance": "238945398766452496083152"
-    },
-    "0x726e9e074b5ad64f30f4e54f60492a3fc4378b21": {
-      "balance": "193985295299710448999032"
     },
     "0x9a1dfeaf8604911f2b829ff96e038c98dde5dadd": {
       "balance": "74215272654190969639744"
@@ -151,12 +151,12 @@
     },
     "0x726e9e074b5ad64f30f4e54f60492a3fc4378b21": {
       "first_seen": 1769771579,
-      "last_seen": 1769771579,
+      "last_seen": 1770372263,
       "entry_timestamp": 1769771579,
       "exit_timestamp": null,
       "entry_block": 24347308,
       "exit_block": null,
-      "max_balance": 193985295299710448999032,
+      "max_balance": 366833561211878121798632,
       "holding_periods": [
         {
           "entry_timestamp": 1769771579,
@@ -184,10 +184,26 @@
           "block": 24347308,
           "timestamp": 1769771579,
           "datetime": "2026-01-30T11:12:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "86424132956083836399800",
+          "balance_after": "280409428255794285398832",
+          "block": 24397066,
+          "timestamp": 1770372263,
+          "datetime": "2026-02-06T10:04:23+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "86424132956083836399800",
+          "balance_after": "366833561211878121798632",
+          "block": 24397066,
+          "timestamp": 1770372263,
+          "datetime": "2026-02-06T10:04:23+00:00"
         }
       ],
       "first_seen_date": "2026-01-30T11:12:59+00:00",
-      "last_seen_date": "2026-01-30T11:12:59+00:00",
+      "last_seen_date": "2026-02-06T10:04:23+00:00",
       "total_holding_duration_days": 0
     },
     "0x68a6c4ff021d551066e9cded1cfea8e3ed89f414": {
