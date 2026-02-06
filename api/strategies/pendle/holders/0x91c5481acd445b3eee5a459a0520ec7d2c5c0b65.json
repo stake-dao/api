@@ -5,16 +5,19 @@
     "address": "0xf5929a1C332ceaB7918A4593a43Db2B9aC20095f",
     "symbol": "reUSD PENDLE LP"
   },
-  "last_block": 24400308,
-  "last_updated": "2026-02-06T20:56:22.502610+00:00",
+  "last_block": 24400404,
+  "last_updated": "2026-02-06T21:15:39.718765+00:00",
   "stats": {
-    "total_deposited": "65581072464318422",
+    "total_deposited": "114201293011144858",
     "total_withdrawn": "19366495380482817",
-    "current_supply": "46214577083835605",
-    "current_holders": 3,
-    "total_users": 3
+    "current_supply": "94834797630662041",
+    "current_holders": 4,
+    "total_users": 4
   },
   "current_holders": {
+    "0x582a2f8d6190a2d1fccf19e9da83ccd9893fbfd0": {
+      "balance": "48620220546826436"
+    },
     "0xcb534d04d5300411cf252b2cdfdf5bf01cd79da1": {
       "balance": "20057672359867024"
     },
@@ -155,6 +158,47 @@
       ],
       "first_seen_date": "2026-01-16T08:40:59+00:00",
       "last_seen_date": "2026-01-16T08:40:59+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0x582a2f8d6190a2d1fccf19e9da83ccd9893fbfd0": {
+      "first_seen": 1770412079,
+      "last_seen": 1770412079,
+      "entry_timestamp": 1770412079,
+      "exit_timestamp": null,
+      "entry_block": 24400367,
+      "exit_block": null,
+      "max_balance": 48620220546826436,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1770412079,
+          "exit_timestamp": null,
+          "entry_block": 24400367,
+          "exit_block": null,
+          "entry_date": "2026-02-06T21:07:59+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "24310110273413218",
+          "balance_after": "24310110273413218",
+          "block": 24400367,
+          "timestamp": 1770412079,
+          "datetime": "2026-02-06T21:07:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "24310110273413218",
+          "balance_after": "48620220546826436",
+          "block": 24400367,
+          "timestamp": 1770412079,
+          "datetime": "2026-02-06T21:07:59+00:00"
+        }
+      ],
+      "first_seen_date": "2026-02-06T21:07:59+00:00",
+      "last_seen_date": "2026-02-06T21:07:59+00:00",
       "total_holding_duration_days": 0
     }
   }
