@@ -5,12 +5,12 @@
     "address": "0x6CB9A013604A567a5834fadD411165B1ca616783",
     "symbol": "reUSDe PENDLE LP"
   },
-  "last_block": 24421713,
-  "last_updated": "2026-02-09T20:51:20.483907+00:00",
+  "last_block": 24421808,
+  "last_updated": "2026-02-09T21:11:02.372242+00:00",
   "stats": {
     "total_deposited": "47539255825507654238701",
-    "total_withdrawn": "7999468170275113435967",
-    "current_supply": "39539787655232540802734",
+    "total_withdrawn": "7999560190554996531242",
+    "current_supply": "39539695634952657707459",
     "current_holders": 11,
     "total_users": 11
   },
@@ -42,11 +42,11 @@
     "0xcf93088ccd85a6ce1602a34d3189924489ca867e": {
       "balance": "534487098671838028821"
     },
-    "0x076e714869cecd1eea6f343d5ce1439d94e079cd": {
-      "balance": "184040559766190550"
-    },
     "0xfd98422fa15ffda7513f9d17bed099ffb74ce0a0": {
       "balance": "134835168301397438"
+    },
+    "0x076e714869cecd1eea6f343d5ce1439d94e079cd": {
+      "balance": "92020279883095275"
     }
   },
   "user_histories": {
@@ -574,7 +574,7 @@
     },
     "0x076e714869cecd1eea6f343d5ce1439d94e079cd": {
       "first_seen": 1770670199,
-      "last_seen": 1770670199,
+      "last_seen": 1770670379,
       "entry_timestamp": 1770670199,
       "exit_timestamp": null,
       "entry_block": 24421707,
@@ -607,10 +607,18 @@
           "block": 24421707,
           "timestamp": 1770670199,
           "datetime": "2026-02-09T20:49:59+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "92020279883095275",
+          "balance_after": "92020279883095275",
+          "block": 24421722,
+          "timestamp": 1770670379,
+          "datetime": "2026-02-09T20:52:59+00:00"
         }
       ],
       "first_seen_date": "2026-02-09T20:49:59+00:00",
-      "last_seen_date": "2026-02-09T20:49:59+00:00",
+      "last_seen_date": "2026-02-09T20:52:59+00:00",
       "total_holding_duration_days": 0
     }
   }
