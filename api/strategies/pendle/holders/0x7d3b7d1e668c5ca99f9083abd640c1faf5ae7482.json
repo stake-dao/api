@@ -5,15 +5,61 @@
     "address": "0x83B2C0b470Ff5f2a60D2BF2AE109766E8bb3E862",
     "symbol": "ysyBOLD PENDLE LP"
   },
-  "last_block": 24443720,
-  "last_updated": "2026-02-12T22:36:30.466069+00:00",
+  "last_block": 24443814,
+  "last_updated": "2026-02-12T22:55:20.309800+00:00",
   "stats": {
-    "total_deposited": "0",
+    "total_deposited": "1642382538693223622958",
     "total_withdrawn": "0",
-    "current_supply": "0",
-    "current_holders": 0,
-    "total_users": 0
+    "current_supply": "1642382538693223622958",
+    "current_holders": 1,
+    "total_users": 1
   },
-  "current_holders": {},
-  "user_histories": {}
+  "current_holders": {
+    "0xe97db597b9eee7ea812bb1dbdb16f27383513068": {
+      "balance": "1642382538693223622958"
+    }
+  },
+  "user_histories": {
+    "0xe97db597b9eee7ea812bb1dbdb16f27383513068": {
+      "first_seen": 1770936491,
+      "last_seen": 1770936491,
+      "entry_timestamp": 1770936491,
+      "exit_timestamp": null,
+      "entry_block": 24443779,
+      "exit_block": null,
+      "max_balance": 1642382538693223622958,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1770936491,
+          "exit_timestamp": null,
+          "entry_block": 24443779,
+          "exit_block": null,
+          "entry_date": "2026-02-12T22:48:11+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "821191269346611811479",
+          "balance_after": "821191269346611811479",
+          "block": 24443779,
+          "timestamp": 1770936491,
+          "datetime": "2026-02-12T22:48:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "821191269346611811479",
+          "balance_after": "1642382538693223622958",
+          "block": 24443779,
+          "timestamp": 1770936491,
+          "datetime": "2026-02-12T22:48:11+00:00"
+        }
+      ],
+      "first_seen_date": "2026-02-12T22:48:11+00:00",
+      "last_seen_date": "2026-02-12T22:48:11+00:00",
+      "total_holding_duration_days": 0
+    }
+  }
 }
