@@ -5,18 +5,18 @@
     "address": "0x6CB9A013604A567a5834fadD411165B1ca616783",
     "symbol": "reUSDe PENDLE LP"
   },
-  "last_block": 24450507,
-  "last_updated": "2026-02-13T21:21:01.605951+00:00",
+  "last_block": 24450606,
+  "last_updated": "2026-02-13T21:40:44.760505+00:00",
   "stats": {
-    "total_deposited": "47629104799972491027881",
+    "total_deposited": "65489753029962001720535",
     "total_withdrawn": "7999560190554996531242",
-    "current_supply": "39629544609417494496639",
+    "current_supply": "57490192839407005189293",
     "current_holders": 11,
     "total_users": 11
   },
   "current_holders": {
     "0xd691a33aabb6e3e27ebe4590fb0ff0105ea16edb": {
-      "balance": "27550557215977575028442"
+      "balance": "45411205445967085721096"
     },
     "0x01bac8aef1adcaf091626bb977c89e8f2192b443": {
       "balance": "3803263717689431479790"
@@ -404,12 +404,12 @@
     },
     "0xd691a33aabb6e3e27ebe4590fb0ff0105ea16edb": {
       "first_seen": 1769548943,
-      "last_seen": 1770998231,
+      "last_seen": 1771017755,
       "entry_timestamp": 1769548943,
       "exit_timestamp": null,
       "entry_block": 24328827,
       "exit_block": null,
-      "max_balance": 27550557215977575028442,
+      "max_balance": 45411205445967085721096,
       "holding_periods": [
         {
           "entry_timestamp": 1769548943,
@@ -533,10 +533,26 @@
           "block": 24448899,
           "timestamp": 1770998231,
           "datetime": "2026-02-13T15:57:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "8930324114994755346327",
+          "balance_after": "36480881330972330374769",
+          "block": 24450516,
+          "timestamp": 1771017755,
+          "datetime": "2026-02-13T21:22:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "8930324114994755346327",
+          "balance_after": "45411205445967085721096",
+          "block": 24450516,
+          "timestamp": 1771017755,
+          "datetime": "2026-02-13T21:22:35+00:00"
         }
       ],
       "first_seen_date": "2026-01-27T21:22:23+00:00",
-      "last_seen_date": "2026-02-13T15:57:11+00:00",
+      "last_seen_date": "2026-02-13T21:22:35+00:00",
       "total_holding_duration_days": 0
     },
     "0xfd98422fa15ffda7513f9d17bed099ffb74ce0a0": {
