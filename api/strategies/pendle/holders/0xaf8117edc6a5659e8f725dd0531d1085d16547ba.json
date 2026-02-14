@@ -5,14 +5,14 @@
     "address": "0xfCe3F966A131c46A51B896CEea3917BC4c302577",
     "symbol": "ynRWAx PENDLE LP"
   },
-  "last_block": 24454888,
-  "last_updated": "2026-02-14T11:59:52.509794+00:00",
+  "last_block": 24454984,
+  "last_updated": "2026-02-14T12:19:23.605357+00:00",
   "stats": {
-    "total_deposited": "153395418644599858",
+    "total_deposited": "163925112476385728",
     "total_withdrawn": "64625010152187014",
-    "current_supply": "88770408492412844",
-    "current_holders": 9,
-    "total_users": 9
+    "current_supply": "99300102324198714",
+    "current_holders": 10,
+    "total_users": 10
   },
   "current_holders": {
     "0x402904e954aebee2e78b7b09595393cf05571333": {
@@ -23,6 +23,9 @@
     },
     "0x114b2f6cfff22d1ab14b94de3dc869816af2617b": {
       "balance": "18245611219139878"
+    },
+    "0x4251890eb713de6cc954b10c134453a6cf470fe8": {
+      "balance": "10529693831785870"
     },
     "0x5593f1ea6fdc6f801bb3a2d18aff39da21e70fc5": {
       "balance": "3692668424518415"
@@ -523,6 +526,47 @@
       ],
       "first_seen_date": "2026-02-13T21:18:11+00:00",
       "last_seen_date": "2026-02-13T21:18:11+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0x4251890eb713de6cc954b10c134453a6cf470fe8": {
+      "first_seen": 1771070651,
+      "last_seen": 1771070651,
+      "entry_timestamp": 1771070651,
+      "exit_timestamp": null,
+      "entry_block": 24454910,
+      "exit_block": null,
+      "max_balance": 10529693831785870,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1771070651,
+          "exit_timestamp": null,
+          "entry_block": 24454910,
+          "exit_block": null,
+          "entry_date": "2026-02-14T12:04:11+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "5264846915892935",
+          "balance_after": "5264846915892935",
+          "block": 24454910,
+          "timestamp": 1771070651,
+          "datetime": "2026-02-14T12:04:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "5264846915892935",
+          "balance_after": "10529693831785870",
+          "block": 24454910,
+          "timestamp": 1771070651,
+          "datetime": "2026-02-14T12:04:11+00:00"
+        }
+      ],
+      "first_seen_date": "2026-02-14T12:04:11+00:00",
+      "last_seen_date": "2026-02-14T12:04:11+00:00",
       "total_holding_duration_days": 0
     }
   }
