@@ -5,24 +5,24 @@
     "address": "0x83B2C0b470Ff5f2a60D2BF2AE109766E8bb3E862",
     "symbol": "ysyBOLD PENDLE LP"
   },
-  "last_block": 24468681,
-  "last_updated": "2026-02-16T10:07:54.357198+00:00",
+  "last_block": 24468807,
+  "last_updated": "2026-02-16T10:33:24.920340+00:00",
   "stats": {
     "total_deposited": "1642382538693223622958",
-    "total_withdrawn": "0",
-    "current_supply": "1642382538693223622958",
+    "total_withdrawn": "821191269346611811479",
+    "current_supply": "821191269346611811479",
     "current_holders": 1,
     "total_users": 1
   },
   "current_holders": {
     "0xe97db597b9eee7ea812bb1dbdb16f27383513068": {
-      "balance": "1642382538693223622958"
+      "balance": "821191269346611811479"
     }
   },
   "user_histories": {
     "0xe97db597b9eee7ea812bb1dbdb16f27383513068": {
       "first_seen": 1770936491,
-      "last_seen": 1770936491,
+      "last_seen": 1771237763,
       "entry_timestamp": 1770936491,
       "exit_timestamp": null,
       "entry_block": 24443779,
@@ -55,10 +55,18 @@
           "block": 24443779,
           "timestamp": 1770936491,
           "datetime": "2026-02-12T22:48:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "821191269346611811479",
+          "balance_after": "821191269346611811479",
+          "block": 24468788,
+          "timestamp": 1771237763,
+          "datetime": "2026-02-16T10:29:23+00:00"
         }
       ],
       "first_seen_date": "2026-02-12T22:48:11+00:00",
-      "last_seen_date": "2026-02-12T22:48:11+00:00",
+      "last_seen_date": "2026-02-16T10:29:23+00:00",
       "total_holding_duration_days": 0
     }
   }
