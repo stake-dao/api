@@ -13,14 +13,14 @@
   "license": "AGPL-3.0-only",
   "dependencies": {
     "@hono/node-server": "^1.19.9",
-    "@stake-dao/constants": "^0.5.9",
-    "@stake-dao/reader": "^0.5.30",
+    "@stake-dao/constants": "^0.5.10",
+    "@stake-dao/reader": "^0.5.31",
     "dayjs": "^1.11.19",
     "dotenv": "^16.6.1",
     "hono": "^4.11.9",
     "memoizee": "^0.4.17",
     "parquetjs": "^0.11.2",
-    "viem": "^2.45.3"
+    "viem": "^2.46.1"
   },
   "devDependencies": {
     "@types/memoizee": "^0.4.12",
