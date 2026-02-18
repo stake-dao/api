@@ -5,12 +5,12 @@
     "address": "0xfCe3F966A131c46A51B896CEea3917BC4c302577",
     "symbol": "ynRWAx PENDLE LP"
   },
-  "last_block": 24486315,
-  "last_updated": "2026-02-18T21:09:03.753545+00:00",
+  "last_block": 24486403,
+  "last_updated": "2026-02-18T21:26:41.471605+00:00",
   "stats": {
     "total_deposited": "166090887275860314",
-    "total_withdrawn": "64634662294513984",
-    "current_supply": "101456224981346330",
+    "total_withdrawn": "74983387793953964",
+    "current_supply": "91107499481906350",
     "current_holders": 10,
     "total_users": 10
   },
@@ -18,14 +18,14 @@
     "0x402904e954aebee2e78b7b09595393cf05571333": {
       "balance": "42634129565026684"
     },
-    "0xd691a33aabb6e3e27ebe4590fb0ff0105ea16edb": {
-      "balance": "20697450998879960"
-    },
     "0x114b2f6cfff22d1ab14b94de3dc869816af2617b": {
       "balance": "18245611219139878"
     },
     "0x4251890eb713de6cc954b10c134453a6cf470fe8": {
       "balance": "10529693831785870"
+    },
+    "0xd691a33aabb6e3e27ebe4590fb0ff0105ea16edb": {
+      "balance": "10348725499439980"
     },
     "0xe97db597b9eee7ea812bb1dbdb16f27383513068": {
       "balance": "4076476454891752"
@@ -529,7 +529,7 @@
     },
     "0xd691a33aabb6e3e27ebe4590fb0ff0105ea16edb": {
       "first_seen": 1771017491,
-      "last_seen": 1771017491,
+      "last_seen": 1771449899,
       "entry_timestamp": 1771017491,
       "exit_timestamp": null,
       "entry_block": 24450494,
@@ -562,10 +562,18 @@
           "block": 24450494,
           "timestamp": 1771017491,
           "datetime": "2026-02-13T21:18:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "10348725499439980",
+          "balance_after": "10348725499439980",
+          "block": 24486395,
+          "timestamp": 1771449899,
+          "datetime": "2026-02-18T21:24:59+00:00"
         }
       ],
       "first_seen_date": "2026-02-13T21:18:11+00:00",
-      "last_seen_date": "2026-02-13T21:18:11+00:00",
+      "last_seen_date": "2026-02-18T21:24:59+00:00",
       "total_holding_duration_days": 0
     },
     "0x4251890eb713de6cc954b10c134453a6cf470fe8": {
