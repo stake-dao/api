@@ -7,6 +7,7 @@ import { formatUnits, parseAbi } from 'viem'
 import baseTokens from '../../../baseTokens'
 import { fetchPrices } from '../../../prices'
 import { getMetadata, getStratsFromGraph } from './common'
+import { getIncentives } from '../../incentives'
 
 require('dotenv').config()
 
@@ -36,12 +37,15 @@ const getCurveFromGraph = memoize(
 
 export const getCurveForChain_v2 = memoize(
   async (chainId: number) => {
-    const { metadata, strats, baseRewardsPrices } = await getCurveFromGraph()
+    const [
+      { metadata, strats, baseRewardsPrices },
+      hookIncentives
+    ] = await Promise.all([getCurveFromGraph(), getIncentives()])
 
     return parseV2Strats(
       metadata,
       strats.filter((s) => s.chainId === chainId),
-      { baseRewardsPrices },
+      { baseRewardsPrices, hookIncentives },
     )
   },
   { maxAge: MEMO_MAX_AGE },
