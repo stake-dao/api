@@ -5,24 +5,24 @@
     "address": "0xA444fF5ad4CA1F234c95A6214849Ac550722b6Dc",
     "symbol": "coreUSDC PENDLE LP"
   },
-  "last_block": 24561927,
-  "last_updated": "2026-03-01T10:14:41.783014+00:00",
+  "last_block": 24562024,
+  "last_updated": "2026-03-01T10:34:36.086095+00:00",
   "stats": {
     "total_deposited": "38190122710",
-    "total_withdrawn": "0",
-    "current_supply": "38190122710",
+    "total_withdrawn": "19095061355",
+    "current_supply": "19095061355",
     "current_holders": 1,
     "total_users": 1
   },
   "current_holders": {
     "0xf92d979ad76148eefd2c7800d57ce956860b0bc5": {
-      "balance": "38190122710"
+      "balance": "19095061355"
     }
   },
   "user_histories": {
     "0xf92d979ad76148eefd2c7800d57ce956860b0bc5": {
       "first_seen": 1772357591,
-      "last_seen": 1772357591,
+      "last_seen": 1772360579,
       "entry_timestamp": 1772357591,
       "exit_timestamp": null,
       "entry_block": 24561722,
@@ -55,10 +55,18 @@
           "block": 24561722,
           "timestamp": 1772357591,
           "datetime": "2026-03-01T09:33:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "19095061355",
+          "balance_after": "19095061355",
+          "block": 24561968,
+          "timestamp": 1772360579,
+          "datetime": "2026-03-01T10:22:59+00:00"
         }
       ],
       "first_seen_date": "2026-03-01T09:33:11+00:00",
-      "last_seen_date": "2026-03-01T09:33:11+00:00",
+      "last_seen_date": "2026-03-01T10:22:59+00:00",
       "total_holding_duration_days": 0
     }
   }
