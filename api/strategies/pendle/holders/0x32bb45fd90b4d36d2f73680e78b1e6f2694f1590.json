@@ -5,12 +5,12 @@
     "address": "0x6CB9A013604A567a5834fadD411165B1ca616783",
     "symbol": "reUSDe PENDLE LP"
   },
-  "last_block": 24604846,
-  "last_updated": "2026-03-07T10:01:41.207707+00:00",
+  "last_block": 24604908,
+  "last_updated": "2026-03-07T10:14:25.553495+00:00",
   "stats": {
     "total_deposited": "182261390468116454984351",
-    "total_withdrawn": "8439916622789676209151",
-    "current_supply": "173821473845326778775200",
+    "total_withdrawn": "8666292995271193615128",
+    "current_supply": "173595097472845261369223",
     "current_holders": 14,
     "total_users": 14
   },
@@ -45,11 +45,11 @@
     "0xcf93088ccd85a6ce1602a34d3189924489ca867e": {
       "balance": "534487098671838028821"
     },
-    "0xca189e6bef40df01357fbb22d92728cd26180b82": {
-      "balance": "452752744963034811954"
-    },
     "0x43a996fa50d2f378d707aca9ddcde1c30cb68f63": {
       "balance": "440356432234679677909"
+    },
+    "0xca189e6bef40df01357fbb22d92728cd26180b82": {
+      "balance": "226376372481517405977"
     },
     "0xfd98422fa15ffda7513f9d17bed099ffb74ce0a0": {
       "balance": "134835168301397438"
@@ -744,7 +744,7 @@
     },
     "0xca189e6bef40df01357fbb22d92728cd26180b82": {
       "first_seen": 1771174679,
-      "last_seen": 1771174679,
+      "last_seen": 1772878343,
       "entry_timestamp": 1771174679,
       "exit_timestamp": null,
       "entry_block": 24463548,
@@ -777,10 +777,18 @@
           "block": 24463548,
           "timestamp": 1771174679,
           "datetime": "2026-02-15T16:57:59+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "226376372481517405977",
+          "balance_after": "226376372481517405977",
+          "block": 24604899,
+          "timestamp": 1772878343,
+          "datetime": "2026-03-07T10:12:23+00:00"
         }
       ],
       "first_seen_date": "2026-02-15T16:57:59+00:00",
-      "last_seen_date": "2026-02-15T16:57:59+00:00",
+      "last_seen_date": "2026-03-07T10:12:23+00:00",
       "total_holding_duration_days": 0
     },
     "0x43a996fa50d2f378d707aca9ddcde1c30cb68f63": {
