@@ -5,16 +5,19 @@
     "address": "0xcFD848b9f6fEf552204014ac67901223AD6bf679",
     "symbol": "wstETH PENDLE LP"
   },
-  "last_block": 24664186,
-  "last_updated": "2026-03-15T16:48:16.420736+00:00",
+  "last_block": 24664258,
+  "last_updated": "2026-03-15T17:02:49.089436+00:00",
   "stats": {
-    "total_deposited": "5547373095792661422",
+    "total_deposited": "33591580058532423110",
     "total_withdrawn": "0",
-    "current_supply": "5547373095792661422",
-    "current_holders": 2,
-    "total_users": 2
+    "current_supply": "33591580058532423110",
+    "current_holders": 3,
+    "total_users": 3
   },
   "current_holders": {
+    "0xf0ea0b3aaf06ce5b09d484990d5d45a00fe9f0b4": {
+      "balance": "28044206962739761688"
+    },
     "0x04267b7b80a210c52bcd02303a74641562e8a6b8": {
       "balance": "5425633095792661422"
     },
@@ -103,6 +106,47 @@
       ],
       "first_seen_date": "2025-12-31T03:13:11+00:00",
       "last_seen_date": "2025-12-31T03:13:11+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0xf0ea0b3aaf06ce5b09d484990d5d45a00fe9f0b4": {
+      "first_seen": 1773594011,
+      "last_seen": 1773594011,
+      "entry_timestamp": 1773594011,
+      "exit_timestamp": null,
+      "entry_block": 24664246,
+      "exit_block": null,
+      "max_balance": 28044206962739761688,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1773594011,
+          "exit_timestamp": null,
+          "entry_block": 24664246,
+          "exit_block": null,
+          "entry_date": "2026-03-15T17:00:11+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "14022103481369880844",
+          "balance_after": "14022103481369880844",
+          "block": 24664246,
+          "timestamp": 1773594011,
+          "datetime": "2026-03-15T17:00:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "14022103481369880844",
+          "balance_after": "28044206962739761688",
+          "block": 24664246,
+          "timestamp": 1773594011,
+          "datetime": "2026-03-15T17:00:11+00:00"
+        }
+      ],
+      "first_seen_date": "2026-03-15T17:00:11+00:00",
+      "last_seen_date": "2026-03-15T17:00:11+00:00",
       "total_holding_duration_days": 0
     }
   }
