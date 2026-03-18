@@ -10,21 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-
-      - name: Use Node.js 22
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-          cache: 'pnpm'
-
-      - name: Install dependencies
-        run: pnpm install
-    
-      - name: Update data
-        run: pnpm tsx scripts/triggerHubUpdate.ts
+      - name: Trigger Curve Strategies Data Update
+        run: |
+          curl --fail --silent --show-error \
+            -X POST "${{ vars.STAKE_DAO_HUB }}/update/curve"
+ 
+      - name: Trigger Balancer Strategies Data Update
+        run: |
+          curl --fail --silent --show-error \
+            -X POST "${{ vars.STAKE_DAO_HUB }}/update/balancer"
