@@ -5,12 +5,12 @@
     "address": "0x7da97FbFAA3020f856C60EB4EF068079A9023Aca",
     "symbol": "hgETH PENDLE LP"
   },
-  "last_block": 24684885,
-  "last_updated": "2026-03-18T14:11:52.641104+00:00",
+  "last_block": 24685067,
+  "last_updated": "2026-03-18T14:48:49.598561+00:00",
   "stats": {
     "total_deposited": "123665580865328363397",
-    "total_withdrawn": "81454048372973359435",
-    "current_supply": "42211532492355003962",
+    "total_withdrawn": "81564180691132102656",
+    "current_supply": "42101400174196260741",
     "current_holders": 5,
     "total_users": 8
   },
@@ -28,7 +28,7 @@
       "balance": "5535864402078650418"
     },
     "0x31632636d664895f1bd9d03f5f7c162a2a6980eb": {
-      "balance": "220264636317486442"
+      "balance": "110132318158743221"
     }
   },
   "user_histories": {
@@ -321,7 +321,7 @@
     },
     "0x31632636d664895f1bd9d03f5f7c162a2a6980eb": {
       "first_seen": 1768563695,
-      "last_seen": 1768563695,
+      "last_seen": 1773844223,
       "entry_timestamp": 1768563695,
       "exit_timestamp": null,
       "entry_block": 24247056,
@@ -354,10 +354,18 @@
           "block": 24247056,
           "timestamp": 1768563695,
           "datetime": "2026-01-16T11:41:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "110132318158743221",
+          "balance_after": "110132318158743221",
+          "block": 24684977,
+          "timestamp": 1773844223,
+          "datetime": "2026-03-18T14:30:23+00:00"
         }
       ],
       "first_seen_date": "2026-01-16T11:41:35+00:00",
-      "last_seen_date": "2026-01-16T11:41:35+00:00",
+      "last_seen_date": "2026-03-18T14:30:23+00:00",
       "total_holding_duration_days": 0
     },
     "0x6772ad780f87a84dbf889a158fe6a90ddf150054": {
