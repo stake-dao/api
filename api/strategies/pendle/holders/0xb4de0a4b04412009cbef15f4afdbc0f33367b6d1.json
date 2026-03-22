@@ -5,12 +5,12 @@
     "address": "0xFb6a09634A3C1aC05318F85321980d1208372793",
     "symbol": "savUSD PENDLE LP"
   },
-  "last_block": 24714625,
-  "last_updated": "2026-03-22T17:44:57.030635+00:00",
+  "last_block": 24714698,
+  "last_updated": "2026-03-22T17:59:35.757472+00:00",
   "stats": {
     "total_deposited": "1857587669888279855985122",
-    "total_withdrawn": "725529912982094949634086",
-    "current_supply": "1132057756906184906351036",
+    "total_withdrawn": "726396367840872973540982",
+    "current_supply": "1131191302047406882444140",
     "current_holders": 8,
     "total_users": 8
   },
@@ -37,7 +37,7 @@
       "balance": "3183153396759824533378"
     },
     "0x9722e41c607819926794118ac50aa2a4c84c5f71": {
-      "balance": "1732909717556047813792"
+      "balance": "866454858778023906896"
     }
   },
   "user_histories": {
@@ -320,7 +320,7 @@
     },
     "0x9722e41c607819926794118ac50aa2a4c84c5f71": {
       "first_seen": 1770287675,
-      "last_seen": 1770287675,
+      "last_seen": 1774202279,
       "entry_timestamp": 1770287675,
       "exit_timestamp": null,
       "entry_block": 24390065,
@@ -353,10 +353,18 @@
           "block": 24390065,
           "timestamp": 1770287675,
           "datetime": "2026-02-05T10:34:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "866454858778023906896",
+          "balance_after": "866454858778023906896",
+          "block": 24714691,
+          "timestamp": 1774202279,
+          "datetime": "2026-03-22T17:57:59+00:00"
         }
       ],
       "first_seen_date": "2026-02-05T10:34:35+00:00",
-      "last_seen_date": "2026-02-05T10:34:35+00:00",
+      "last_seen_date": "2026-03-22T17:57:59+00:00",
       "total_holding_duration_days": 0
     },
     "0x50174919350fd2944439ba719488b78ec4be9357": {
