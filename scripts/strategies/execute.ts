@@ -1,5 +1,4 @@
 import updateCurveStrats from '../strategies/updateCurveStrats'
-import updateAngleStrats from './updateAngleStrats'
 import updateBalancerStrats from './updateBalancerStrats'
 import updatePancakeStrats from './updatePancakeStrats'
 import updatePendleStrats from './updatePendleStrats'
@@ -9,9 +8,6 @@ const executeUpdateStrats = async (protocol) => {
   switch (protocol) {
     case 'curve':
       await updateCurveStrats()
-      break
-    case 'angle':
-      await updateAngleStrats()
       break
     case 'balancer':
       await updateBalancerStrats()

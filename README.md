@@ -164,7 +164,6 @@ Available protocols :
 - [pendle](https://api.stakedao.org/api/strategies/pendle)
 - [pancakeswap](https://api.stakedao.org/api/strategies/pancakeswap)
 - [balancer](https://api.stakedao.org/api/strategies/balancer)
-- [angle](https://api.stakedao.org/api/strategies/angle)
 
 The chain id can be selected by adding {chainId}.json at the end of the endpoint.
 e.g. Curve strategies on Ethereum can be fetched through the endpoint : [/api/strategies/curve/1.json](https://api.stakedao.org/api/strategies/curve/1.json)

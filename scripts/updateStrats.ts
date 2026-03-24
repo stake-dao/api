@@ -3,7 +3,6 @@ import updateBalancerStrats from './strategies/updateBalancerStrats'
 import updateYearnStrats from './strategies/updateYearnStrats'
 import updatePancakeStrats from './strategies/updatePancakeStrats'
 import updatePendleStrats from './strategies/updatePendleStrats'
-import updateAngleStrats from './strategies/updateAngleStrats'
 import updatePassiveStrats from './strategies/updatePassiveStrats'
 import updateStakeDaoStrats from './strategies/updateStakeDaoStrats'
 
@@ -13,9 +12,8 @@ const PROMISES_INDEX = {
   2: 'yearn',
   3: 'pancake',
   4: 'pendle',
-  5: 'angle',
-  6: 'passive',
-  7: 'stakeDao',
+  5: 'passive',
+  6: 'stakeDao',
 }
 
 const updateStrats = async () => {
