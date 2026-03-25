@@ -12,6 +12,7 @@ export const getLockers = memoize(
     const prices = await fetch("https://data-hub.contact-69d.workers.dev/v1/prices").then(res => res.json())
 
     const lockers = await fetchLockers({
+      rpc: RPC,
       prices,
       provider: {
         [mainnet.id]: createPublicClient({ chain: mainnet, transport: http(RPC[mainnet.id]) }),
