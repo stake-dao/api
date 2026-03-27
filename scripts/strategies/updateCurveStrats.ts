@@ -1,7 +1,7 @@
 import { arbitrum, mainnet } from 'viem/chains'
 import { writeFile, writeFileFromPromise } from '../utils'
 import { getCurve, getCurveArbitrum, getCurveMainnet } from '../../src/lib/strategies/curve'
-import { getCurve_v2 } from '../../src/lib/strategies/v2/curve'
+import { getCurve_v2 } from '../../src/lib/strategies/v2'
 
 const updateCurveStrats = async () => {
   const [curveDataMainnet, curveDataArbitrum, curveData] = await Promise.allSettled([

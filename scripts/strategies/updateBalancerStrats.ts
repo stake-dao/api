@@ -1,7 +1,7 @@
 import { mainnet } from 'viem/chains'
 import { writeFile } from '../utils'
 import { getBalancer, getBalancerMainnet } from '../../src/lib/strategies/balancer'
-import { getBalancer_v2 } from '../../src/lib/strategies/v2/balancer'
+import { getBalancer_v2 } from '../../src/lib/strategies/v2'
 
 const updateBalancerStrats = async () => {
   const [balancerDataMainnet, balancerData] = await Promise.all([getBalancerMainnet(), getBalancer()])
