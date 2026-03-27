@@ -5,12 +5,12 @@
     "address": "0xcFD848b9f6fEf552204014ac67901223AD6bf679",
     "symbol": "wstETH PENDLE LP"
   },
-  "last_block": 24747322,
-  "last_updated": "2026-03-27T07:11:53.103310+00:00",
+  "last_block": 24747475,
+  "last_updated": "2026-03-27T07:42:50.500789+00:00",
   "stats": {
     "total_deposited": "33591580058532423110",
-    "total_withdrawn": "0",
-    "current_supply": "33591580058532423110",
+    "total_withdrawn": "2712816547896330711",
+    "current_supply": "30878763510636092399",
     "current_holders": 3,
     "total_users": 3
   },
@@ -19,7 +19,7 @@
       "balance": "28044206962739761688"
     },
     "0x04267b7b80a210c52bcd02303a74641562e8a6b8": {
-      "balance": "5425633095792661422"
+      "balance": "2712816547896330711"
     },
     "0xa04cbcbf43abd445aeac02d6ea070c2275c2eaf5": {
       "balance": "121740000000000000"
@@ -69,7 +69,7 @@
     },
     "0x04267b7b80a210c52bcd02303a74641562e8a6b8": {
       "first_seen": 1767150791,
-      "last_seen": 1767150791,
+      "last_seen": 1774597295,
       "entry_timestamp": 1767150791,
       "exit_timestamp": null,
       "entry_block": 24129848,
@@ -102,10 +102,18 @@
           "block": 24129848,
           "timestamp": 1767150791,
           "datetime": "2025-12-31T03:13:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "2712816547896330711",
+          "balance_after": "2712816547896330711",
+          "block": 24747470,
+          "timestamp": 1774597295,
+          "datetime": "2026-03-27T07:41:35+00:00"
         }
       ],
       "first_seen_date": "2025-12-31T03:13:11+00:00",
-      "last_seen_date": "2025-12-31T03:13:11+00:00",
+      "last_seen_date": "2026-03-27T07:41:35+00:00",
       "total_holding_duration_days": 0
     },
     "0xf0ea0b3aaf06ce5b09d484990d5d45a00fe9f0b4": {
