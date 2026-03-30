@@ -5,12 +5,12 @@
     "address": "0xfCe3F966A131c46A51B896CEea3917BC4c302577",
     "symbol": "ynRWAx PENDLE LP"
   },
-  "last_block": 24769030,
-  "last_updated": "2026-03-30T07:49:32.486997+00:00",
+  "last_block": 24769202,
+  "last_updated": "2026-03-30T08:24:03.633292+00:00",
   "stats": {
     "total_deposited": "170593868593098152",
-    "total_withdrawn": "81496491988895411",
-    "current_supply": "89097376604202741",
+    "total_withdrawn": "82096127527635519",
+    "current_supply": "88497741065462633",
     "current_holders": 12,
     "total_users": 12
   },
@@ -36,11 +36,11 @@
     "0x957251724eb2d2cfdcd47b09f694998513d6d90c": {
       "balance": "1924865967495571"
     },
-    "0x803c7dea214ecfb35959259cd3d845ed3fc461ac": {
-      "balance": "1199271077480216"
-    },
     "0x0f27bff243cd1a77f448b2e45f7d2930f4b8a664": {
       "balance": "653249382246696"
+    },
+    "0x803c7dea214ecfb35959259cd3d845ed3fc461ac": {
+      "balance": "599635538740108"
     },
     "0x385c8a11519e84f41374445b67fe6966bfface4d": {
       "balance": "318670323794548"
@@ -437,7 +437,7 @@
     },
     "0x803c7dea214ecfb35959259cd3d845ed3fc461ac": {
       "first_seen": 1770630875,
-      "last_seen": 1770630875,
+      "last_seen": 1774858511,
       "entry_timestamp": 1770630875,
       "exit_timestamp": null,
       "entry_block": 24418443,
@@ -470,10 +470,18 @@
           "block": 24418443,
           "timestamp": 1770630875,
           "datetime": "2026-02-09T09:54:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "599635538740108",
+          "balance_after": "599635538740108",
+          "block": 24769159,
+          "timestamp": 1774858511,
+          "datetime": "2026-03-30T08:15:11+00:00"
         }
       ],
       "first_seen_date": "2026-02-09T09:54:35+00:00",
-      "last_seen_date": "2026-02-09T09:54:35+00:00",
+      "last_seen_date": "2026-03-30T08:15:11+00:00",
       "total_holding_duration_days": 0
     },
     "0xe97db597b9eee7ea812bb1dbdb16f27383513068": {
