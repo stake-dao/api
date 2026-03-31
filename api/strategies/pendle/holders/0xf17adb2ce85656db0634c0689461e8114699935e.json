@@ -5,12 +5,12 @@
     "address": "0xbE570Be4238BD9019aA8D575204f1DAA27Ee0a15",
     "symbol": "asdPENDLE PENDLE LP"
   },
-  "last_block": 24778294,
-  "last_updated": "2026-03-31T14:50:00.337903+00:00",
+  "last_block": 24778448,
+  "last_updated": "2026-03-31T15:20:58.644275+00:00",
   "stats": {
     "total_deposited": "46488826414499774021191",
-    "total_withdrawn": "18282149107478094625797",
-    "current_supply": "28206677307021679395394",
+    "total_withdrawn": "21442830000590672263237",
+    "current_supply": "25045996413909101757954",
     "current_holders": 8,
     "total_users": 12
   },
@@ -21,11 +21,11 @@
     "0xf930ebbd05ef8b25b1797b9b2109ddc9b0d43063": {
       "balance": "6528268623996689332364"
     },
-    "0x0e7bc8009f87231661591c05e07afbc2df89116b": {
-      "balance": "6321361786225155274880"
-    },
     "0x7ecf3629e27b410d6a277cdca9c99240706eebec": {
       "balance": "5601349006689182229654"
+    },
+    "0x0e7bc8009f87231661591c05e07afbc2df89116b": {
+      "balance": "3160680893112577637440"
     },
     "0x957251724eb2d2cfdcd47b09f694998513d6d90c": {
       "balance": "418215900869045194729"
@@ -318,7 +318,7 @@
     },
     "0x0e7bc8009f87231661591c05e07afbc2df89116b": {
       "first_seen": 1765431371,
-      "last_seen": 1765431371,
+      "last_seen": 1774969847,
       "entry_timestamp": 1765431371,
       "exit_timestamp": null,
       "entry_block": 23987390,
@@ -351,10 +351,18 @@
           "block": 23987390,
           "timestamp": 1765431371,
           "datetime": "2025-12-11T05:36:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "3160680893112577637440",
+          "balance_after": "3160680893112577637440",
+          "block": 24778398,
+          "timestamp": 1774969847,
+          "datetime": "2026-03-31T15:10:47+00:00"
         }
       ],
       "first_seen_date": "2025-12-11T05:36:11+00:00",
-      "last_seen_date": "2025-12-11T05:36:11+00:00",
+      "last_seen_date": "2026-03-31T15:10:47+00:00",
       "total_holding_duration_days": 0
     },
     "0x7ecf3629e27b410d6a277cdca9c99240706eebec": {
