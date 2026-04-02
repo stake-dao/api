@@ -5,21 +5,18 @@
     "address": "0xC374f7eC85F8C7DE3207a10bB1978bA104bdA3B2",
     "symbol": "wstETH PENDLE LP"
   },
-  "last_block": 24792063,
-  "last_updated": "2026-04-02T12:56:12.733511+00:00",
+  "last_block": 24792276,
+  "last_updated": "2026-04-02T13:38:41.382892+00:00",
   "stats": {
     "total_deposited": "716234499475225789032",
-    "total_withdrawn": "714494461413411768451",
-    "current_supply": "1740038061814020581",
-    "current_holders": 3,
+    "total_withdrawn": "714943102025584200768",
+    "current_supply": "1291397449641588264",
+    "current_holders": 2,
     "total_users": 52
   },
   "current_holders": {
     "0xd52a931632a7655614030d99c96624a72aaadc22": {
       "balance": "1248077913748626214"
-    },
-    "0x943c23be6316736b6d029210ecea2e2b0df2ef3e": {
-      "balance": "448640612172432317"
     },
     "0x96f3fd68ca448912f8f19ca8716db7c868b542bf": {
       "balance": "43319535892962050"
@@ -268,23 +265,26 @@
     },
     "0x943c23be6316736b6d029210ecea2e2b0df2ef3e": {
       "first_seen": 1725442691,
-      "last_seen": 1725442691,
+      "last_seen": 1775136611,
       "entry_timestamp": 1725442691,
-      "exit_timestamp": null,
+      "exit_timestamp": 1775136611,
       "entry_block": 20676370,
-      "exit_block": null,
+      "exit_block": 24792234,
       "max_balance": 448640612172432317,
       "holding_periods": [
         {
           "entry_timestamp": 1725442691,
-          "exit_timestamp": null,
+          "exit_timestamp": 1775136611,
           "entry_block": 20676370,
-          "exit_block": null,
-          "entry_date": "2024-09-04T09:38:11+00:00"
+          "exit_block": 24792234,
+          "entry_date": "2024-09-04T09:38:11+00:00",
+          "duration": 49693920,
+          "exit_date": "2026-04-02T13:30:11+00:00",
+          "duration_days": 575.1611111111112
         }
       ],
-      "total_holding_duration": 0,
-      "is_current_holder": true,
+      "total_holding_duration": 49693920,
+      "is_current_holder": false,
       "events": [
         {
           "type": "DEPOSIT",
@@ -293,11 +293,19 @@
           "block": 20676370,
           "timestamp": 1725442691,
           "datetime": "2024-09-04T09:38:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "448640612172432317",
+          "balance_after": "0",
+          "block": 24792234,
+          "timestamp": 1775136611,
+          "datetime": "2026-04-02T13:30:11+00:00"
         }
       ],
       "first_seen_date": "2024-09-04T09:38:11+00:00",
-      "last_seen_date": "2024-09-04T09:38:11+00:00",
-      "total_holding_duration_days": 0
+      "last_seen_date": "2026-04-02T13:30:11+00:00",
+      "total_holding_duration_days": 575.1611111111112
     },
     "0xef1eba3c139b3f9ae8303d5aaffc13ae175106ee": {
       "first_seen": 1725511547,
