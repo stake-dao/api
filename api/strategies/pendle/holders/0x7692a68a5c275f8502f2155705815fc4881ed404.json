@@ -5,14 +5,14 @@
     "address": "0x2ec28D05d86a1FC4DE199726F7DdC8f83D23b5a5",
     "symbol": "asdCRV PENDLE LP"
   },
-  "last_block": 24802234,
-  "last_updated": "2026-04-03T22:56:37.118349+00:00",
+  "last_block": 24802336,
+  "last_updated": "2026-04-03T23:17:10.736817+00:00",
   "stats": {
-    "total_deposited": "763753047129767831930437",
+    "total_deposited": "766801676459434352261229",
     "total_withdrawn": "80666213379415853011191",
-    "current_supply": "683086833750351978919246",
-    "current_holders": 7,
-    "total_users": 7
+    "current_supply": "686135463080018499250038",
+    "current_holders": 8,
+    "total_users": 8
   },
   "current_holders": {
     "0xf930ebbd05ef8b25b1797b9b2109ddc9b0d43063": {
@@ -26,6 +26,9 @@
     },
     "0x10ca6444d0740d76c759482cfaf1b6ef61220b11": {
       "balance": "3352240173146334080146"
+    },
+    "0x0f27bff243cd1a77f448b2e45f7d2930f4b8a664": {
+      "balance": "3048629329666520330792"
     },
     "0x3f91790f59ebd950486e25fd917cbc46d9e73cbf": {
       "balance": "1949590954140646170974"
@@ -371,6 +374,47 @@
       ],
       "first_seen_date": "2026-03-15T12:34:23+00:00",
       "last_seen_date": "2026-03-15T12:34:23+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0x0f27bff243cd1a77f448b2e45f7d2930f4b8a664": {
+      "first_seen": 1775257175,
+      "last_seen": 1775257175,
+      "entry_timestamp": 1775257175,
+      "exit_timestamp": null,
+      "entry_block": 24802250,
+      "exit_block": null,
+      "max_balance": 3048629329666520330792,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1775257175,
+          "exit_timestamp": null,
+          "entry_block": 24802250,
+          "exit_block": null,
+          "entry_date": "2026-04-03T22:59:35+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "1524314664833260165396",
+          "balance_after": "1524314664833260165396",
+          "block": 24802250,
+          "timestamp": 1775257175,
+          "datetime": "2026-04-03T22:59:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "1524314664833260165396",
+          "balance_after": "3048629329666520330792",
+          "block": 24802250,
+          "timestamp": 1775257175,
+          "datetime": "2026-04-03T22:59:35+00:00"
+        }
+      ],
+      "first_seen_date": "2026-04-03T22:59:35+00:00",
+      "last_seen_date": "2026-04-03T22:59:35+00:00",
       "total_holding_duration_days": 0
     }
   }
