@@ -1,0 +1,64 @@
+{
+  "gauge_id": "0x22661555611e688a2dF7Ca56A17070625A5157ba",
+  "vault_id": "0xcC0B0fcd034bFDa19a16657dB14C99F5D20457CD",
+  "token": {
+    "address": "0x520Dc4a08E55f6Bcc241E0FB780A683a425e8956",
+    "symbol": "nBASIS PENDLE LP"
+  },
+  "last_block": 24735410,
+  "last_updated": "2026-03-25T15:19:01.619177+00:00",
+  "stats": {
+    "total_deposited": "929177411",
+    "total_withdrawn": "929177411",
+    "current_supply": "0",
+    "current_holders": 0,
+    "total_users": 1
+  },
+  "current_holders": {},
+  "user_histories": {
+    "0xe1009b65e306625713ce113b9b10ca7096b8e555": {
+      "first_seen": 1764610859,
+      "last_seen": 1770386603,
+      "entry_timestamp": 1764610859,
+      "exit_timestamp": 1770386603,
+      "entry_block": 23920183,
+      "exit_block": 24398256,
+      "max_balance": 929177411,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1764610859,
+          "exit_timestamp": 1770386603,
+          "entry_block": 23920183,
+          "exit_block": 24398256,
+          "entry_date": "2025-12-01T17:40:59+00:00",
+          "duration": 5775744,
+          "exit_date": "2026-02-06T14:03:23+00:00",
+          "duration_days": 66.8488888888889
+        }
+      ],
+      "total_holding_duration": 5775744,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "929177411",
+          "balance_after": "929177411",
+          "block": 23920183,
+          "timestamp": 1764610859,
+          "datetime": "2025-12-01T17:40:59+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "929177411",
+          "balance_after": "0",
+          "block": 24398256,
+          "timestamp": 1770386603,
+          "datetime": "2026-02-06T14:03:23+00:00"
+        }
+      ],
+      "first_seen_date": "2025-12-01T17:40:59+00:00",
+      "last_seen_date": "2026-02-06T14:03:23+00:00",
+      "total_holding_duration_days": 66.8488888888889
+    }
+  }
+}

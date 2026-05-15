@@ -1,0 +1,120 @@
+name: Bot Pendle Gauge Holders
+
+on:
+  schedule:
+    - cron: '*/10 * * * *' # Every 10 minutes
+  workflow_dispatch: # Allows the workflow to be triggered manually
+
+env:
+  TARGET_DEVOPS_DIR: target-devops
+  DEVOPS_DIR: devops
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          repository: stake-dao/automation-jobs
+          token: ${{ secrets.GIT_ACCESS_TOKEN }}
+          path: ${{ env.DEVOPS_DIR }}
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10.13'
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: pip install -r ${{ env.DEVOPS_DIR }}/requirements.txt
+        shell: bash
+
+      - name: Run the pendle gauge holders script
+        run: |
+          cd ${{ env.DEVOPS_DIR }}
+          python script/indexing/pendle_gauge_holders.py
+        shell: bash
+        env:
+          PYTHONPATH: script/
+          ETHERSCAN_API_KEY: ${{ secrets.EXPLORER_KEY }}
+
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          repository: stake-dao/api
+          token: ${{ secrets.GIT_ACCESS_TOKEN }}
+          path: ${{ env.TARGET_DEVOPS_DIR }}
+        if: always()
+
+      - name: Copy pendle gauge holders data to target repo
+        run: |
+          # Copy all per-gauge JSON files
+          cp ${{ env.DEVOPS_DIR }}/temp/pendle_gauge_holders/*.json "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}/api/strategies/pendle/holders/"
+
+      - name: Generate index.json for pendle holders
+        run: |
+          cd "${GITHUB_WORKSPACE}/${{ env.TARGET_DEVOPS_DIR }}"
+          node -e '
+          const fs = require("fs");
+          const path = require("path");
+
+          const holdersDir = "api/strategies/pendle/holders";
+          const files = fs.readdirSync(holdersDir).filter(f => f.endsWith(".json") && f.startsWith("0x"));
+
+          const gauges = {};
+          let totalHolders = 0;
+          let totalUsers = 0;
+          let lastUpdated = null;
+          let lastBlock = 0;
+
+          for (const file of files) {
+            const filePath = path.join(holdersDir, file);
+            const content = JSON.parse(fs.readFileSync(filePath, "utf8"));
+            const gaugeId = file.replace(".json", "");
+            
+            gauges[gaugeId] = content;
+            
+            totalHolders += content.stats?.current_holders || 0;
+            totalUsers += content.stats?.total_users || 0;
+            
+            if (content.last_block > lastBlock) {
+              lastBlock = content.last_block;
+              lastUpdated = content.last_updated;
+            }
+          }
+
+          const indexData = {
+            metadata: {
+              total_gauges: files.length,
+              total_current_holders: totalHolders,
+              total_users: totalUsers,
+              last_updated: lastUpdated,
+              last_block: lastBlock
+            },
+            gauges: gauges
+          };
+
+          fs.writeFileSync(path.join(holdersDir, "index.json"), JSON.stringify(indexData));
+          console.log("Created index.json with " + files.length + " gauges");
+          '
+
+      - name: Commit and push if changes found
+        run: |
+          cd ${{ env.TARGET_DEVOPS_DIR }}
+          git config --local user.email "action@github.com"
+          git config --local user.name "Stake DAO API update"
+          git add api/strategies/pendle/holders
+          git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Pendle Gauge Holders data" || exit 0
+          git pull --rebase origin main
+          git push origin main
+        shell: bash
+        if: always()

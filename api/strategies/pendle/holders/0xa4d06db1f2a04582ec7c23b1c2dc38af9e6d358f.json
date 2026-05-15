@@ -1,0 +1,64 @@
+{
+  "gauge_id": "0xa4D06db1F2a04582EC7C23b1c2DC38af9E6D358f",
+  "vault_id": "0x3A0fB6480Dfa7907Ed75b3dC9C547588c7E8A4f6",
+  "token": {
+    "address": "0x28F2C72361f6B7430C5aC30d289265309392901C",
+    "symbol": "sUSDa PENDLE LP"
+  },
+  "last_block": 24131675,
+  "last_updated": "2025-12-31T09:21:08.315289+00:00",
+  "stats": {
+    "total_deposited": "369842374145277602562",
+    "total_withdrawn": "369842374145277602562",
+    "current_supply": "0",
+    "current_holders": 0,
+    "total_users": 1
+  },
+  "current_holders": {},
+  "user_histories": {
+    "0xabe9ac63a4122b103638f753e7d0c2b1b47991fe": {
+      "first_seen": 1755681551,
+      "last_seen": 1766045087,
+      "entry_timestamp": 1755681551,
+      "exit_timestamp": 1766045087,
+      "entry_block": 23181349,
+      "exit_block": 24038180,
+      "max_balance": 369842374145277602562,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1755681551,
+          "exit_timestamp": 1766045087,
+          "entry_block": 23181349,
+          "exit_block": 24038180,
+          "entry_date": "2025-08-20T09:19:11+00:00",
+          "duration": 10363536,
+          "exit_date": "2025-12-18T08:04:47+00:00",
+          "duration_days": 119.94833333333334
+        }
+      ],
+      "total_holding_duration": 10363536,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "369842374145277602562",
+          "balance_after": "369842374145277602562",
+          "block": 23181349,
+          "timestamp": 1755681551,
+          "datetime": "2025-08-20T09:19:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "369842374145277602562",
+          "balance_after": "0",
+          "block": 24038180,
+          "timestamp": 1766045087,
+          "datetime": "2025-12-18T08:04:47+00:00"
+        }
+      ],
+      "first_seen_date": "2025-08-20T09:19:11+00:00",
+      "last_seen_date": "2025-12-18T08:04:47+00:00",
+      "total_holding_duration_days": 119.94833333333334
+    }
+  }
+}

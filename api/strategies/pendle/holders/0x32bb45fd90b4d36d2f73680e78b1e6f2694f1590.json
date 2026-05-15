@@ -1,0 +1,1393 @@
+{
+  "gauge_id": "0x32bB45fd90b4D36D2f73680e78B1E6F2694F1590",
+  "vault_id": "0x65C9a299C7b77ab1e25B8038B1b1A77B792495F7",
+  "token": {
+    "address": "0x6CB9A013604A567a5834fadD411165B1ca616783",
+    "symbol": "reUSDe PENDLE LP"
+  },
+  "last_block": 24978937,
+  "last_updated": "2026-04-28T13:43:57.073685+00:00",
+  "stats": {
+    "total_deposited": "298196047954765446518587",
+    "total_withdrawn": "100255890377854753070472",
+    "current_supply": "197940157576910693448115",
+    "current_holders": 19,
+    "total_users": 19
+  },
+  "current_holders": {
+    "0xd691a33aabb6e3e27ebe4590fb0ff0105ea16edb": {
+      "balance": "80233040768939165652370"
+    },
+    "0xacf19e0cb91017e74c5b788110e0b203736235fe": {
+      "balance": "52210867148645397599630"
+    },
+    "0x32f1cfa3ecd87be9e46bd4a34aa38c9bc77e936e": {
+      "balance": "26374075393359493266956"
+    },
+    "0xd1c921829db71034b077e585fa4f28850f2b5267": {
+      "balance": "10916200181409714125065"
+    },
+    "0x10ca6444d0740d76c759482cfaf1b6ef61220b11": {
+      "balance": "10660415310198596933964"
+    },
+    "0x09728fd85f07cdc91bbc5ea25c7aaa4c8f70c9c9": {
+      "balance": "4359482143967529640138"
+    },
+    "0x01bac8aef1adcaf091626bb977c89e8f2192b443": {
+      "balance": "3803263717689431479790"
+    },
+    "0xe97db597b9eee7ea812bb1dbdb16f27383513068": {
+      "balance": "2088407608715262156680"
+    },
+    "0x5e9ed3ecc680554f04be1ee2cc4556d8dd0baf1d": {
+      "balance": "1788927008896343306932"
+    },
+    "0xc1e7ca17274c36a3358460f93ce30200916688b6": {
+      "balance": "1573260543347618539232"
+    },
+    "0x9d9cbc11c85848a3ebf181940f2bec9f5fc75396": {
+      "balance": "928963094617006793754"
+    },
+    "0xe57c3dc8c3069243307f218e7d67ec94664e03b7": {
+      "balance": "826964367382396641454"
+    },
+    "0x6c07bee398a98b5e7d15aa1bc2cc4300514cabf7": {
+      "balance": "534487098671838028821"
+    },
+    "0xcf93088ccd85a6ce1602a34d3189924489ca867e": {
+      "balance": "534487098671838028821"
+    },
+    "0x43a996fa50d2f378d707aca9ddcde1c30cb68f63": {
+      "balance": "440356432234679677909"
+    },
+    "0xd22234192cf66368d36155327cc3b33b5ad09425": {
+      "balance": "440356432234679677909"
+    },
+    "0xca189e6bef40df01357fbb22d92728cd26180b82": {
+      "balance": "226376372481517405977"
+    },
+    "0xfd98422fa15ffda7513f9d17bed099ffb74ce0a0": {
+      "balance": "134835168301397438"
+    },
+    "0x076e714869cecd1eea6f343d5ce1439d94e079cd": {
+      "balance": "92020279883095275"
+    }
+  },
+  "user_histories": {
+    "0xe57c3dc8c3069243307f218e7d67ec94664e03b7": {
+      "first_seen": 1766032355,
+      "last_seen": 1766032355,
+      "entry_timestamp": 1766032355,
+      "exit_timestamp": null,
+      "entry_block": 24037125,
+      "exit_block": null,
+      "max_balance": 826964367382396641454,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1766032355,
+          "exit_timestamp": null,
+          "entry_block": 24037125,
+          "exit_block": null,
+          "entry_date": "2025-12-18T04:32:35+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "413482183691198320727",
+          "balance_after": "413482183691198320727",
+          "block": 24037125,
+          "timestamp": 1766032355,
+          "datetime": "2025-12-18T04:32:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "413482183691198320727",
+          "balance_after": "826964367382396641454",
+          "block": 24037125,
+          "timestamp": 1766032355,
+          "datetime": "2025-12-18T04:32:35+00:00"
+        }
+      ],
+      "first_seen_date": "2025-12-18T04:32:35+00:00",
+      "last_seen_date": "2025-12-18T04:32:35+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0x6c07bee398a98b5e7d15aa1bc2cc4300514cabf7": {
+      "first_seen": 1766041751,
+      "last_seen": 1767767807,
+      "entry_timestamp": 1766041751,
+      "exit_timestamp": null,
+      "entry_block": 24037904,
+      "exit_block": null,
+      "max_balance": 1068974197343676057642,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1766041751,
+          "exit_timestamp": null,
+          "entry_block": 24037904,
+          "exit_block": null,
+          "entry_date": "2025-12-18T07:09:11+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "534487098671838028821",
+          "balance_after": "534487098671838028821",
+          "block": 24037904,
+          "timestamp": 1766041751,
+          "datetime": "2025-12-18T07:09:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "534487098671838028821",
+          "balance_after": "1068974197343676057642",
+          "block": 24037904,
+          "timestamp": 1766041751,
+          "datetime": "2025-12-18T07:09:11+00:00"
+        },
+        {
+          "type": "TRANSFER",
+          "amount": "534487098671838028821",
+          "balance_after": "534487098671838028821",
+          "block": 24181054,
+          "timestamp": 1767767807,
+          "datetime": "2026-01-07T06:36:47+00:00"
+        }
+      ],
+      "first_seen_date": "2025-12-18T07:09:11+00:00",
+      "last_seen_date": "2026-01-07T06:36:47+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0x9d9cbc11c85848a3ebf181940f2bec9f5fc75396": {
+      "first_seen": 1766087087,
+      "last_seen": 1766087087,
+      "entry_timestamp": 1766087087,
+      "exit_timestamp": null,
+      "entry_block": 24041656,
+      "exit_block": null,
+      "max_balance": 928963094617006793754,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1766087087,
+          "exit_timestamp": null,
+          "entry_block": 24041656,
+          "exit_block": null,
+          "entry_date": "2025-12-18T19:44:47+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "464481547308503396877",
+          "balance_after": "464481547308503396877",
+          "block": 24041656,
+          "timestamp": 1766087087,
+          "datetime": "2025-12-18T19:44:47+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "464481547308503396877",
+          "balance_after": "928963094617006793754",
+          "block": 24041656,
+          "timestamp": 1766087087,
+          "datetime": "2025-12-18T19:44:47+00:00"
+        }
+      ],
+      "first_seen_date": "2025-12-18T19:44:47+00:00",
+      "last_seen_date": "2025-12-18T19:44:47+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0xc1e7ca17274c36a3358460f93ce30200916688b6": {
+      "first_seen": 1767208523,
+      "last_seen": 1767901403,
+      "entry_timestamp": 1767208523,
+      "exit_timestamp": null,
+      "entry_block": 24134634,
+      "exit_block": null,
+      "max_balance": 3146521086695237078464,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1767208523,
+          "exit_timestamp": null,
+          "entry_block": 24134634,
+          "exit_block": null,
+          "entry_date": "2025-12-31T19:15:23+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "1573260543347618539232",
+          "balance_after": "1573260543347618539232",
+          "block": 24134634,
+          "timestamp": 1767208523,
+          "datetime": "2025-12-31T19:15:23+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "1573260543347618539232",
+          "balance_after": "3146521086695237078464",
+          "block": 24134634,
+          "timestamp": 1767208523,
+          "datetime": "2025-12-31T19:15:23+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "1573260543347618539232",
+          "balance_after": "1573260543347618539232",
+          "block": 24192120,
+          "timestamp": 1767901403,
+          "datetime": "2026-01-08T19:43:23+00:00"
+        }
+      ],
+      "first_seen_date": "2025-12-31T19:15:23+00:00",
+      "last_seen_date": "2026-01-08T19:43:23+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0xcf93088ccd85a6ce1602a34d3189924489ca867e": {
+      "first_seen": 1767767807,
+      "last_seen": 1767767807,
+      "entry_timestamp": 1767767807,
+      "exit_timestamp": null,
+      "entry_block": 24181054,
+      "exit_block": null,
+      "max_balance": 534487098671838028821,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1767767807,
+          "exit_timestamp": null,
+          "entry_block": 24181054,
+          "exit_block": null,
+          "entry_date": "2026-01-07T06:36:47+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "534487098671838028821",
+          "balance_after": "534487098671838028821",
+          "block": 24181054,
+          "timestamp": 1767767807,
+          "datetime": "2026-01-07T06:36:47+00:00"
+        }
+      ],
+      "first_seen_date": "2026-01-07T06:36:47+00:00",
+      "last_seen_date": "2026-01-07T06:36:47+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0x01bac8aef1adcaf091626bb977c89e8f2192b443": {
+      "first_seen": 1768225955,
+      "last_seen": 1769929103,
+      "entry_timestamp": 1768225955,
+      "exit_timestamp": null,
+      "entry_block": 24219052,
+      "exit_block": null,
+      "max_balance": 7606527435378862959580,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1768225955,
+          "exit_timestamp": null,
+          "entry_block": 24219052,
+          "exit_block": null,
+          "entry_date": "2026-01-12T13:52:35+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "3803263717689431479790",
+          "balance_after": "3803263717689431479790",
+          "block": 24219052,
+          "timestamp": 1768225955,
+          "datetime": "2026-01-12T13:52:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "3803263717689431479790",
+          "balance_after": "7606527435378862959580",
+          "block": 24219052,
+          "timestamp": 1768225955,
+          "datetime": "2026-01-12T13:52:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "3803263717689431479790",
+          "balance_after": "3803263717689431479790",
+          "block": 24360371,
+          "timestamp": 1769929103,
+          "datetime": "2026-02-01T06:58:23+00:00"
+        }
+      ],
+      "first_seen_date": "2026-01-12T13:52:35+00:00",
+      "last_seen_date": "2026-02-01T06:58:23+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0x5e9ed3ecc680554f04be1ee2cc4556d8dd0baf1d": {
+      "first_seen": 1768937711,
+      "last_seen": 1768937711,
+      "entry_timestamp": 1768937711,
+      "exit_timestamp": null,
+      "entry_block": 24278116,
+      "exit_block": null,
+      "max_balance": 1788927008896343306932,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1768937711,
+          "exit_timestamp": null,
+          "entry_block": 24278116,
+          "exit_block": null,
+          "entry_date": "2026-01-20T19:35:11+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "894463504448171653466",
+          "balance_after": "894463504448171653466",
+          "block": 24278116,
+          "timestamp": 1768937711,
+          "datetime": "2026-01-20T19:35:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "894463504448171653466",
+          "balance_after": "1788927008896343306932",
+          "block": 24278116,
+          "timestamp": 1768937711,
+          "datetime": "2026-01-20T19:35:11+00:00"
+        }
+      ],
+      "first_seen_date": "2026-01-20T19:35:11+00:00",
+      "last_seen_date": "2026-01-20T19:35:11+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0xe97db597b9eee7ea812bb1dbdb16f27383513068": {
+      "first_seen": 1769465435,
+      "last_seen": 1770057347,
+      "entry_timestamp": 1769465435,
+      "exit_timestamp": null,
+      "entry_block": 24321898,
+      "exit_block": null,
+      "max_balance": 4176815217430524313360,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1769465435,
+          "exit_timestamp": null,
+          "entry_block": 24321898,
+          "exit_block": null,
+          "entry_date": "2026-01-26T22:10:35+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "2088407608715262156680",
+          "balance_after": "2088407608715262156680",
+          "block": 24321898,
+          "timestamp": 1769465435,
+          "datetime": "2026-01-26T22:10:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "2088407608715262156680",
+          "balance_after": "4176815217430524313360",
+          "block": 24321898,
+          "timestamp": 1769465435,
+          "datetime": "2026-01-26T22:10:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "2088407608715262156680",
+          "balance_after": "2088407608715262156680",
+          "block": 24371003,
+          "timestamp": 1770057347,
+          "datetime": "2026-02-02T18:35:47+00:00"
+        }
+      ],
+      "first_seen_date": "2026-01-26T22:10:35+00:00",
+      "last_seen_date": "2026-02-02T18:35:47+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0xd691a33aabb6e3e27ebe4590fb0ff0105ea16edb": {
+      "first_seen": 1769548943,
+      "last_seen": 1775658863,
+      "entry_timestamp": 1769548943,
+      "exit_timestamp": null,
+      "entry_block": 24328827,
+      "exit_block": null,
+      "max_balance": 160466081537878331304740,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1769548943,
+          "exit_timestamp": null,
+          "entry_block": 24328827,
+          "exit_block": null,
+          "entry_date": "2026-01-27T21:22:23+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "117326910384807353196",
+          "balance_after": "117326910384807353196",
+          "block": 24328827,
+          "timestamp": 1769548943,
+          "datetime": "2026-01-27T21:22:23+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "117326910384807353196",
+          "balance_after": "234653820769614706392",
+          "block": 24328827,
+          "timestamp": 1769548943,
+          "datetime": "2026-01-27T21:22:23+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "4499128983709950852267",
+          "balance_after": "4733782804479565558659",
+          "block": 24333126,
+          "timestamp": 1769600735,
+          "datetime": "2026-01-28T11:45:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "4499128983709950852267",
+          "balance_after": "9232911788189516410926",
+          "block": 24333126,
+          "timestamp": 1769600735,
+          "datetime": "2026-01-28T11:45:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "4491100805883200863360",
+          "balance_after": "13724012594072717274286",
+          "block": 24361456,
+          "timestamp": 1769942171,
+          "datetime": "2026-02-01T10:36:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "4491100805883200863360",
+          "balance_after": "18215113399955918137646",
+          "block": 24361456,
+          "timestamp": 1769942171,
+          "datetime": "2026-02-01T10:36:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "4491176110426377060806",
+          "balance_after": "22706289510382295198452",
+          "block": 24363895,
+          "timestamp": 1769971595,
+          "datetime": "2026-02-01T18:46:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "4491176110426377060806",
+          "balance_after": "27197465620808672259258",
+          "block": 24363895,
+          "timestamp": 1769971595,
+          "datetime": "2026-02-01T18:46:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "76563513359960276868",
+          "balance_after": "27274029134168632536126",
+          "block": 24376382,
+          "timestamp": 1770122351,
+          "datetime": "2026-02-03T12:39:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "76563513359960276868",
+          "balance_after": "27350592647528592812994",
+          "block": 24376382,
+          "timestamp": 1770122351,
+          "datetime": "2026-02-03T12:39:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "55057796992072713134",
+          "balance_after": "27405650444520665526128",
+          "block": 24420035,
+          "timestamp": 1770650075,
+          "datetime": "2026-02-09T15:14:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "55057796992072713134",
+          "balance_after": "27460708241512738239262",
+          "block": 24420035,
+          "timestamp": 1770650075,
+          "datetime": "2026-02-09T15:14:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "44924487232418394590",
+          "balance_after": "27505632728745156633852",
+          "block": 24448899,
+          "timestamp": 1770998231,
+          "datetime": "2026-02-13T15:57:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "44924487232418394590",
+          "balance_after": "27550557215977575028442",
+          "block": 24448899,
+          "timestamp": 1770998231,
+          "datetime": "2026-02-13T15:57:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "8930324114994755346327",
+          "balance_after": "36480881330972330374769",
+          "block": 24450516,
+          "timestamp": 1771017755,
+          "datetime": "2026-02-13T21:22:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "8930324114994755346327",
+          "balance_after": "45411205445967085721096",
+          "block": 24450516,
+          "timestamp": 1771017755,
+          "datetime": "2026-02-13T21:22:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "4274757298681374732103",
+          "balance_after": "49685962744648460453199",
+          "block": 24486422,
+          "timestamp": 1771450223,
+          "datetime": "2026-02-18T21:30:23+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "4274757298681374732103",
+          "balance_after": "53960720043329835185302",
+          "block": 24486422,
+          "timestamp": 1771450223,
+          "datetime": "2026-02-18T21:30:23+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "4437698467662182834743",
+          "balance_after": "58398418510992018020045",
+          "block": 24486428,
+          "timestamp": 1771450295,
+          "datetime": "2026-02-18T21:31:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "4437698467662182834743",
+          "balance_after": "62836116978654200854788",
+          "block": 24486428,
+          "timestamp": 1771450295,
+          "datetime": "2026-02-18T21:31:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "98190644506712360943",
+          "balance_after": "62934307623160913215731",
+          "block": 24521941,
+          "timestamp": 1771878083,
+          "datetime": "2026-02-23T20:21:23+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "98190644506712360943",
+          "balance_after": "63032498267667625576674",
+          "block": 24521941,
+          "timestamp": 1771878083,
+          "datetime": "2026-02-23T20:21:23+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "69218392957124446795",
+          "balance_after": "63101716660624750023469",
+          "block": 24564258,
+          "timestamp": 1772388167,
+          "datetime": "2026-03-01T18:02:47+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "69218392957124446795",
+          "balance_after": "63170935053581874470264",
+          "block": 24564258,
+          "timestamp": 1772388167,
+          "datetime": "2026-03-01T18:02:47+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "48398864678318955495529",
+          "balance_after": "111569799731900829965793",
+          "block": 24584541,
+          "timestamp": 1772632667,
+          "datetime": "2026-03-04T13:57:47+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "48398864678318955495529",
+          "balance_after": "159968664410219785461322",
+          "block": 24584541,
+          "timestamp": 1772632667,
+          "datetime": "2026-03-04T13:57:47+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "62094577656725240741",
+          "balance_after": "160030758987876510702063",
+          "block": 24620859,
+          "timestamp": 1773070643,
+          "datetime": "2026-03-09T15:37:23+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "62094577656725240741",
+          "balance_after": "160092853565533235942804",
+          "block": 24620859,
+          "timestamp": 1773070643,
+          "datetime": "2026-03-09T15:37:23+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "69873338276779119722",
+          "balance_after": "160162726903810015062526",
+          "block": 24669991,
+          "timestamp": 1773663275,
+          "datetime": "2026-03-16T12:14:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "69873338276779119722",
+          "balance_after": "160232600242086794182248",
+          "block": 24669991,
+          "timestamp": 1773663275,
+          "datetime": "2026-03-16T12:14:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "47473473220160656839",
+          "balance_after": "160280073715306954839087",
+          "block": 24713449,
+          "timestamp": 1774187279,
+          "datetime": "2026-03-22T13:47:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "47473473220160656839",
+          "balance_after": "160327547188527115495926",
+          "block": 24713449,
+          "timestamp": 1774187279,
+          "datetime": "2026-03-22T13:47:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "69267174675607904407",
+          "balance_after": "160396814363202723400333",
+          "block": 24778899,
+          "timestamp": 1774975883,
+          "datetime": "2026-03-31T16:51:23+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "69267174675607904407",
+          "balance_after": "160466081537878331304740",
+          "block": 24778899,
+          "timestamp": 1774975883,
+          "datetime": "2026-03-31T16:51:23+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "2000000000000000000000",
+          "balance_after": "158466081537878331304740",
+          "block": 24827433,
+          "timestamp": 1775560355,
+          "datetime": "2026-04-07T11:12:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "8000000000000000000000",
+          "balance_after": "150466081537878331304740",
+          "block": 24827451,
+          "timestamp": 1775560571,
+          "datetime": "2026-04-07T11:16:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "8000000000000000000000",
+          "balance_after": "142466081537878331304740",
+          "block": 24828088,
+          "timestamp": 1775568251,
+          "datetime": "2026-04-07T13:24:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "12000000000000000000000",
+          "balance_after": "130466081537878331304740",
+          "block": 24828194,
+          "timestamp": 1775569523,
+          "datetime": "2026-04-07T13:45:23+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "10000000000000000000000",
+          "balance_after": "120466081537878331304740",
+          "block": 24828438,
+          "timestamp": 1775572451,
+          "datetime": "2026-04-07T14:34:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "2233000000000000000000",
+          "balance_after": "118233081537878331304740",
+          "block": 24828745,
+          "timestamp": 1775576159,
+          "datetime": "2026-04-07T15:35:59+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "12000000000000000000000",
+          "balance_after": "106233081537878331304740",
+          "block": 24829351,
+          "timestamp": 1775583479,
+          "datetime": "2026-04-07T17:37:59+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "8000000000000000000000",
+          "balance_after": "98233081537878331304740",
+          "block": 24830178,
+          "timestamp": 1775593427,
+          "datetime": "2026-04-07T20:23:47+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "10000000000000000000000",
+          "balance_after": "88233081537878331304740",
+          "block": 24835606,
+          "timestamp": 1775658743,
+          "datetime": "2026-04-08T14:32:23+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "8000040768939165652370",
+          "balance_after": "80233040768939165652370",
+          "block": 24835616,
+          "timestamp": 1775658863,
+          "datetime": "2026-04-08T14:34:23+00:00"
+        }
+      ],
+      "first_seen_date": "2026-01-27T21:22:23+00:00",
+      "last_seen_date": "2026-04-08T14:34:23+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0xfd98422fa15ffda7513f9d17bed099ffb74ce0a0": {
+      "first_seen": 1770669467,
+      "last_seen": 1770669635,
+      "entry_timestamp": 1770669467,
+      "exit_timestamp": null,
+      "entry_block": 24421646,
+      "exit_block": null,
+      "max_balance": 184037019264628882,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1770669467,
+          "exit_timestamp": null,
+          "entry_block": 24421646,
+          "exit_block": null,
+          "entry_date": "2026-02-09T20:37:47+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "92018509632314441",
+          "balance_after": "92018509632314441",
+          "block": 24421646,
+          "timestamp": 1770669467,
+          "datetime": "2026-02-09T20:37:47+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "92018509632314441",
+          "balance_after": "184037019264628882",
+          "block": 24421646,
+          "timestamp": 1770669467,
+          "datetime": "2026-02-09T20:37:47+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "49201850963231444",
+          "balance_after": "134835168301397438",
+          "block": 24421660,
+          "timestamp": 1770669635,
+          "datetime": "2026-02-09T20:40:35+00:00"
+        }
+      ],
+      "first_seen_date": "2026-02-09T20:37:47+00:00",
+      "last_seen_date": "2026-02-09T20:40:35+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0x076e714869cecd1eea6f343d5ce1439d94e079cd": {
+      "first_seen": 1770670199,
+      "last_seen": 1770670379,
+      "entry_timestamp": 1770670199,
+      "exit_timestamp": null,
+      "entry_block": 24421707,
+      "exit_block": null,
+      "max_balance": 184040559766190550,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1770670199,
+          "exit_timestamp": null,
+          "entry_block": 24421707,
+          "exit_block": null,
+          "entry_date": "2026-02-09T20:49:59+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "92020279883095275",
+          "balance_after": "92020279883095275",
+          "block": 24421707,
+          "timestamp": 1770670199,
+          "datetime": "2026-02-09T20:49:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "92020279883095275",
+          "balance_after": "184040559766190550",
+          "block": 24421707,
+          "timestamp": 1770670199,
+          "datetime": "2026-02-09T20:49:59+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "92020279883095275",
+          "balance_after": "92020279883095275",
+          "block": 24421722,
+          "timestamp": 1770670379,
+          "datetime": "2026-02-09T20:52:59+00:00"
+        }
+      ],
+      "first_seen_date": "2026-02-09T20:49:59+00:00",
+      "last_seen_date": "2026-02-09T20:52:59+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0xca189e6bef40df01357fbb22d92728cd26180b82": {
+      "first_seen": 1771174679,
+      "last_seen": 1772878343,
+      "entry_timestamp": 1771174679,
+      "exit_timestamp": null,
+      "entry_block": 24463548,
+      "exit_block": null,
+      "max_balance": 452752744963034811954,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1771174679,
+          "exit_timestamp": null,
+          "entry_block": 24463548,
+          "exit_block": null,
+          "entry_date": "2026-02-15T16:57:59+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "226376372481517405977",
+          "balance_after": "226376372481517405977",
+          "block": 24463548,
+          "timestamp": 1771174679,
+          "datetime": "2026-02-15T16:57:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "226376372481517405977",
+          "balance_after": "452752744963034811954",
+          "block": 24463548,
+          "timestamp": 1771174679,
+          "datetime": "2026-02-15T16:57:59+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "226376372481517405977",
+          "balance_after": "226376372481517405977",
+          "block": 24604899,
+          "timestamp": 1772878343,
+          "datetime": "2026-03-07T10:12:23+00:00"
+        }
+      ],
+      "first_seen_date": "2026-02-15T16:57:59+00:00",
+      "last_seen_date": "2026-03-07T10:12:23+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0x43a996fa50d2f378d707aca9ddcde1c30cb68f63": {
+      "first_seen": 1772258015,
+      "last_seen": 1772259935,
+      "entry_timestamp": 1772258015,
+      "exit_timestamp": null,
+      "entry_block": 24553469,
+      "exit_block": null,
+      "max_balance": 880712864469359355818,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1772258015,
+          "exit_timestamp": null,
+          "entry_block": 24553469,
+          "exit_block": null,
+          "entry_date": "2026-02-28T05:53:35+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "440356432234679677909",
+          "balance_after": "440356432234679677909",
+          "block": 24553469,
+          "timestamp": 1772258015,
+          "datetime": "2026-02-28T05:53:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "440356432234679677909",
+          "balance_after": "880712864469359355818",
+          "block": 24553469,
+          "timestamp": 1772258015,
+          "datetime": "2026-02-28T05:53:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "440356432234679677909",
+          "balance_after": "440356432234679677909",
+          "block": 24553628,
+          "timestamp": 1772259935,
+          "datetime": "2026-02-28T06:25:35+00:00"
+        }
+      ],
+      "first_seen_date": "2026-02-28T05:53:35+00:00",
+      "last_seen_date": "2026-02-28T06:25:35+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0xd22234192cf66368d36155327cc3b33b5ad09425": {
+      "first_seen": 1772677955,
+      "last_seen": 1775610575,
+      "entry_timestamp": 1772677955,
+      "exit_timestamp": null,
+      "entry_block": 24588299,
+      "exit_block": null,
+      "max_balance": 880712864469359355818,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1772677955,
+          "exit_timestamp": null,
+          "entry_block": 24588299,
+          "exit_block": null,
+          "entry_date": "2026-03-05T02:32:35+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "440356432234679677909",
+          "balance_after": "440356432234679677909",
+          "block": 24588299,
+          "timestamp": 1772677955,
+          "datetime": "2026-03-05T02:32:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "440356432234679677909",
+          "balance_after": "880712864469359355818",
+          "block": 24588299,
+          "timestamp": 1772677955,
+          "datetime": "2026-03-05T02:32:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "440356432234679677909",
+          "balance_after": "440356432234679677909",
+          "block": 24831601,
+          "timestamp": 1775610575,
+          "datetime": "2026-04-08T01:09:35+00:00"
+        }
+      ],
+      "first_seen_date": "2026-03-05T02:32:35+00:00",
+      "last_seen_date": "2026-04-08T01:09:35+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0x32f1cfa3ecd87be9e46bd4a34aa38c9bc77e936e": {
+      "first_seen": 1773148919,
+      "last_seen": 1773148919,
+      "entry_timestamp": 1773148919,
+      "exit_timestamp": null,
+      "entry_block": 24627336,
+      "exit_block": null,
+      "max_balance": 26374075393359493266956,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1773148919,
+          "exit_timestamp": null,
+          "entry_block": 24627336,
+          "exit_block": null,
+          "entry_date": "2026-03-10T13:21:59+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "13187037696679746633478",
+          "balance_after": "13187037696679746633478",
+          "block": 24627336,
+          "timestamp": 1773148919,
+          "datetime": "2026-03-10T13:21:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "13187037696679746633478",
+          "balance_after": "26374075393359493266956",
+          "block": 24627336,
+          "timestamp": 1773148919,
+          "datetime": "2026-03-10T13:21:59+00:00"
+        }
+      ],
+      "first_seen_date": "2026-03-10T13:21:59+00:00",
+      "last_seen_date": "2026-03-10T13:21:59+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0xacf19e0cb91017e74c5b788110e0b203736235fe": {
+      "first_seen": 1774343891,
+      "last_seen": 1777187891,
+      "entry_timestamp": 1774343891,
+      "exit_timestamp": null,
+      "entry_block": 24726443,
+      "exit_block": null,
+      "max_balance": 52210867148645397599630,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1774343891,
+          "exit_timestamp": null,
+          "entry_block": 24726443,
+          "exit_block": null,
+          "entry_date": "2026-03-24T09:18:11+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "8764410564705592374929",
+          "balance_after": "8764410564705592374929",
+          "block": 24726443,
+          "timestamp": 1774343891,
+          "datetime": "2026-03-24T09:18:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "8764410564705592374929",
+          "balance_after": "17528821129411184749858",
+          "block": 24726443,
+          "timestamp": 1774343891,
+          "datetime": "2026-03-24T09:18:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "1752976550624418529127",
+          "balance_after": "19281797680035603278985",
+          "block": 24727401,
+          "timestamp": 1774355399,
+          "datetime": "2026-03-24T12:29:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "1752976550624418529127",
+          "balance_after": "21034774230660021808112",
+          "block": 24727401,
+          "timestamp": 1774355399,
+          "datetime": "2026-03-24T12:29:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "8731471527739016353082",
+          "balance_after": "29766245758399038161194",
+          "block": 24734044,
+          "timestamp": 1774435367,
+          "datetime": "2026-03-25T10:42:47+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "8731471527739016353082",
+          "balance_after": "38497717286138054514276",
+          "block": 24734044,
+          "timestamp": 1774435367,
+          "datetime": "2026-03-25T10:42:47+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "220879616597495785361",
+          "balance_after": "38718596902735550299637",
+          "block": 24854960,
+          "timestamp": 1775891999,
+          "datetime": "2026-04-11T07:19:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "220879616597495785361",
+          "balance_after": "38939476519333046084998",
+          "block": 24854960,
+          "timestamp": 1775891999,
+          "datetime": "2026-04-11T07:19:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "6635695314656175757316",
+          "balance_after": "45575171833989221842314",
+          "block": 24962647,
+          "timestamp": 1777187891,
+          "datetime": "2026-04-26T07:18:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "6635695314656175757316",
+          "balance_after": "52210867148645397599630",
+          "block": 24962647,
+          "timestamp": 1777187891,
+          "datetime": "2026-04-26T07:18:11+00:00"
+        }
+      ],
+      "first_seen_date": "2026-03-24T09:18:11+00:00",
+      "last_seen_date": "2026-04-26T07:18:11+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0x09728fd85f07cdc91bbc5ea25c7aaa4c8f70c9c9": {
+      "first_seen": 1775765387,
+      "last_seen": 1775940251,
+      "entry_timestamp": 1775765387,
+      "exit_timestamp": null,
+      "entry_block": 24844457,
+      "exit_block": null,
+      "max_balance": 4359482143967529640138,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1775765387,
+          "exit_timestamp": null,
+          "entry_block": 24844457,
+          "exit_block": null,
+          "entry_date": "2026-04-09T20:09:47+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "4347344677625719201",
+          "balance_after": "4347344677625719201",
+          "block": 24844457,
+          "timestamp": 1775765387,
+          "datetime": "2026-04-09T20:09:47+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "4347344677625719201",
+          "balance_after": "8694689355251438402",
+          "block": 24844457,
+          "timestamp": 1775765387,
+          "datetime": "2026-04-09T20:09:47+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "4361048289368972908",
+          "balance_after": "13055737644620411310",
+          "block": 24858546,
+          "timestamp": 1775935199,
+          "datetime": "2026-04-11T19:19:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "4361048289368972908",
+          "balance_after": "17416785933989384218",
+          "block": 24858546,
+          "timestamp": 1775935199,
+          "datetime": "2026-04-11T19:19:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "985925400448922145124",
+          "balance_after": "1003342186382911529342",
+          "block": 24858654,
+          "timestamp": 1775936495,
+          "datetime": "2026-04-11T19:41:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "985925400448922145124",
+          "balance_after": "1989267586831833674466",
+          "block": 24858654,
+          "timestamp": 1775936495,
+          "datetime": "2026-04-11T19:41:35+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "4359080757680347122",
+          "balance_after": "1993626667589514021588",
+          "block": 24858941,
+          "timestamp": 1775939939,
+          "datetime": "2026-04-11T20:38:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "4359080757680347122",
+          "balance_after": "1997985748347194368710",
+          "block": 24858941,
+          "timestamp": 1775939939,
+          "datetime": "2026-04-11T20:38:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "1180748197810167635714",
+          "balance_after": "3178733946157362004424",
+          "block": 24858967,
+          "timestamp": 1775940251,
+          "datetime": "2026-04-11T20:44:11+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "1180748197810167635714",
+          "balance_after": "4359482143967529640138",
+          "block": 24858967,
+          "timestamp": 1775940251,
+          "datetime": "2026-04-11T20:44:11+00:00"
+        }
+      ],
+      "first_seen_date": "2026-04-09T20:09:47+00:00",
+      "last_seen_date": "2026-04-11T20:44:11+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0x10ca6444d0740d76c759482cfaf1b6ef61220b11": {
+      "first_seen": 1776301379,
+      "last_seen": 1776301379,
+      "entry_timestamp": 1776301379,
+      "exit_timestamp": null,
+      "entry_block": 24888974,
+      "exit_block": null,
+      "max_balance": 10660415310198596933964,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1776301379,
+          "exit_timestamp": null,
+          "entry_block": 24888974,
+          "exit_block": null,
+          "entry_date": "2026-04-16T01:02:59+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "5330207655099298466982",
+          "balance_after": "5330207655099298466982",
+          "block": 24888974,
+          "timestamp": 1776301379,
+          "datetime": "2026-04-16T01:02:59+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "5330207655099298466982",
+          "balance_after": "10660415310198596933964",
+          "block": 24888974,
+          "timestamp": 1776301379,
+          "datetime": "2026-04-16T01:02:59+00:00"
+        }
+      ],
+      "first_seen_date": "2026-04-16T01:02:59+00:00",
+      "last_seen_date": "2026-04-16T01:02:59+00:00",
+      "total_holding_duration_days": 0
+    },
+    "0xd1c921829db71034b077e585fa4f28850f2b5267": {
+      "first_seen": 1776947627,
+      "last_seen": 1776947987,
+      "entry_timestamp": 1776947627,
+      "exit_timestamp": null,
+      "entry_block": 24942672,
+      "exit_block": null,
+      "max_balance": 21832400362819428250130,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1776947627,
+          "exit_timestamp": null,
+          "entry_block": 24942672,
+          "exit_block": null,
+          "entry_date": "2026-04-23T12:33:47+00:00"
+        }
+      ],
+      "total_holding_duration": 0,
+      "is_current_holder": true,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "10916200181409714125065",
+          "balance_after": "10916200181409714125065",
+          "block": 24942672,
+          "timestamp": 1776947627,
+          "datetime": "2026-04-23T12:33:47+00:00"
+        },
+        {
+          "type": "DEPOSIT",
+          "amount": "10916200181409714125065",
+          "balance_after": "21832400362819428250130",
+          "block": 24942672,
+          "timestamp": 1776947627,
+          "datetime": "2026-04-23T12:33:47+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "10916200181409714125065",
+          "balance_after": "10916200181409714125065",
+          "block": 24942702,
+          "timestamp": 1776947987,
+          "datetime": "2026-04-23T12:39:47+00:00"
+        }
+      ],
+      "first_seen_date": "2026-04-23T12:33:47+00:00",
+      "last_seen_date": "2026-04-23T12:39:47+00:00",
+      "total_holding_duration_days": 0
+    }
+  }
+}
