@@ -13,21 +13,21 @@
   "license": "AGPL-3.0-only",
   "dependencies": {
     "@hono/node-server": "^1.19.14",
-    "@stake-dao/constants": "^0.5.18",
-    "@stake-dao/reader": "^0.5.45",
+    "@stake-dao/constants": "^0.5.19",
+    "@stake-dao/reader": "^0.5.46",
     "dayjs": "^1.11.20",
     "dotenv": "^16.6.1",
     "hono": "^4.12.19",
     "lodash-es": "^4.18.1",
     "memoizee": "^0.4.17",
     "parquetjs": "^0.11.2",
-    "viem": "^2.49.3"
+    "viem": "^2.50.4"
   },
   "devDependencies": {
     "@types/memoizee": "^0.4.12",
     "@types/node": "^20.19.41",
     "prettier": "^3.8.3",
-    "tsx": "^4.22.1",
+    "tsx": "^4.22.2",
     "typescript": "^5.9.3"
   }
 }
