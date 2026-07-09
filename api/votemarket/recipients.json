@@ -1,0 +1,89 @@
+{
+  "epochs": {
+    "balancer": 1783555200,
+    "curve": 1783555200,
+    "frax": 1783555200,
+    "fxn": 1783555200,
+    "pendle": 1783555200
+  },
+  "recipients": {
+    "0x0000000014814b037cf4a091fe00cba2defc6115": [
+      {
+        "forwarder": "0x52f541764e6e90eebc5c21ff570de0e2d63766b6",
+        "protocol": "curve",
+        "chainId": 42161,
+        "platform": "0x8c2c5a295450ddff4cb360ca73fccc12243d14d9"
+      },
+      {
+        "forwarder": "0x52f541764e6e90eebc5c21ff570de0e2d63766b6",
+        "protocol": "curve",
+        "chainId": 8453,
+        "platform": "0x8c2c5a295450ddff4cb360ca73fccc12243d14d9"
+      }
+    ],
+    "0x0000000095310137125f82f37fbe5d2f99279947": [
+      {
+        "forwarder": "0x989aeb4d175e16225e39e87d0d97a3360524ad80",
+        "protocol": "curve",
+        "chainId": 42161,
+        "platform": "0x5e5c922a5eeab508486eb906ebe7bdffb05d81e5"
+      },
+      {
+        "forwarder": "0x989aeb4d175e16225e39e87d0d97a3360524ad80",
+        "protocol": "curve",
+        "chainId": 42161,
+        "platform": "0x8c2c5a295450ddff4cb360ca73fccc12243d14d9"
+      },
+      {
+        "forwarder": "0x989aeb4d175e16225e39e87d0d97a3360524ad80",
+        "protocol": "curve",
+        "chainId": 8453,
+        "platform": "0x8c2c5a295450ddff4cb360ca73fccc12243d14d9"
+      }
+    ],
+    "0x2343bda7b40c4197c4d472ab2f4863e2c434af82": [
+      {
+        "forwarder": "0xd11a4ee017ca0beca8fa45ff2abfe9c6267b7881",
+        "protocol": "fxn",
+        "chainId": 42161,
+        "platform": "0x155a7cf21f8853c135bdeba27fea19674c65f2b4"
+      }
+    ],
+    "0x4444aaaacdba5580282365e25b16309bd770ce4a": [
+      {
+        "forwarder": "0xf147b8125d2ef93fb6965db97d6746952a133934",
+        "protocol": "curve",
+        "chainId": 42161,
+        "platform": "0x5e5c922a5eeab508486eb906ebe7bdffb05d81e5"
+      },
+      {
+        "forwarder": "0xf147b8125d2ef93fb6965db97d6746952a133934",
+        "protocol": "curve",
+        "chainId": 42161,
+        "platform": "0x8c2c5a295450ddff4cb360ca73fccc12243d14d9"
+      },
+      {
+        "forwarder": "0xf147b8125d2ef93fb6965db97d6746952a133934",
+        "protocol": "curve",
+        "chainId": 8453,
+        "platform": "0x8c2c5a295450ddff4cb360ca73fccc12243d14d9"
+      }
+    ],
+    "0xa05c5f4a91be37f82a5ddfea970c6d32675fa737": [
+      {
+        "forwarder": "0x75736518075a01034fa72d675d36a47e9b06b2fb",
+        "protocol": "fxn",
+        "chainId": 42161,
+        "platform": "0x155a7cf21f8853c135bdeba27fea19674c65f2b4"
+      }
+    ],
+    "0xfcbbb4f7653770a040e1b14574ed5577d0a18eab": [
+      {
+        "forwarder": "0xc40549aa1d05c30af23a1c4a5af6ba11fcafe23f",
+        "protocol": "fxn",
+        "chainId": 42161,
+        "platform": "0x155a7cf21f8853c135bdeba27fea19674c65f2b4"
+      }
+    ]
+  }
+}
