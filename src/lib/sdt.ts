@@ -8,7 +8,9 @@ import dayjs from 'dayjs'
 import { formatUnits } from 'viem'
 
 require('dotenv').config()
+
 const BUYBACK_FILE_PATH = 'api/sdt/buyback.json'
+const BUYBACK_START = dayjs(1704070800000)
 
 export const getPricesForSdtData = memoize(
   async () => {
@@ -66,7 +68,7 @@ export const getSdtBuybackData = memoize(
         const orderTs = dayjs(order.creationDate)
         const orderUnixTs = orderTs.unix()
 
-        if (orderTs.isAfter(lastUpdate)) {
+        if (orderTs.isAfter(BUYBACK_START) && orderTs.isAfter(lastUpdate)) {
           const prices = await fetch(`https://coins.llama.fi/prices/historical/${orderUnixTs}/coingecko:stake-dao,ethereum:${order.sellToken}`).then(res => res.json())
           const sdtPrice = prices?.coins?.["coingecko:stake-dao"]?.price || 0
           const sellTokenPrice = prices?.coins?.[`ethereum:${order.sellToken}`]?.price || 0
