@@ -1,9 +1,10 @@
 import { writeFile } from './utils'
-import { getLegacySdtData, getSdtData } from '../src/lib/sdt'
+import { getLegacySdtData, getSdtBuybackData, getSdtData } from '../src/lib/sdt'
 
 const updateSdtData = async () => {
   const sdtData = await getSdtData()
   const legacySdtData = await getLegacySdtData()
+  const sdtBuyback = await getSdtBuybackData()
 
   writeFile({
     path: `api/sdt/index.json`,
@@ -20,6 +21,15 @@ const updateSdtData = async () => {
     log: {
       success: '✅ - Legacy SDT Data have been updated!',
       error: '❌ - An error occured during the Legacy SDT Data update.',
+    },
+  })
+
+  writeFile({
+    path: `api/sdt/buyback.json`,
+    data: JSON.stringify(sdtBuyback),
+    log: {
+      success: '✅ - SDT Buyback Data have been updated!',
+      error: '❌ - An error occured during the SDT Buyback Data update.',
     },
   })
 }
