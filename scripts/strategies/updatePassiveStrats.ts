@@ -35,6 +35,17 @@ const updatePassiveStrats = async () => {
       error: '❌ - An error occured during the Passive strategies update.',
     },
   })
+
+  // Same reason as `updateCurveStrats`: the previous JSON is preserved by the writer, but the
+  // rejection has to reach `updateStrats.ts` for the workflow step to fail and the commit to be
+  // skipped. Swallowed here, the exit code never fired.
+  const rejected = [passiveDataMainnet, passiveDataPolygon, passiveData].filter((r) => r.status === 'rejected')
+  if (rejected.length) {
+    throw new AggregateError(
+      rejected.map((r) => (r as PromiseRejectedResult).reason),
+      `${rejected.length}/3 passive strategy file(s) could not be produced`,
+    )
+  }
 }
 
 export default updatePassiveStrats

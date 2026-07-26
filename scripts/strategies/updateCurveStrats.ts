@@ -36,6 +36,18 @@ const updateCurveStrats = async () => {
       error: '❌ - An error occured during the Curve strategies update.',
     },
   })
+
+  // Written first, then raised. `writeFileFromPromise` skips a rejected entry, so the previously
+  // published JSON is preserved — but swallowing the rejection here made the caller's exit code
+  // useless: a hub outage on mainnet left this function resolving normally, `updateStrats.ts`
+  // counting zero failures, and the workflow committing the other protocols with a green step.
+  const rejected = [curveDataMainnet, curveDataArbitrum, curveData].filter((r) => r.status === 'rejected')
+  if (rejected.length) {
+    throw new AggregateError(
+      rejected.map((r) => (r as PromiseRejectedResult).reason),
+      `${rejected.length}/3 Curve strategy file(s) could not be produced`,
+    )
+  }
 }
 
 export const updateCurveStrats_v2 = async () => {
