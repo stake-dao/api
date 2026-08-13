@@ -1,10 +1,10 @@
 {
   "epochs": {
-    "balancer": 1783555200,
-    "curve": 1783555200,
-    "frax": 1783555200,
-    "fxn": 1783555200,
-    "pendle": 1783555200
+    "balancer": 1786579200,
+    "curve": 1786579200,
+    "fxn": 1786579200,
+    "pendle": 1786579200,
+    "yb": 1786579200
   },
   "recipients": {
     "0x0000000014814b037cf4a091fe00cba2defc6115": [
@@ -12,12 +12,6 @@
         "forwarder": "0x52f541764e6e90eebc5c21ff570de0e2d63766b6",
         "protocol": "curve",
         "chainId": 42161,
-        "platform": "0x8c2c5a295450ddff4cb360ca73fccc12243d14d9"
-      },
-      {
-        "forwarder": "0x52f541764e6e90eebc5c21ff570de0e2d63766b6",
-        "protocol": "curve",
-        "chainId": 8453,
         "platform": "0x8c2c5a295450ddff4cb360ca73fccc12243d14d9"
       }
     ],
@@ -32,12 +26,6 @@
         "forwarder": "0x989aeb4d175e16225e39e87d0d97a3360524ad80",
         "protocol": "curve",
         "chainId": 42161,
-        "platform": "0x8c2c5a295450ddff4cb360ca73fccc12243d14d9"
-      },
-      {
-        "forwarder": "0x989aeb4d175e16225e39e87d0d97a3360524ad80",
-        "protocol": "curve",
-        "chainId": 8453,
         "platform": "0x8c2c5a295450ddff4cb360ca73fccc12243d14d9"
       }
     ],
@@ -60,12 +48,6 @@
         "forwarder": "0xf147b8125d2ef93fb6965db97d6746952a133934",
         "protocol": "curve",
         "chainId": 42161,
-        "platform": "0x8c2c5a295450ddff4cb360ca73fccc12243d14d9"
-      },
-      {
-        "forwarder": "0xf147b8125d2ef93fb6965db97d6746952a133934",
-        "protocol": "curve",
-        "chainId": 8453,
         "platform": "0x8c2c5a295450ddff4cb360ca73fccc12243d14d9"
       }
     ],
