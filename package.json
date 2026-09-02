@@ -14,14 +14,14 @@
   "dependencies": {
     "@hono/node-server": "^1.19.17",
     "@stake-dao/constants": "^0.5.21",
-    "@stake-dao/reader": "^0.5.50",
+    "@stake-dao/reader": "^0.5.51",
     "dayjs": "^1.11.23",
     "dotenv": "^16.6.1",
     "hono": "^4.13.5",
     "lodash-es": "^4.18.1",
     "memoizee": "^0.4.17",
     "parquetjs": "^0.11.2",
-    "viem": "^2.56.1"
+    "viem": "^2.56.3"
   },
   "devDependencies": {
     "@types/memoizee": "^0.4.12",
