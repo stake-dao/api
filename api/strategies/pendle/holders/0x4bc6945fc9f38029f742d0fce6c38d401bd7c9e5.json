@@ -1,0 +1,64 @@
+{
+  "gauge_id": "0x4Bc6945FC9f38029F742D0Fce6c38D401BD7C9E5",
+  "vault_id": "0x65B8c250AF2bbF1459eab03635d724D8D4D7a2dD",
+  "token": {
+    "address": "0x80c229544530c2bA693bF7e8A5AA76Ff98705C6E",
+    "symbol": "USDC-Euler Yield PENDLE LP"
+  },
+  "last_block": 24025876,
+  "last_updated": "2025-12-16T14:50:35.548717+00:00",
+  "stats": {
+    "total_deposited": "20857921",
+    "total_withdrawn": "20857921",
+    "current_supply": "0",
+    "current_holders": 0,
+    "total_users": 1
+  },
+  "current_holders": {},
+  "user_histories": {
+    "0x35c79714b4dba8b9cb3f02e9b39a3dbdd392b80b": {
+      "first_seen": 1749114491,
+      "last_seen": 1751022875,
+      "entry_timestamp": 1749114491,
+      "exit_timestamp": 1751022875,
+      "entry_block": 22637421,
+      "exit_block": 22795410,
+      "max_balance": 20857921,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1749114491,
+          "exit_timestamp": 1751022875,
+          "entry_block": 22637421,
+          "exit_block": 22795410,
+          "duration": 1908384,
+          "entry_date": "2025-06-05T09:08:11+00:00",
+          "exit_date": "2025-06-27T11:14:35+00:00",
+          "duration_days": 22.087777777777777
+        }
+      ],
+      "total_holding_duration": 1908384,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "20857921",
+          "balance_after": "20857921",
+          "block": 22637421,
+          "timestamp": 1749114491,
+          "datetime": "2025-06-05T09:08:11+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "20857921",
+          "balance_after": "0",
+          "block": 22795410,
+          "timestamp": 1751022875,
+          "datetime": "2025-06-27T11:14:35+00:00"
+        }
+      ],
+      "first_seen_date": "2025-06-05T09:08:11+00:00",
+      "last_seen_date": "2025-06-27T11:14:35+00:00",
+      "total_holding_duration_days": 22.087777777777777
+    }
+  }
+}

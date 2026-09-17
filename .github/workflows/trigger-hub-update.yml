@@ -1,0 +1,21 @@
+name: Update Stake DAO Hub Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/10 * * * *'  # Every 10 minutes
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Curve Strategies Data Update
+        run: |
+          curl --fail --silent --show-error \
+            -X POST "${{ vars.STAKE_DAO_HUB }}/update/curve"
+ 
+      - name: Trigger Balancer Strategies Data Update
+        run: |
+          curl --fail --silent --show-error \
+            -X POST "${{ vars.STAKE_DAO_HUB }}/update/balancer"

@@ -1,0 +1,42 @@
+name: Update Votemarket Recipients
+
+on:
+  schedule:
+    - cron: "0 4 * * *" # At 04:00 every day
+  workflow_dispatch: # Allows the workflow to be triggered manually
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run script to update Votemarket recipients data
+        run: pnpm tsx scripts/votemarket/updateRecipients.ts
+
+      - name: Commit and push if changes found
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Stake DAO API update"
+          git add api/votemarket/recipients.json
+          if ! git diff --staged --quiet; then
+            git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update votemarket recipients data"
+            git pull --rebase origin main
+            git push
+          fi
+        shell: bash

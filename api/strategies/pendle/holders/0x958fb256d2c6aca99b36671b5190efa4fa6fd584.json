@@ -1,0 +1,108 @@
+{
+  "gauge_id": "0x958FB256d2c6ACA99b36671b5190efa4fa6fd584",
+  "vault_id": "0x0E599Dd3DDe3A0889571A935b2AD20BbC7d51B0a",
+  "token": {
+    "address": "0xAf5669E4ed9a999667cd2b810878022cF54866d1",
+    "symbol": "USD (Midas mEDGE) PENDLE LP"
+  },
+  "last_block": 24525422,
+  "last_updated": "2026-02-24T08:00:02.095007+00:00",
+  "stats": {
+    "total_deposited": "12457240983305210",
+    "total_withdrawn": "12457240983305210",
+    "current_supply": "0",
+    "current_holders": 0,
+    "total_users": 2
+  },
+  "current_holders": {},
+  "user_histories": {
+    "0xf87f7d563558bebf1031bcf09ba6ca60097cc7ab": {
+      "first_seen": 1761816695,
+      "last_seen": 1770148067,
+      "entry_timestamp": 1761816695,
+      "exit_timestamp": 1770148067,
+      "entry_block": 23689322,
+      "exit_block": 24378511,
+      "max_balance": 7842661524840386,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1761816695,
+          "exit_timestamp": 1770148067,
+          "entry_block": 23689322,
+          "exit_block": 24378511,
+          "entry_date": "2025-10-30T09:31:35+00:00",
+          "duration": 8331372,
+          "exit_date": "2026-02-03T19:47:47+00:00",
+          "duration_days": 96.42791666666666
+        }
+      ],
+      "total_holding_duration": 8331372,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "7842661524840386",
+          "balance_after": "7842661524840386",
+          "block": 23689322,
+          "timestamp": 1761816695,
+          "datetime": "2025-10-30T09:31:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "7842661524840386",
+          "balance_after": "0",
+          "block": 24378511,
+          "timestamp": 1770148067,
+          "datetime": "2026-02-03T19:47:47+00:00"
+        }
+      ],
+      "first_seen_date": "2025-10-30T09:31:35+00:00",
+      "last_seen_date": "2026-02-03T19:47:47+00:00",
+      "total_holding_duration_days": 96.42791666666666
+    },
+    "0xe1009b65e306625713ce113b9b10ca7096b8e555": {
+      "first_seen": 1764788675,
+      "last_seen": 1769696483,
+      "entry_timestamp": 1764788675,
+      "exit_timestamp": 1769696483,
+      "entry_block": 23934877,
+      "exit_block": 24341073,
+      "max_balance": 4614579458464824,
+      "holding_periods": [
+        {
+          "entry_timestamp": 1764788675,
+          "exit_timestamp": 1769696483,
+          "entry_block": 23934877,
+          "exit_block": 24341073,
+          "entry_date": "2025-12-03T19:04:35+00:00",
+          "duration": 4907808,
+          "exit_date": "2026-01-29T14:21:23+00:00",
+          "duration_days": 56.803333333333335
+        }
+      ],
+      "total_holding_duration": 4907808,
+      "is_current_holder": false,
+      "events": [
+        {
+          "type": "DEPOSIT",
+          "amount": "4614579458464824",
+          "balance_after": "4614579458464824",
+          "block": 23934877,
+          "timestamp": 1764788675,
+          "datetime": "2025-12-03T19:04:35+00:00"
+        },
+        {
+          "type": "WITHDRAW",
+          "amount": "4614579458464824",
+          "balance_after": "0",
+          "block": 24341073,
+          "timestamp": 1769696483,
+          "datetime": "2026-01-29T14:21:23+00:00"
+        }
+      ],
+      "first_seen_date": "2025-12-03T19:04:35+00:00",
+      "last_seen_date": "2026-01-29T14:21:23+00:00",
+      "total_holding_duration_days": 56.803333333333335
+    }
+  }
+}
