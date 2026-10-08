@@ -1,10 +1,10 @@
 {
   "epochs": {
-    "balancer": 1787788800,
-    "curve": 1787788800,
-    "fxn": 1787788800,
-    "pendle": 1787788800,
-    "yb": 1787788800
+    "balancer": 1791417600,
+    "curve": 1791417600,
+    "fxn": 1791417600,
+    "pendle": 1791417600,
+    "yb": 1791417600
   },
   "recipients": {
     "0x0000000014814b037cf4a091fe00cba2defc6115": [
@@ -34,6 +34,14 @@
     "0x4444aaaacdba5580282365e25b16309bd770ce4a": [
       {
         "forwarder": "0xf147b8125d2ef93fb6965db97d6746952a133934",
+        "protocol": "curve",
+        "chainId": 42161,
+        "platform": "0x8c2c5a295450ddff4cb360ca73fccc12243d14d9"
+      }
+    ],
+    "0x6d7f38c1d88868a488bcbc2aae6bf2d3a016f4f9": [
+      {
+        "forwarder": "0x4e31194647492761feede4f0f28b7c0cdc59217e",
         "protocol": "curve",
         "chainId": 42161,
         "platform": "0x8c2c5a295450ddff4cb360ca73fccc12243d14d9"
