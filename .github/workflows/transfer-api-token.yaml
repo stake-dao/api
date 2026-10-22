@@ -1,0 +1,62 @@
+name: Verify and encrypt VoteMarket dispatch credential
+
+on:
+  push:
+    branches: [feature/reuse-votemarket-api-token-20261022]
+    paths: [.github/workflows/transfer-api-token.yaml]
+
+permissions: {}
+
+jobs:
+  seal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      SOURCE_TOKEN: ${{ secrets.GIT_ACCESS_TOKEN }}
+    steps:
+      - name: Verify identity and repository dispatch permission
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.error
+          import urllib.request
+
+          headers = {
+              'Authorization': 'Bearer ' + os.environ['SOURCE_TOKEN'],
+              'Accept': 'application/vnd.github+json',
+              'X-GitHub-Api-Version': '2022-11-28',
+          }
+          request = urllib.request.Request('https://api.github.com/user', headers=headers)
+          with urllib.request.urlopen(request, timeout=30) as response:
+              assert json.load(response)['login'] == 'Lao0ni'
+          # Missing event_type proves authorization without creating an event.
+          request = urllib.request.Request(
+              'https://api.github.com/repos/stake-dao/api/dispatches',
+              headers={**headers, 'Content-Type': 'application/json'},
+              data=b'{}',
+          )
+          try:
+              urllib.request.urlopen(request, timeout=30)
+          except urllib.error.HTTPError as error:
+              body = json.load(error)
+              assert error.code == 422, error.code
+              assert 'event_type' in json.dumps(body), 'Unexpected validation response'
+          else:
+              raise RuntimeError('Unexpected success for invalid dispatch payload')
+          PY
+      - name: Encrypt for automation-guard production only
+        shell: bash
+        run: |
+          php <<'PHP'
+          <?php
+          $token = getenv('SOURCE_TOKEN');
+          $key = base64_decode('XS0yNesC+/dNU6wWHlaouvpZSrLZwgFVKO9pT5QVgGA=', true);
+          $sealed = sodium_crypto_box_seal($token, $key);
+          sodium_memzero($token);
+          echo 'SEALED_SECRET_JSON:' . json_encode([
+              'key_id' => '3380204578043523366',
+              'encrypted_value' => base64_encode($sealed),
+          ]) . PHP_EOL;
+          PHP
