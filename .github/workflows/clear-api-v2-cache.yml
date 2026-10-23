@@ -1,4 +1,4 @@
-name: Clear cloudflare and api-v2 cache
+name: Refresh Hub Votemarket and clear Cloudflare cache
 
 on:
   workflow_dispatch: # Allows the workflow to be triggered manually -
@@ -11,6 +11,7 @@ env:
   ETHERSCAN_TOKEN: ${{ secrets.ETHERSCAN_TOKEN }}
   CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
   CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+  VOTEMARKET_API_URL: ${{ vars.VOTEMARKET_API_URL || 'https://hub.stakedao.org/v1/votemarket' }}
   WORKER_USERNAME: ${{ secrets.WORKER_USERNAME }}
   WORKER_PASSWORD: ${{ secrets.WORKER_PASSWORD }}
   
