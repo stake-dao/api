@@ -11,7 +11,7 @@ env:
   ETHERSCAN_TOKEN: ${{ secrets.ETHERSCAN_TOKEN }}
   CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
   CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-  DATA_HUB_URL: https://data-hub.contact-69d.workers.dev
+  DATA_HUB_URL: ${{ secrets.DATA_HUB_URL }}
   WORKER_USERNAME: ${{ secrets.WORKER_USERNAME }}
   WORKER_PASSWORD: ${{ secrets.WORKER_PASSWORD }}
   
