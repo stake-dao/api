@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
 
 env:
+  DATA_HUB_URL: ${{ secrets.DATA_HUB_URL }}
   WEB3_ALCHEMY_API_KEY: ${{ secrets.WEB3_ALCHEMY_API_KEY }}
   GIT_ACCESS_TOKEN: ${{ secrets.GIT_ACCESS_TOKEN }}
 
