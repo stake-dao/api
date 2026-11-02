@@ -6,12 +6,22 @@ import * as path from 'path'
 import { ParquetReader } from 'parquetjs'
 import { pipeline } from 'stream'
 import { promisify } from 'util'
-import { createPublicClient, http, parseAbi } from 'viem'
+import {
+  concat,
+  createPublicClient,
+  encodePacked,
+  http,
+  keccak256,
+  parseAbi,
+  zeroHash,
+  type Address,
+  type Hex,
+} from 'viem'
 import { mainnet } from 'viem/chains'
 import { RPC } from '../constants'
 
 const API_URL = 'https://api.github.com/repos/oo-00/Votium'
-const MERKLE_API_BASE = 'https://raw.githubusercontent.com/oo-00/Votium/refs/heads/main/merkle/'
+const MERKLE_API_BASE = 'https://raw.githubusercontent.com/oo-00/Votium'
 const PARQUET_DELEGATORS_API =
   'https://raw.githubusercontent.com/stake-dao/bounties-report/main/data/delegations/1/0x52ea58f4FC3CEd48fa18E909226c1f8A0EF887DC.parquet'
 const VOTIUM_MERKLE = '0x378Ba9B73309bE80BF4C2c027aAD799766a7ED5A'
@@ -25,7 +35,7 @@ async function getSubdirectories(url: string) {
     return data.filter((item) => item.type === 'dir').map((item) => item.name)
   } catch (error) {
     console.error(error)
-    return []
+    throw error
   }
 }
 
@@ -75,7 +85,7 @@ async function getDelegators() {
     fs.unlinkSync(tempFilePath)
   } catch (error) {
     console.error(error)
-    return []
+    throw error
   }
 
   console.log(`Found ${delegators.length} delegators for space 'cvx.eth'`)
@@ -86,8 +96,8 @@ function findToken(symbol: string) {
   return tokens.find((t) => t.symbol.toLowerCase() === symbol.toLowerCase() && t.chainId === 1)
 }
 
-function getTokenMerkle(symbol: string) {
-  return `${MERKLE_API_BASE}/${symbol}/${symbol}.json`
+function getTokenMerkle(symbol: string, revision: string) {
+  return `${MERKLE_API_BASE}/${revision}/merkle/${symbol}/${symbol}.json`
 }
 
 async function fetchIfToOld(symbol: string) {
@@ -149,12 +159,17 @@ const processVotiumMerkles = async (provider: any) => {
   console.log(`Found ${delegators.length} effective delegator addresses after forwarding check.`)
 
   // Get subdirectories for tokens (as before).
-  const subdirectories = await getSubdirectories(`${API_URL}/contents/merkle`)
+  const response = await fetch(`${API_URL}/commits/main`)
+  if (!response.ok) throw new Error(`Votium revision: ${response.status} ${response.statusText}`)
+  const { sha } = await response.json()
+  const subdirectories = await getSubdirectories(`${API_URL}/contents/merkle?ref=${sha}`)
   for (const symbol of subdirectories) {
     const token = findToken(symbol)
     if (!token) continue
 
-    const merkle = await fetch(getTokenMerkle(symbol)).then((res) => res.json())
+    const response = await fetch(getTokenMerkle(symbol, sha))
+    if (!response.ok) throw new Error(`${symbol} merkle: ${response.status} ${response.statusText}`)
+    const merkle = await response.json()
 
     // Iterate over the merkle claims.
     for (const user of Object.keys(merkle.claims)) {
@@ -180,7 +195,22 @@ const processVotiumMerkles = async (provider: any) => {
       user: u,
     })),
   )
+  const blockNumber = await provider.getBlockNumber()
+  const rewardTokens = [...new Set(claimsToCheck.map((c) => c.token))]
+  const roots = await provider.multicall({
+    blockNumber,
+    allowFailure: false,
+    contracts: rewardTokens.map((token) => ({
+      address: VOTIUM_MERKLE,
+      abi: parseAbi(['function merkleRoot(address) external view returns(bytes32)']),
+      functionName: 'merkleRoot',
+      args: [token],
+    })),
+  })
+  const rootByToken = new Map(rewardTokens.map((token, i) => [token, roots[i]]))
   const checkClaimed = await provider.multicall({
+    blockNumber,
+    allowFailure: false,
     contracts: claimsToCheck.map((c) => ({
       address: VOTIUM_MERKLE,
       abi: parseAbi(['function isClaimed(address,uint256) external returns(bool)']),
@@ -190,8 +220,25 @@ const processVotiumMerkles = async (provider: any) => {
   })
 
   for (const [index, check] of claimsToCheck.entries()) {
-    if (checkClaimed[index].result) {
+    if (checkClaimed[index] || rootByToken.get(check.token) === zeroHash) {
       delete output.claims[check.user].tokens[check.token]
+      continue
+    }
+    const claim = output.claims[check.user].tokens[check.token]
+    let root = keccak256(
+      encodePacked(
+        ['uint256', 'address', 'uint256'],
+        [BigInt(claim.index), check.user as Address, BigInt(claim.amount)],
+      ),
+    )
+    for (const proof of claim.proof) {
+      root = keccak256(concat([root, proof].sort() as Hex[]))
+    }
+    if (root !== rootByToken.get(check.token)) {
+      const symbol = tokens.find((t) => t.address === check.token && t.chainId === 1)?.symbol
+      throw new Error(
+        `${symbol} root mismatch for ${check.user}: proof ${root}, on-chain ${rootByToken.get(check.token)}`,
+      )
     }
   }
 

@@ -3,22 +3,13 @@ name: Update Votium merkles
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 8 * * 2' # Every Tuesday at 8:30 am, filtered later to match distributions
+    - cron: '30 * * * *'
 
 jobs:
   update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Verify week number # Votium distributions occurs on odd weeks
-        run: |
-          week_number=$(date +%V)
-          if [ $((week_number % 2)) -eq 0 ]; then
-            echo "Updating script"
-          else
-            echo "Wrong week, aborting..."
-            exit 0
-          fi
       - uses: actions/checkout@v4
 
       - name: Install pnpm
@@ -44,6 +35,7 @@ jobs:
           git config --local user.name "Stake DAO API update"
           git pull origin main --ff
           git add api/votemarket/votium_merkles.json
+          git diff --cached --quiet && exit 0
           git commit -m "$(date +"%Y-%m-%d %H:%M:%S"): Auto-update Votium merkles data"
           git push
         shell: bash
