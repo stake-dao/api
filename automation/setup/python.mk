@@ -1,5 +1,5 @@
 # Common configuration
-PYTHON_VERSION := 3.10.13
+PYTHON_VERSION := 3.10
 VENV_DIR := $(shell pwd)/.venv
 
 # Check if UV is installed
