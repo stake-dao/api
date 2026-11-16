@@ -12,12 +12,18 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      VOTE_REMINDER_BOT_API_KEY: ${{ secrets.VOTE_REMINDER_BOT_API_KEY }}
+      REDIS_HOST: ${{ secrets.REDIS_HOST }}
+      REDIS_PORT: ${{ secrets.REDIS_PORT }}
+      REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
+      ROUTEMESH_API_KEY: ${{ secrets.ROUTEMESH_API_KEY }}
+      WEB3_ALCHEMY_API_KEY: ${{ secrets.WEB3_ALCHEMY_API_KEY }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          repository: stake-dao/automation-jobs
-          token: ${{ secrets.GIT_ACCESS_TOKEN }}
+          repository: stake-dao/tg-bots
           path: ${{ env.DEVOPS_DIR }}
           ref: main
 
@@ -36,6 +42,16 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r ${{ env.DEVOPS_DIR }}/requirements.txt
+        shell: bash
+
+      - name: Check required secrets
+        run: |
+          for key in VOTE_REMINDER_BOT_API_KEY REDIS_HOST REDIS_PORT REDIS_PASSWORD; do
+            if [[ -z "${!key}" ]]; then
+              echo "::error::Missing $key"
+              exit 1
+            fi
+          done
         shell: bash
 
       - name: Run the vote reminder script
