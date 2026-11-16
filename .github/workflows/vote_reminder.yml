@@ -13,11 +13,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Create GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.AUTOMATION_JOBS_APP_ID }}
+          private-key: ${{ secrets.AUTOMATION_JOBS_APP_PRIVATE_KEY }}
+          owner: stake-dao
+          repositories: automation-jobs
+
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
           repository: stake-dao/automation-jobs
-          token: ${{ secrets.GIT_ACCESS_TOKEN }}
+          token: ${{ steps.app-token.outputs.token }}
           path: ${{ env.DEVOPS_DIR }}
           ref: main
 
