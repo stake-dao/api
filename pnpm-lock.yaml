@@ -10,13 +10,13 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.19.19
-        version: 1.19.19(hono@4.13.18)
+        version: 1.19.19(hono@4.13.19)
       '@stake-dao/constants':
-        specifier: ^0.5.21
-        version: 0.5.21
+        specifier: ^0.5.22
+        version: 0.5.22
       '@stake-dao/reader':
-        specifier: ^0.5.57
-        version: 0.5.57(graphql@16.12.0)(typescript@5.9.3)
+        specifier: ^0.5.59
+        version: 0.5.59(graphql@16.12.0)(typescript@5.9.3)
       dayjs:
         specifier: ^1.11.23
         version: 1.11.23
@@ -24,8 +24,8 @@ importers:
         specifier: ^16.6.1
         version: 16.6.1
       hono:
-        specifier: ^4.13.18
-        version: 4.13.18
+        specifier: ^4.13.19
+        version: 4.13.19
       lodash-es:
         specifier: ^4.18.1
         version: 4.18.1
@@ -36,8 +36,8 @@ importers:
         specifier: ^0.11.2
         version: 0.11.2
       viem:
-        specifier: ^2.57.20
-        version: 2.57.20(typescript@5.9.3)
+        specifier: ^2.58.0
+        version: 2.58.0(typescript@5.9.3)
     devDependencies:
       '@types/memoizee':
         specifier: ^0.4.12
@@ -252,11 +252,11 @@ packages:
   '@scure/bip39@1.6.0':
     resolution: {integrity: sha512-+lF0BbLiJNwVlev4eKelw1WWLaiKXw7sSl8T6FvBlWkdX+94aGJ4o8XjUdlyhTCjd8c+B3KT3JfS8P0bLRNU6A==}
 
-  '@stake-dao/constants@0.5.21':
-    resolution: {integrity: sha512-AnUgBJ9jQsNs2Xp24omQn9WAJAE4wVW3fjFnYy6OO3G4nsRaGOvnI2fyBByjDTExOrOSbcLYnET0SRRFJJNf9A==}
+  '@stake-dao/constants@0.5.22':
+    resolution: {integrity: sha512-60ujMuGyxj3sJBURGC5S35XWCRAAljkxZXctv7/X+uAVzncad/K0yXXq8pzaHrDTDdrM1wgblJy1u1uqOkLQmw==}
 
-  '@stake-dao/reader@0.5.57':
-    resolution: {integrity: sha512-uORBp7lW1b2z/lk91t5m1GJT6T6stD7srdRKiKvIkFPY5+5g80qKRYlYJ7s3If97mn1FzhvCRbH5QKn2ofeATg==}
+  '@stake-dao/reader@0.5.59':
+    resolution: {integrity: sha512-tn+hqQRhIAku5RQ4rc9D+P607U+o2V3SRQZoNghktpE2qhJ3I/9Tb35vRsVZ7KKJmIGJzsL3FHyNqVxiNcuAoQ==}
 
   '@types/memoizee@0.4.12':
     resolution: {integrity: sha512-EdtpwNYNhe3kZ+4TlXj/++pvBoU0KdrAICMzgI7vjWgu9sIvvUhu9XR8Ks4L6Wh3sxpZ22wkZR7yCLAqUjnZuQ==}
@@ -360,8 +360,8 @@ packages:
     resolution: {integrity: sha512-DKKrynuQRne0PNpEbzuEdHlYOMksHSUI8Zc9Unei5gTsMNA2/vMpoMz/yKba50pejK56qj98qM0SjYxAKi13gQ==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
 
-  hono@4.13.18:
-    resolution: {integrity: sha512-H9q/E1XizaWstJxUW881dmLxEj+t/TrGGnyxINkm4+sK0qUwsMtFdo2BWI9Vs3cIS19MU6b6iCijoUoEf4f3DA==}
+  hono@4.13.19:
+    resolution: {integrity: sha512-KmXvQAXwcAHV+muzbIwoJ23niEB5nMoDVr9WcRkU8mvjUECm/1+7v4Jgp7P7a+H6MLFrh+vXrGonGrGS+RQfkA==}
     engines: {node: '>=16.9.0'}
 
   int53@0.2.4:
@@ -481,8 +481,8 @@ packages:
       typescript:
         optional: true
 
-  viem@2.57.20:
-    resolution: {integrity: sha512-LSvREzKT7xFXpmxW2YFJ/OtcZRkSGLp5zywSgadBf0qQCeqh2+FxHHWyrS2zEG7ZfBWQQvk8HI1i4HPzSMD14g==}
+  viem@2.58.0:
+    resolution: {integrity: sha512-oBGZGy6VptLmAATtEua71a7FzCXT5y74dQoeDP8EDHmBsWhQ34rXeHKz6tHeciKWnJ3zBT1u8sby8tAtg0gouA==}
     peerDependencies:
       mppx: '>=0.17.0'
       typescript: '>=5.0.4'
@@ -620,9 +620,9 @@ snapshots:
     dependencies:
       graphql: 16.12.0
 
-  '@hono/node-server@1.19.19(hono@4.13.18)':
+  '@hono/node-server@1.19.19(hono@4.13.19)':
     dependencies:
-      hono: 4.13.18
+      hono: 4.13.19
 
   '@noble/ciphers@1.3.0': {}
 
@@ -649,11 +649,11 @@ snapshots:
       '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
 
-  '@stake-dao/constants@0.5.21': {}
+  '@stake-dao/constants@0.5.22': {}
 
-  '@stake-dao/reader@0.5.57(graphql@16.12.0)(typescript@5.9.3)':
+  '@stake-dao/reader@0.5.59(graphql@16.12.0)(typescript@5.9.3)':
     dependencies:
-      '@stake-dao/constants': 0.5.21
+      '@stake-dao/constants': 0.5.22
       dayjs: 1.11.23
       graphql-request: 6.1.0(graphql@16.12.0)
       lodash-es: 4.18.1
@@ -792,7 +792,7 @@ snapshots:
 
   graphql@16.12.0: {}
 
-  hono@4.13.18: {}
+  hono@4.13.19: {}
 
   int53@0.2.4: {}
 
@@ -936,7 +936,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  viem@2.57.20(typescript@5.9.3):
+  viem@2.58.0(typescript@5.9.3):
     dependencies:
       '@noble/curves': 1.9.1
       '@noble/hashes': 1.8.0
